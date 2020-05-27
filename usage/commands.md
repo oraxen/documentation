@@ -14,7 +14,7 @@ For this tutorial we will use /o because it is the shortest, but if this command
 
 ### For testing
 
-The advantage of this method is that it allows you to see all the items at the same time and therefore to be more efficient \(you just have to click on an item to make it appear in your inventory\). But you can't use it to automatically give an item to another player \(for example from the shop\).
+The main benefit of this method is that it allows you to see all the items at the same time and therefore to be more efficient \(you just have to click on an item to make it appear in your inventory\). But you can't use it to automatically give an item to another player \(for example from the shop\).
 
 #### Usage:
 
