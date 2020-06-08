@@ -123,12 +123,23 @@ The parent\_model field is required by minecraft. In fact this will allow your i
 
 ### Use a json model
 
-Creating a json model can be time consuming but it allows you to create really cool things \(like 3d items\). It is really easy to integrate a json model with Oraxen : put your textures in your textures directory and your model in your models directory \(inside Oraxen folder\). Then you can ask Oraxen to put this model on one of your items :
+Creating a json model can be time consuming but it allows you to create really cool things \(like 3d items\). It is really easy to integrate a json model with Oraxen : put your textures in your textures directory and your model in your models directory \(inside Oraxen folder\). Then you can ask Oraxen to put this model on one of your items:
 
 ```yaml
   Pack:
     generate_model: false
     model: example_model.json #json extension is not mandatory
+```
+
+### Use a blocking json model \(for shield\)
+
+If you want to use a custom model for a shield, you need to specific the blocking model which will be used when a user right click using your shield, hopefully this is easy with Oraxen. Here is what it can look like:
+
+```yaml
+  Pack:
+    generate_model: false
+    model: example_shield.json #json extension is not mandatory
+    blocking_model: example_shield_blocking.json #json extension is not mandatory
 ```
 
 ## Mechanics options
