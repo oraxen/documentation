@@ -12,9 +12,13 @@ description: >-
 
 ![](../.gitbook/assets/image.png)
 
+The **emerald armor** gives you some extra hearts and a good protection \(better than diamond\). It doesn't have a big durability though.
+
 ### Obsidian armor
 
 ![](../.gitbook/assets/obsidian_armor.jpg)
+
+The **obsidian armor** is not as good as a diamond armor but has a ludicrous durability.
 
 ## Blocks
 
@@ -22,9 +26,13 @@ description: >-
 
 ![](../.gitbook/assets/ores.jpg)
 
+**Orax, ruby, onyx** and **amethyst** ores support fortune and silktouch enchantments.
+
 ### Caveblock
 
 ![](../.gitbook/assets/caveblock.jpg)
+
+A **caveblock** is a block which allows you to see through the other blocks \(like a kind of xray\), players LOVE it in faction servers.
 
 ## Hats
 
@@ -32,17 +40,25 @@ description: >-
 
 ![](../.gitbook/assets/crown.jpg)
 
-### Anubis hat
+A nice **crown** to look like a king which gives you armor protection and armor toughness.
+
+### Anubis head
 
 ![](../.gitbook/assets/anubis_helmet.jpg)
+
+The **anubis** head gives you nightvision and some protection.
 
 ### Witch hat
 
 ![](../.gitbook/assets/witch_hat.jpg)
 
-### Pharaon
+A nice **witch hat** which gives you armor protection and armor toughness.
+
+### Pharaoh head
 
 ![](../.gitbook/assets/pharaon.jpg)
+
+The incredible legendary **pharaoh head**, which gives you some armor protection and armor toughness.
 
 ## Items
 
@@ -50,19 +66,27 @@ description: >-
 
 ![](../.gitbook/assets/cogs.jpg)
 
+A **cog** is an item that can be used to repair an item. You just have to take it in your hand and click on a repairable item using it inside your inventory.
+
 ## Mystical weapons
 
 ### Storm sword
 
 ![](../.gitbook/assets/storm_sword.png)
 
+A incredibly powerful **storm sword** which allows you to strike lightning.
+
 ### **Magical wand**
 
 ![](../.gitbook/assets/magical_wand.jpg)
 
+This **magical wand** has a great animation and looks really cool but it currently doesn't have any mechanic so it's up to you to decide what you want to do with it.
+
 ### Withooker
 
 ![](../.gitbook/assets/withooker.jpg)
+
+Like the magical wand, the **withooker** has a great animation and looks really cool but it currently doesn't have any mechanic so it's up to you to decide what you want to do with it.
 
 ## Other weapons
 
