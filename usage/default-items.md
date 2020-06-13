@@ -94,31 +94,43 @@ Like the magical wand, the **withooker** has a great animation and looks really 
 
 ![](../.gitbook/assets/dagger.jpg)
 
+The **dagger** is a really nice weapon that can be used like a sword. By default you can use it faster than a sword.
+
 ### Energy crystal sword
 
 ![](../.gitbook/assets/energy_crystal_sword.jpg)
+
+The **energy crystal sword** is an incredibly looking sword, optimized for PvP and partially transparent.
 
 ### Blood sword
 
 ![](../.gitbook/assets/blood_sword.jpg)
 
+You can use the **blood sword** to steal hearts from your enemies.
+
 ### Katana
 
 ![](../.gitbook/assets/katana.jpg)
+
+The **katana** is another nice looking sword that you can customize.
 
 ### Octavia sword
 
 ![](../.gitbook/assets/octavia_sword.jpg)
 
+Like the dagger, the **Octavia sword** is small and nice looking.
+
 ### Obsidian sword
 
 ![](../.gitbook/assets/obsidian_sword.jpg)
+
+As powerful as an iron sword ...but so much durable! The **obsidian sword** is really useful.
 
 ### Glass sword
 
 ![](../.gitbook/assets/glass_sword.jpg)
 
-
+The **glass sword** is a pretty powerful sword but with a low durability.
 
 ## Other tools
 
@@ -126,13 +138,19 @@ Like the magical wand, the **withooker** has a great animation and looks really 
 
 ![](../.gitbook/assets/axe_of_experience.jpg)
 
+You can use the **axe of experience** to convert your experience into bottles of experience \(you'll have to lose a few percentage of experience though\).
+
 ### Bedrock pickaxe
 
 ![](../.gitbook/assets/bedrock_pickaxe.jpg)
 
+You can use the **bedrock pickaxe** to break bedrock and go at the top of the nether for example.
+
 ### Obsidian pickaxe
 
 ![](../.gitbook/assets/obsidian_pickaxe.jpg)
+
+The **obsidian pickaxe** can be used to break a lot of blocks but is similar to an iron pickaxe.
 
 ## Hammers
 
