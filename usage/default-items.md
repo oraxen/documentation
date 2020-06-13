@@ -8,6 +8,10 @@ description: >-
 
 ## Armors
 
+### Emerald armor
+
+### Obsidian armor
+
 ## Blocks
 
 ## Hats
