@@ -8,6 +8,13 @@ description: Various options impacting the plugin in its generality
 
 You can change the name and prefix of the plugin \(used in messages\) in the Plugin section. You can use & codes 
 
+```yaml
+  name: "Oraxen"
+  prefix: "&8&l[&bOraxen&8&l] §7"
+```
+
+### 
+
 ## Pack
 
 Oraxen integrates with Polymath \(a custom web server written in Python especially to be compatible\). You can download the source code [here](https://github.com/Th0rgal/Polymath/) and host it yourself or use the provided instance \(atlas\). You can also integrate with [your own custom hosting service](../developers/custom-hosting-service.md).
