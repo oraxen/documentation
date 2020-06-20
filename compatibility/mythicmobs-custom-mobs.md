@@ -8,7 +8,7 @@ description: >-
 
 This feature is provided to you by [yzl210](https://github.com/yzl210), don't hesitate to thank him!
 
-## Drops
+## How to use an oraxen item for the drops?
 
 ### Usage
 
@@ -19,7 +19,7 @@ This feature is provided to you by [yzl210](https://github.com/yzl210), don't he
 `oraxen custom_material 3-4 0.75`  
 This means that it has **75** percent chance to drop **3 to 4 custom\_material** items.
 
-## Equipments
+## How to equip your mob with an oraxen item?
 
 ### Usage
 
