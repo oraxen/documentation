@@ -19,6 +19,8 @@ First you need to decide on which world you want to add your new ores \(or creat
 
 You need to find your custom block data. This can be achieved using any minecraft version on a server running Oraxen. Just place your block \(you can get it from the oraxen inventory of give it to yourself through a command\) and press F3 while looking at the block you want to add.
 
+![](../.gitbook/assets/amethyst.png)
+
 ### Simply add a new ore using this blockdata
 
 You can now easily add your new ore to the generation. In our example, this should look like that:

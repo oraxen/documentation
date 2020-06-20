@@ -22,7 +22,9 @@
 ## Compatibility
 
 * [TrMenu - custom inventories](compatibility/trmenu-custom-inventories.md)
+* [MythicMobs - custom mobs](compatibility/mythicmobs-custom-mobs.md)
 * [RealisticWorldGenerator](compatibility/realisticworldgenerator.md)
+* [EpicWorldGenerator](compatibility/epicworldgenerator.md)
 
 ## Developers
 
