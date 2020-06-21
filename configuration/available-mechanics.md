@@ -131,6 +131,18 @@ lifeleech:
 
 ## Farming
 
+### Harvesting
+
+Harvesting allows you to recolt and replant automatically wheat in a certain radius.
+
+#### Per item configuration
+
+```yaml
+harvesting:
+  radius: 5 # blocks surrounding the clicked block
+  height: 3 # high
+```
+
 ### BigMining
 
 Bigmining allows you to mine different blocks at the same time. By default this mechanic is used on the hammers and allows you to mine 3x3 square and more.

@@ -132,7 +132,7 @@ As powerful as an iron sword ...but so much durable! The **obsidian sword** is r
 
 The **glass sword** is a pretty powerful sword but with a low durability.
 
-## Other tools
+## Tools
 
 ### Axe of experience
 
@@ -145,6 +145,12 @@ You can use the **axe of experience** to convert your experience into bottles of
 ![](../.gitbook/assets/bedrock_pickaxe.jpg)
 
 You can use the **bedrock pickaxe** to break bedrock and go at the top of the nether for example.
+
+### Iron serpe
+
+![](../.gitbook/assets/iron_serpe.jpg)
+
+This tool allows you to harvest: it will automatically recolt and replant wheat!
 
 ### Obsidian pickaxe
 
