@@ -21,10 +21,13 @@
 
 ## Compatibility
 
-* [TrMenu - custom inventories](compatibility/trmenu-custom-inventories.md)
+* [BossShopPro - shop](compatibility/bossshoppro-shop.md)
+* [CrateReloaded - crates](compatibility/cratereloaded-crates.md)
 * [MythicMobs - custom mobs](compatibility/mythicmobs-custom-mobs.md)
-* [RealisticWorldGenerator](compatibility/realisticworldgenerator.md)
-* [EpicWorldGenerator](compatibility/epicworldgenerator.md)
+* [TrMenu - custom inventories](compatibility/trmenu-custom-inventories.md)
+* [World Generators](compatibility/world-generators/README.md)
+  * [EpicWorldGenerator](compatibility/world-generators/epicworldgenerator.md)
+  * [RealisticWorldGenerator](compatibility/world-generators/realisticworldgenerator.md)
 
 ## Developers
 
