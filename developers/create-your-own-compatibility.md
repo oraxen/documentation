@@ -1,8 +1,8 @@
 ---
-description: make Oraxen compatible with other plugins.
+description: Make Oraxen compatible with other plugins directly from the oraxen source code
 ---
 
-# Create your own Compatibility
+# Add Compatibility with a plugin
 
 ## How does it work?
 

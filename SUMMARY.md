@@ -33,6 +33,6 @@
 
 * [API](developers/api.md)
 * [Create your own Mechanic](developers/mechanics.md)
-* [Create your own Compatibility](developers/create-your-own-compatibility.md)
+* [Add Compatibility with a plugin](developers/create-your-own-compatibility.md)
 * [Custom hosting service](developers/custom-hosting-service.md)
 
