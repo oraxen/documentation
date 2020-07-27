@@ -8,19 +8,23 @@ description: make Oraxen compatible with other plugins.
 
 ### First Step: create a compatibility class
 
-You need to create a class that  extends  
+You need to create a class that extends
 
 ```text
 CompatibilityProvider<Main class of the plugin you want to add support>
 ```
 
-and put the codes which add support for the plugin in the class.
+and put the codes which add support for the plugin in the class you created.
 
 ### Second Step: add the compatibility class to Oraxen
+
+Use
 
 ```text
 CompatibilitiesManager.addCompatibility(name of the plugin you want to add support, class you created in first step)
 ```
+
+to add the class to Oraxen.
 
 ## Example
 
@@ -33,6 +37,7 @@ CompatibilitiesManager.addCompatibility(name of the plugin you want to add suppo
 ```text
 import io.lumine.xikage.mythicmobs.MythicMobs;
 import io.lumine.xikage.mythicmobs.api.bukkit.events.MythicDropLoadEvent;
+import io.th0rgal.oraxen.compatibilities.CompatibilityProvider;
 
 public class MythicMobsCompatibility extends CompatibilityProvider<MythicMobs>{
 
@@ -47,6 +52,16 @@ public class MythicMobsCompatibility extends CompatibilityProvider<MythicMobs>{
 ### Second Step: add the compatibility class to Oraxen
 
 ```text
-CompatibilitiesManager.addCompatibility("MythicMobs", MythicMobsCompatibility.class)
+import io.th0rgal.oraxen.compatibilities.CompatibilitiesManager;
+import org.bukkit.plugin.java.JavaPlugin;
+
+public class OraxenPlugin extends JavaPlugin {
+
+    public void onEnable() {
+        CompatibilitiesManager.addCompatibility("MythicMobs", MythicMobsCompatibility.class)
+    }
+
+}
+
 ```
 
