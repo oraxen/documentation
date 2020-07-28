@@ -129,6 +129,26 @@ lifeleech:
   amount: 2 # the amount of 1/2 hearts that you'll steal to your opponents
 ```
 
+### EnergyBlast
+
+EnergyBlast is a very cool mechanic that creates a cone of particles to attack entities.
+
+#### Per item configuration
+
+```yaml
+energyblast:
+  delay: 20000
+  length: 5
+  damage: 10.0
+  particle:
+    type: REDSTONE #Only REDSTONE particle can change size and color.
+    size: 1
+    color:
+      red: 0
+      green: 255
+      blue: 255
+```
+
 ## Farming
 
 ### Harvesting
