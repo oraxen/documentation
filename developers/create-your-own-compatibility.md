@@ -55,7 +55,7 @@ public class MythicMobsCompatibility extends CompatibilityProvider<MythicMobs>{
 import io.th0rgal.oraxen.compatibilities.CompatibilitiesManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class OraxenPlugin extends JavaPlugin {
+public class OraxenMythicMobsCompatibilityPlugin extends JavaPlugin {
 
     public void onEnable() {
         CompatibilitiesManager.addCompatibility("MythicMobs", MythicMobsCompatibility.class)
