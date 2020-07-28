@@ -80,7 +80,7 @@ A incredibly powerful **storm sword** which allows you to strike lightning.
 
 ![](../.gitbook/assets/magical_wand.jpg)
 
-This **magical wand** has a great animation and looks really cool but it currently doesn't have any mechanic so it's up to you to decide what you want to do with it.
+This **magical wand** has a great animation and looks really cool, you can use it to make an Energy Blast to attack entities.
 
 ### Withooker
 

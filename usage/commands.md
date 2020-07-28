@@ -19,7 +19,8 @@ The main benefit of this method is that it allows you to see all the items at th
 #### Usage:
 
 ```yaml
-/o inv # Opens an inventory containing all oraxen items
+/o inv # Opens an inventory containing oraxen items sorted by each file
+/o inv all # Opens an inventory containing all oraxen items
 ```
 
 #### Permissions:
@@ -37,7 +38,7 @@ This command will be mainly useful if you want to give an item to another player
 #### Usage:
 
 ```yaml
-/o give <item> # Gives you one item
+/o give <item> # Gives you one item(not recommended)
 /o give <player> <item> # Gives one item to player
 /o give <player> <item> <amount> # Gives amount items to player
 ```
@@ -112,9 +113,10 @@ This command allows you to reload oraxen configurations quickly and without caus
 #### Usage
 
 ```yaml
-/o reload # Reloads items configuration, regenerates the pack and upload it
+/o reload # Reloads items configuration, Reloads recipes configuration, regenerates the pack and upload it
 /o reload items # Reloads items configuration
 /o reload pack # Regenerates resourcepack and upload it
+/o reload recipes # Reloads recipes configuration
 ```
 
 #### Permission:
