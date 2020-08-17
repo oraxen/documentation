@@ -131,6 +131,23 @@ Creating a json model can be time consuming but it allows you to create really c
     model: example_model.json #json extension is not mandatory
 ```
 
+#### ⚠️ Pro tips when you use a json model!
+
+Usually the templates you get place the textures in a folder, to make sure, open the json file and look at the first few lines, you should find something similar:
+
+```javascript
+{
+	"__comment": "Designed by HighBridRed for Oraxen",
+	"textures": {
+		"particle": "custom/bonesword_palette",
+		"texture": "custom/bonesword_palette",
+		"bonesword_palette": "custom/bonesword_palette"
+	},
+	...
+```
+
+As you can see, the path to the texture is **custom/bonesword\_palette**, that means minecraft will be looking for a texture called **bonesword\_palette.png** in the folder "custom", so you need to create this folder inside "Oraxen/pack/items". You can also remove "custom/" and keep the texture name only, so you just have to drag and drop it inside the textures folder without creating a subfolder.
+
 ### Use a blocking json model \(for shield\)
 
 If you want to use a custom model for a shield, you need to specific the blocking model which will be used when a user right click using your shield, hopefully this is easy with Oraxen. Here is what it can look like:
