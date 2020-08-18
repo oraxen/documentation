@@ -97,7 +97,26 @@ hat:
   enabled: true
 ```
 
+### Skinnable
 
+With this mechanic, you can change the texture of an item using an item with Skin mechanic.
+
+#### Per item configuration
+
+```yaml
+skinnable: {}
+```
+
+### Skin
+
+This mechanic will allow the item to be a skin for Skinnable mechanic, skin and Skinnable item must have the same material to apply the texture.
+
+#### Per item configuration
+
+```yaml
+skin: 
+  consume: true #consume 1 skin item
+```
 
 ## Combat
 
