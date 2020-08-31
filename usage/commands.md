@@ -19,7 +19,7 @@ The main benefit of this method is that it allows you to see all the items at th
 #### Usage:
 
 ```yaml
-/o inv # Opens an inventory containing oraxen items sorted by each file
+/o inv # Opens an inventory containing oraxen items sorted by file
 /o inv all # Opens an inventory containing all oraxen items
 ```
 
@@ -38,7 +38,6 @@ This command will be mainly useful if you want to give an item to another player
 #### Usage:
 
 ```yaml
-/o give <item> # Gives you one item(not recommended)
 /o give <player> <item> # Gives one item to player
 /o give <player> <item> <amount> # Gives amount items to player
 ```
@@ -104,6 +103,25 @@ This command allows you to add new recipes to the configuration directly from th
 
 ```yaml
 oraxen.command.recipes # Allows you to create new recipes via /o recipes
+```
+
+## Pack
+
+This command allows you to interact with the Oraxen pack: send the configured message to download it from the internet or load it directly through the game.
+
+#### Usage:
+
+```yaml
+/o pack send # Send you the pack directly through the game
+/o pack send <player> # Send to <player> the pack directly through the game
+/o pack get # Send you the configured message
+/o pack get <player> # Send to <player> the configured message
+```
+
+#### Permission:
+
+```yaml
+oraxen.command.pack # Allows you to use /o pack
 ```
 
 ## Reload
