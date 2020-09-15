@@ -86,18 +86,20 @@ oraxen.command.repair.all# Allows to use the /o repair command
 `oraxen.command.repair.all` would give you access to both
 {% endhint %}
 
-## Create recipes
+## Manage recipes
 
 This command allows you to add new recipes to the configuration directly from the game using recipes builder. For more information on how to use it, see [Recipes](recipes.md). 
+
+![Recipe showcase using /o recipe show all](../.gitbook/assets/recipe_showcase.png)
 
 #### Usage:
 
 ```yaml
-/o recipes builder <builder> # Creates a recipe builder of type <builder> and opens it
-/o recipes save <name> # Saves your recipe with name <name>
-/o recipes save <name> <permission> # Same but with the permission <permission>
-/o recipes show all # Show you the loaded recipes
-/o recipes show <recipe> # Show you one recipe
+/o recipe builder <builder> # Creates a recipe builder of type <builder> and opens it
+/o recipe save <name> # Saves your recipe with name <name>
+/o recipe save <name> <permission> # Same but with the permission <permission>
+/o recipe show all # Show you the loaded recipes
+/o recipe show <recipe> # Show you one recipe
 ```
 
 #### Permission:
