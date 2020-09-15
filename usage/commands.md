@@ -93,10 +93,11 @@ This command allows you to add new recipes to the configuration directly from th
 #### Usage:
 
 ```yaml
-/o recipes open <builder> # Creates a recipe builder of type <builder> and opens it
-/o recipes open # Opens your already created recipe builder
+/o recipes builder <builder> # Creates a recipe builder of type <builder> and opens it
 /o recipes save <name> # Saves your recipe with name <name>
 /o recipes save <name> <permission> # Same but with the permission <permission>
+/o recipes show all # Show you the loaded recipes
+/o recipes show <recipe> # Show you one recipe
 ```
 
 #### Permission:

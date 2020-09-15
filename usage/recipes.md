@@ -12,7 +12,7 @@ You can see the list of commands and permissions required in the [wiki page](com
 
 ### First step: open a builder inventory
 
-Start by typing **/o recipes open shaped**, it will open you a craft table:
+Start by typing **/o recipes builder SHAPED**, it will open you a crafting table:
 
 Then place the ingredients in the order you want in the left part. Place the wanted result in the slot on the right.
 
