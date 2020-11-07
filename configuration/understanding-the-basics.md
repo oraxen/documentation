@@ -6,7 +6,7 @@ description: A simple explanation of how oraxen works
 
 As you have seen previously, Oraxen is able to generate custom items but also the texture pack that goes with them. It also makes it possible to associate these items with special powers or capabilities known as mechanics.
 
-## Contents of the Oraxen folder
+## Content of the Oraxen folder
 
 ![Directory tree structure of Oraxen folder](../.gitbook/assets/tree.png)
 
