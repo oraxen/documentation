@@ -135,7 +135,6 @@ receive:
 ## ConfigTools
 
 ```yaml
-ConfigsTools:
   # Nice for production servers, automatically set model ID in settings so
   # that you can other items without destroying the others already created
   automatically_set_model_id: false
@@ -147,6 +146,34 @@ ConfigsTools:
 ```
 
 The `automatically_set_model_id` option is really important. If you set it to true, Oraxen will automatically edit your configurations to add a custom\_model\_data field, that way if you add another item, it won't take the same model\_data than your previous item and this will avoid breaking already existing items. Please enable this option on a production server \(with players\). If you work on a test server and reset items everytime, it is not required.
+
+## Misc
+
+### reset\_recipes
+
+```yaml
+reset_recipes: true
+```
+
+This option can causes bug with other recipes plugins. If you notice bugs with a recipes plugin when reloading Oraxen, you can disable this option. If you do that, you will have to restart the server to refresh Oraxen recipes.
+
+## GUI Inventory
+
+```yaml
+gui_inventory:
+  armors: emerald_chestplate
+  blocks: orax_ore
+  guis: CHEST
+  hats: crown
+  items: ruby
+  mobs: goblin_beetle
+  mystical: legendary_hammer
+  skins: wood_sword
+  tools: iron_serpe
+  weapons: energy_crystal_sword
+```
+
+This allows you to configure an icon for every section of the Oraxen inventory. You can use Oraxen ids or Minecraft materials.
 
 
 
