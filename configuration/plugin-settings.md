@@ -4,22 +4,46 @@ description: Various options impacting the plugin in its generality
 
 # Plugin settings
 
-## Cosmetic configurations
-
-You can change the name and prefix of the plugin \(used in messages\) in the Plugin section. You can use & codes 
+## Plugin
 
 ```yaml
-  name: "Oraxen"
-  prefix: "&8&l[&bOraxen&8&l] §7"
+Plugin:
+  commands:
+    repair:
+      oraxen_durability_only: false # will not repair vanilla items if set to true
 ```
 
-### 
+The plugin related options. Here you can configure how some things work. Should the repair only repair Oraxen items with an oraxen durability?
 
 ## Pack
 
+### Generation
+
+```yaml
+  generation:
+    generate: true
+    compression: BEST_COMPRESSION # see Deflater.class
+    comment: "The content of this texture pack
+     \nbelongs to the owner of the Oraxen
+     \nplugin and any complete or partial
+     \nuse must comply with the terms and
+     \nconditions of Oraxen."
+```
+
+This section allows you to configure the generation of the pack. The compression is configured to make the smallest zip possible by default. You can change the comment which is basically a watermark inside your zip.
+
+### Upload
+
+```yaml
+    enabled: true
+    type: polymath #transfer.sh or polymath
+    polymath:
+      server: atlas.oraxen.com # you can also host your own polymath instance
+```
+
 Oraxen integrates with Polymath \(a custom web server written in Python especially to be compatible\). You can download the source code [here](https://github.com/Th0rgal/Polymath/) and host it yourself or use the provided instance \(atlas\). You can also integrate with [your own custom hosting service](../developers/custom-hosting-service.md).
 
-## Pack reception
+### Dispatch
 
 This section allows you to easily perform actions depending on the resource pack status of your players.
 
