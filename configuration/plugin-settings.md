@@ -132,5 +132,21 @@ receive:
         opped_player: []
 ```
 
+## ConfigTools
+
+```yaml
+ConfigsTools:
+  # Nice for production servers, automatically set model ID in settings so
+  # that you can other items without destroying the others already created
+  automatically_set_model_id: false
+  enable_configs_updater: true
+  error_item:
+    material: PODZOL
+    excludeFromInventory: false # set to true if you don't want to display it inside inventory
+    injectID: false
+```
+
+The `automatically_set_model_id` option is really important. If you set it to true, Oraxen will automatically edit your configurations to add a custom\_model\_data field, that way if you add another item, it won't take the same model\_data than your previous item and this will avoid breaking already existing items. Please enable this option on a production server \(with players\). If you work on a test server and reset items everytime, it is not required.
+
 
 
