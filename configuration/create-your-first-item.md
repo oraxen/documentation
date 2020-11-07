@@ -6,7 +6,7 @@ description: How to create your first custom item easily
 
 Today I want to create a new super rare object. By the way, it's funny how players love having super rare items, so to make them happy they all end up having a super rare item \(having a rare item is no longer very rare lol\). No more jokes, let's get to work! This tutorial will explain how to create an onyx axe but you can do absolutely anything you want with it.
 
-## 1. Let's start by creating its textures
+## 1. Let's start by creating textures
 
 For this tutorial I will make a simple item in 2d and Oraxen will generate the model, but if you want you can use software like [cubik.studio](https://cubik.studio/) \(paid\) or [blockbench](https://www.blockbench.net) \(free + opensource\) which are both excellent.
 
@@ -16,7 +16,7 @@ Here's what I did in 16x16 \(so it still looks like vanilla minecraft\) on Photo
 
 I then save the file under the name _onyx\_axe.png_.
 
-## 2. Let's start the basic configuration
+## 2. The basic configuration
 
 I couldn't decide where to add my axe \(is it more of a tool or a weapon?\) so I created my **super\_cool\_items.yml** file under items directory. Here is what I wrote:
 
@@ -75,7 +75,7 @@ A durability of 20,000 is ludicrous, to compare diamond tools have a 1,561 one. 
 For some mechanics it is necessary to use ProtocolLib, this is the case for bedrockbreak
 {% endhint %}
 
-## 5. Let's test it!
+## 5. Let's try it!
 
 I begin by restarting the server and when it is good I will install the texture pack.zip pack generated in the /pack/ folder of Oraxen.
 
