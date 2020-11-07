@@ -68,6 +68,26 @@ Allows you to set ItemFlags to an item, get the list of available flags [here](h
     - HIDE_POTION_EFFECTS
 ```
 
+### PotionEffects
+
+Allows you to add custom Potion Effects to your potion. Get the list of available effects [here](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html).
+
+```yaml
+  PotionEffects:
+    # - type: Get the list here: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html
+    # - duration: in ticks
+    # - amplifier: potion effects level
+    # - ambient: true/false, makes potion effect produce more, translucent, particles.
+    # - particles: true/false, whether this effect has particles or not
+    # - icon: true/false, whether this effect has an icon or not
+    - { type: WITHER,
+        duration: 200,
+        amplifier: 2,
+        ambient: false,
+        particles: true,
+        icon: true }
+```
+
 ### AttributeModifiers
 
 Allows you to add minecraft attributes to your item. They are very powerful and allow you to make an item that adds hearts, increases the player's speed, etc. Get the list of available attributes [here](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/attribute/Attribute.html).
