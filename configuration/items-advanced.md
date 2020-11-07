@@ -146,7 +146,7 @@ Usually the templates you get place the textures in a folder, to make sure, open
 	...
 ```
 
-As you can see, the path to the texture is **custom/bonesword\_palette**, that means minecraft will be looking for a texture called **bonesword\_palette.png** in the folder "custom", so you need to create this folder inside "Oraxen/pack/items". You can also remove "custom/" and keep the texture name only, so you just have to drag and drop it inside the textures folder without creating a subfolder.
+As you can see, the path to the texture is **custom/bonesword\_palette**, that means minecraft will be looking for a texture called **bonesword\_palette.png** in the folder "custom", so you need to create this folder inside "Oraxen/pack/textures". You can also remove "custom/" and keep the texture name only, so you just have to drag and drop it inside the textures folder without creating a subfolder.
 
 ### Use a blocking json model \(for shield\)
 
