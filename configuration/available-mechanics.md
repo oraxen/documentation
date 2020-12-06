@@ -53,7 +53,7 @@ This allows you to execute commands \(as the console, a player or op player\). I
 commands:
   delay: 5 # example delay in seconds. This is optional
   permission: "my.awesome.perm" # required permission. This is optional
-  oneUsage: true # should the amount decrease when used? Default: false
+  one_usage: true # should the amount decrease when used? Default: false
   console:
     # e.g. to kill the player
     - "kill %p%"
