@@ -80,6 +80,14 @@ You can use to check if an ItemStack is an OraxenItem \(it will return null if O
 OraxenItems.getIdByItem(itemstack);
 ```
 
+### Add resources to the pack
+
+#### Get access to the assets/ folder 
+
+```java
+ResourcePack.getAssetsFolder();
+```
+
 ### Mechanics:
 
 Oraxen allows you to add your own mechanics to the plugin, it is a little bit more complex than the rest, that's why there is a [dedicated tutorial](mechanics.md#how-does-the-mechanic-system-work).
