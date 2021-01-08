@@ -168,6 +168,18 @@ energyblast:
       blue: 255
 ```
 
+### Witherskull
+
+Want to send wither skulls to break blocks!
+
+#### Per item configuration
+
+```yaml
+witherskull:
+  charged: false # a charged skull can break blocks
+  delay: 3000 # in milliseconds (3000ms = 3s)
+```
+
 ## Farming
 
 ### Harvesting
