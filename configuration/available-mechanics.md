@@ -170,7 +170,7 @@ energyblast:
 
 ### Witherskull
 
-Want to send wither skulls to break blocks!
+Send wither skulls when right clicking!
 
 #### Per item configuration
 
