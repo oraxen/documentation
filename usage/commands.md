@@ -117,8 +117,8 @@ This command allows you to interact with the Oraxen pack: send the configured me
 ```yaml
 /o pack send # Send you the pack directly through the game
 /o pack send <player> # Send to <player> the pack directly through the game
-/o pack get # Send you the configured message
-/o pack get <player> # Send to <player> the configured message
+/o pack msg # Send you the configured message
+/o pack msg <player> # Send to <player> the configured message
 ```
 
 #### Permission:
