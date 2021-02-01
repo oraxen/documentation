@@ -18,7 +18,10 @@
 * [Mechanics](configuration/mechanics.md)
 * [Available mechanics](configuration/available-mechanics.md)
 * [Block mechanic](configuration/block-mechanic.md)
-* [Custom HUDs](configuration/custom-huds.md)
+
+## Unicodes
+
+* [Custom HUDs](unicodes/custom-huds.md)
 
 ## Compatibility
 
