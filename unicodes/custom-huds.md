@@ -34,7 +34,7 @@ If Its name won't be **font** it will **not** work. Also file location is too im
 
 {% file src="../.gitbook/assets/default.json" caption="It\'s sample of default.json you can use it as template." %}
 
-As you can see in the title It's the most important one. **default.json** provides unicodes work. I guess you don't have that file yet. Don't worry! :\) I putted the file just download.
+As you can see in the title It's the most important one. **default.json** provides unicodes work. I guess you don't have that file yet. Don't worry! :\) I putted the file just download and **put it in font folder**.
 
 I left 2 unicode samples into default.json you can add more and more! And you can change their height and ascent as how do you want to but It's already fit to upper of hunger/health bar If you use it in **actionbar.** I want to leave the config as code text for you:
 
