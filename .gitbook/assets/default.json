@@ -1,0 +1,21 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "emptymana.png",
+            "ascent": -10,
+            "height": 10,
+            "chars": ["\u2E95"]
+        },
+        {
+            "type": "bitmap",
+            "file": "fullmana.png",
+            "ascent": -10,
+            "height": 10,
+            "chars": ["\u2EB1"]
+        }
+
+    ]
+}
+
+
