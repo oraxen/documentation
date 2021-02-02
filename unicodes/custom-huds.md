@@ -4,21 +4,19 @@ description: 'How to add custom HUDs, like Mana Bar'
 
 # Custom HUDs
 
-## Redundant personal introduce
+## About the writer
 
-Hello there, I'm new editor of Oraxen docs and new helper of th0rgal's discord. 
+I'm **kedybogan**_\(kedy boğan\),_ an helper on the Oraxen discord and a contributor of the wiki. It's my first article, so if you notice any problem, please contact me and tell me how I can improve it! Here is my discord: **kedy boğan\#6929**
 
-I'm **kedybogan**_\(kedy boğan\)_ and It's my first document! So due to If there is any problem with it please contact me and tell what's wrong in here! Here is my discord: **kedy boğan\#6929**
+## What is it about?
 
-## What will I do?
-
- I'll teach you how to add custom HUDs into the Minecraft via Oraxen. _I hope to it will so helpful for you!_
+ I'll teach you how to add custom HUDs into the Minecraft via Oraxen. I hope this will be helpful!
 
 ![There is a sample of custom HUD. How cool! :\) ](../.gitbook/assets/screenshot_434.png)
 
-## How it works?
+## How does it work?
 
-It works as **textured unusual unicodes in actionbar**. Unicodes will very useful and cool for you with Oraxen. You can add/make many different things too with unicodes but It's not the topic for now...
+It works as **textured unusual unicodes in actionbar**. There are tens of thousands of unicodes that exist but few are used. Unicodes will very useful with Oraxen to create emojis. You can add/make many different things too with unicodes but It's not the topic for now...
 
 ## Let's start with preparing folders and files!
 
