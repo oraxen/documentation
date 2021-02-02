@@ -12,7 +12,7 @@ I'm **kedybogan**_\(kedy boğan\),_ an helper on the Oraxen discord and a contri
 
  I'll teach you how to add custom HUDs into the Minecraft via Oraxen. I hope this will be helpful!
 
-![There is a sample of custom HUD. How cool! :\) ](../.gitbook/assets/screenshot_434.png)
+![credits: SimplySarc ](../.gitbook/assets/screenshot_434.png)
 
 ## How does it work?
 
@@ -36,7 +36,7 @@ As you can see in the title It's the most important one. **default.json** provid
 
 I left 2 unicode samples into default.json you can add more and more! And you can change their height and ascent as how do you want to but It's already fit to upper of hunger/health bar If you use it in **actionbar.** I want to leave the config as code text for you:
 
-```text
+```javascript
 {
     "providers": [
         {
@@ -56,9 +56,6 @@ I left 2 unicode samples into default.json you can add more and more! And you ca
 
     ]
 }
-
-
-
 ```
 
 ## "File": "x.png"
