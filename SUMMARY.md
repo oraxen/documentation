@@ -17,6 +17,7 @@
 * [Items \(advanced\)](configuration/items-advanced.md)
 * [Mechanics](configuration/mechanics.md)
 * [Available mechanics](configuration/available-mechanics.md)
+* [Custom mechanic](configuration/custom-mechanic.md)
 * [Block mechanic](configuration/block-mechanic.md)
 
 ## Unicodes
