@@ -20,7 +20,7 @@ We'll start with preparing folder and file, then we'll edit the default.json fil
 
 That's easiest step just draw your .png file to Oraxen's texture folder 
 
-It location must be;      Oraxen/Textures/emojihere.png
+It location must be;      Oraxen/textures/emojihere.png
 
 ## S\) Folder and a json file
 
