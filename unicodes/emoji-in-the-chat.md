@@ -4,9 +4,13 @@ description: 'How to add emojis, and how to use them in chat.'
 
 # Emoji in the chat
 
-## What are they?
+## About the writer
 
-Emojis are actually just a textured unicode symbol. 
+I'm **kedybogan**_\(kedy boğan\),_ an helper on the Oraxen discord and a contributor of the wiki. It's my first article, so if you notice any problem, please contact me and tell me how I can improve it! Here is my discord: **kedy boğan\#6929**
+
+## What is it about?
+
+Emojis are just a textured unicode symbol. 
 
 ## Steps?
 
@@ -50,7 +54,7 @@ Edit **ascent** and **height.**
 
 You can change unicode too, I'll explain more now.
 
-```text
+```javascript
 {
     "providers": [
         {
@@ -70,9 +74,6 @@ You can change unicode too, I'll explain more now.
 
     ]
 }
-
-
-
 ```
 
 ### What should you edit?

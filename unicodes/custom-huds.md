@@ -16,7 +16,7 @@ I'm **kedybogan**_\(kedy boğan\),_ an helper on the Oraxen discord and a contri
 
 ## How does it work?
 
-It works as **textured unusual unicodes in actionbar**. There are tens of thousands of unicodes that exist but few are used. Unicodes will very useful with Oraxen to create emojis. You can add/make many different things too with unicodes but It's not the topic for now...
+It works as **textured unusual unicodes in actionbar**. There are tens of thousands of unicodes that exist but few are used. Unicodes will very useful with Oraxen to create HUD. You can add/make many different things too with unicodes but It's not the topic for now...
 
 ## Let's start with preparing folders and files!
 
