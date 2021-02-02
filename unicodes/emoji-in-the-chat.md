@@ -14,7 +14,7 @@ We'll start with preparing folder and file, then we'll edit the default.json fil
 
 %emoji\_1% -&gt; [❤️](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjV-6uy2cnuAhVRyxoKHZvnArUQFjAMegQICBAC&url=https%3A%2F%2Femojipedia.org%2Fred-heart%2F&usg=AOvVaw2iTHkylfMQmgNvpAEHugje)
 
-![How they looks](../.gitbook/assets/screenshot_441.png)
+![](../.gitbook/assets/screenshot_444.png)
 
 ## Add your emoji texture to Oraxen
 
@@ -109,7 +109,7 @@ I didn't used it due to I don't know how its config but It's same/similar with a
 
 ## It works now!
 
-![How it looks](../.gitbook/assets/screenshot_441.png)
+![](../.gitbook/assets/screenshot_443.png)
 
 Just type it in game It's depends on your emoji plugin If I would type a text with emoji in game that would be that:
 
@@ -119,7 +119,7 @@ Macro_\(%laughemoji%\)_ must be converted to your symbol and your symbol looks m
 
 ## Cool tips
 
-Also you can use them in EVERYWHERE that supports unicode symbols. For example using in signs you don't need any plugins just paste the symbol, or you can use macro plugin too for typing %laughemoji% instead of typing **⺕**
+Also you can use them in EVERYWHERE that supports unicode symbols. For example using in signs you don't need any plugins just paste the symbol, or you can use macro plugin too for typing %laughemoji% instead of typing **⺕** But macro plugin for **signs** is hard to find I don't recommend and It's unnecessary I think
 
 ![Sign](../.gitbook/assets/screenshot_442.png)
 
