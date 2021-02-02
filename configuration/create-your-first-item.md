@@ -47,6 +47,10 @@ As you can see I've set parent\_model to "item/handheld", it is the parent model
 
 I also need to drag my **onyx\_axe.png** texture into the **/pack/textures** folder of Oraxen. From this configuration I could normally already restart the server and see my item but I want to add cool powers to it.
 
+{% hint style="info" %}
+You can also use a json model to create 3d items, [here is a link](items-advanced.md#use-a-json-model) to the documentation.
+{% endhint %}
+
 ## 4. Let's improve our item with mechanics
 
 In the configuration of each item you can add a mechanics section and add lots of cool things in it. By the way, if you find that there are not enough cool features \(although I try to add as many as possible\) you can add some via other plugins that use Oraxen's api \(see [Create your own Mechanic](../developers/mechanics.md)\). I would like my axe to have a huge durability and to be able to break bedrock. Here is what I wrote:
