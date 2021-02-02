@@ -115,7 +115,7 @@ With this mechanic, you can change the item type detected by OraxenBlocks. Make 
 
 ```yaml
 skinnable:
-  value: SuperMaterial # your itemType
+  value: SUPER_MATERIAL # your itemType
 ```
 
 ### Skin
