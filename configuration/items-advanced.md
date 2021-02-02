@@ -109,13 +109,56 @@ Allows you to add minecraft attributes to your item. They are very powerful and 
 
 ### Enchantments
 
-If you want to enchant your item \(even with non vanilla levels like for example sharpness 15\), you can do it with this section. Get the list of available enchants [here](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/enchantments/Enchantment.html).
+If you want to enchant your item \(even with non vanilla levels like for example sharpness 15\), you can do it with this section.
 
 ```yaml
   Enchantments:
     protection: 4
     flame: 34
     sharpness: 18
+```
+
+Here is a list of enchants available in minecraft vanilla:
+
+```text
+protection
+fire_protection
+feather_falling
+blast_protection
+projectile_protection
+respiration
+aqua_affinity
+thorns
+depth_strider
+frost_walker
+binding_curse
+sharpness
+smite
+bane_of_arthropods
+knockback
+fire_aspect
+looting
+sweeping
+efficiency
+silk_touch
+unbreaking
+fortune
+power
+punch
+flame
+infinity
+luck_of_the_sea
+lure
+loyalty
+impaling
+riptide
+channeling
+multishot
+quick_charge
+piercing
+mending
+vanishing_curse
+soul_speed
 ```
 
 ## Pack options
@@ -143,7 +186,7 @@ The parent\_model field is required by minecraft. In fact this will allow your i
 
 ### Use a json model
 
-Creating a json model can be time consuming but it allows you to create really cool things \(like 3d items\). It is really easy to integrate a json model with Oraxen : put your textures in your textures directory and your model in your models directory \(inside Oraxen folder\). Then you can ask Oraxen to put this model on one of your items:
+Creating a json model can be time consuming but it allows you to create really cool things \(like 3d items\). It is really easy to integrate a json model with Oraxen : put your textures in your textures directory and your model in your models directory \(inside Oraxen/pack folder\). Then you can ask Oraxen to put this model on one of your items:
 
 ```yaml
   Pack:
