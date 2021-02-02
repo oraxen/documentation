@@ -98,7 +98,7 @@ Here is a example:   actionbar: "                              ⺕"\(until fits 
 
 Actually hungerbar is cool enough and healthbar is really too harder than hungerbar. That needs negative spaces fonts. Negative spaces pushes back the text. I won't show it for now. But maybe soon :\)
 
-![Here is! I hope to It&apos;s helpful for you! If not enough, come our Discord support server! ](../.gitbook/assets/screenshot_436.png)
+![credits: Stevertus](../.gitbook/assets/screenshot_436.png)
 
 I'll create document about **negative spaces** don't worry, It will be cooler and has more features than you think but just wait :\)
 
