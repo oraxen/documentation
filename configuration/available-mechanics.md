@@ -109,7 +109,7 @@ skinnable: {}
 
 ### ItemType
 
-With this mechanic, you can change the item type detected by OraxenBlocks. Make sure to use a type declared [inside the block mechanic](available-mechanics.md#block). 
+With this mechanic, you can change the item type detected by OraxenBlocks. Make sure to use a type declared [inside the block mechanic](block-mechanic.md#global-configuration). 
 
 #### Per item configuration
 
@@ -117,6 +117,10 @@ With this mechanic, you can change the item type detected by OraxenBlocks. Make 
 skinnable:
   value: SUPER_MATERIAL # your itemType
 ```
+
+### Custom mechanic
+
+This mechanic allows you to customize events, conditions and actions. Since it is a quite rspecial mechanic, it has its [dedicated tutorial page](custom-mechanic.md).
 
 ### Skin
 
