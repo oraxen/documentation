@@ -8,6 +8,22 @@ description: How to add your own blocks to the game
 
 Unlike items, blocks cannot be added to the game using predicates in a model, in fact it is not really possible to add new blocks ...at least the game wasn't made for that. But there are still some hacked-up techniques to do it anyway. Oraxen is using blockstates to attribute block models \(the json file which contains all the informations needed by Minecraft in order to render the block\) depending of the blockfacing of the base block. Basically it uses the variations of a vanilla blocks which can have different blockfacing: the mushroom stem block. Only one variation is used in vanilla minecraft maps for this block, there are 6 faces on a block so we have 2^6 - 1 = 63 possible variations.
 
+## Global configuration
+
+This global configuration has to be used in order to define the hierarchy of between your multiple tool\_types. You can put the normal types + new types you just invented.
+
+```yaml
+block:
+  tool_types:
+    - WOODEN
+    - STONE
+    - IRON
+    - GOLDEN
+    - DIAMOND
+    - NETHERITE
+  enabled: true
+```
+
 ## How to create a simple block?
 
 ### Oraxen item and Pack configuration

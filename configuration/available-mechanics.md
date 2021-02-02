@@ -107,6 +107,17 @@ With this mechanic, you can change the texture of an item using an item with Ski
 skinnable: {}
 ```
 
+### ItemType
+
+With this mechanic, you can change the item type detected by OraxenBlocks. Make sure to use a type declared [inside the block mechanic](available-mechanics.md#block). 
+
+#### Per item configuration
+
+```yaml
+skinnable:
+  value: SuperMaterial # your itemType
+```
+
 ### Skin
 
 This mechanic will allow the item to be a skin for Skinnable mechanic, skin and Skinnable item must have the same material to apply the texture.
