@@ -113,7 +113,7 @@ I didn't used it due to I don't know how its config but It's same/similar with a
 
 Just type it in game It's depends on your emoji plugin If I would type a text with emoji in game that would be that:
 
-_\[Owner\] kedybogan:_ Oraxen is so cool and there is a emoji %laughemoji%
+_&lt;kedybogan&gt;_ Oraxen is so cool and there is a emoji %laughemoji%
 
 Macro_\(%laughemoji%\)_ must be converted to your symbol and your symbol looks must textured with your emoji texture
 
