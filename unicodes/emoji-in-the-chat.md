@@ -99,7 +99,7 @@ Don't lose that symbol you'll need it.
 
 ## Find a emoji plugin that makes macros
 
-I found one for you [click here ](https://www.spigotmc.org/resources/emoji❤.61432/)to visit plugin's Spigot link.
+I found one for you [click here ](https://www.spigotmc.org/resources/basicexpressions-turns-expressions-into-emoticons.58767/)to visit plugin's Spigot link.
 
 I didn't used it due to I don't know how its config but It's same/similar with all that types plugins find its macros in config and change its symbol to your unicode symbol.
 
