@@ -52,7 +52,7 @@ To use this mechanic you need to tell to oraxen which model to use \(to use the 
       model: my_block
       drop:
         silktouch: false 
-        minimal_tool: STONE_PICKAXE
+        minimal_type: STONE
         loots:
           - {oraxen_item: caveblock, probability: 1.0}
 ```
@@ -77,7 +77,7 @@ amethyst_ore:
       drop:
         silktouch: true
         fortune: true
-        minimal_tool: IRON_PICKAXE
+        minimal_type: IRON
         loots:
           - {oraxen_item: amethyst, probability: 1.0}
 ```
