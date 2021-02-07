@@ -35,7 +35,13 @@ The plugin related options. Here you can configure how some things work. Should 
      \nconditions of Oraxen."
 ```
 
-This section allows you to configure the generation of the pack. The compression is configured to make the smallest zip possible by default. You can change the comment which is basically a watermark inside your zip. Protection will allow you to prevent players from stealing your textures easily.
+This section allows you to configure the **generation** of the pack. The **compression** is configured to make the smallest zip possible by default. You can change the **comment** which is basically a watermark inside your zip. 
+
+#### Protection
+
+Protection will allow you to prevent players from stealing your textures easily. This won't make your pack heavier but if you enabled it. Even though this is not a perfect protection, you **shall not** try to extract the generated zip.
+
+
 
 ### Upload
 
