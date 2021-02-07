@@ -23,6 +23,11 @@ The plugin related options. Here you can configure how some things work. Should 
   generation:
     generate: true
     compression: BEST_COMPRESSION # see Deflater.class
+    # protection will use several methods to make your pack impossible to extract
+    # with usual tools (native windows unzip, 7zip, winrar, etc) without altering
+    # its integrity. Be careful if you activate this option to not try to extract
+    # the pack or you might fill your disk.
+    protection: true
     comment: "The content of this texture pack
      \nbelongs to the owner of the Oraxen
      \nplugin and any complete or partial
@@ -30,7 +35,7 @@ The plugin related options. Here you can configure how some things work. Should 
      \nconditions of Oraxen."
 ```
 
-This section allows you to configure the generation of the pack. The compression is configured to make the smallest zip possible by default. You can change the comment which is basically a watermark inside your zip.
+This section allows you to configure the generation of the pack. The compression is configured to make the smallest zip possible by default. You can change the comment which is basically a watermark inside your zip. Protection will allow you to prevent players from stealing your textures easily.
 
 ### Upload
 
