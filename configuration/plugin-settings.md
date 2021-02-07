@@ -39,9 +39,11 @@ This section allows you to configure the **generation** of the pack. The **compr
 
 #### Protection
 
-Protection will allow you to prevent players from stealing your textures easily. This won't make your pack heavier but if you enabled it. Even though this is not a perfect protection, you **shall not** try to extract the generated zip.
+Protection will allow you to prevent players from stealing your textures easily. This won't make your pack heavier but if you enabled it. You **shall not** try to extract the generated zip, this could damage your disk.
 
+![1 Exabyte \(EB\) = 1000000000 Gigabyte \(GB\)](../.gitbook/assets/size.png)
 
+![Your operating system should prevent you from extracting in order to preserve your disk integrity](../.gitbook/assets/extraction.png)
 
 ### Upload
 
