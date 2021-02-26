@@ -80,6 +80,18 @@ You can use to check if an ItemStack is an OraxenItem \(it will return null if O
 OraxenItems.getIdByItem(itemstack);
 ```
 
+### Place custom block [BlockMechanicFactory](https://github.com/oraxen/Oraxen/blob/master/src/main/java/io/th0rgal/oraxen/mechanics/provided/block/BlockMechanicFactory.java)
+
+#### Set an OraxenBlock
+
+You can set the model of a block by providing a block and the itemID of an item that implements the Block  mechanic.
+
+```java
+BlockMechanicFactory.setBlockModel(block, itemID);
+```
+
+
+
 ### Add resources to the pack
 
 #### Get access to the assets/ folder 
