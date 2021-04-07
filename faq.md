@@ -20,6 +20,12 @@ By default oraxen automatically set a custom model data to your items and genera
 Don't forget to reload the plugin with `/o reload` **AND** your resource pack using `/o pack getpack`\(you can also disconnect and reconnect to the server\)
 {% endhint %}
 
+## Does Oraxen replace items?
+
+The goal of Oraxen is to add things to the game without losing features, so the short answer is no, however minecraft has some limitations \(you can't really add blocks or armors for example\), so we had to make a choice \(a choice that can be undone by disabling the related mechanics\):  
+- by default leather amors will look a little different on body \(they will keep the same texture inside inventory though\)  
+- new blocks will use vanilla unused mushroom stem block variations: this can create issues in constructions made using those unusual variations and look buggy if you place two mushroom stem blocks side-by-side \(this is just a display bug and that would be fixed by right clicking or disconnecting\).
+
 ## I would like to suggest a new feature or report an issue
 
 Login to github and submit an issue to the official repo: [git.io/oraxen](https://github.com/Th0rgal/Oraxen)
