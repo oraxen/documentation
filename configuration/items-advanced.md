@@ -8,7 +8,7 @@ description: All the subtleties of item creation
 
 ### displayname
 
-Allows you to change the name displayed on the top of an item.
+This allows you to change the name displayed on the top of an item.
 
 ```yaml
   displayname: "&c&lExample" #example name
@@ -16,15 +16,33 @@ Allows you to change the name displayed on the top of an item.
 
 ### material
 
-Allows you to change the item type
+This allows you to change the item type
 
 ```yaml
   material: WOODEN_SWORD
 ```
 
+### color
+
+This allows you to change the color of an item made of a supported material \(e.g. leather armor\).
+
+```yaml
+  color: 3, 252, 136 #rgb
+```
+
+### lore
+
+This allows you to add lines of text under the item name.
+
+```yaml
+lore:
+  - "One line"
+  - "&aAnother line"
+```
+
 ### injectID
 
-Allows Oraxen to know recognise the item, it is by default set to true and you should not have to change it. If you do it anyway, the mechanics of the items will no longer work.
+This allows Oraxen to know recognise the item, it is by default set to true and you should not have to change it. If you do it anyway, the mechanics of the items will no longer work.
 
 ```yaml
   injectID: false
@@ -40,7 +58,7 @@ This option allows you to exclude an item from the oraxen inventory. It will no 
 
 ### durability
 
-Allows you to change the number of damage of a item \(not very useful\)
+This allows you to change the number of damage of a item \(not very useful\)
 
 ```yaml
   durability: 10
@@ -56,7 +74,7 @@ unbreakable: true
 
 ### ItemFlags
 
-Allows you to set ItemFlags to an item, get the list of available flags [here](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/inventory/ItemFlag.html).
+This allows you to set ItemFlags to an item, get the list of available flags [here](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/inventory/ItemFlag.html).
 
 ```yaml
   ItemFlags:
@@ -70,7 +88,7 @@ Allows you to set ItemFlags to an item, get the list of available flags [here](h
 
 ### PotionEffects
 
-Allows you to add custom Potion Effects to your potion. Get the list of available effects [here](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html).
+This allows you to add custom Potion Effects to your potion. Get the list of available effects [here](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html).
 
 ```yaml
   PotionEffects:
@@ -90,7 +108,7 @@ Allows you to add custom Potion Effects to your potion. Get the list of availabl
 
 ### AttributeModifiers
 
-Allows you to add minecraft attributes to your item. They are very powerful and allow you to make an item that adds hearts, increases the player's speed, etc. Get the list of available attributes [here](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/attribute/Attribute.html).
+This allows you to add minecraft attributes to your item. They are very powerful and allow you to make an item that adds hearts, increases the player's speed, etc. Get the list of available attributes [here](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/attribute/Attribute.html).
 
 ```yaml
   AttributeModifiers:

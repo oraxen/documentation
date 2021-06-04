@@ -15,10 +15,9 @@ In this example we assume that you have added a block \(an amethyst ore for exam
 
 First you need to decide on which world you want to add your new ores \(or create it\). When you are ready, restart your server. A new folder inside ./plugins/RealisticWorldGenerator/worlds should have appear. You can now open it and find some files called "**ores.yml**", "**biomes.yml**" and "**replacement.yml**".
 
-Depending on which version of RWG you're using there are different ways to add custom blocks to RWG.
-If you're using a version lower than or equal to 4.26.5 then you need to [follow the guide exactly beneath this sentence](#adding-a-ore-in-rwg--4265). If you're using a version higher than that you need to [follow the guide below](#adding-custom-blocks-in-rwg--4266).
+Depending on which version of RWG you're using there are different ways to add custom blocks to RWG. If you're using a version lower than or equal to 4.26.5 then you need to [follow the guide exactly beneath this sentence](realisticworldgenerator.md#adding-a-ore-in-rwg--4265). If you're using a version higher than that you need to [follow the guide below](realisticworldgenerator.md#adding-custom-blocks-in-rwg--4266).
 
-### Adding a ore in (RWG <= 4.26.5)
+### Adding a ore in \(RWG &lt;= 4.26.5\)
 
 You need to find your custom block data. This can be achieved using any minecraft version on a server running Oraxen. Just place your block \(you can get it from the oraxen inventory of give it to yourself through a command\) and press F3 while looking at the block you want to add.
 
@@ -38,13 +37,12 @@ You can now easily add your new ore to the generation. In our example, this shou
     max: 16
 ```
 
-### Adding custom blocks in (RWG >= 4.26.6)
+### Adding custom blocks in \(RWG &gt;= 4.26.6\)
 
-You need to chose what you want to do.
-In this example I will show it with the "**ores.yml**" file but it's the same for every file mentioned above in [Locate the file to edit](#Locate-the-file-to-edit)
+You need to chose what you want to do. In this example I will show it with the "**ores.yml**" file but it's the same for every file mentioned above in [Locate the file to edit](realisticworldgenerator.md#Locate-the-file-to-edit)
 
-After opening the file you only need to add the block you want to add with the "**oraxen:**" namespace infront of it instead of "**minecraft:**"<br>
-This can look like this:
+After opening the file you only need to add the block you want to add with the "**oraxen:**" namespace infront of it instead of "**minecraft:**"  
+ This can look like this:
 
 ```yaml
   amethyst:
