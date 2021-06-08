@@ -6,14 +6,20 @@ description: How to add your own blocks to the game
 
 ## How does it work?
 
-Unlike items, blocks cannot be added to the game using predicates in a model, in fact it is not really possible to add new blocks ...at least the game wasn't made for that. But there are still some hacked-up techniques to do it anyway. Oraxen is using blockstates to attribute block models \(the json file which contains all the informations needed by Minecraft in order to render the block\) depending of the blockfacing of the base block. Basically it uses the variations of a vanilla blocks which can have different blockfacing: the mushroom stem block. Only one variation is used in vanilla minecraft maps for this block, there are 6 faces on a block so we have 2^6 - 1 = 63 possible variations.
+Unlike items, blocks cannot be added to the game using predicates in a model, in fact it is not really possible to add new blocks ...at least the game wasn't made for that. But there are still some hacked-up techniques to do it anyway. Oraxen allows you to do this in two different ways. Blockstates \(the json file which contains all the informations needed by Minecraft in order to render the block\) can be used to attribute block models according to the characteristics of particular blocks. The oldest method  relies on the blockfacing of the base block. Basically it uses the variations of a vanilla blocks which can have different blockfacing: the mushroom stem block. Only one variation is used in vanilla minecraft maps for this block, there are 6 faces on a block so we have 2^6 - 1 = 63 possible variations.
+
+The most recent \(and recommended\) method is to use noteblocks and assign them different models depending on their instrument, their note and whether they are activated or not. This makes 800 possibilities \(but 25 are reserved so that the vanilla noteblocks still work\).
+
+{% hint style="info" %}
+The block and noteblock mechanics have the same configuration. To switch from one to the other you just have to rename the `block` section to `noteblock` and vice versa.
+{% endhint %}
 
 ## Global configuration
 
 This global configuration has to be used in order to define the hierarchy of between your multiple tool\_types. You can put the normal types + new types you just invented.
 
 ```yaml
-block:
+noteblock:
   tool_types:
     - WOODEN
     - STONE
@@ -71,7 +77,7 @@ amethyst_ore:
     textures:
       - amethyst_ore
   Mechanics:
-    block:
+    noteblock:
       custom_variation: 2
       model: amethyst_ore
       drop:
