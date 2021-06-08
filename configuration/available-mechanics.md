@@ -82,9 +82,9 @@ potioneffects:
     icon: true # whether this effect has an icon or not
 ```
 
-### Block
+### Block and NoteBlock
 
-This mechanic allows you to use an item as block. Since it is a quite special mechanic, it has its [dedicated tutorial page](block-mechanic.md).
+These mechanic allows you to use an item as block. Since these are quite special mechanics, they have a [dedicated tutorial page](block-mechanic.md).
 
 ### Hat
 
