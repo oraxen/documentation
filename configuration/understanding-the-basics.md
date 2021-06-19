@@ -20,7 +20,7 @@ The subfolder items contains all your created items. You can create a new item i
 
 ### Resourcepack
 
-The resource pack is a crucial element of oraxen and even if it is able to generate most of the files you will need, you will still have to provide the textures of the custom items yourself, all this is managed inside the Pack folder. You'll use the textures subfolder for adding textures and the models subfolder for adding models \(if you want to use 3d items for example\). You can also change the basic files of the pack \(pack.mcmeta, pack icon, etc.\) from the root of the pack folder.
+The resource pack is a crucial element of oraxen and even if it is able to generate most of the files you will need, you will still have to provide the textures of the custom items yourself, all this is managed inside the Pack folder. You'll use the **textures** subfolder for adding textures and the **models** subfolder for adding models \(if you want to use 3d items for example\). You can also change the basic files of the pack \(pack.mcmeta, pack icon, etc.\) from the root of the pack folder. If you need to override a specific file from the pack, you can create an assets folder and put for example **assets/minecraft/sounds.json**.
 
 ### Recipes
 
