@@ -15,12 +15,6 @@ In this example we assume that you have added a block \(an amethyst ore for exam
 
 // todo
 
-### Find your ores' custom block data
-
-You need to find your custom block data. This can be achieved using any minecraft version on a server running Oraxen. Just place your block \(you can get it from the oraxen inventory of give it to yourself through a command\) and press F3 while looking at the block you want to add.
-
-![](../../.gitbook/assets/amethyst.png)
-
 ### Simply add a new ore using this blockdata
 
 //todo

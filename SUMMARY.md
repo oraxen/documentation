@@ -32,6 +32,7 @@
 * [MythicMobs - custom mobs](compatibility/mythicmobs-custom-mobs.md)
 * [TrMenu - custom inventories](compatibility/trmenu-custom-inventories.md)
 * [World Generators](compatibility/world-generators/README.md)
+  * [Iris World Generator](compatibility/world-generators/iris-world-generator.md)
   * [EpicWorldGenerator](compatibility/world-generators/epicworldgenerator.md)
   * [RealisticWorldGenerator](compatibility/world-generators/realisticworldgenerator.md)
 
