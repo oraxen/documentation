@@ -45,13 +45,13 @@ repair:
 
 ### Commands
 
-This allows you to execute commands \(as the console, a player or op player\). If this option is not often the most elegant it has the merit of simplifying a lot of things. You can delay the command, check if the player has a specific permission and use the item \(understand decrease its amount by one when the command is performed\).
+This allows you to execute commands \(as the console, a player or op player\). If this option is not often the most elegant it has the merit of simplifying a lot of things. You can create a cooldown between usages, check if the player has a specific permission and use the item \(understand decrease its amount by one when the command is performed\).
 
 #### Per item configuration
 
 ```yaml
 commands:
-  delay: 5 # example delay in seconds. This is optional
+  cooldown: 5 # example cooldown in seconds. This is optional
   permission: "my.awesome.perm" # required permission. This is optional
   one_usage: true # should the amount decrease when used? Default: false
   console:
