@@ -19,16 +19,16 @@ The main benefit of this method is that it allows you to see all the items at th
 #### Usage:
 
 ```yaml
-/o inv # Opens an inventory containing oraxen items sorted by file
+/o inv sorted # Opens an inventory containing oraxen items sorted by file
 /o inv all # Opens an inventory containing all oraxen items
 ```
 
 #### Permissions:
 
 ```yaml
-oraxen.command.inv.view # Allows to view the inventory visualizer
-oraxen.command.inv.give # Allows to get item from the inventory visualizer
-oraxen.command.inv.* # Gives you the two previous permissions
+oraxen.command.inventory.view # Allows to view the inventory visualizer
+oraxen.command.inventory.give# Allows to get item from the inventory visualizer
+oraxen.command.inventory.* # Gives you the two previous permissions
 ```
 
 ### In order to give them
@@ -38,7 +38,6 @@ This command will be mainly useful if you want to give an item to another player
 #### Usage:
 
 ```yaml
-/o give <player> <item> # Gives one item to player
 /o give <player> <item> <amount> # Gives amount items to player
 ```
 
@@ -57,13 +56,13 @@ This command can be used to repair an item you hold in your main hand. You can c
 #### Usage:
 
 ```yaml
-/o repair # Repair the item you hold
+/o repair hand # Repair the item you hold
 ```
 
 #### Permissions:
 
 ```yaml
-oraxen.command.repair.hand # Allows to use the /o repair command
+oraxen.command.repair # Allows to use the /o repair command
 ```
 
 ### Repair all items in your inventory
@@ -79,12 +78,9 @@ This command can be used to repair every single item in your inventory \(or in y
 #### Permissions:
 
 ```yaml
-oraxen.command.repair.all# Allows to use the /o repair command
+oraxen.command.repair # so you are also able to use /o repair hand
+oraxen.command.repair.all # Allows to use the /o repair all command
 ```
-
-{% hint style="info" %}
-`oraxen.command.repair.all` would give you access to both
-{% endhint %}
 
 ## Manage recipes
 
@@ -97,7 +93,6 @@ This command allows you to add new recipes to the configuration directly from th
 ```yaml
 /o recipe builder <builder> # Creates a recipe builder of type <builder> and opens it
 /o recipe save <name> # Saves your recipe with name <name>
-/o recipe save <name> <permission> # Same but with the permission <permission>
 /o recipe show all # Show you the loaded recipes
 /o recipe show <recipe> # Show you one recipe
 ```
@@ -115,9 +110,7 @@ This command allows you to interact with the Oraxen pack: send the configured me
 #### Usage:
 
 ```yaml
-/o pack send # Send you the pack directly through the game
 /o pack send <player> # Send to <player> the pack directly through the game
-/o pack msg # Send you the configured message
 /o pack msg <player> # Send to <player> the configured message
 ```
 
@@ -134,7 +127,7 @@ This command allows you to reload oraxen configurations quickly and without caus
 #### Usage
 
 ```yaml
-/o reload # Reloads items configuration, Reloads recipes configuration, regenerates the pack and upload it
+/o reload all # Reloads items configuration, Reloads recipes configuration, regenerates the pack and upload it
 /o reload items # Reloads items configuration
 /o reload pack # Regenerates resourcepack and upload it
 /o reload recipes # Reloads recipes configuration
