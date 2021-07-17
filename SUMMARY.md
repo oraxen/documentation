@@ -22,8 +22,7 @@
 
 ## Unicodes
 
-* [Custom HUDs](unicodes/custom-huds.md)
-* [Emoji in the chat](unicodes/emoji-in-the-chat.md)
+* [Emoji](unicodes/emoji.md)
 
 ## Compatibility
 
