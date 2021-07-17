@@ -37,3 +37,13 @@ chat:
 
 The placeholders can be used in chat by players with the required permission \(if permission is specified, it is not mandatory\).
 
+## How to use it in item name or lore?
+
+Any glyph can be used in name and lore of your item configurations.
+
+```text
+<glyph:heart>
+```
+
+Where heart is replaced by your glyph section name.
+
