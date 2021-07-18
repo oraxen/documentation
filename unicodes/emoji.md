@@ -14,7 +14,7 @@ You first need to create a png texture. For example the heart.png file contained
 
 ![heart.png](../.gitbook/assets/heart%20%281%29.png)
 
-You can then add your section to the list of glyphs in `font.yml`. The code must be different for every glyph. This is the number that corresponds to the number of the unicode character that will be used. The texture is the path and name of the texture file. Ascent allows you to set the character size. 
+You can then add your section to the list of glyphs in `font.yml`. The code must be different for every glyph. This is the number that corresponds to the number of the unicode character that will be used. The texture is the path and name of the texture file. Height allows you to set the displayed character scale while ascent defines the vertical shift of the displayed result.
 
 ```yaml
 heart:
