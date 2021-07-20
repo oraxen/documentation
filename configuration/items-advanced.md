@@ -206,6 +206,10 @@ The parent\_model field is required by minecraft. In fact this will allow your i
 
 Creating a json model can be time consuming but it allows you to create really cool things \(like 3d items\). It is really easy to integrate a json model with Oraxen : put your textures in your textures directory and your model in your models directory \(inside Oraxen/pack folder\). Then you can ask Oraxen to put this model on one of your items:
 
+{% hint style="danger" %}
+ALWAYS USE LOWER CASE FOR MODEL AND TEXTURE NAMES. Upper case is n longer supported by minecraft vanilla since 1.11 \(even though it still works for users using optifine\).
+{% endhint %}
+
 ```yaml
   Pack:
     generate_model: false
