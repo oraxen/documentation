@@ -63,9 +63,29 @@ To use this mechanic you need to tell to oraxen which model to use \(to use the 
           - {oraxen_item: caveblock, probability: 1.0}
 ```
 
+### Customize the breaking speed
+
+You can customize the breaking speed and the most suitable tools with the hardness subsection.
+
+```yaml
+  Mechanics:
+    block:
+      custom_variation: 2
+      model: my_block
+      drop:
+        silktouch: false 
+        minimal_type: STONE
+        loots:
+          - {oraxen_item: caveblock, probability: 1.0}
+      hardness:
+        period: 20 # this makes it really hard to mine
+        best_tools:
+          - PICKAXE # and it's faster using a pickaxe
+```
+
 ### Ores
 
-This example configuration shows you how to create ores that support fortune and silktouch.
+This example configuration shows you how to create ores that support fortune and silktouch with a normal hardness.
 
 ```yaml
 amethyst_ore:
@@ -86,7 +106,9 @@ amethyst_ore:
         minimal_type: IRON
         loots:
           - {oraxen_item: amethyst, probability: 1.0}
+      hardness:
+        period: 8
+        best_tools:
+          - PICKAXE
 ```
-
-
 
