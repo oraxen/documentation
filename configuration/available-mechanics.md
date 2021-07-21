@@ -262,11 +262,11 @@ This mechanic depends on ProtocolLib, if you can't use ProtocolLib, you need to 
 
 #### Per item configuration
 
-The period is the time between animation switch and probability is the percentage of chance to get the bedrock \(0.10 for 10%, 0.5 for 50% or 1.0 for 100%\).
+The hardness is the amount of ticks between breaking animation switch and probability is the percentage of chance to get the bedrock \(0.10 for 10%, 0.5 for 50% or 1.0 for 100%\).
 
 ```yaml
 bedrockbreak:
-  period: 10
+  hardness: 10
   probability: 1
 ```
 
