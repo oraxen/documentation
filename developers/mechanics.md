@@ -206,7 +206,7 @@ Just call this line when you load your plugin \(e.g. in your onEnable method\):
 
 ```java
 MechanicsManager.registerMechanicFactory("durability", 
-                                DurabilityMechanicFactory.class);
+                                DurabilityMechanicFactory::new);
 ```
 
 ## Conclusion
