@@ -19,6 +19,7 @@
 * [Available mechanics](configuration/available-mechanics.md)
 * [Custom mechanic](configuration/custom-mechanic.md)
 * [Block mechanic](configuration/block-mechanic.md)
+* [Furniture Mechanic](configuration/furniture-mechanic.md)
 
 ## Unicodes
 
