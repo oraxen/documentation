@@ -22,7 +22,7 @@ I couldn't decide where to add my axe \(is it more of a tool or a weapon?\) so I
 
 ```yaml
 onyx_axe:
-  displayname: "&0Onyx Axe"
+  displayname: "<#6f737d>Onyx Axe"
   material: DIAMOND_AXE
 ```
 

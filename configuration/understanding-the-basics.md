@@ -26,19 +26,9 @@ The resource pack is a crucial element of oraxen and even if it is able to gener
 
 This folder contains the configurations of the different recipes you have added sorted by recipe type. For example, shaped.yml will contain all your shaped recipes. You will rarely use this folder because it is easier and faster to generate this configuration directly from the game via the oraxen recipe commands.
 
-## Configuration generalities
+## Color and other minecraft formatting
 
-It will sometimes be specified that color codes can be used, this means that you can use the character & followed by a character that matches the desired color or effect:
+In the past minecraft only supported 16 colours and most plugins used a special format with the & character. Since 1.16 any colour can be used, and given the amount of formatting possible \(clickable messages for example\), I didn't want to restrict the plugin to these few options. That's why Guardian allows you to use the [MiniMessage format](https://docs.adventure.kyori.net/minimessage.html#format). That's what it looks like:
 
-```text
-# 0 black         # f white
-# 1 dark_blue     # 9 blue
-# 2 dark_green    # a green
-# 3 dark_aqua     # b aqua
-# 4 dark_red      # c red
-# 5 dark_purple   # d light_purple (pink)
-# 6 gold          # e yellow
-# 7 gray
-# 8 dark_gray
-```
+`<#FF5555>This is a <#55FF55>test!`
 
