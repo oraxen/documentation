@@ -6,6 +6,12 @@ description: A simple explanation of how oraxen works
 
 As you have seen previously, Oraxen is able to generate custom items but also the texture pack that goes with them. It also makes it possible to associate these items with special powers or capabilities known as mechanics.
 
+## Color and other minecraft formatting
+
+In the past minecraft only supported 16 colours and most plugins used a special format with the & character. Since 1.16 any colour can be used, and given the amount of formatting possible \(clickable messages for example\), I didn't want to restrict the plugin to these few options. That's why Guardian allows you to use the [MiniMessage format](https://docs.adventure.kyori.net/minimessage.html#format). That's what it looks like:
+
+`<#FF5555>This is a <#55FF55>test!`
+
 ## Content of the Oraxen folder
 
 ![Directory tree structure of Oraxen folder](../.gitbook/assets/tree.png)
@@ -25,10 +31,4 @@ The resource pack is a crucial element of oraxen and even if it is able to gener
 ### Recipes
 
 This folder contains the configurations of the different recipes you have added sorted by recipe type. For example, shaped.yml will contain all your shaped recipes. You will rarely use this folder because it is easier and faster to generate this configuration directly from the game via the oraxen recipe commands.
-
-## Color and other minecraft formatting
-
-In the past minecraft only supported 16 colours and most plugins used a special format with the & character. Since 1.16 any colour can be used, and given the amount of formatting possible \(clickable messages for example\), I didn't want to restrict the plugin to these few options. That's why Guardian allows you to use the [MiniMessage format](https://docs.adventure.kyori.net/minimessage.html#format). That's what it looks like:
-
-`<#FF5555>This is a <#55FF55>test!`
 
