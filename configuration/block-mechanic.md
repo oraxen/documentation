@@ -98,17 +98,21 @@ amethyst_ore:
       - amethyst_ore
   Mechanics:
     noteblock:
-      custom_variation: 2
+      break_sound: BLOCK_STONE_BREAK
+      custom_variation: 1
       model: amethyst_ore
+      hardness:
+        period: 6
+        best_tools:
+          - PICKAXE
       drop:
         silktouch: true
         fortune: true
         minimal_type: IRON
-        loots:
-          - {oraxen_item: amethyst, probability: 1.0}
-      hardness:
-        period: 8
         best_tools:
           - PICKAXE
+        loots:
+          - oraxen_item: amethyst
+            probability: 1.0
 ```
 
