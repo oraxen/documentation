@@ -75,12 +75,11 @@ You can customize the breaking speed and the most suitable tools with the hardne
       drop:
         silktouch: false 
         minimal_type: STONE
-        loots:
-          - {oraxen_item: caveblock, probability: 1.0}
-      hardness:
-        period: 20 # this makes it really hard to mine
         best_tools:
           - PICKAXE # and it's faster using a pickaxe
+        loots:
+          - {oraxen_item: caveblock, probability: 1.0}
+      hardness: 20 # this makes it really hard to mine
 ```
 
 ### Ores
@@ -101,10 +100,7 @@ amethyst_ore:
       break_sound: BLOCK_STONE_BREAK
       custom_variation: 1
       model: amethyst_ore
-      hardness:
-        period: 6
-        best_tools:
-          - PICKAXE
+      hardness: 6
       drop:
         silktouch: true
         fortune: true
