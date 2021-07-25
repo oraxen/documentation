@@ -86,6 +86,18 @@ potioneffects:
 
 These mechanic allows you to use an item as block. Since these are quite special mechanics, they have a [dedicated tutorial page](block-mechanic.md).
 
+### Aura
+
+Do you want to show a cool particle effect when a player holds your item? The Aura mechanic is your way  to go. You can find a list of available particles here: [https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html)
+
+#### Per item configuration \(easy\)
+
+```yaml
+aura:
+  type: simple # available types: [ simple, helix ]
+  particle: PORTAL
+```
+
 ### Hat
 
 Do you want to create a hat? Use this mechanic so that you'll be able to put any item on your head.
