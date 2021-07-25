@@ -21,8 +21,8 @@
 
 ---
 
-* [Introduction](introduction.md)
-* [Available mechanics](available-mechanics.md)
+* [Introduction](mechanics-introduction.md)
+* [All mechanics](all-mechanics.md)
 * [Block mechanic](block-mechanic.md)
 * [Furniture Mechanic](furniture-mechanic.md)
 * [Custom mechanic](custom-mechanic.md)

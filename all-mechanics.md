@@ -4,7 +4,7 @@ description: >-
   by category
 ---
 
-# Available mechanics
+# All mechanics
 
 ## Miscellaneous
 

@@ -246,5 +246,5 @@ If you want to use a custom model for a shield, you need to specific the blockin
 
 ## Mechanics options
 
-This part has a dedicated page, you can consult it [here](../introduction.md).
+This part has a dedicated page, you can consult it [here](../mechanics-introduction.md).
 
