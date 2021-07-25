@@ -217,6 +217,7 @@ Harvesting allows you to recolt and replant automatically wheat in a certain rad
 
 ```yaml
 harvesting:
+  cooldown: 10000 # 10 seconds between usages
   radius: 5 # blocks surrounding the clicked block
   height: 3 # high
 ```
