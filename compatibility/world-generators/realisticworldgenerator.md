@@ -9,7 +9,7 @@ Spigot Link: [https://www.spigotmc.org/resources/realisticworldgenerator.15905/]
 
 ## How to create custom ores / blocks
 
-In this example we assume that you have added a block \(an amethyst ore for example\) following [this example](../../configuration/block-mechanic.md#ores) to your oraxen configuration.
+In this example we assume that you have added a block \(an amethyst ore for example\) following [this example](../../block-mechanic.md#ores) to your oraxen configuration.
 
 ### Locate the file to edit
 

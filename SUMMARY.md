@@ -15,15 +15,17 @@
 * [Plugin settings](configuration/plugin-settings.md)
 * [Items \(beginners\)](configuration/create-your-first-item.md)
 * [Items \(advanced\)](configuration/items-advanced.md)
-* [Mechanics](configuration/mechanics.md)
-* [Available mechanics](configuration/available-mechanics.md)
-* [Custom mechanic](configuration/custom-mechanic.md)
-* [Block mechanic](configuration/block-mechanic.md)
-* [Furniture Mechanic](configuration/furniture-mechanic.md)
+* [Emoji](configuration/emoji.md)
 
-## Unicodes
+## Mechanics
 
-* [Emoji](unicodes/emoji.md)
+---
+
+* [Introduction](introduction.md)
+* [Available mechanics](available-mechanics.md)
+* [Block mechanic](block-mechanic.md)
+* [Furniture Mechanic](furniture-mechanic.md)
+* [Custom mechanic](custom-mechanic.md)
 
 ## Compatibility
 

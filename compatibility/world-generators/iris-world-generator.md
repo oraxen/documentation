@@ -9,7 +9,7 @@ Spigot Link: [https://www.spigotmc.org/resources/iris-world-gen-the-dimension-en
 
 ## How to create custom ores
 
-In this example we assume that you have added a block \(an amethyst ore for example\) following [this example](../../configuration/block-mechanic.md#ores) to your oraxen configuration.
+In this example we assume that you have added a block \(an amethyst ore for example\) following [this example](../../block-mechanic.md#ores) to your oraxen configuration.
 
 ### 1\) Find your custom ore properties
 

@@ -2,7 +2,7 @@
 description: Aka how to give superpowers to your items
 ---
 
-# Mechanics
+# Introduction
 
 ## Introduction
 
@@ -12,7 +12,7 @@ It's easy to make very nice items on oraxen and change their abilities but how a
 
 ### Items dedicated configurations
 
-As you've seen in the [dedicated part of the beginner tutorial](create-your-first-item.md#4-lets-improve-our-item-with-mechanics), you just need to add a new section called mechanics which will contain all your wanted mechanics in subsections.
+As you've seen in the [dedicated part of the beginner tutorial](configuration/create-your-first-item.md#4-lets-improve-our-item-with-mechanics), you just need to add a new section called mechanics which will contain all your wanted mechanics in subsections.
 
 ```yaml
 example_item:
