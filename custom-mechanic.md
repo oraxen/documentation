@@ -29,3 +29,23 @@ Mechanics:
 
 In this example, the subsection `test` defines a custom mechanic triggered when someone right click \(on a block or in the air\). If this player has the permission `example.permission`, the console will perform the give command and replace &lt;player&gt; by the player name.
 
+## Available events
+
+### CLICK:mouse\_click\_type:target\_type
+
+**mouse\_click\_type**: `[ right, left, all ]`  
+**target\_type**: `[ block, air, all ]` 
+
+## Available conditions
+
+### HAS\_PERMISSION:the.permission
+
+**the.permission**:  `The permission required by the player using the item`
+
+## Available actions
+
+### COMMAND:sender:command
+
+**sender**:  `[ console, player ]`  
+**command**:  `The command to perform. The placeholder <player> can be used.`
+
