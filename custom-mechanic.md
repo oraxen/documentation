@@ -49,3 +49,11 @@ In this example, the subsection `test` defines a custom mechanic triggered when 
 **sender**:  `[ console, player ]`  
 **command**:  `The command to perform. The placeholder <player> can be used.`
 
+### MESSAGE:content
+
+**content**:  `Content of the message to send (it supports minimessage format)`
+
+### ACTIONBAR:content
+
+**content**:  `Content of the message to send (it supports minimessage format)`
+
