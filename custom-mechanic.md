@@ -33,8 +33,18 @@ In this example, the subsection `test` defines a custom mechanic triggered when 
 
 ### CLICK:mouse\_click\_type:target\_type
 
+Called when you click with the item.
+
 **mouse\_click\_type**: `[ right, left, all ]`  
 **target\_type**: `[ block, air, all ]` 
+
+### DROP
+
+Called when you drop the item.
+
+### PICKUP
+
+Called when you pick up the item.
 
 ## Available conditions
 
