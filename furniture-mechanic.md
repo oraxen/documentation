@@ -46,3 +46,25 @@ table:
           - { oraxen_item: table, probability: 1.0 }
 ```
 
+## Barriers
+
+Barriers are invisible blocks placed with your furniture so that it has a realistic hitbox. You can place a single one or a list relative to the position of the player who places them.
+
+### Single barrier:
+
+```yaml
+barrier: true
+```
+
+### Multiple barriers:
+
+```yaml
+barriers:
+    - { x: 0, y: 0, z: 0 }
+    - { x: 0, y: 0, z: 1 }
+    - { x: 0, y: 0, z: 2 }
+    - { x: 1, y: 0, z: 0 }
+    - { x: 1, y: 0, z: 1 }
+    - { x: 1, y: 0, z: 2 }
+```
+
