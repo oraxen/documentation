@@ -30,6 +30,10 @@ Don't forget to reload the plugin with `/o reload` **AND** your resource pack us
 
 It is no longer possible to use upper case in textures or model names with vanilla since minecraft 1.11, however optifine still supports it. Please never use upper case to avoid problems.
 
+## How to update Oraxen?
+
+Here is a great video that can help you: [https://youtu.be/LkansZwVaPY](https://youtu.be/LkansZwVaPY)
+
 ## I would like to suggest a new feature or report an issue
 
 First option: Login to github and submit an issue to the official repo: [git.io/oraxen](https://github.com/Th0rgal/Oraxen)
