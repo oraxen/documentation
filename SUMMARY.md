@@ -15,7 +15,7 @@
 * [Plugin settings](configuration/plugin-settings.md)
 * [Items \(beginners\)](configuration/create-your-first-item.md)
 * [Items \(advanced\)](configuration/items-advanced.md)
-* [Item Appearance](configuration/textures-and-models.md)
+* [Item Appearance](configuration/item-appearance.md)
 * [Emoji](configuration/emoji.md)
 
 ## Mechanics

@@ -181,11 +181,7 @@ soul_speed
 
 ## Pack options
 
-Unlike most other plugins that allow you to create custom items, oraxen supports the creation of a texture pack: that is, you can define directly in the configuration what you want your items to look like and it will take care of generating the pack. For minecraft, the appearance of each item is managed by a json file called the model. Most of the items have a very simple model that simply displays a two-dimensional texture. To avoid having to write this json file \(which is repetitive and boring\), you can ask Oraxen to generate it itself.
-
-### The pack folder
-
-This part has a dedicated page, you can consult it [here](textures-and-models.md).
+This part has a dedicated page, you can consult it [here](item-appearance.md).
 
 ## Mechanics options
 
