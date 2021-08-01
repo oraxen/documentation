@@ -185,7 +185,7 @@ Unlike most other plugins that allow you to create custom items, oraxen supports
 
 ### The pack folder
 
-This part has a dedicated page, you can consult it here.
+This part has a dedicated page, you can consult it [here](textures-and-models.md).
 
 ## Mechanics options
 
