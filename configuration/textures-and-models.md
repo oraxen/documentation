@@ -1,8 +1,8 @@
 ---
-description: How to customize your items appearance?
+description: How to customize your item appearance?
 ---
 
-# Textures and Models
+# Item Appearance
 
 This folder \(./plugins/Oraxen/pack\) contains your pack. It works like a normal minecraft texture pack but simpler. You can drag your textures into the textures folder and your models into your models folder. You can also create sub-folders inside these folders to make it cleaner but it's not necessary. When the plugin generates the resource pack it appears in this folder under the name pack.zip.
 
