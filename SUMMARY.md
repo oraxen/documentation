@@ -16,6 +16,7 @@
 * [Items \(beginners\)](configuration/create-your-first-item.md)
 * [Items \(advanced\)](configuration/items-advanced.md)
 * [Item Appearance](configuration/item-appearance.md)
+* [Custom Armors](configuration/custom-armors.md)
 * [Emoji](configuration/emoji.md)
 
 ## Mechanics
