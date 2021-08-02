@@ -12,7 +12,7 @@ Armor has like every item a texture in the inventory and in the hand, but it als
 
 Because I'm using a simple 2d texture in the inventory, I will use the oraxen model generator. Since we use leather armor, we need to specify the overlay of a texture. That's why I wrote my texture name two times.
 
-![~/pack/textures/default/armors/ruby\_helmet.png](../.gitbook/assets/helmet.png)
+![textures/default/armors/ruby\_helmet.png](../.gitbook/assets/helmet.png)
 
 I also specified a RGB color: `252, 3, 28`, which is equals to in hexadecimal: `#FC031C`. It's a beautiful red but I could've used anything. 
 
@@ -38,7 +38,9 @@ Now the fun begins. We're going to use a vanilla shader to associate an armor st
 
 ### 1\) Create your textures
 
-You'll have to create two textures for your armor:
+You'll have to create two textures for your armor. You can download the ruby example here:  
+[https://oraxen.com/resources/armor\_rest.png](https://oraxen.com/resources/armor_rest.png)  
+[https://oraxen.com/resources/armor\_leggings.png](https://oraxen.com/resources/armor_leggings.png)
 
 #### One for the leggings \(40x32\):
 
@@ -47,6 +49,24 @@ You'll have to create two textures for your armor:
 #### **One for the rest of the armor \(64x32\):**
 
 ![](../.gitbook/assets/armor.png)
+
+#### If you want to animate your armor, you can repeat the texture multiple time \(one time per frame\). To get about one second, you'ld need 24 frames. Here is an example with 3 frames:
+
+![](../.gitbook/assets/animation.png)
+
+### 2\) Add a recognition pixel at the top left of your texture
+
+When we created our item, we chosed the color `252, 3, 28`, which is equals to in hexadecimal: `#FC031C`, it's time to tell to our shader to recognize this color. Just add a pixel with this exact color at the top left of your body textures. This shoud look like that: 
+
+![](../.gitbook/assets/pixel.png)
+
+{% hint style="info" %}
+You can also add another pixel to create emitive textures, but I'll explain it later.
+{% endhint %}
+
+### 3\) Merge our textures with the included texture
+
+You just need to add it to the right of the files: `textures/models/armors/leather_layer_1.png` ****and `textures/models/armors/leather_layer_2.png`
 
 
 
