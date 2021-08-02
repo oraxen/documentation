@@ -34,3 +34,19 @@ You can use [this tool](https://www.rapidtables.com/convert/color/index.html) to
 
 ## How to change the body appearance?
 
+Now the fun begins. We're going to use a vanilla shader to associate an armor style with a specific color. I warmly thank Ancientkingg for developing the shader used by Oraxen.
+
+### 1\) Create your textures
+
+You'll have to create two textures for your armor:
+
+#### One for the leggings \(40x32\):
+
+![](../.gitbook/assets/leggings.png)
+
+#### **One for the rest of the armor \(64x32\):**
+
+![](../.gitbook/assets/armor.png)
+
+
+
