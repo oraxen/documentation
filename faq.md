@@ -30,6 +30,10 @@ Don't forget to reload the plugin with `/o reload` **AND** your resource pack us
 
 It is no longer possible to use upper case in textures or model names with vanilla since minecraft 1.11, however optifine still supports it. Please never use upper case to avoid problems.
 
+## I'm using bungeecord and my players redownload the pack every time they switch to another server
+
+Just install [Bungee Pack Layer](https://www.spigotmc.org/resources/%E2%9C%82%EF%B8%8F-bungee-pack-layer-optimize-resource-pack-sending.94978/) on your bungee server/
+
 ## How to update Oraxen?
 
 Here is a great video that can help you: [https://youtu.be/LkansZwVaPY](https://youtu.be/LkansZwVaPY)
