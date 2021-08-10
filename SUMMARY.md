@@ -31,6 +31,7 @@
 
 ## Compatibility
 
+* [PlaceholderAPI](compatibility/placeholderapi.md)
 * [BossShopPro - shop](compatibility/bossshoppro-shop.md)
 * [CrateReloaded - crates](compatibility/cratereloaded-crates.md)
 * [MythicMobs - custom mobs](compatibility/mythicmobs-custom-mobs.md)
