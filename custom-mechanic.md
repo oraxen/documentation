@@ -14,12 +14,17 @@ The mechanics let you create sub-sections composed of 3 parts:
 * **Conditions**: a set of conditions that must be satisfied. e.g. having a permission
 * **Actions**: a set of actions to perform. e.g. send a command or a message
 
+{% hint style="info" %}
+An optional settings called oneUsage allows you to imitate the use of an item at 1. 
+{% endhint %}
+
 ## A comprehensive example
 
 ```yaml
 Mechanics:
   custom:
     test:
+      oneUsage: false
       event: "CLICK:right:all"
       conditions:
         - "HAS_PERMISSION:example.permission"
@@ -27,7 +32,7 @@ Mechanics:
         - "COMMAND:console:give <player> cooked_beef 1"
 ```
 
-In this example, the subsection `test` defines a custom mechanic triggered when someone right click \(on a block or in the air\). If this player has the permission `example.permission`, the console will perform the give command and replace &lt;player&gt; by the player name.
+In this example, the subsection `test` defines a custom mechanic triggered when someone right click \(on a block or in the air\). If this player has the permission `example.permission`, the console will perform the give command and replace &lt;player&gt; by the player name. The item won't be consumed \(oneUsage: false\).
 
 ## Available events
 
