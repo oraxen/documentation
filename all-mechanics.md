@@ -94,7 +94,7 @@ Do you want to show a cool particle effect when a player holds your item? The Au
 
 ```yaml
 aura:
-  type: simple # available types: [ simple, helix ]
+  type: simple # available types: [ simple, ring, helix ]
   particle: PORTAL
 ```
 
