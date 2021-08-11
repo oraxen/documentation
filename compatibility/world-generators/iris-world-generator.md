@@ -11,17 +11,13 @@ Spigot Link: [https://www.spigotmc.org/resources/iris-world-gen-the-dimension-en
 
 In this example we assume that you have added a block \(an amethyst ore for example\) following [this example](../../block-mechanic.md#ores) to your oraxen configuration.
 
-### 1\) Find your custom ore properties
-
-Follow [this tutorial](./#find-your-ores-custom-block-data).
-
-### 2\) Locate your dimension configuration
+### 1\) Locate your dimension configuration
 
 Go to `Iris/pack/YOUR_PACK_NAME/dimensions/YOUR_DIMENSION_NAME.json`, by default this should be: `Iris/packs/overworld/dimensions/overworld.json`
 
 Then, open the file \(or the vscode workspace to enjoy the cool vscode integration\).
 
-### 3\) Add your ore!
+### 2\) Add your ore!
 
 Locate this part of the config:
 
@@ -45,12 +41,12 @@ Add your own config using the custom ore properties found at step one. For examp
 ```yaml
         {
             "minHeight": 2,
-            "maxPerChunk": 3,
+            "maxPerChunk": 5,
             "maxHeight": 30,
             "minPerChunk": 0,
             "minSize": 3,
             "maxSize": 6,
-            "palette": [{"block": "note_block", "data": { "instrument" : "basedrum", "note" : 2, "powered" : false}}],
+            "palette": [{"block": "oraxen:amethyst_ore"}],
             "varience": 5
         },
 ```
