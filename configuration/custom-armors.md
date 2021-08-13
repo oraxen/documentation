@@ -64,9 +64,17 @@ When we created our item, we chosed the color `252, 3, 28`, which is equals to i
 You can also add another pixel to create emitive textures, but I'll explain it later.
 {% endhint %}
 
-### 3\) Merge our textures with the included texture
+### 3\) Name your textures correctly
 
-You just need to add it to the right of the files: `textures/models/armors/leather_layer_1.png` ****and `textures/models/armors/leather_layer_2.png`
+To get your textures registered correctly, their name need to contain the string  `armor_layer_1` if this is the layer 1 and `armor_layer_2` if this is the layer 2. For example:
+
+`ruby_armor_layer_1.png`
+
+and
+
+`ruby_armor_layer_1.png`
+
+You can put them in any folder of the pack textures. ~/textures/armors is suggested.
 
 
 
