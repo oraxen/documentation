@@ -8,6 +8,22 @@ Armor has like every item a texture in the inventory and in the hand, but it als
 
 ![A: item appearance    B: body appearance](../.gitbook/assets/stuff.png)
 
+{% hint style="danger" %}
+You must be careful when naming your armors to get the textures detected correctly.
+
+If you want to create an **amethyst** armor set, then your item sections must be:  
+- **amethyst**\_helmet  
+- **amethyst**\_chestplate  
+- **amethyst**\_leggings  
+- **amethyst**\_boots  
+  
+And in [step 2](custom-armors.md#2-name-your-textures-correctly) you'll be able to create the textures:  
+- **amethyst**\_armor\_layer\_1.png  
+- **amethyst**\_armor\_layer\_2.png
+{% endhint %}
+
+
+
 ## How to change the item appearance?
 
 Because I'm using a simple 2d texture in the inventory, I will use the oraxen model generator. Since we use leather armor, we need to specify the overlay of a texture. That's why I wrote my texture name two times.
@@ -17,6 +33,7 @@ Because I'm using a simple 2d texture in the inventory, I will use the oraxen mo
 I also specified a RGB color: `252, 3, 28`, which is equals to in hexadecimal: `#FC031C`. It's a beautiful red but I could've used anything. 
 
 ```yaml
+ruby_helmet: # BE CAREFUL TO NAME IT armorsetname_armorpart
   displayname: "<gradient:#FA7CBB:#F14658>Ruby Helmet"
   material: LEATHER_HELMET
   color: 252, 3, 28
@@ -54,17 +71,7 @@ You'll have to create two textures for your armor. You can download the ruby exa
 
 ![](../.gitbook/assets/animation.png)
 
-### 2\) Add a recognition pixel at the top left of your texture
-
-When we created our item, we chosed the color `252, 3, 28`, which is equals to in hexadecimal: `#FC031C`, it's time to tell to our shader to recognize this color. Just add a pixel with this exact color at the top left of your body textures. This shoud look like that: 
-
-![](../.gitbook/assets/pixel.png)
-
-{% hint style="info" %}
-You can also add another pixel to create emitive textures, but I'll explain it later.
-{% endhint %}
-
-### 3\) Name your textures correctly
+### 2\) Name your textures correctly
 
 To get your textures registered correctly, their name need to contain the string  `armor_layer_1` if this is the layer 1 and `armor_layer_2` if this is the layer 2. For example:
 
@@ -72,9 +79,9 @@ To get your textures registered correctly, their name need to contain the string
 
 and
 
-`ruby_armor_layer_1.png`
+`ruby_armor_layer_2.png`
 
-You can put them in any folder of the pack textures. ~/textures/armors is suggested.
+You can put them in any folder of the pack textures. ~/textures/default/armors is suggested.
 
 
 
