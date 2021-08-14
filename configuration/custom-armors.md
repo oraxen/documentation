@@ -71,6 +71,11 @@ You'll have to create two textures for your armor. You can download the ruby exa
 
 ![](../.gitbook/assets/animation.png)
 
+{% hint style="success" %}
+You can make your texture emissive \(no optifine required\) by adding another filed with the same name ending in \_e.png. For example `ruby_armor_layer_1_e.png`  
+This texture will be treated as an emissivity map, where the alpha of the pixel will be treated as the amount of emissivity.
+{% endhint %}
+
 ### 2\) Name your textures correctly
 
 To get your textures registered correctly, their name need to contain the string  `armor_layer_1` if this is the layer 1 and `armor_layer_2` if this is the layer 2. For example:
