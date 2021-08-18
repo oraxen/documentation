@@ -15,7 +15,7 @@ Oraxen uses invisible item frames to add non cubic blocks to the game. This avoi
 This global configuration has to be used in order to define the hierarchy of between your multiple tool\_types. You can put the normal types + new types you just invented.
 
 ```yaml
-noteblock:
+furniture:
   tool_types:
     - WOODEN
     - STONE
@@ -66,5 +66,23 @@ barriers:
     - { x: 1, y: 0, z: 0 }
     - { x: 1, y: 0, z: 1 }
     - { x: 1, y: 0, z: 2 }
+```
+
+## Light
+
+You can configure your furniture so it produces light. To do so you need to install this plugin: [Light API \(fork\)](https://www.spigotmc.org/resources/lightapi-fork.48247/)
+
+This allows you to use a new option: light. This option corresponds to light intensity and must be between 1 and 15.
+
+```yaml
+Mechanics:
+  furniture:
+    facing: UP
+    barrier: true
+    light: 5
+    drop: # useless if you are not using a barrier
+      silktouch: false
+      loots:
+        - { oraxen_item: table, probability: 1.0 }
 ```
 
