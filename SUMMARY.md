@@ -31,10 +31,10 @@
 
 ## Compatibility
 
-* [ModelEngine - custom mobs](compatibility/modelengine-custom-mobs.md)
 * [PlaceholderAPI](compatibility/placeholderapi.md)
 * [BossShopPro - shop](compatibility/bossshoppro-shop.md)
 * [CrateReloaded - crates](compatibility/cratereloaded-crates.md)
+* [ModelEngine - custom mobs](compatibility/modelengine-custom-mobs.md)
 * [MythicMobs - custom mobs](compatibility/mythicmobs-custom-mobs.md)
 * [TrMenu - custom inventories](compatibility/trmenu-custom-inventories.md)
 * [World Generators](compatibility/world-generators/README.md)
