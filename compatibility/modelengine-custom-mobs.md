@@ -10,7 +10,7 @@ Using ModelEngine with Oraxen is very simple as long as you use different types 
 
 Go to the ModelEngine folder. It should look like that:
 
-![content of ModelEngine folder by @Thew](../.gitbook/assets/image%20%286%29.png)
+![content of ModelEngine folder by @Thew](../.gitbook/assets/image%20%287%29.png)
 
 Open the `resource pack` folder:
 
@@ -18,5 +18,5 @@ Open the `resource pack` folder:
 
 Copy the assets folder \(the folder, not its content\) inside `Oraxen/pack`, this should look like this:
 
-
+![Oraxen/pack folder by @Thew](../.gitbook/assets/image%20%286%29.png)
 
