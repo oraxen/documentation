@@ -31,6 +31,7 @@
 
 ## Compatibility
 
+* [ModelEngine - custom mobs](compatibility/modelengine-custom-mobs.md)
 * [PlaceholderAPI](compatibility/placeholderapi.md)
 * [BossShopPro - shop](compatibility/bossshoppro-shop.md)
 * [CrateReloaded - crates](compatibility/cratereloaded-crates.md)
