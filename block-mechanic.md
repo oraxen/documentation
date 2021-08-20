@@ -82,6 +82,22 @@ You can customize the breaking speed and the most suitable tools with the hardne
       hardness: 20 # this makes it really hard to mine
 ```
 
+### Produce Light
+
+You can use the option **light** so that your block emits light.
+
+```yaml
+  Mechanics:
+    block:
+    custom_variation: 2
+    model: my_block
+    light: 5
+    drop:
+      silktouch: false 
+      loots:
+        - {oraxen_item: my_custom_item, probability: 1.0}
+```
+
 ### Ores
 
 This example configuration shows you how to create ores that support fortune and silktouch with a normal hardness.
