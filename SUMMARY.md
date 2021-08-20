@@ -17,7 +17,7 @@
 * [Items \(advanced\)](configuration/items-advanced.md)
 * [Item Appearance](configuration/item-appearance.md)
 * [Custom Armors](configuration/custom-armors.md)
-* [Emoji](configuration/emoji.md)
+* [Glyphs](configuration/glyphs.md)
 
 ## Mechanics
 
