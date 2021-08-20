@@ -130,6 +130,17 @@ skinnable:
   value: SUPER_MATERIAL # your itemType
 ```
 
+### Soulbound
+
+With this mechanic, you can avoid the players to lose their item when they die.
+
+#### Per item configuration
+
+```yaml
+soulbound:
+  lose_chance: 0
+```
+
 ### Custom mechanic
 
 This mechanic allows you to customize events, conditions and actions. Since it is a quite rspecial mechanic, it has its [dedicated tutorial page](custom-mechanic.md).
