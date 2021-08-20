@@ -20,7 +20,7 @@ The goal of Oraxen is to add things to the game without losing features, so the 
 
 ## When I add an item, it breaks the textures of others already created
 
-By default oraxen automatically set a custom model data to your items and generate it in the most optimized way.  Every item need to have a different model data, so when you add another item, it might break the others. In order to avoid this "issue" \(which is not really an issue for test servers, but might be problematic for a production servers\), enable the option `automatically_set_model_id` in **settings.yml**.
+By default oraxen automatically set a custom model data to your items and generate it in the most optimized way.  Every item need to have a different model data, so when you add another item, it might break the others. In order to avoid this "issue" \(which is not really an issue for test servers, but might be problematic for a production servers\), enable the option `automatically_set_model_data` in **settings.yml**.
 
 {% hint style="info" %}
 Don't forget to reload the plugin with `/o reload` **AND** your resource pack using `/o pack getpack`\(you can also disconnect and reconnect to the server\)
