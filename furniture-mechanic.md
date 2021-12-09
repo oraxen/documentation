@@ -6,9 +6,9 @@ description: How to add non cubic blocs to the game
 
 ## How does it work?
 
-Oraxen uses invisible item frames to add non cubic blocks to the game. This avoids some lags causes by armorstands You can then activate a transparent block \(barrier\) on top to act as a hitbox.
+Oraxen uses invisible item frames to add non cubic blocks to the game. This avoids some lags causes by armorstands You can then activate a transparent block (barrier) on top to act as a hitbox.
 
-![Example furniture](.gitbook/assets/image%20%283%29.png)
+![Example furniture](<.gitbook/assets/image (3).png>)
 
 ## Global configuration
 
@@ -70,7 +70,7 @@ barriers:
 
 ## Light
 
-You can configure your furniture so it produces light. To do so you need to install this plugin: [Light API \(fork\)](https://www.spigotmc.org/resources/lightapi-fork.48247/)
+You can configure your furniture so it produces light. To do so you need to install this plugin: [LightAPI](https://www.spigotmc.org/resources/lightapi.4510/).
 
 This allows you to use a new option: light. This option corresponds to light intensity and must be between 1 and 15.
 
@@ -85,4 +85,3 @@ Mechanics:
       loots:
         - { oraxen_item: table, probability: 1.0 }
 ```
-
