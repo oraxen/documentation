@@ -12,7 +12,7 @@ In order to use Oraxen API, you need to add the jarfile to your classpath. You c
 
 ### With Maven
 
-#### Repository \(jitpack\)
+#### Repository (jitpack)
 
 ```markup
 	<repositories>
@@ -27,15 +27,15 @@ In order to use Oraxen API, you need to add the jarfile to your classpath. You c
 
 ```markup
 	<dependency>
-	    <groupId>com.github.Th0rgal</groupId>
-	    <artifactId>Oraxen</artifactId>
+	    <groupId>com.github.oraxen</groupId>
+	    <artifactId>oraxen</artifactId>
 	    <version>-SNAPSHOT</version>
 	</dependency>
 ```
 
 ### With Gradle
 
-#### Repository \(jitpack\)
+#### Repository (jitpack)
 
 ```groovy
 	allprojects {
@@ -50,7 +50,7 @@ In order to use Oraxen API, you need to add the jarfile to your classpath. You c
 
 ```groovy
 	dependencies {
-	        compileOnly 'com.github.Th0rgal:Oraxen:-SNAPSHOT'
+	        compileOnly 'com.github.oraxen:oraxen:-SNAPSHOT'
 	}
 ```
 
@@ -60,7 +60,7 @@ In order to use Oraxen API, you need to add the jarfile to your classpath. You c
 
 Oraxen is built around an ItemsBuilder class that allows you to create items easily. When the plugin starts it parses the configurations to generate builders for each type of items. Each builder can be used to generate itemstacks.
 
-### [OraxenItems](https://github.com/Th0rgal/Oraxen/blob/master/src/main/java/io/th0rgal/oraxen/items/OraxenItems.java) class: 
+### [OraxenItems](https://github.com/Th0rgal/Oraxen/blob/master/src/main/java/io/th0rgal/oraxen/items/OraxenItems.java) class:&#x20;
 
 #### Get an ItemBuilder from an OraxenID
 
@@ -76,7 +76,7 @@ OraxenItems.isAnItem(itemID);
 
 #### Extract an OraxenID from an ItemStack
 
-You can use to check if an ItemStack is an OraxenItem \(it will return null if OraxenID doesn't exist\)
+You can use to check if an ItemStack is an OraxenItem (it will return null if OraxenID doesn't exist)
 
 ```java
 OraxenItems.getIdByItem(itemstack);
@@ -96,7 +96,7 @@ BlockMechanicFactory.setBlockModel(block, itemID);
 
 ### Add resources to the pack
 
-#### Get access to the assets/ folder 
+#### Get access to the assets/ folder&#x20;
 
 ```java
 ResourcePack.getAssetsFolder();
@@ -105,4 +105,3 @@ ResourcePack.getAssetsFolder();
 ### Mechanics:
 
 Oraxen allows you to add your own mechanics to the plugin, it is a little bit more complex than the rest, that's why there is a [dedicated tutorial](mechanics.md#how-does-the-mechanic-system-work).
-
