@@ -10,11 +10,11 @@ description: >-
 
 ### Durability
 
-This allows you to change the durability of an item created with Oraxen. Minecraft vanilla wasn't made to handle that kind of modifications, this is why this system is not perfect. You'll not see the good  durability on your item, it will just work as a percentage. What that means is that if for example you create a pickaxe based off the wooden pickaxe \(which has 59 of durability by default\) and you change it to 5900, you'll still see 59 of durability on your item. But you'll need to break 100 blocks in order to lose of one durability. The cool thing is that the displayed bar will be updated correctly.
+This allows you to change the durability of an item created with Oraxen. Minecraft vanilla wasn't made to handle that kind of modifications, this is why this system is not perfect. You'll not see the good  durability on your item, it will just work as a percentage. What that means is that if for example you create a pickaxe based off the wooden pickaxe (which has 59 of durability by default) and you change it to 5900, you'll still see 59 of durability on your item. But you'll need to break 100 blocks in order to lose of one durability. The cool thing is that the displayed bar will be updated correctly.
 
 #### Per item configuration
 
-There are two options available : ratio and fixed\_amount. You can put only one of these two options on the same item. Ratio allows you to repair a percentage of your item \(0.15 will repair 15% of maximum durability while 1.0 will repair it to 100%\). Fixe amount repairs a fixed amount of your item durability \(put 10 if you want to add 10 durability points to your item for example\).
+There are two options available : ratio and fixed\_amount. You can put only one of these two options on the same item. Ratio allows you to repair a percentage of your item (0.15 will repair 15% of maximum durability while 1.0 will repair it to 100%). Fixe amount repairs a fixed amount of your item durability (put 10 if you want to add 10 durability points to your item for example).
 
 ```yaml
 durability:
@@ -23,7 +23,7 @@ durability:
 
 ### Repair
 
-This mechanic allows you to use an item to repair another one \(which uses vanilla durability or oraxen custom\). By default this mechanic is binded to iron, gold and diamond cogs. To use them you just need to click on the item you want to repair.
+This mechanic allows you to use an item to repair another one (which uses vanilla durability or oraxen custom). By default this mechanic is binded to iron, gold and diamond cogs. To use them you just need to click on the item you want to repair.
 
 #### Per item configuration
 
@@ -45,7 +45,7 @@ repair:
 
 ### Commands
 
-This allows you to execute commands \(as the console, a player or op player\). If this option is not often the most elegant it has the merit of simplifying a lot of things. You can create a cooldown between usages, check if the player has a specific permission and use the item \(understand decrease its amount by one when the command is performed\).
+This allows you to execute commands (as the console, a player or op player). If this option is not often the most elegant it has the merit of simplifying a lot of things. You can create a cooldown between usages, check if the player has a specific permission and use the item (understand decrease its amount by one when the command is performed).
 
 #### Per item configuration
 
@@ -67,7 +67,7 @@ commands:
 
 ### PotionEffects
 
-This allows you to bind a Potion Effect to an armor \(or a hat\) so that when you equip it you'll get the effect.
+This allows you to bind a Potion Effect to an armor (or a hat) so that when you equip it you'll get the effect.
 
 #### Per item configuration
 
@@ -86,11 +86,15 @@ potioneffects:
 
 These mechanic allows you to use an item as block. Since these are quite special mechanics, they have a [dedicated tutorial page](block-mechanic.md).
 
+### clickAction
+
+This mechanic allows you to run various events when a player clicks a block or furniture. It is very customizable, so it also has a [dedicated tutorial page](clickaction-mechanic.md).
+
 ### Aura
 
 Do you want to show a cool particle effect when a player holds your item? The Aura mechanic is your way  to go. You can find a list of available particles here: [https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html)
 
-#### Per item configuration \(easy\)
+#### Per item configuration (easy)
 
 ```yaml
 aura:
@@ -102,7 +106,7 @@ aura:
 
 Do you want to create a hat? Use this mechanic so that you'll be able to put any item on your head.
 
-#### Per item configuration \(easy\)
+#### Per item configuration (easy)
 
 ```yaml
 hat:
@@ -121,7 +125,7 @@ skinnable: {}
 
 ### ItemType
 
-With this mechanic, you can change the item type detected by OraxenBlocks. Make sure to use a type declared [inside the block mechanic](block-mechanic.md#global-configuration). 
+With this mechanic, you can change the item type detected by OraxenBlocks. Make sure to use a type declared [inside the block mechanic](block-mechanic.md#global-configuration).&#x20;
 
 #### Per item configuration
 
@@ -172,8 +176,8 @@ Have you ever dreamed of being able to throw lightning bolts? This is for you.
 ```
 
 * **lightning\_bolts\_amount**: how many lightning bolts will be spawned?
-* **random\_location\_variation**: the random variation range between bolts \(in blocks\)
-* **delay**: delay between usage in milliseconds \(1000ms = 1s\)
+* **random\_location\_variation**: the random variation range between bolts (in blocks)
+* **delay**: delay between usage in milliseconds (1000ms = 1s)
 
 ### Lifeleech
 
@@ -286,7 +290,7 @@ This mechanic depends on ProtocolLib, if you can't use ProtocolLib, you need to 
 
 #### Per item configuration
 
-The hardness is the amount of ticks between breaking animation switch and probability is the percentage of chance to get the bedrock \(0.10 for 10%, 0.5 for 50% or 1.0 for 100%\).
+The hardness is the amount of ticks between breaking animation switch and probability is the percentage of chance to get the bedrock (0.10 for 10%, 0.5 for 50% or 1.0 for 100%).
 
 ```yaml
 bedrockbreak:
@@ -296,7 +300,7 @@ bedrockbreak:
 
 #### Global configuration
 
-If you set disable\_on\_first\_layer to true, your players will no longer be able to break the ground \(layer 0\), the durability\_cost is the amount of durability the item you've set bedrockbreak
+If you set disable\_on\_first\_layer to true, your players will no longer be able to break the ground (layer 0), the durability\_cost is the amount of durability the item you've set bedrockbreak
 
 ```yaml
 bedrockbreak:
@@ -304,4 +308,3 @@ bedrockbreak:
   disable_on_first_layer: false
   durability_cost: 500
 ```
-

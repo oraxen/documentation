@@ -27,6 +27,7 @@
 * [All mechanics](all-mechanics.md)
 * [Block mechanic](block-mechanic.md)
 * [Furniture Mechanic](furniture-mechanic.md)
+* [clickAction Mechanic](clickaction-mechanic.md)
 * [Custom mechanic](custom-mechanic.md)
 
 ## Compatibility
