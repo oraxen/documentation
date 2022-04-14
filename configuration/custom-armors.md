@@ -11,15 +11,15 @@ Armor has like every item a texture in the inventory and in the hand, but it als
 {% hint style="danger" %}
 You must be careful when naming your armors to get the textures detected correctly.
 
-If you want to create an **amethyst** armor set, then your item sections must be:  
-- **amethyst**\_helmet  
-- **amethyst**\_chestplate  
-- **amethyst**\_leggings  
-- **amethyst**\_boots  
-  
-And in [step 2](custom-armors.md#2-name-your-textures-correctly) you'll be able to create the textures:  
-- **amethyst**\_armor\_layer\_1.png  
-- **amethyst**\_armor\_layer\_2.png
+If you want to create an **amethyst** armor set, then your item sections must be:\
+\- **amethyst**\_helmet\
+\- **amethyst**\_chestplate\
+\- **amethyst**\_leggings\
+\- **amethyst**\_boots\
+\
+And in [step 2](custom-armors.md#2-name-your-textures-correctly) you'll be able to create the textures:\
+\- **amethyst**\_armor\_layer\_1.png\
+\- **amethyst**\_armor\_layer\_2.png
 {% endhint %}
 
 
@@ -30,7 +30,7 @@ Because I'm using a simple 2d texture in the inventory, I will use the oraxen mo
 
 ![textures/default/armors/ruby\_helmet.png](../.gitbook/assets/helmet.png)
 
-I also specified a RGB color: `252, 3, 28`, which is equals to in hexadecimal: `#FC031C`. It's a beautiful red but I could've used anything. 
+I also specified a RGB color: `252, 3, 28`, which is equals to in hexadecimal: `#FC031C`. It's a beautiful red but I could've used anything.&#x20;
 
 ```yaml
 ruby_helmet: # BE CAREFUL TO NAME IT armorsetname_armorpart
@@ -53,36 +53,34 @@ You can use [this tool](https://www.rapidtables.com/convert/color/index.html) to
 
 Now the fun begins. We're going to use a vanilla shader to associate an armor style with a specific color. I warmly thank Ancientkingg for developing the shader used by Oraxen.
 
-### 1\) Create your textures
+### 1) Create your textures
 
-You'll have to create two textures for your armor. You can download the ruby example here:  
-[https://oraxen.com/resources/armor\_rest.png](https://oraxen.com/resources/armor_rest.png)  
-[https://oraxen.com/resources/armor\_leggings.png](https://oraxen.com/resources/armor_leggings.png)
+You'll have to create two textures for your armor. You can download the ruby example here:\
+[https://oraxen.com/resources/armor\_rest.png](https://oraxen.com/resources/armor\_rest.png)\
+[https://oraxen.com/resources/armor\_leggings.png](https://oraxen.com/resources/armor\_leggings.png)
 
-#### One for the leggings \(40x32\):
+#### One for the leggings (40x32):
 
 ![](../.gitbook/assets/leggings.png)
 
-#### **One for the rest of the armor \(64x32\):**
+#### **One for the rest of the armor (64x32):**
 
 ![](../.gitbook/assets/armor.png)
 
-#### If you want to animate your armor, you can repeat the texture multiple time \(one time per frame\). To get about one second, you'ld need 24 frames. Here is an example with 3 frames:
+#### If you want to animate your armor, you can repeat the texture multiple time (one time per frame). To get about one second, you'ld need 24 frames. Here is an example with 3 frames:
 
 ![](../.gitbook/assets/animation.png)
 
 {% hint style="success" %}
-You can make your texture **emissive** \(no optifine required\) by adding another filed with the same name ending in **\_e.png**. For example `ruby_armor_layer_1_e.png`  
+You can make your texture **emissive** (no optifine required) by adding another filed with the same name ending in **\_e.png**. For example `ruby_armor_layer_1_e.png`\
 This texture will be treated as an emissivity map, where the alpha of the pixel will be treated as the amount of emissivity.
 {% endhint %}
 
-### 2\) Name your textures correctly
+### 2) Name your textures correctly
 
 To get your textures registered correctly, their name need to contain the string  `armor_layer_1` if this is the layer 1 and `armor_layer_2` if this is the layer 2. For example:
 
 `ruby_armor_layer_1.png` and`ruby_armor_layer_2.png`
 
 You can put them in any folder of the pack textures, `~/textures/default/armors` is suggested.
-
-
 

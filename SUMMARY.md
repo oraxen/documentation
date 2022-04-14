@@ -21,24 +21,22 @@
 
 ## Mechanics
 
-***
-
-* [Introduction](mechanics-introduction.md)
-* [All mechanics](all-mechanics.md)
-* [Block mechanic](block-mechanic.md)
-* [Furniture Mechanic](furniture-mechanic.md)
-* [clickAction Mechanic](clickaction-mechanic.md)
-* [Custom mechanic](custom-mechanic.md)
+* [Introduction](mechanics/mechanics-introduction.md)
+* [All mechanics](mechanics/all-mechanics.md)
+* [Block mechanic](mechanics/block-mechanic.md)
+* [Furniture Mechanic](mechanics/furniture-mechanic.md)
+* [clickAction Mechanic](mechanics/clickaction-mechanic.md)
+* [Custom mechanic](mechanics/custom-mechanic.md)
 
 ## Compatibility
 
-* [MMoItems](compatibility/mmoitems.md)
 * [PlaceholderAPI](compatibility/placeholderapi.md)
 * [BossShopPro - shop](compatibility/bossshoppro-shop.md)
 * [CrateReloaded - crates](compatibility/cratereloaded-crates.md)
 * [ModelEngine - custom mobs](compatibility/modelengine-custom-mobs.md)
 * [MythicMobs - custom mobs](compatibility/mythicmobs-custom-mobs.md)
 * [TrMenu - custom inventories](compatibility/trmenu-custom-inventories.md)
+* [MMoItems](compatibility/mmoitems.md)
 * [World Generators](compatibility/world-generators/README.md)
   * [Iris World Generator](compatibility/world-generators/iris-world-generator.md)
   * [EpicWorldGenerator](compatibility/world-generators/epicworldgenerator.md)

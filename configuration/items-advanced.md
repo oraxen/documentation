@@ -2,7 +2,7 @@
 description: All the subtleties of item creation
 ---
 
-# Items \(advanced\)
+# Items (advanced)
 
 ## Vanilla options
 
@@ -24,7 +24,7 @@ This allows you to change the item type
 
 ### color
 
-This allows you to change the color of an item made of a supported material \(e.g. leather armor\).
+This allows you to change the color of an item made of a supported material (e.g. leather armor).
 
 ```yaml
   color: 3, 252, 136 #rgb
@@ -58,7 +58,7 @@ This option allows you to exclude an item from the oraxen inventory. It will no 
 
 ### durability
 
-This allows you to change the number of damage of a item \(not very useful\)
+This allows you to change the number of damage of a item (not very useful)
 
 ```yaml
   durability: 10
@@ -66,7 +66,7 @@ This allows you to change the number of damage of a item \(not very useful\)
 
 ### unbreakable
 
-This will make your item unbreakable \(for real, using minecraft dedicated property\).
+This will make your item unbreakable (for real, using minecraft dedicated property).
 
 ```yaml
 unbreakable: true
@@ -127,7 +127,7 @@ This allows you to add minecraft attributes to your item. They are very powerful
 
 ### Enchantments
 
-If you want to enchant your item \(even with non vanilla levels like for example sharpness 15\), you can do it with this section.
+If you want to enchant your item (even with non vanilla levels like for example sharpness 15), you can do it with this section.
 
 ```yaml
   Enchantments:
@@ -138,7 +138,7 @@ If you want to enchant your item \(even with non vanilla levels like for example
 
 Here is a list of enchants available in minecraft vanilla:
 
-```text
+```
 protection
 fire_protection
 feather_falling
@@ -185,5 +185,4 @@ This part has a dedicated page, you can consult it [here](item-appearance.md).
 
 ## Mechanics options
 
-This part has a dedicated page, you can consult it [here](../mechanics-introduction.md).
-
+This part has a dedicated page, you can consult it [here](../mechanics/mechanics-introduction.md).

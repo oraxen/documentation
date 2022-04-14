@@ -12,7 +12,7 @@ It's easy to make very nice items on oraxen and change their abilities but how a
 
 ### Items dedicated configurations
 
-As you've seen in the [dedicated part of the beginner tutorial](configuration/create-your-first-item.md#4-lets-improve-our-item-with-mechanics), you just need to add a new section called mechanics which will contain all your wanted mechanics in subsections.
+As you've seen in the [dedicated part of the beginner tutorial](../configuration/create-your-first-item.md#4-lets-improve-our-item-with-mechanics), you just need to add a new section called mechanics which will contain all your wanted mechanics in subsections.
 
 ```yaml
 example_item:
@@ -31,7 +31,7 @@ Each subsection of a mechanic inside an item configuration allows you to change 
 
 ### Global configurations
 
-These settings are saved into the file `mechanics.yml` at the root of your Oraxen folder. They allow you to change global parameters for all item using this mechanic. You won't need it often but it can be useful. For example for the bedrockbreak mechanic which allows you to break bedrock. Most of servers don't want their player to break the ground of the world : the last layer of bedrock. In the global configuration of bedrockbreak mechanic you can change toggle this \(and this will get applied to all your items using this mechanic\).
+These settings are saved into the file `mechanics.yml` at the root of your Oraxen folder. They allow you to change global parameters for all item using this mechanic. You won't need it often but it can be useful. For example for the bedrockbreak mechanic which allows you to break bedrock. Most of servers don't want their player to break the ground of the world : the last layer of bedrock. In the global configuration of bedrockbreak mechanic you can change toggle this (and this will get applied to all your items using this mechanic).
 
 ```yaml
 bedrockbreak:
@@ -39,4 +39,3 @@ bedrockbreak:
   disable_on_first_layer: false # this
   durability_cost: 500
 ```
-

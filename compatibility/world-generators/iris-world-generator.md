@@ -4,20 +4,20 @@ description: Iris is a paid world generator
 
 # Iris World Generator
 
-IrisWorldGenerator allows you to easily generate a really cool looking world. This supports custom BlockDatas, so you can add custom minerals created with Oraxen to be generated like diamond for example.  
+IrisWorldGenerator allows you to easily generate a really cool looking world. This supports custom BlockDatas, so you can add custom minerals created with Oraxen to be generated like diamond for example.\
 Spigot Link: [https://www.spigotmc.org/resources/iris-world-gen-the-dimension-engine.84586/](https://www.spigotmc.org/resources/iris-world-gen-the-dimension-engine.84586/)
 
 ## How to create custom ores
 
-In this example we assume that you have added a block \(an amethyst ore for example\) following [this example](../../block-mechanic.md#ores) to your oraxen configuration.
+In this example we assume that you have added a block (an amethyst ore for example) following [this example](../../mechanics/block-mechanic.md#ores) to your oraxen configuration.
 
-### 1\) Locate your dimension configuration
+### 1) Locate your dimension configuration
 
 Go to `Iris/pack/YOUR_PACK_NAME/dimensions/YOUR_DIMENSION_NAME.json`, by default this should be: `Iris/packs/overworld/dimensions/overworld.json`
 
-Then, open the file \(or the vscode workspace to enjoy the cool vscode integration\).
+Then, open the file (or the vscode workspace to enjoy the cool vscode integration).
 
-### 2\) Add your ore!
+### 2) Add your ore!
 
 Locate this part of the config:
 
@@ -52,4 +52,3 @@ Add your own config using the custom ore properties found at step one. For examp
 ```
 
 You can now save the file, reset your world and restart!
-
