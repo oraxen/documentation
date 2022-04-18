@@ -130,7 +130,7 @@ With this mechanic, you can change the item type detected by OraxenBlocks. Make 
 #### Per item configuration
 
 ```yaml
-skinnable:
+itemtype:
   value: SUPER_MATERIAL # your itemType
 ```
 
