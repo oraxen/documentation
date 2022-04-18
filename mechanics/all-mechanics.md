@@ -74,7 +74,7 @@ This allows you to bind a Potion Effect to an armor (or a hat) so that when you 
 [Here](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html) is a list of all potion effect types available.
 
 ```yaml
-potioneffects:
+armorpotioneffects:
   night_vision: # the potion effect type
     amplifier: 0
     ambient: true # Makes potion effect produce more, translucent, particles.
