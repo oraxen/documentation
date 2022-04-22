@@ -14,23 +14,27 @@
 * [Understand the basics](configuration/understanding-the-basics.md)
 * [Plugin settings](configuration/plugin-settings.md)
 * [Items (beginners)](configuration/create-your-first-item.md)
-* [Items (advanced)](configuration/items-advanced.md)
+* [Items (advanced)](configuration/items-advanced/README.md)
+  * [Dyeable Items](configuration/items-advanced/dyeable-items.md)
 * [Item Appearance](configuration/item-appearance.md)
 * [Custom Armors](configuration/custom-armors.md)
-* [Glyphs](configuration/glyphs.md)
+* [Glyphs](configuration/glyphs/README.md)
+  * [Custom Gui](configuration/glyphs/custom-gui.md)
 
 ## Mechanics
 
 * [Introduction](mechanics/mechanics-introduction.md)
-* [All mechanics](mechanics/all-mechanics.md)
+* [All mechanics](mechanics/all-mechanics/README.md)
+  * [Custom mechanic](mechanics/all-mechanics/custom-mechanic.md)
+  * [clickAction Mechanic](mechanics/all-mechanics/clickaction-mechanic.md)
+* [Furniture Mechanic](mechanics/furniture-mechanic/README.md)
+  * [Furtniture Position](mechanics/furniture-mechanic/furtniture-position.md)
+  * [Farming Mechanic](mechanics/furniture-mechanic/farming-mechanic.md)
 * [Block mechanic](mechanics/block-mechanic.md)
-* [Furniture Mechanic](mechanics/furniture-mechanic.md)
-* [clickAction Mechanic](mechanics/clickaction-mechanic.md)
-* [Custom mechanic](mechanics/custom-mechanic.md)
+* [StringBlock Mechanic](mechanics/stringblock-mechanic.md)
 
 ## Compatibility
 
-* [PlaceholderAPI](compatibility/placeholderapi.md)
 * [BossShopPro - shop](compatibility/bossshoppro-shop.md)
 * [CrateReloaded - crates](compatibility/cratereloaded-crates.md)
 * [ModelEngine - custom mobs](compatibility/modelengine-custom-mobs.md)

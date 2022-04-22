@@ -1,5 +1,8 @@
 ---
 description: Various options impacting the plugin in its generality
+cover: >-
+  https://cdn.discordapp.com/attachments/896841738621177896/966825582216237126/unknown.png
+coverY: 0
 ---
 
 # Plugin settings
@@ -14,6 +17,13 @@ Plugin:
 ```
 
 The plugin related options. Here you can configure how some things work. Should the repair only repair Oraxen items with an oraxen durability?
+
+## Item configurations
+
+### How do the Oraxen configurations work?
+
+First, Oraxen has several folders and 3 of these are to configure things, the first one is `Oraxen/ghyphs/` and is to configure the Custom Font or Ghyph, then\
+`Oraxen/items/` and is to configure and create your own configuration yaml and lastly `Oraxen/pack/` the target place where all the files like textures and models will be created,
 
 ## Pack
 
@@ -35,13 +45,13 @@ The plugin related options. Here you can configure how some things work. Should 
      \nconditions of Oraxen."
 ```
 
-This section allows you to configure the **generation** of the pack. The **compression** is configured to make the smallest zip possible by default. You can change the **comment** which is basically a watermark inside your zip. 
+This section allows you to configure the **generation** of the pack. The **compression** is configured to make the smallest zip possible by default. You can change the **comment** which is basically a watermark inside your zip.&#x20;
 
 #### Protection
 
 Protection will allow you to prevent players from stealing your textures easily. This won't make your pack heavier but if you enabled it. You **shall not** try to extract the generated zip, this could damage your disk.
 
-![1 Exabyte \(EB\) = 1000000000 Gigabyte \(GB\)](../.gitbook/assets/size.png)
+![1 Exabyte (EB) = 1000000000 Gigabyte (GB)](../.gitbook/assets/size.png)
 
 ![Your operating system should prevent you from extracting in order to preserve your disk integrity](../.gitbook/assets/extraction.png)
 
@@ -54,13 +64,13 @@ Protection will allow you to prevent players from stealing your textures easily.
       server: atlas.oraxen.com # you can also host your own polymath instance
 ```
 
-Oraxen integrates with Polymath \(a custom web server written in Python especially to be compatible\). You can download the source code [here](https://github.com/Th0rgal/Polymath/) and host it yourself or use the provided instance \(atlas\). You can also integrate with [your own custom hosting service](../developers/custom-hosting-service.md).
+Oraxen integrates with Polymath (a custom web server written in Python especially to be compatible). You can download the source code [here](https://github.com/Th0rgal/Polymath/) and host it yourself or use the provided instance (atlas). You can also integrate with [your own custom hosting service](../developers/custom-hosting-service.md).
 
 ### Dispatch
 
 This section allows you to easily perform actions depending on the resource pack status of your players.
 
-You can send message \(through a KICK, the chat, an actionbar or a title\) and specify a delay and a period \(between the different messages if you are using an actionbar or a title\).
+You can send message (through a KICK, the chat, an actionbar or a title) and specify a delay and a period (between the different messages if you are using an actionbar or a title).
 
 ```yaml
 receive:
@@ -158,7 +168,7 @@ receive:
     injectID: false
 ```
 
-The `automatically_set_model_id` option is really important. If you set it to true, Oraxen will automatically edit your configurations to add a custom\_model\_data field, that way if you add another item, it won't take the same model\_data than your previous item and this will avoid breaking already existing items. Please enable this option on a production server \(with players\). If you work on a test server and reset items everytime, it is not required.
+The `automatically_set_model_id` option is really important. If you set it to true, Oraxen will automatically edit your configurations to add a custom\_model\_data field, that way if you add another item, it won't take the same model\_data than your previous item and this will avoid breaking already existing items. Please enable this option on a production server (with players). If you work on a test server and reset items everytime, it is not required.
 
 ## Misc
 
@@ -187,6 +197,4 @@ gui_inventory:
 ```
 
 This allows you to configure an icon for every section of the Oraxen inventory. You can use Oraxen ids or Minecraft materials.
-
-
 

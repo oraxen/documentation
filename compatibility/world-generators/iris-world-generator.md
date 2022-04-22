@@ -1,5 +1,8 @@
 ---
 description: Iris is a paid world generator
+cover: >-
+  https://cdn.discordapp.com/attachments/896841738621177896/966832733290627072/unknown.png
+coverY: 0
 ---
 
 # Iris World Generator
@@ -39,16 +42,16 @@ Locate this part of the config:
 Add your own config using the custom ore properties found at step one. For example:
 
 ```yaml
-        {
-            "minHeight": 2,
-            "maxPerChunk": 5,
-            "maxHeight": 30,
-            "minPerChunk": 0,
-            "minSize": 3,
-            "maxSize": 6,
-            "palette": [{"block": "oraxen:amethyst_ore"}],
-            "varience": 5
-        },
+    {
+      "minHeight": 2,
+      "maxPerChunk": 2,
+      "maxHeight": 30,
+      "minPerChunk": 0,
+      "minSize": 3,
+      "maxSize": 6,
+      "palette": [{ "block": "oraxen:amethyst_ore" }],
+      "varience": 5
+    },
 ```
 
 You can now save the file, reset your world and restart!

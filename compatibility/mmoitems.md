@@ -1,5 +1,8 @@
 ---
 description: MMoItems introduces very unique attack effect
+cover: >-
+  https://cdn.discordapp.com/attachments/896841738621177896/966832308395049000/unknown.png
+coverY: 0
 ---
 
 # MMoItems

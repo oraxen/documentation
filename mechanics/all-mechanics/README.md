@@ -2,6 +2,9 @@
 description: >-
   The different mechanics available by default and their configurations sorted
   by category
+cover: >-
+  https://cdn.discordapp.com/attachments/896841738621177896/966825489098489856/unknown.png
+coverY: 0
 ---
 
 # All mechanics
@@ -84,7 +87,7 @@ armorpotioneffects:
 
 ### Block and NoteBlock
 
-These mechanic allows you to use an item as block. Since these are quite special mechanics, they have a [dedicated tutorial page](block-mechanic.md).
+These mechanic allows you to use an item as block. Since these are quite special mechanics, they have a [dedicated tutorial page](../block-mechanic.md).
 
 ### clickAction
 
@@ -125,7 +128,7 @@ skinnable: {}
 
 ### ItemType
 
-With this mechanic, you can change the item type detected by OraxenBlocks. Make sure to use a type declared [inside the block mechanic](block-mechanic.md#global-configuration).&#x20;
+With this mechanic, you can change the item type detected by OraxenBlocks. Make sure to use a type declared [inside the block mechanic](../block-mechanic.md#global-configuration).&#x20;
 
 #### Per item configuration
 

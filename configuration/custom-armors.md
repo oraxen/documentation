@@ -1,5 +1,8 @@
 ---
 description: How to create custom armors without replacing existing stuff?
+cover: >-
+  https://cdn.discordapp.com/attachments/896841738621177896/966823919917080626/unknown.png
+coverY: 0
 ---
 
 # Custom Armors

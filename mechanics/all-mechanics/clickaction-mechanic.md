@@ -2,6 +2,9 @@
 description: >-
   Run commands, play sounds, or send messages when a player clicks a block or
   furniture.
+cover: >-
+  https://cdn.discordapp.com/attachments/896841738621177896/966825489098489856/unknown.png
+coverY: 0
 ---
 
 # clickAction Mechanic
@@ -12,7 +15,7 @@ The `clickAction` mechanic allows you to run commands, play sounds, or send mess
 
 ### Configuration
 
-To get started, create a basic [Block](block-mechanic.md) or [Furniture](furniture-mechanic.md).
+To get started, create a basic [Block](../block-mechanic.md) or [Furniture](../furniture-mechanic/).
 
 Next, under the mechanics section, you can add the default clickAction mechanic.
 

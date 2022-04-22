@@ -1,17 +1,20 @@
 ---
 description: Allows the creation of every kind of Chest GUI menu or shop.
+cover: >-
+  https://cdn.discordapp.com/attachments/896841738621177896/966831560231886868/unknown.png
+coverY: 0
 ---
 
 # BossShopPro - shop
 
-This feature is provided to you by [yzl210](https://github.com/yzl210), don't hesitate to thank him!  
+This feature is provided to you by [yzl210](https://github.com/yzl210), don't hesitate to thank him!\
 Spigot link: [https://www.spigotmc.org/resources/bossshoppro.222/](https://www.spigotmc.org/resources/bossshoppro-the-most-powerful-chest-gui-shop-menu-plugin.222/)
 
 ## Menu Item
 
 ### Usage
 
-```text
+```
 OraxenTest:
     MenuItem:
       oraxen: <oraxen item name>
@@ -20,7 +23,7 @@ OraxenTest:
 
 ### Example
 
-```text
+```
 OraxenTest:
     MenuItem:
       oraxen: oraxen_icon_test
@@ -28,9 +31,9 @@ OraxenTest:
 
 ## Reward
 
-### Usage: \(It has the same format as ITEM\)
+### Usage: (It has the same format as ITEM)
 
-```text
+```
 OraxenTest:
     RewardType: ORAXEN(you can also use ORAXEN-ITEM and ITEM-ORAXEN)
     Reward:
@@ -42,7 +45,7 @@ You can add many items as you want, just put`- -` to start a new item.
 
 ### Example
 
-```text
+```
 OraxenTest:
     RewardType: ORAXEN
     Reward:
@@ -54,9 +57,9 @@ OraxenTest:
 
 ## Price
 
-### Usage: \(It has the same format as ITEM\)
+### Usage: (It has the same format as ITEM)
 
-```text
+```
 OraxenTest:
     PriceType: ORAXEN(you can also use ORAXEN-ITEM and ITEM-ORAXEN)
     Price:
@@ -68,7 +71,7 @@ You can add many items as you want, just put`- -` to start a new item.
 
 ### Example
 
-```text
+```
 OraxenTest:
     PriceType: ORAXEN
     Price:
@@ -77,4 +80,3 @@ OraxenTest:
     - - type: oraxen_item_2
       - amount: 10
 ```
-

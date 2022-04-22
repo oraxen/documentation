@@ -2,6 +2,9 @@
 description: >-
   MythicMobs allows you to create custom mobs and bosses with advanced skills
   and attributes
+cover: >-
+  https://cdn.discordapp.com/attachments/896841738621177896/966831974004174858/unknown.png
+coverY: 0
 ---
 
 # MythicMobs - custom mobs
@@ -18,7 +21,7 @@ This feature is provided to you by [yzl210](https://github.com/yzl210), don't he
 
 ### Example
 
-`oraxen custom_material 3-4 0.75`  
+`oraxen custom_material 3-4 0.75`\
 This means that it has **75** percent chance to drop **3 to 4 custom\_material** items.
 
 ## How to equip your mob with an oraxen item?
@@ -40,8 +43,7 @@ _5 is OffHand, but you can't put **offhand**, because MythicMobs's Author didn't
 
 ### Example
 
-`oraxen mainhand custom_sword`  
-It means that you put a **custom\_sword** item in **MainHand**.  
-`oraxen 3 custom_chestplate`  
-It means that you put a **custom\_chestplate** item in **ChestPlate** slot \(as an armor\)
-
+`oraxen mainhand custom_sword`\
+It means that you put a **custom\_sword** item in **MainHand**.\
+`oraxen 3 custom_chestplate`\
+It means that you put a **custom\_chestplate** item in **ChestPlate** slot (as an armor)

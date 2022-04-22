@@ -1,5 +1,8 @@
 ---
 description: also known as "How to superpower Oraxen?"
+cover: >-
+  https://www.veracode.com/sites/default/files/2020-12/developers-hero-developer-center_0.jpg
+coverY: 0
 ---
 
 # Create your own Mechanic
@@ -30,7 +33,7 @@ item -> item.setCustomTag(NAMESPACED_KEY,
 ## Let's create our first mechanic
 
 {% hint style="info" %}
-For this tutorial I will take as an example the durability mechanic \(because it is very simple to understand\) but you can follow this tutorial to create the one you want.
+For this tutorial I will take as an example the durability mechanic (because it is very simple to understand) but you can follow this tutorial to create the one you want.
 {% endhint %}
 
 ### First step: create our mechanic class
@@ -51,7 +54,7 @@ class DurabilityMechanic extends Mechanic {
 
 The Mechanic constructor takes three arguments:
 
-```text
+```
 - An instance of the Factory which created the Mechanic
 - The section used to configure the Mechanic
 - The item modifier(s)
@@ -85,7 +88,7 @@ class DurabilityMechanic extends Mechanic {
 }
 ```
 
-So now we have a DurabilityMechanic class that is able to adapt to any item and that will call our DurabilityModifier class to tell to Oraxen which modifications to do before creating them \(here we just add a data in the item which contains the wanted new durability\).
+So now we have a DurabilityMechanic class that is able to adapt to any item and that will call our DurabilityModifier class to tell to Oraxen which modifications to do before creating them (here we just add a data in the item which contains the wanted new durability).
 
 ### Second step: create our mechanic factory class
 
@@ -105,7 +108,7 @@ class DurabilityMechanicFactory extends MechanicFactory {
 }
 ```
 
-We rewrite the parse method to create a new Mechanic \(via the DurabilityMechanic class created previously\). We also want to tell to Oraxen that this mechanic is successfully implemented and can be loaded using `addToImplemented` method. So our class now looks like that:
+We rewrite the parse method to create a new Mechanic (via the DurabilityMechanic class created previously). We also want to tell to Oraxen that this mechanic is successfully implemented and can be loaded using `addToImplemented` method. So our class now looks like that:
 
 ```java
 public class DurabilityMechanicFactory extends MechanicFactory {
@@ -124,7 +127,7 @@ public class DurabilityMechanicFactory extends MechanicFactory {
 }
 ```
 
-### Third step: add our features \(events\)
+### Third step: add our features (events)
 
 In my case I need to use only one event to play with durability and I will create a DurabilityMechanicsManager class that implements Listener to have a clean and tidy code but I could have done it directly in DurabilityMechanicFactory. I tell to Bukkit which class manages the events when the factory is built:
 
@@ -202,7 +205,7 @@ class DurabilityMechanicsManager implements Listener {
 
 ### Last step: register our mechanic
 
-Just call this line when you load your plugin \(e.g. in your onEnable method\):
+Just call this line when you load your plugin (e.g. in your onEnable method):
 
 ```java
 MechanicsManager.registerMechanicFactory("durability", 
@@ -215,7 +218,7 @@ To properly create a new mechanic it is recommended to separate its code into th
 
 * A factory which extends [MechanicFactory](https://github.com/Th0rgal/Oraxen/blob/master/src/main/java/io/th0rgal/oraxen/items/mechanics/MechanicFactory.java)
 * A mechanic which extends [Mechanic](https://github.com/Th0rgal/Oraxen/blob/master/src/main/java/io/th0rgal/oraxen/items/mechanics/Mechanic.java)
-* Your own features in a &lt;YourMechanicName&gt;MechanicsManager class \(optional too\)
+* Your own features in a \<YourMechanicName>MechanicsManager class (optional too)
 
 {% hint style="info" %}
 While it is possible to modify items using your mechanic thanks to an ItemModifier:
@@ -235,4 +238,3 @@ ResourcePack.addModifiers(packFolder -> {/* your modifications */});
 Finally register your mechanic!
 
 To summarize the tutorial, [here is the complete source code of the durability mechanics](https://github.com/Th0rgal/Oraxen/blob/master/src/main/java/io/th0rgal/oraxen/items/mechanics/provided/durability/DurabilityMechanicFactory.java).
-

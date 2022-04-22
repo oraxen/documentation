@@ -2,6 +2,9 @@
 description: >-
   TrMenu is a free and opensource plugin which allows you to create custom
   inventory GUIs
+cover: >-
+  https://cdn.discordapp.com/attachments/896841738621177896/966832180812714014/unknown.png
+coverY: 0
 ---
 
 # TrMenu - custom inventories

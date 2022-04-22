@@ -1,12 +1,14 @@
 ---
 description: How to install and setup Oraxen on Spigot
+cover: https://images.polymart.org/resource/629/default.jpg
+coverY: 0
 ---
 
 # Getting started
 
 ## What is Oraxen?
 
-Oraxen is a minecraft plugin which allows to easily exploit new Minecraft  1.14 features in order to create new items with custom textures. It handles the resourcepack generation, upload \(using Polymath\) , is fully open source and has an extensible API.
+Oraxen is a minecraft plugin which allows to easily exploit new Minecraft  1.14 features in order to create new items with custom textures. It handles the resourcepack generation, upload (using Polymath) , is fully open source and has an extensible API.
 
 ## How does it work?
 
@@ -21,6 +23,4 @@ Oraxen has been tested with Spigot and PaperSpigot 1.16.5+
 {% endhint %}
 
 Don't want to use ProtocolLib? You can use Oraxen without it but you'll have to disable some mechanics. You'll get the list soon.
-
-
 

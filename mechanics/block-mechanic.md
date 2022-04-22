@@ -1,5 +1,8 @@
 ---
 description: How to add your own blocks to the game
+cover: >-
+  https://cdn.discordapp.com/attachments/896841738621177896/966827878706708560/unknown.png
+coverY: 0
 ---
 
 # Block mechanic
@@ -11,7 +14,7 @@ Unlike items, blocks cannot be added to the game using predicates in a model, in
 The most recent (and recommended) method is to use noteblocks and assign them different models depending on their instrument, their note and whether they are activated or not. This makes 800 possibilities (but 25 are reserved so that the vanilla noteblocks still work).
 
 {% hint style="info" %}
-The block and noteblock mechanics have the same configuration. To switch from one to the other you just have to rename the `block` section to `noteblock` and vice versa.
+The `block (`mushroom block ) and `noteblock` ( noteblock ) mechanics have the same configuration. To switch from one to the other you just have to rename the `block` section to `noteblock` and vice versa.
 {% endhint %}
 
 ## Global configuration
@@ -53,7 +56,7 @@ To use this mechanic you need to tell to oraxen which model to use (to use the g
 
 ```yaml
   Mechanics:
-    block:
+    noteblock:
       custom_variation: 2
       model: my_block
       drop:
@@ -69,7 +72,7 @@ You can customize the breaking speed and the most suitable tools with the hardne
 
 ```yaml
   Mechanics:
-    block:
+    noteblock:
       custom_variation: 2
       model: my_block
       hardness: 20 # this makes it really hard to mine
@@ -84,11 +87,11 @@ You can customize the breaking speed and the most suitable tools with the hardne
 
 ### Produce Light
 
-You can use the option **light** so that your block emits light.
+You can use the option **light** so that your block emits light.&#x20;
 
 ```yaml
   Mechanics:
-    block:
+    noteblock:
     custom_variation: 2
     model: my_block
     light: 5
@@ -97,6 +100,12 @@ You can use the option **light** so that your block emits light.
       loots:
         - {oraxen_item: my_custom_item, probability: 1.0}
 ```
+
+{% hint style="info" %}
+You need Light Api for this
+{% endhint %}
+
+{% embed url="https://www.spigotmc.org/resources/lightapi.4510" %}
 
 ### Ores
 
@@ -127,3 +136,31 @@ amethyst_ore:
           - oraxen_item: amethyst
             probability: 1.0
 ```
+
+### Custom blocks with Custom Model
+
+```yaml
+box_block:
+  displayname: "<white>box"
+  material: PAPER
+  Pack:
+    generate_model: false # because this is a block, a 2nd model pointing to specified one will be generated anyway
+    model: custom/furniture/caja
+  Mechanics:
+    noteblock:
+      custom_variation: 3
+      model: custom/furniture/caja
+      hardness: 6
+      drop:
+        silktouch: false 
+        best_tools:
+          - AXE
+        loots:
+          - { oraxen_item: box_block, probability: 1.0 }
+```
+
+![](https://cdn.discordapp.com/attachments/958524021035647046/961362589735088178/unknown.png)
+
+{% hint style="info" %}
+This feature does not support borders that are less than 16x16x16.
+{% endhint %}

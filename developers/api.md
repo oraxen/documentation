@@ -1,5 +1,8 @@
 ---
 description: How to integrate your plugin with Oraxen
+cover: >-
+  https://www.techyon.es/media/news/full-stack-developer-cu%C3%81les-son-las-principales-competencias_1637600851_21.jpg
+coverY: 0
 ---
 
 # API

@@ -1,5 +1,8 @@
 ---
 description: How to customize your item appearance?
+cover: >-
+  https://cdn.discordapp.com/attachments/896841738621177896/966824489490976798/unknown.png
+coverY: 0
 ---
 
 # Item Appearance
@@ -79,4 +82,18 @@ If you want to use a custom model for a shield, you need to specific the pulling
       - default/combat_bow_pulling_0
       - default/combat_bow_pulling_1
       - default/combat_bow_pulling_2
+```
+
+### Use charged\_models json model (for Crossbows)
+
+```
+  Pack:
+    generate_model: false
+    model: default/custom_bow
+    pulling_models:
+      - default/custom_bow_pulling_0
+      - default/custom_bow_pulling_1
+      - default/custom_bow_pulling_2
+    charged_models: default/custom_bow_pulling_2
+    firework_models: default/custom_bow_charged #not so necessary
 ```

@@ -1,5 +1,8 @@
 ---
 description: Aka how to give superpowers to your items
+cover: >-
+  https://cdn.discordapp.com/attachments/896841738621177896/966834131214422036/unknown.png
+coverY: 0
 ---
 
 # Introduction

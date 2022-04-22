@@ -2,6 +2,9 @@
 description: >-
   A detailed explanation of the items from default configuration (you can add as
   many as you want)
+cover: >-
+  https://cdn.discordapp.com/attachments/896841738621177896/966826870391865364/unknown.png
+coverY: 0
 ---
 
 # Default items
@@ -12,11 +15,11 @@ description: >-
 
 ![](../.gitbook/assets/image.png)
 
-The **emerald armor** gives you some extra hearts and a good protection \(better than diamond\). It doesn't have a big durability though.
+The **emerald armor** gives you some extra hearts and a good protection (better than diamond). It doesn't have a big durability though.
 
 ### Obsidian armor
 
-![](../.gitbook/assets/obsidian_armor.jpg)
+![](../.gitbook/assets/obsidian\_armor.jpg)
 
 The **obsidian armor** is not as good as a diamond armor but has a ludicrous durability.
 
@@ -32,7 +35,7 @@ The **obsidian armor** is not as good as a diamond armor but has a ludicrous dur
 
 ![](../.gitbook/assets/caveblock.jpg)
 
-A **caveblock** is a block which allows you to see through the other blocks \(like a kind of xray\), players LOVE it in faction servers.
+A **caveblock** is a block which allows you to see through the other blocks (like a kind of xray), players LOVE it in faction servers.
 
 ## Hats
 
@@ -44,13 +47,13 @@ A nice **crown** to look like a king which gives you armor protection and armor 
 
 ### Anubis head
 
-![](../.gitbook/assets/anubis_helmet.jpg)
+![](../.gitbook/assets/anubis\_helmet.jpg)
 
 The **anubis** head gives you nightvision and some protection.
 
 ### Witch hat
 
-![](../.gitbook/assets/witch_hat.jpg)
+![](../.gitbook/assets/witch\_hat.jpg)
 
 A nice **witch hat** which gives you armor protection and armor toughness.
 
@@ -72,13 +75,13 @@ A **cog** is an item that can be used to repair an item. You just have to take i
 
 ### Storm sword
 
-![](../.gitbook/assets/storm_sword.png)
+![](../.gitbook/assets/storm\_sword.png)
 
 A incredibly powerful **storm sword** which allows you to strike lightning.
 
 ### **Magical wand**
 
-![](../.gitbook/assets/magical_wand.jpg)
+![](../.gitbook/assets/magical\_wand.jpg)
 
 This **magical wand** has a great animation and looks really cool, you can use it to make an Energy Blast to attack entities.
 
@@ -98,13 +101,13 @@ The **dagger** is a really nice weapon that can be used like a sword. By default
 
 ### Energy crystal sword
 
-![](../.gitbook/assets/energy_crystal_sword.jpg)
+![](../.gitbook/assets/energy\_crystal\_sword.jpg)
 
 The **energy crystal sword** is an incredibly looking sword, optimized for PvP and partially transparent.
 
 ### Blood sword
 
-![](../.gitbook/assets/blood_sword.jpg)
+![](../.gitbook/assets/blood\_sword.jpg)
 
 You can use the **blood sword** to steal hearts from your enemies.
 
@@ -116,19 +119,19 @@ The **katana** is another nice looking sword that you can customize.
 
 ### Octavia sword
 
-![](../.gitbook/assets/octavia_sword.jpg)
+![](../.gitbook/assets/octavia\_sword.jpg)
 
 Like the dagger, the **Octavia sword** is small and nice looking.
 
 ### Obsidian sword
 
-![](../.gitbook/assets/obsidian_sword.jpg)
+![](../.gitbook/assets/obsidian\_sword.jpg)
 
 As powerful as an iron sword ...but so much durable! The **obsidian sword** is really useful.
 
 ### Glass sword
 
-![](../.gitbook/assets/glass_sword.jpg)
+![](../.gitbook/assets/glass\_sword.jpg)
 
 The **glass sword** is a pretty powerful sword but with a low durability.
 
@@ -136,25 +139,25 @@ The **glass sword** is a pretty powerful sword but with a low durability.
 
 ### Axe of experience
 
-![](../.gitbook/assets/axe_of_experience.jpg)
+![](../.gitbook/assets/axe\_of\_experience.jpg)
 
-You can use the **axe of experience** to convert your experience into bottles of experience \(you'll have to lose a few percentage of experience though\).
+You can use the **axe of experience** to convert your experience into bottles of experience (you'll have to lose a few percentage of experience though).
 
 ### Bedrock pickaxe
 
-![](../.gitbook/assets/bedrock_pickaxe.jpg)
+![](../.gitbook/assets/bedrock\_pickaxe.jpg)
 
 You can use the **bedrock pickaxe** to break bedrock and go at the top of the nether for example.
 
 ### Iron serpe
 
-![](../.gitbook/assets/iron_serpe.jpg)
+![](../.gitbook/assets/iron\_serpe.jpg)
 
 This tool allows you to harvest: it will automatically recolt and replant wheat!
 
 ### Obsidian pickaxe
 
-![](../.gitbook/assets/obsidian_pickaxe.jpg)
+![](../.gitbook/assets/obsidian\_pickaxe.jpg)
 
 The **obsidian pickaxe** can be used to break a lot of blocks but is similar to an iron pickaxe.
 
@@ -164,31 +167,30 @@ Hammers are very special pickaxes capable of mining several blocks at the same t
 
 ### **Emerald Hammer**
 
-![](../.gitbook/assets/emerald_hammer.jpg)
+![](../.gitbook/assets/emerald\_hammer.jpg)
 
 The most basic hammer you can find is the **Emerald Hammer**, it mines a square of 3 blocks per 3 blocks, this is cool in order to start but definitively not the best you can get.
 
 ### Amethyst Hammer
 
-![](../.gitbook/assets/amethyst_hammer.jpg)
+![](../.gitbook/assets/amethyst\_hammer.jpg)
 
 Unlike the Emerald Hammer, the **Amethyst Hammer** mines a square of 3 blocks per 3 blocks too but with a depth of two blocks.
 
 ### Onyx Hammer
 
-![](../.gitbook/assets/onyx_hammer.jpg)
+![](../.gitbook/assets/onyx\_hammer.jpg)
 
 Take the Amethyst Hammer, improve it and you've got the **Onyx Hammer**. It can break more blocks than the Amethyst Hammer because it has a big durability.
 
 ### Orax Hammer
 
-![](../.gitbook/assets/orax_hammer.jpg)
+![](../.gitbook/assets/orax\_hammer.jpg)
 
 Compared to his brothers, the **Orax Hammer** is a god like hammer : it can mine a really big square with a depth of two blocks.
 
 ### Fire Hammer
 
-![](../.gitbook/assets/fire_hammer.jpg)
+![](../.gitbook/assets/fire\_hammer.jpg)
 
-The **Fire Hammer** mines like a basic hammer \(3 blocks per 3 blocks, depth of 1\) but it actually melts ores instantly! If you mine iron ore for example you'll immediatly get rewarded with iron ingots ...and it stacks with fortune!
-
+The **Fire Hammer** mines like a basic hammer (3 blocks per 3 blocks, depth of 1) but it actually melts ores instantly! If you mine iron ore for example you'll immediatly get rewarded with iron ingots ...and it stacks with fortune!

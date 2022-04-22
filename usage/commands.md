@@ -1,5 +1,8 @@
 ---
 description: A simple explanation to use the plugin commands
+cover: >-
+  https://cdn.discordapp.com/attachments/896841738621177896/966827022758330398/unknown.png
+coverY: 0
 ---
 
 # Commands
@@ -14,7 +17,7 @@ For this tutorial we will use /o because it is the shortest, but if this command
 
 ### For testing
 
-The main benefit of this method is that it allows you to see all the items at the same time and therefore to be more efficient \(you just have to click on an item to make it appear in your inventory\). But you can't use it to automatically give an item to another player \(for example from the shop\).
+The main benefit of this method is that it allows you to see all the items at the same time and therefore to be more efficient (you just have to click on an item to make it appear in your inventory). But you can't use it to automatically give an item to another player (for example from the shop).
 
 #### Usage:
 
@@ -67,7 +70,7 @@ oraxen.command.repair # Allows to use the /o repair command
 
 ### Repair all items in your inventory
 
-This command can be used to repair every single item in your inventory \(or in your armor slots\). You can configure the plugin to repair only items using oraxen custom durability or also vanilla durability.
+This command can be used to repair every single item in your inventory (or in your armor slots). You can configure the plugin to repair only items using oraxen custom durability or also vanilla durability.
 
 #### Usage:
 
@@ -84,9 +87,9 @@ oraxen.command.repair.all # Allows to use the /o repair all command
 
 ## Manage recipes
 
-This command allows you to add new recipes to the configuration directly from the game using recipes builder. For more information on how to use it, see [Recipes](recipes.md). 
+This command allows you to add new recipes to the configuration directly from the game using recipes builder. For more information on how to use it, see [Recipes](recipes.md).&#x20;
 
-![Recipe showcase using /o recipe show all](../.gitbook/assets/recipe_showcase.png)
+![Recipe showcase using /o recipe show all](../.gitbook/assets/recipe\_showcase.png)
 
 #### Usage:
 
@@ -122,7 +125,7 @@ oraxen.command.pack # Allows you to use /o pack
 
 ## Reload
 
-This command allows you to reload oraxen configurations quickly and without causing bugs \(you cannot reload oraxen using plugman\). However, it should be noted that for the time being, customs crafts created with oraxen cannot be reloaded.
+This command allows you to reload oraxen configurations quickly and without causing bugs (you cannot reload oraxen using plugman). However, it should be noted that for the time being, customs crafts created with oraxen cannot be reloaded.
 
 #### Usage
 
@@ -152,4 +155,3 @@ It will depend on the situation and will often change with the updates of oraxen
 ```yaml
 oraxen.command.debug # Allows you to use /o debug
 ```
-

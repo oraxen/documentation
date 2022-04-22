@@ -2,6 +2,9 @@
 description: >-
   This mechanism allows you to realize an extremely customizable mechanism
   without programming
+cover: >-
+  https://cdn.discordapp.com/attachments/896841738621177896/966825489098489856/unknown.png
+coverY: 0
 ---
 
 # Custom mechanic
@@ -29,7 +32,7 @@ Mechanics:
       conditions:
         - "HAS_PERMISSION:example.permission"
       actions:
-        - "COMMAND:console:give <player> cooked_beef 1"
+        - "[console] give <player> cooked_beef 1"
 ```
 
 In this example, the subsection `test` defines a custom mechanic triggered when someone right click (on a block or in the air). If this player has the permission `example.permission`, the console will perform the give command and replace \<player> by the player name. The item won't be consumed (oneUsage: false).

@@ -1,5 +1,8 @@
 ---
 description: RWG is a paid world generator
+cover: >-
+  https://cdn.discordapp.com/attachments/896841738621177896/966833048731660338/unknown.png
+coverY: 0
 ---
 
 # RealisticWorldGenerator

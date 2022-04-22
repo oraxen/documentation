@@ -1,5 +1,8 @@
 ---
 description: All the subtleties of item creation
+cover: >-
+  https://cdn.discordapp.com/attachments/896841738621177896/966824770651967498/unknown.png
+coverY: 0
 ---
 
 # Items (advanced)
@@ -50,7 +53,7 @@ This allows Oraxen to know recognise the item, it is by default set to true and 
 
 ### excludeFromInventory
 
-This option allows you to exclude an item from the oraxen inventory. It will no longer be displayed but you can still get it using [oraxen give command](../usage/commands.md#get-the-items). It is useful for items used in  other plugins like inventory icons.
+This option allows you to exclude an item from the oraxen inventory. It will no longer be displayed but you can still get it using [oraxen give command](../../usage/commands.md#get-the-items). It is useful for items used in  other plugins like inventory icons.
 
 ```yaml
   excludeFromInventory: true
@@ -181,8 +184,8 @@ soul_speed
 
 ## Pack options
 
-This part has a dedicated page, you can consult it [here](item-appearance.md).
+This part has a dedicated page, you can consult it [here](../item-appearance.md).
 
 ## Mechanics options
 
-This part has a dedicated page, you can consult it [here](../mechanics/mechanics-introduction.md).
+This part has a dedicated page, you can consult it [here](../../mechanics/mechanics-introduction.md).
