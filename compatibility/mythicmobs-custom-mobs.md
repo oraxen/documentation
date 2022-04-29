@@ -9,6 +9,10 @@ coverY: 0
 
 # MythicMobs - custom mobs
 
+{% hint style="info" %}
+If the plugin does not work with MythicMobs, use version 5.0.2.
+{% endhint %}
+
 This feature is provided to you by [yzl210](https://github.com/yzl210), don't hesitate to thank him!
 
 

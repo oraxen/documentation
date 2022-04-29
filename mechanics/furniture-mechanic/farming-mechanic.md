@@ -124,4 +124,7 @@ The plants can have the stages you decide, and the stages have to be a model cre
 **delay** the time in ticks that it takes to grow \
 **probability** to grow when the delay is passed \
 **light\_boost** when it has light nearby it grows faster \
-**next\_stage** you specify the next stage, it has to be an already created Oraxen item.
+**next\_stage** you specify the next stage, it has to be an already created Oraxen item.\
+**farmland\_required** [dedicated tutorial page](../block-mechanic/block-mechanic.md)
+
+****
