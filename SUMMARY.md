@@ -32,6 +32,7 @@
   * [Furtniture Position](mechanics/furniture-mechanic/furtniture-position.md)
   * [Farming Mechanic](mechanics/furniture-mechanic/farming-mechanic.md)
 * [Block mechanic](mechanics/block-mechanic/README.md)
+  * [Stripped log Mechanic](mechanics/block-mechanic/stripped-log-mechanic.md)
   * [Farmblock Mechanic](mechanics/block-mechanic/block-mechanic.md)
 * [StringBlock Mechanic](mechanics/stringblock-mechanic.md)
 
