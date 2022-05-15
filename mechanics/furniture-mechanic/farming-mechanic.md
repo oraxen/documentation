@@ -26,7 +26,8 @@ rose_seed:
       item: rose_plant_stage1
       facing: UP
       barrier: false
-      farmland_required: true
+      farmblock_required: true
+      dryout: 10000
       evolution:
         delay: 10000
         probability: 0.5
@@ -39,14 +40,6 @@ rose_seed:
   Pack:
     generate_model: false
     model: custom/plants/rose_stage_1
-
-rose_plant_stage0:
-  material: PAPER
-  excludeFromInventory: true
-  Pack:
-    generate_model: false
-    model: custom/plants/rose_stage_1
-    custom_model_data: 327
 ```
 
 ### First stage
@@ -58,7 +51,8 @@ rose_plant_stage1:
     furniture:
       facing: UP
       barrier: false
-      farmland_required: true
+      farmblock_required: true
+      dryout: 10000
       evolution:
         delay: 10000
         probability: 0.5
@@ -82,7 +76,8 @@ rose_plant_stage2:
     furniture:
       facing: UP
       barrier: false
-      farmland_required: true
+      farmblock_required: true
+      dryout: 10000
       evolution:
         delay: 10000
         probability: 0.5
@@ -107,7 +102,12 @@ rose_plant_stage3:
     furniture:
       facing: UP
       barrier: false
-      farmland_required: true
+      farmblock_required: true
+      dryout: 10000
+      evolution:
+        delay: 100000
+        probability: 0.25
+        light_boost: true
       drop:
         silktouch: true
         loots:
@@ -124,7 +124,8 @@ The plants can have the stages you decide, and the stages have to be a model cre
 **delay** the time in ticks that it takes to grow \
 **probability** to grow when the delay is passed \
 **light\_boost** when it has light nearby it grows faster \
-**next\_stage** you specify the next stage, it has to be an already created Oraxen item.\
-**farmland\_required** [dedicated tutorial page](../block-mechanic/block-mechanic.md)
+**next\_stage** you specify the next stage, it has to be an already created Oraxen item.
+
+**farmblock\_required** [dedicated tutorial page](../block-mechanic/block-mechanic.md)
 
 ****

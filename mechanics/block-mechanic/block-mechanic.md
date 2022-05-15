@@ -46,6 +46,7 @@ epic_box_dry:
   material: PAPER
   Pack:
     generate_model: false
+    model: epic_box_dry
     custom_model_data: 83
   Mechanics:
     noteblock:
@@ -62,6 +63,7 @@ epic_box_wet:
   material: PAPER
   Pack:
     generate_model: false
+    model: epic_box_wet
     custom_model_data: 84
   Mechanics:
     noteblock:

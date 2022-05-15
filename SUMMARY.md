@@ -16,9 +16,9 @@
 * [Items (beginners)](configuration/create-your-first-item.md)
 * [Items (advanced)](configuration/items-advanced/README.md)
   * [Dyeable Items](configuration/items-advanced/dyeable-items.md)
-* [Item Appearance](configuration/item-appearance.md)
 * [Custom Armors](configuration/custom-armors/README.md)
   * [Shader Armors](configuration/custom-armors/shader-armors.md)
+* [Item Appearance](configuration/item-appearance.md)
 * [Glyphs](configuration/glyphs/README.md)
   * [Custom Gui](configuration/glyphs/custom-gui.md)
 
@@ -33,6 +33,7 @@
   * [Farming Mechanic](mechanics/furniture-mechanic/farming-mechanic.md)
 * [Block mechanic](mechanics/block-mechanic/README.md)
   * [Stripped log Mechanic](mechanics/block-mechanic/stripped-log-mechanic.md)
+  * [Directional mechanic](mechanics/block-mechanic/directional-mechanic.md)
   * [Farmblock Mechanic](mechanics/block-mechanic/block-mechanic.md)
 * [StringBlock Mechanic](mechanics/stringblock-mechanic.md)
 
@@ -52,7 +53,7 @@
 
 ## Developers
 
-* [API](developers/api.md)
 * [Create your own Mechanic](developers/mechanics.md)
 * [Add Compatibility with a plugin](developers/create-your-own-compatibility.md)
 * [Custom hosting service](developers/custom-hosting-service.md)
+* [API](developers/api.md)
