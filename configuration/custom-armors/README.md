@@ -35,6 +35,10 @@ Because I'm using a simple 2d texture in the inventory, I will use the oraxen mo
 
 I also specified a RGB color: `252, 3, 28`, which is equals to in hexadecimal: `#FC031C`. It's a beautiful red but I could've used anything.&#x20;
 
+{% hint style="info" %}
+If you don't change the color the armors will look the same as another one!
+{% endhint %}
+
 ```yaml
 ruby_helmet: # BE CAREFUL TO NAME IT armorsetname_armorpart
   displayname: "<gradient:#FA7CBB:#F14658>Ruby Helmet"

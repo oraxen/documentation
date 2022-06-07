@@ -53,5 +53,29 @@ Second option: Join [the discord](https://discord.gg/4Qk5kBT9UX), get your Oraxe
 
 
 
+### I just want to use Oraxen's mechanics.
+
+Go to settings.yml and set these options
+
+```yaml
+  upload:
+    enabled: false
+Pack:
+  generation:
+    generate: false
+    compression: BEST_COMPRESSION
+    protection: false
+  dispatch:
+    send_pack: false
+  automatically_set_model_data: true
+  automatically_set_glyph_code: true
+  enable_configs_updater: false
+Misc:
+  reset_recipes: false
+  auto_update_items: false
+```
+
+The configurations do not go in that order, once this is done, delete what is inside the Oraxen/pack, Oraxen/Items/ and Oraxen/glyphs paths.
+
 
 

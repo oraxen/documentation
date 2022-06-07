@@ -88,3 +88,7 @@ Mechanics:
       loots:
         - { oraxen_item: table, probability: 1.0 }
 ```
+
+### Video Tutorial
+
+{% embed url="https://www.youtube.com/watch?t=329s&v=ch4Fufti5Rg" %}

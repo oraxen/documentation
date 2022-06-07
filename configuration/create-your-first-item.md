@@ -11,7 +11,7 @@ Today I want to create a new super rare object. By the way, it's funny how playe
 
 ## 1. Let's start by creating textures
 
-For this tutorial I will make a simple item in 2d and Oraxen will generate the model, but if you want you can use software like [cubik.studio](https://cubik.studio) (paid) or [blockbench](https://www.blockbench.net) (free + opensource) which are both excellent.
+For this tutorial I will make a simple item in 2d and Oraxen will generate the model, but if you want you can use software like [cubik.studio](https://cubik.studio/) (paid) or [blockbench](https://www.blockbench.net) (free + opensource) which are both excellent.
 
 Here's what I did in 16x16 (so it still looks like vanilla minecraft) on Photoshop:
 
@@ -97,3 +97,7 @@ I'm also able to mine bedrock:
 {% hint style="success" %}
 If you have come this far, congratulations you have created your own item 👍
 {% endhint %}
+
+### Video Tutorial
+
+{% embed url="https://www.youtube.com/watch?t=4s&v=kjN9uPcu3hc" %}

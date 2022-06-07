@@ -182,6 +182,17 @@ vanishing_curse
 soul_speed
 ```
 
+### How do I set a specific Custom Model Data?
+
+```yaml
+  Pack:
+    generate_model: true
+    parent_model: "custom/items/generated_elite"
+    textures:
+      - custom/items/elite_zombie_walk
+    custom_model_data: 452
+```
+
 ## Pack options
 
 This part has a dedicated page, you can consult it [here](../item-appearance.md).

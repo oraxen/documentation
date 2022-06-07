@@ -32,7 +32,7 @@ rose_seed:
         delay: 10000
         probability: 0.5
         light_boost: true
-        next_stage: weed_plant_stage1
+        next_stage: rose_plant_stage1
       drop:
         silktouch: true
         loots:

@@ -28,3 +28,4 @@ Don't want to use ProtocolLib? You can use Oraxen without it but you'll have to 
 If you use 1.16-1.17 use Oraxen version 1.119.
 {% endhint %}
 
+If you upgrade or downgrade your version remember to update mechanics.yml by removing it.
