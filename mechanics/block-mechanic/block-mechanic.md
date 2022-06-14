@@ -7,6 +7,10 @@ coverY: 0
 
 # Farmblock Mechanic
 
+{% hint style="info" %}
+only for 1.134.0+
+{% endhint %}
+
 ## How does it work?
 
 This is a block system for custom plants and crops where you have your own watering system to make the plant grow.

@@ -6,6 +6,10 @@ coverY: 0
 
 # StringBlock Mechanic
 
+{% hint style="info" %}
+only for 1.123.0+
+{% endhint %}
+
 ## How does it work?
 
 This is a variable of the custom blocks, but now you have to have a thread-based hitbox that allows you to make small decorative objects that can be traversed and are more optimized than furniture and the custom\_variation is different from that of the blocks.

@@ -6,6 +6,10 @@ coverY: 0
 
 # Directional mechanic
 
+{% hint style="info" %}
+only for 1.135.1+
+{% endhint %}
+
 ### What is this?
 
 This mechanic allows you to place blocks and have them change their texture depending on the position in which they are placed, like the normal minecraft logs but now with custom blocks.

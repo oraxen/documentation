@@ -6,6 +6,10 @@ coverY: 0
 
 # Stripped log Mechanic
 
+{% hint style="info" %}
+only for 1.134.0+
+{% endhint %}
+
 ## What is this?
 
 Minecraft has a function that allows you to click to build with an axe on trees and leave them bare, well Oraxen allows you to do it with custom blocks.\
