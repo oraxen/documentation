@@ -28,6 +28,15 @@ heart:
 
 {% embed url="https://unicode-table.com/en/search?q=3000" %}
 
+## Emoji List
+To make a glyph appear under `/oraxen emoji list` you need to specify that it is one, like below.  
+If not specified, this will default to `false`
+```yaml
+heart:
+  texture: default/chat/heart
+  is_emoji: true
+```
+
 ## How to use it in the chat?
 
 You need to add a chat subsection to your glyph section:
@@ -41,11 +50,25 @@ chat:
 
 The placeholders can be used in chat by players with the required permission (if permission is specified, it is not mandatory).
 
-
+## How to make glyphs tabcomplete?
+Simply set `tabcomplete: true` in the chat-section.  
+If not specified, this will default to `false`
+```yaml
+chat:
+  tabcomplete: true
+  tab_icon_texture: "something" # Not recommended to change from default unless you know how
+  tab_icon_signature: "something" # Not recommended to change from default unless you know how
+  placeholders:
+    - "<3"
+  permission: "oraxen.emoji.heart"
+```
+You can also change the icon displayed in tablist if you want to.  
+Simply change the `tab_icon_texture` and `tab_icon_signature` fields.  
+Unless you know how to get textures and signatures, it is recommended to leave them unspecified.
 
 ## PlaceHolderApi
 
-## What's my glyph placeholder?
+### What's my glyph placeholder?
 
 When you define a glyph in font.yml, you define a subsection. For example:
 
@@ -62,7 +85,7 @@ The section name is the glyph id. In this example the glyph id is `heart`, the p
 
 ### How do I use this in Luckperms or in the lore of an item?
 
-You have to use the command `/papi parse <any_user> %oraxen_ghyphid%`&#x20;
+You have to use the command `/papi bcparse me %oraxen_ghyphid%`&#x20;
 
 to get the symbol that you can use wherever you want!, the token is universal and works for all users.
 
