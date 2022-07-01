@@ -36,7 +36,7 @@
   * [Directional mechanic](mechanics/block-mechanic/directional-mechanic.md)
   * [Farmblock Mechanic](mechanics/block-mechanic/block-mechanic.md)
 * [StringBlock Mechanic](mechanics/stringblock-mechanic/README.md)
-  * [Sappling Mechanic](mechanics/stringblock-mechanic/sappling-mechanic.md)
+  * [Sappling Mechanic](mechanics/stringblock-mechanic/sapling-mechanic.md)
 
 ## Compatibility
 

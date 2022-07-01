@@ -3,7 +3,7 @@ cover: https://i.pinimg.com/originals/d4/77/45/d47745d48330de3e7fec0691ef0b32b9.
 coverY: 0
 ---
 
-# Sappling Mechanic
+# Sapling Mechanic
 
 {% hint style="info" %}
 only for 1.136.0+
@@ -28,18 +28,10 @@ stringblock:
     enabled: true
 ```
 
-## How do I create a decoration?
-
-### Oraxen item and Pack configuration
-
+## How do I create a sapling?
+Add the below section to your stringblock of choice.
 ```yaml
 sapling:
-  displayname: "Sapling"
-  material: PAPER
-  Pack:
-    generate_model: false
-    custom_model_data: 415
-    model: flowers/maricold_tall
   Mechanics:
     stringblock:
       sapling:
@@ -51,17 +43,9 @@ sapling:
         minLightLevel: 4
         requiresWaterSource: false #if you want it to need water
         schematicName: schemTest #structure that will put
-      break_sound: block.grass.break
-      place_sound: block.grass.place
-      custom_variation: 23
-      model: flowers/maricold_tall
-      hardness: 2
-      drop:
-        silktouch: false
-        loots:
-        - oraxen_item: sapling
-          probability: 1.0
 ```
+You can also add some randomness to the growth, or just increase the delay between checks.  
+Go into `mechanics.yml` and under stringblock-mechanic, adjust `sapling_growth_check_delay` (20 = 1 second).
 
 {% embed url="https://cdn.discordapp.com/attachments/743544047733440582/985657454400532580/2022-06-12_16-29-55.mp4" %}
 
