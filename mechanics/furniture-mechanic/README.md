@@ -71,6 +71,20 @@ barriers:
     - { x: 1, y: 0, z: 2 }
 ```
 
+# Seats
+<b>Seats are only available when barriers are enabled.</b>  
+Currently it will also spawn a seat for every barrier, if there is multiple ones.  
+You can alter the height-offset of seats with the following configuration:  
+
+```yaml
+seat: { height: 0.5 }
+```
+You can also adjust the rotation if desired by adding a yaw section.  
+Keep in mind it is recommended to leave this off
+```yaml
+seat: { height: -0.5, yaw: 90 }
+```
+
 ## Light
 
 You can configure your furniture so it produces light. To do so you need to install this plugin: [LightAPI](https://www.spigotmc.org/resources/lightapi.4510/).

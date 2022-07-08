@@ -122,7 +122,11 @@ amethyst_ore:
       - amethyst_ore
   Mechanics:
     noteblock:
-      break_sound: BLOCK_STONE_BREAK
+      place_sound: block.stone.place
+      break_sound: block.stone.break
+      hit_sound: my.custom.hitsound     # Custom sound as defined in Oraxen/sound.yml
+      step_sound: my.custom.stepsound   # Requires a sound-file in the Oraxen/pack-folder aswell
+      fall_sound: my.custom.fallsound
       custom_variation: 1
       model: amethyst_ore
       hardness: 6
