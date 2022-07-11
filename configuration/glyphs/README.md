@@ -75,7 +75,8 @@ When you define a glyph in font.yml, you define a subsection. For example:
 
 
 ```
-code: 3000  
+heart:
+  code: 3000  
   texture: default/chat/heart
   ascent: 8
   height: 8
