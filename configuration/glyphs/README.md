@@ -66,6 +66,9 @@ You can also change the icon displayed in tablist if you want to.
 Simply change the `tab_icon_texture` and `tab_icon_signature` fields.  
 Unless you know how to get textures and signatures, it is recommended to leave them unspecified.
 
+## Do not remove shifts.yml
+It is essential and deleting the file would break the plugin
+
 ## PlaceHolderApi
 
 ### What's my glyph placeholder?
