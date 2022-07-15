@@ -83,14 +83,20 @@ code: 3000
 
 The section name is the glyph id. In this example the glyph id is `heart`, the placeholder is `%oraxen_glyphid%`, so in this example: `%oraxen_heart%`
 
-### How do I use this in Luckperms or in the lore of an item?
+### How do I use this in Luckperms
 
-You have to use the command `/papi bcparse me %oraxen_ghyphid%`&#x20;
+To use a glyph in a luckperms prefix, you need to get the raw unicode.  
+You can use the following command to get the unicode from any glyph:  
+`/oraxen printglyph glyph_id`  
+This will copy the unicode to your clipboard.  
+You can also replace glyph_id with `all` to get a list of all your glyphs.  
+Below you can see what this looks like.  
+If you click, say `[dye_menu]` it will copy its unicode and you can simply paste it where you need it.  
+The glyph is also shown when you hover over the glyph-id.
+![](https://user-images.githubusercontent.com/36164338/178945511-447ce8f7-28be-4687-bc02-8ef9b3f935ab.png)
 
-to get the symbol that you can use wherever you want!, the token is universal and works for all users.
 
-
-
+### How do I use a glyph in name/lore of an item?
 Any glyph can be used in name and lore of your item configurations.
 
 ```
