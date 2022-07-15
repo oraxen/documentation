@@ -20,6 +20,10 @@ The textures must be maximum 256x256 and normally they will look a bit uneven in
 
 ![](https://images-ext-2.discordapp.net/external/lXJpPHHy3JFqjn9qU\_JpNHjaP2edFMFvnQjuYvTghYE/https/mcmodels.net/wp-content/uploads/2022/01/image-1.png)
 
+### How do I get the unicode for the glyph?
+As mentioned in the previous section, you need to get the raw unicode for this.  
+You can see the command and example [here](https://docs.oraxen.com/configuration/glyphs#how-do-i-use-this-in-luckperms)
+
 ### How do I create an invisible item?
 
 {% hint style="info" %}
