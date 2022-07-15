@@ -26,7 +26,7 @@ heart:
   height: 8
 ```
 
-{% embed url="https://unicode-table.com/en/search?q=3000" %}
+{% embed url="https://unicode-table.com/en/search?q=3000" %}{% embed url="https://docs.oraxen.com/usage/commands#print-glyphs" %}
 
 ## Emoji List
 To make a glyph appear under `/oraxen emoji list` you need to specify that it is one, like below.  
