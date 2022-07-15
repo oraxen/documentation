@@ -123,6 +123,22 @@ This command allows you to interact with the Oraxen pack: send the configured me
 oraxen.command.pack # Allows you to use /o pack
 ```
 
+## Print glyphs
+This command allows you to print glyphs and unicode characters in chat so that you can copy them by clicking on them
+
+#### Usage:
+```yaml
+/o printfont <glyphname/"all"> # prints the requested glyph or print all the glyphs
+/o printfont <unicode>         # prints the requested unicode (ex. "E100") in a json message 
+/o printfont <unicode>+<range> # prints a range of unicode characters starting by the first parameter (ex of argument: "E000+10" prints E000 and the next 10 characters)
+```
+
+#### Permission:
+
+```yaml
+oraxen.command.printfont # Allows you to use /o printfont
+```
+
 ## Reload
 
 This command allows you to reload oraxen configurations quickly and without causing bugs (you cannot reload oraxen using plugman). However, it should be noted that for the time being, customs crafts created with oraxen cannot be reloaded.
