@@ -129,8 +129,8 @@ This command allows you to print glyphs and unicode characters in chat so that y
 #### Usage:
 ```yaml
 /o printfont <glyphname/"all"> # prints the requested glyph or print all the glyphs
-/o printfont <unicode>         # prints the requested unicode (ex. "E100") in a json message 
-/o printfont <unicode>+<range> # prints a range of unicode characters starting by the first parameter (ex of argument: "E000+10" prints E000 and the next 10 characters)
+/o printfont <unicodehex>         # prints the requested unicode hex code (ex. "E100") in a json message 
+/o printfont <unicodehex>+<range> # prints a range of unicode characters starting by the first hexcode (ex of command: "/o printfont E000+10" prints E000 and the next 10 characters)
 ```
 
 #### Permission:
