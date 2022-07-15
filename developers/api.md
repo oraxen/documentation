@@ -33,6 +33,7 @@ In order to use Oraxen API, you need to add the jarfile to your classpath. You c
 	    <groupId>com.github.oraxen</groupId>
 	    <artifactId>oraxen</artifactId>
 	    <version>-SNAPSHOT</version>
+	    <scope>provided</scope>
 	</dependency>
 ```
 
