@@ -67,7 +67,10 @@ Simply change the `tab_icon_texture` and `tab_icon_signature` fields.
 Unless you know how to get textures and signatures, it is recommended to leave them unspecified.
 
 ## Do not remove shifts.yml
-It is essential and deleting the file would break the plugin
+This file is used elsewhere in the default pack and removing it improperly will make the plugin fail to load.  
+There is no real reason to delete this file. It will simply be recreated on startup.  
+If you know what you are doing, changes made inside the file will not be overwritten, only if deleting the file.
+Same applies to `interface.yml`. They are used in for example language files, so deleting them means those fail.
 
 ## PlaceHolderApi
 
