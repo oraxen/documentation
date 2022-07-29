@@ -29,14 +29,17 @@ heart:
 {% embed url="https://unicode-table.com/en/search?q=3000" %}{% embed url="https://docs.oraxen.com/usage/commands#print-glyphs" %}
 
 ## Emoji List
-To make a glyph appear under `/oraxen emoji list` you need to specify that it is one, like below.  
+To make a glyph appear under `/oraxen emojis` you need to specify that it is one, like below.  
 If not specified, this will default to `false`
 ```yaml
 heart:
   texture: default/chat/heart
   is_emoji: true
 ```
-
+It will also, by default, only show emojis the player has the permission for.  
+In `settings.yml` you can toggle the `only_show_emojis_with_permission` setting.  
+This will show all emojis to every player, and adds a hover-message indicating if they have permission or not.
+![img](https://cdn.discordapp.com/attachments/758785982005903431/1002564595099111474/unknown.png)
 ## How to use it in the chat?
 
 You need to add a chat subsection to your glyph section:
