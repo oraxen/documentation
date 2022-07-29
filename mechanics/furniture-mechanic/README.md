@@ -85,6 +85,46 @@ Keep in mind it is recommended to leave this off
 seat: { height: -0.5, yaw: 90 }
 ```
 
+### Limited placing
+You can customize what blocks a custom block/furniture can be placed on with `limited_placing` subsection.  
+There is both an `allow_on` and a `deny_on` subsection of this.
+
+If there is no `allow_on` or `deny_on` section, then the block can be placed on everything.  
+If there is both `allow_on` and `deny_on` sections, then it only takes `allow_on` into account.
+
+If there is an `allow_on` section, but no `deny_on` section, the block can only be placed on blocks in `allow_on` section.
+```yaml
+Mechanics:
+  furniture:
+    limited_placing:
+      allow_on:
+        block_types:
+          - GRASS_BLOCK
+          - STONE
+        block_tags:
+          - wool
+        oraxen_blocks:
+          - my_block
+```
+If there is no `allow_on` section, but there is a `deny_on`, the block can be placed on anything not in `deny_on` section.
+```yaml
+Mechanics:
+  furniture:
+    limited_placing:
+      deny_on:
+        block_types:
+          - GRASS_BLOCK
+          - STONE
+        block_tags:
+          - wool
+        oraxen_blocks:
+          - my_block
+```
+The `block_tags` can be found at [this page](https://minecraft.fandom.com/wiki/Tag#Block_tags). Useful if you want to allow/deny a group of blocks.  
+The `block_types` are materials. Useful if you want to allow/deny a specific list block.  
+The `oraxen_blocks` are blocks defined in the oraxen configuration.  
+This allows all custom blocks and furniture in here, but furniture requires a barrier-hitbox.
+
 ## Light
 
 You can configure your furniture so it produces light. To do so you need to install this plugin: [LightAPI](https://www.spigotmc.org/resources/lightapi.4510/).

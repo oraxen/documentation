@@ -55,15 +55,15 @@ my_block:
 To use this mechanic you need to tell to oraxen which model to use (to use the generated one, just put the name id of your item). You then need to use custom\_variation which is not already used by another block (since by default 1 is used by caveblock, you can for example use 2). This example drop configurations allows you to get the drop when you mine it with a stone pickaxe.
 
 ```yaml
-  Mechanics:
-    noteblock:
-      custom_variation: 2
-      model: my_block
-      drop:
-        silktouch: false 
-        minimal_type: STONE
-        loots:
-          - {oraxen_item: caveblock, probability: 1.0}
+Mechanics:
+  noteblock:
+    custom_variation: 2
+    model: my_block
+    drop:
+      silktouch: false 
+      minimal_type: STONE
+      loots:
+        - {oraxen_item: caveblock, probability: 1.0}
 ```
 
 ### Customize the breaking speed
@@ -71,27 +71,67 @@ To use this mechanic you need to tell to oraxen which model to use (to use the g
 You can customize the breaking speed and the most suitable tools with the hardness subsection.
 
 ```yaml
-  Mechanics:
-    noteblock:
-      custom_variation: 2
-      model: my_block
-      hardness: 20 # this makes it really hard to mine
-      drop:
-        silktouch: false 
-        minimal_type: STONE
-        best_tools:
-          - PICKAXE # and it's faster using a pickaxe
-        loots:
-          - {oraxen_item: caveblock, probability: 1.0}
+Mechanics:
+  noteblock:
+    custom_variation: 2
+    model: my_block
+    hardness: 20 # this makes it really hard to mine
+    drop:
+      silktouch: false 
+      minimal_type: STONE
+      best_tools:
+        - PICKAXE # and it's faster using a pickaxe
+      loots:
+        - {oraxen_item: caveblock, probability: 1.0}
 ```
+
+### Limited placing
+You can customize what blocks a custom block/furniture can be placed on with `limited_placing` subsection.  
+There is both an `allow_on` and a `deny_on` subsection of this.  
+
+If there is no `allow_on` or `deny_on` section, then the block can be placed on everything.  
+If there is both `allow_on` and `deny_on` sections, then it only takes `allow_on` into account.  
+
+If there is an `allow_on` section, but no `deny_on` section, the block can only be placed on blocks in `allow_on` section.
+```yaml
+Mechanics:
+  noteblock:
+    limited_placing:
+      allow_on:
+        block_types:
+          - GRASS_BLOCK
+          - STONE
+        block_tags:
+          - wool
+        oraxen_blocks:
+          - my_block
+```
+If there is no `allow_on` section, but there is a `deny_on`, the block can be placed on anything not in `deny_on` section.
+```yaml
+Mechanics:
+  noteblock:
+    limited_placing:
+      deny_on:
+        block_types:
+          - GRASS_BLOCK
+          - STONE
+        block_tags:
+          - wool
+        oraxen_blocks:
+          - my_block
+```
+The `block_tags` can be found at [this page](https://minecraft.fandom.com/wiki/Tag#Block_tags). Useful if you want to allow/deny a group of blocks.  
+The `block_types` are materials. Useful if you want to allow/deny a specific list block.  
+The `oraxen_blocks` are blocks defined in the oraxen configuration.  
+This allows all custom blocks and furniture in here, but furniture requires a barrier-hitbox.
 
 ### Produce Light
 
 You can use the option **light** so that your block emits light.&#x20;
 
 ```yaml
-  Mechanics:
-    noteblock:
+Mechanics:
+  noteblock:
     custom_variation: 2
     model: my_block
     light: 5
