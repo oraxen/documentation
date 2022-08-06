@@ -40,6 +40,11 @@ table:
     model: default/table
   Mechanics:
     furniture:
+      place_sound: "block.wood.place"
+      break_sound: "block.wood.break"
+      hit_sound: "block.wood.hit"
+      step_sound: "block.wood.step"
+      fall_sound: "block.wood.fall"
       rotation: NONE
       facing: UP
       barrier: true
@@ -47,6 +52,18 @@ table:
         silktouch: false
         loots:
           - { oraxen_item: table, probability: 1.0 }
+```
+## Custom Sounds
+Furniture, like custom blocks, can have custom sounds.  
+Currently the options are place/break/hit/step/fall.
+```yaml
+Mechanics:
+  furniture:
+    place_sound: "block.wood.place"
+    break_sound: "block.wood.break"
+    hit_sound: "block.wood.hit"
+    step_sound: "block.wood.step"
+    fall_sound: "block.wood.fall"
 ```
 
 ## Barriers
