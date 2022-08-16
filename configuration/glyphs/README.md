@@ -75,7 +75,7 @@ There is no real reason to delete this file. It will simply be recreated on star
 If you know what you are doing, changes made inside the file will not be overwritten, only if deleting the file.
 Same applies to `interface.yml`. They are used in for example language files, so deleting them means those fail.
 
-## PlaceHolderApi
+## PlaceholderAPI
 
 ### What's my glyph placeholder?
 
