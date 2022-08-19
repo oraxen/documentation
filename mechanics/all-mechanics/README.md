@@ -15,6 +15,7 @@ coverY: 0
 This mechanic allows you to set food-related properties for any food item.  
 This means you can create foods which refill different amounts of hunger and saturation.  
 It also lets you set a replacement item for when the food has been consumed.  
+
 Below is a config example of the mechanic-part for a custom food:
 
 ```yaml
@@ -24,14 +25,16 @@ Mechanics:
     saturation: 10
     replacement:
       oraxen_item: any_oraxen_itemid      # Can also be minecraft_type or crucible_item
-    effect:
-      probability: 0.35                   # The probability of the effect being applied, default is 1.0 / 100%
-      type: HUNGER                        # Must be a valid potion effect, can find a list https://jd.papermc.io/paper/1.19/org/bukkit/potion/PotionEffectType.html 
-      amplifier: 0                        # If not set, defaults to 1
-      duration: 20                        # Duration is in seconds. If not set, defaults to 1 second
-      is_ambient: true                    # If not set, defaults to true
-      has_particles: true                 # If not set, defaults to true
-      has_icon: true                      # If not set, defaults to true
+    effect_probability: 0.35              # The probability of the effect being applied, default is 1.0 / 100%
+    effects:
+      hunger:                             # Must be a valid potion effect, can find a list https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html 
+        amplifier: 1                      # If not set, defaults to 0
+        duration: 20                      # Duration in seconds. If not set, defaults to 1 second
+        is_ambient: true                  # If not set, defaults to true
+        has_particles: true               # If not set, defaults to true
+        has_icon: true                    # If not set, defaults to true
+      night_vision:
+        duration: 60
 ```
 
 ### Durability
