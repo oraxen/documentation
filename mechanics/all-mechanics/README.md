@@ -11,6 +11,29 @@ coverY: 0
 
 ## Miscellaneous
 
+### Custom Food
+This mechanic allows you to set food-related properties for any food item.  
+This means you can create foods which refill different amounts of hunger and saturation.  
+It also lets you set a replacement item for when the food has been consumed.  
+Below is a config example of the mechanic-part for a custom food:
+
+```yaml
+Mechanics:
+  food:
+    hunger: 10
+    saturation: 10
+    replacement:
+      oraxen_item: any_oraxen_itemid      # Can also be minecraft_type or crucible_item
+    effect:
+      probability: 0.35                   # The probability of the effect being applied, default is 1.0 / 100%
+      type: HUNGER                        # Must be a valid potion effect, can find a list https://jd.papermc.io/paper/1.19/org/bukkit/potion/PotionEffectType.html 
+      amplifier: 0                        # If not set, defaults to 1
+      duration: 20                        # Duration is in seconds. If not set, defaults to 1 second
+      is_ambient: true                    # If not set, defaults to true
+      has_particles: true                 # If not set, defaults to true
+      has_icon: true                      # If not set, defaults to true
+```
+
 ### Durability
 
 This allows you to change the durability of an item created with Oraxen. Minecraft vanilla wasn't made to handle that kind of modifications, this is why this system is not perfect. You'll not see the good  durability on your item, it will just work as a percentage. What that means is that if for example you create a pickaxe based off the wooden pickaxe (which has 59 of durability by default) and you change it to 5900, you'll still see 59 of durability on your item. But you'll need to break 100 blocks in order to lose of one durability. The cool thing is that the displayed bar will be updated correctly.
