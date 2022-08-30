@@ -28,6 +28,12 @@ heart:
 
 {% embed url="https://unicode-table.com/en/search?q=3000" %}{% embed url="https://docs.oraxen.com/usage/commands#print-glyphs" %}
 
+## My glyphs don't work?
+
+This is likely due to misconfiguration of the glyphs' config.  
+Please check your console for any errors, as it should tell you exactly which glyph is misconfigured and how it is.
+![](https://user-images.githubusercontent.com/62521371/185404681-e0c1a881-e30b-446a-9f33-20dd88bae27c.png)
+
 ## Emoji List
 To make a glyph appear under `/oraxen emojis` you need to specify that it is one, like below.  
 If not specified, this will default to `false`
