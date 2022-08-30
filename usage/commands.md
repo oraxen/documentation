@@ -133,10 +133,17 @@ This command allows you to print glyphs and unicode characters in chat so that y
 /o printglyphs <unicodehex>+<range> # prints a range of unicode characters starting by the first hexcode (ex of command: "/o printglyphs E000+10" prints E000 and the next 10 characters)
 ```
 
+## Item info
+This command allows you to print item infos and custom-model-data-id
+
+#### Usage:
+```yaml
+/o iteminfo <itemname> # prints the requested item information
+```
 #### Permission:
 
 ```yaml
-oraxen.command.printglyphs # Allows you to use /o printglyphs
+oraxen.command.iteminfo # Allows you to use /o iteminfo
 ```
 
 ## Reload
