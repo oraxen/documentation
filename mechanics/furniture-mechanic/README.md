@@ -102,6 +102,32 @@ Keep in mind it is recommended to leave this off
 seat: { height: -0.5, yaw: 90 }
 ```
 
+### Limited placing
+You can customize what blocks a custom block/furniture can be placed on with `limited_placing` subsection.  
+The `type` specifies if it should only be allowed on or denied on specific blocks.  
+If type is `ALLOW` the block can only be placed on the given blocks.  
+If the type is `DENY` can be placed on all blocks not matching the given blocks.
+```yaml
+amethyst_ore:
+  Mechanics:
+    furniture:
+      limited_placing:
+        type: ALLOW
+        block_types:
+          - GRASS_BLOCK
+          - DIRT
+        block_tags:
+          - base_stone_nether
+        oraxen_blocks:
+          - chair
+          - ruby_ore
+```
+
+The `block_tags` can be found at [this page](https://minecraft.fandom.com/wiki/Tag#Block_tags). Useful if you want to allow/deny a group of blocks.  
+The `block_types` are materials. Useful if you want to allow/deny a specific list block.  
+The `oraxen_blocks` are blocks defined in the oraxen configuration.  
+This allows all custom blocks and furniture in here, but furniture requires a barrier-hitbox.
+
 ## Light
 
 You can configure your furniture so it produces light. To do so you need to install this plugin: [LightAPI](https://www.spigotmc.org/resources/lightapi.4510/).
