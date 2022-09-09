@@ -37,6 +37,24 @@ Mechanics:
         duration: 60
 ```
 
+### Backpack
+This allows you to turn any item into a backpack.\
+
+{% hint style="info" %}
+This mechanic might cause duplication issues!\
+If you find any please open a [bug-report](https://github.com/oraxen/oraxen/issues/new?assignees=&labels=bug&template=bug-report.yml&title=%5BBUG%5D+%3Cname+for+bug%3E) and we will fix them as soon as possible!\
+{% endhint %}\
+#### Per item configuration
+```yml
+Mechanics:
+  backpack:
+    rows: 4
+    title: "<red>Backpack"                      #Optional, Default: "Backpack"
+    open_sound: "entity.shulker.open"       #Optional, Default: "entity.shulker.open"
+    close_sound: "entity.shulker.close"     #Optional, Default: "entity.shulker.close"
+```
+
+
 ### Durability
 
 This allows you to change the durability of an item created with Oraxen. Minecraft vanilla wasn't made to handle that kind of modifications, this is why this system is not perfect. You'll not see the good  durability on your item, it will just work as a percentage. What that means is that if for example you create a pickaxe based off the wooden pickaxe (which has 59 of durability by default) and you change it to 5900, you'll still see 59 of durability on your item. But you'll need to break 100 blocks in order to lose of one durability. The cool thing is that the displayed bar will be updated correctly.
