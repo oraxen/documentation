@@ -133,6 +133,32 @@ You need Light Api for this
 
 {% embed url="https://www.spigotmc.org/resources/lightapi.4510" %}
 
+### Storage
+This is a sub-mechanic for furniture and noteblock mechanics, that let you make a custom storage container.\
+Essentially a chest, closet or whatever you might want.
+
+There's a few different types: _STORAGE, PERSONAL, ENDERCHEST & DISPOSAL_.\
+**STORAGE** is similar to a normal chest. Anyone can open it and view the content of it.\
+**PERSONAL** is essentially a custom enderchest, letting you edit the row-count and so on.\
+**ENDERCHEST** is literally just the enderchest inventory, but letting you make a custom block/furniture to access it.\
+**DISPOSAL** is a custom trashcan, letting you throw items in it, and they will be deleted when closed.\
+
+
+```yaml
+Mechanics:
+  furniture:
+    barrier: true
+    storage:
+      type: STORAGE
+      rows: 5                             # Default: 6
+      title: "<red>My Storage"            # Default: "Storage"
+      open_sound: entity.shulker.open     # Default: entity.chest.open
+      close_sound: entity.shulker.close   # Default: entity.chest.close
+```
+{% hint style="info" %}\
+This mechanic can also be used with the furniture mechanic!\
+{% endhint %}
+
 ### Ores
 
 This example configuration shows you how to create ores that support fortune and silktouch with a normal hardness.

@@ -128,6 +128,31 @@ The `block_types` are materials. Useful if you want to allow/deny a specific lis
 The `oraxen_blocks` are blocks defined in the oraxen configuration.  
 This allows all custom blocks and furniture in here, but furniture requires a barrier-hitbox.
 
+# Storage
+This is a sub-mechanic for furniture and noteblock mechanics, that let you make a custom storage container.\
+Essentially a chest, closet or whatever you might want.
+
+There's a few different types: _STORAGE, PERSONAL, ENDERCHEST & DISPOSAL_.\
+**STORAGE** is similar to a normal chest. Anyone can open it and view the content of it.\
+**PERSONAL** is essentially a custom enderchest, letting you edit the row-count and so on.\
+**ENDERCHEST** is literally just the enderchest inventory, but letting you make a custom block/furniture to access it.\
+**DISPOSAL** is a custom trashcan, letting you throw items in it, and they will be deleted when closed.\
+
+```yaml
+Mechanics:
+  furniture:
+    barrier: true
+    storage:
+      type: STORAGE
+      rows: 5                             # Default: 6
+      title: "<red>My Storage"            # Default: "Storage"
+      open_sound: entity.shulker.open     # Default: entity.chest.open
+      close_sound: entity.shulker.close   # Default: entity.chest.close
+```
+{% hint style="info" %}
+This mechanic requires a barrier(s) if used with furniture!
+{% endhint %}
+
 ## Light
 
 You can configure your furniture so it produces light. To do so you need to install this plugin: [LightAPI](https://www.spigotmc.org/resources/lightapi.4510/).
