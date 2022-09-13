@@ -54,6 +54,15 @@ Called when you drop the item.
 
 Called when you pick up the item.
 
+### BREAK
+Called when a player breaks an item.
+
+### EQUIP
+Called when a player equips an item.
+
+### UNEQUIP
+Called when a player unequips an item.
+
 ## Available conditions
 
 ### HAS\_PERMISSION:the.permission
