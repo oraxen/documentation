@@ -18,6 +18,11 @@ This mod adds the CIT, or Custom Item Texture, system from Optifine to Iris.
 
 ### Setup for custom shader armor
 
+{% hint style="danger" %}
+As of Oraxen 1.142.1, Oraxen will automatically generate the shader armor for you.\
+If you still want to do this manually, you can disable the setting `automatically_generate_shader_compatible_armor` in the `settings.yml`.\
+{% endhint %}
+
 First step is to create the folders `Oraxen/pack/optifine/cit/armors/`.  
 
 You then want to copy your `armor_layer_1.png` and `armor_layer_2.png` files to this folder.  
