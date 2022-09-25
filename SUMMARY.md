@@ -18,6 +18,7 @@
   * [Dyeable Items](configuration/items-advanced/dyeable-items.md)
 * [Custom Armors](configuration/custom-armors/README.md)
   * [Shader Armors](configuration/custom-armors/shader-armors.md)
+* [Custom HUD](configuration/custom-hud.md)
 * [Item Appearance](configuration/item-appearance.md)
 * [Glyphs](configuration/glyphs/README.md)
   * [Custom Gui](configuration/glyphs/custom-gui.md)

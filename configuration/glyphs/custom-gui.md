@@ -16,12 +16,13 @@ customshop:
   code: 5088
 ```
 
-The textures must be maximum 256x256 and normally they will look a bit uneven in the GUI, so you must use the Oraxen shifts that in your case is `%oraxen_shift_8%` or `%oraxen_shift_16%` and before that you must use the letter `&f` in the configuration.
+The textures must be maximum 256x256 and normally they will look a bit uneven in the GUI, so you must use the Oraxen shifts that in your case is `%oraxen_shift_-8%` or `%oraxen_shift_-16%` and before that you must use the letter `&f` in the configuration.
 
 ![](https://images-ext-2.discordapp.net/external/lXJpPHHy3JFqjn9qU\_JpNHjaP2edFMFvnQjuYvTghYE/https/mcmodels.net/wp-content/uploads/2022/01/image-1.png)
 
 ### How do I get the unicode for the glyph?
-As mentioned in the previous section, you need to get the raw unicode for this.  
+
+As mentioned in the previous section, you need to get the raw unicode for this.\
 You can see the command and example [here](https://docs.oraxen.com/configuration/glyphs#how-do-i-use-this-in-luckperms)
 
 ### How do I create an invisible item?
