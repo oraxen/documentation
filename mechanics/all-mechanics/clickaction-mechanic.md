@@ -25,7 +25,7 @@ Mechanics:
     - conditions:
         - '#player.hasPermission("test.permission")'
       actions:
-        - '[console] say hello <player>!'
+        - '[console] say <player> hello <player>!'
 ```
 
 With this setup, players will only trigger the console command `say hello <player>` action if they have the permission `test.permission`.
@@ -37,7 +37,7 @@ Mechanics:
   clickActions:
     - conditions: []
       actions:
-        - '[console] say hello <player>!'
+        - '[console] say <player> hello <player>!'
 ```
 
 {% hint style="danger" %}

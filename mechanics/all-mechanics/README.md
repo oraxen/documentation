@@ -43,7 +43,7 @@ This allows you to turn any item into a backpack.\
 {% hint style="info" %}
 This mechanic might cause duplication issues!\
 If you find any please open a [bug-report](https://github.com/oraxen/oraxen/issues/new?assignees=&labels=bug&template=bug-report.yml&title=%5BBUG%5D+%3Cname+for+bug%3E) and we will fix them as soon as possible!\
-{% endhint %}\
+{% endhint %}
 {% hint style="warning" %}
 There is currently a known dupe, if your backpack is using a stackable material like paper.\
 Therefore you should use an unstackable item for the material.
