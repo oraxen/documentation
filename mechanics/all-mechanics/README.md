@@ -44,6 +44,10 @@ This allows you to turn any item into a backpack.\
 This mechanic might cause duplication issues!\
 If you find any please open a [bug-report](https://github.com/oraxen/oraxen/issues/new?assignees=&labels=bug&template=bug-report.yml&title=%5BBUG%5D+%3Cname+for+bug%3E) and we will fix them as soon as possible!\
 {% endhint %}\
+{% hint style="warning" %}
+There is currently a known dupe, if your backpack is using a stackable material like paper.\
+Therefore you should use an unstackable item for the material.
+{% endhint %}
 #### Per item configuration
 ```yml
 Mechanics:
@@ -54,6 +58,30 @@ Mechanics:
     close_sound: "entity.shulker.close"     #Optional, Default: "entity.shulker.close"
 ```
 
+### Music Disc
+This allows you to make custom music discs with custom sounds.\
+To add a sound simply follow the default example by adding it into `Oraxen/sound.yml`\
+{% hint style="warning" %}
+Any stereo sounds will not play at a specific position or following an entity.\
+If you want this you need to make sure your .ogg sound-file is in mono sound format.
+{% endhint %}
+
+`song` is the namespace:sound.name as you defined it in `sound.yml`.\
+If your sound.yml entry looks like this:
+```yml
+sounds:
+  my_music_disc_song.mysong:
+    category: record
+    sound: mysong.ogg
+```
+This means your .ogg file is in the path `Oraxen/sounds/mysong.ogg`,
+and your sound-ID is `my_music_disc_song.mysong` with the namespace minecraft.\
+If you are importing sounds.json into another namespace, the namespace would naturally not be minecraft
+```yml
+Mechanics:
+  music_disc:
+    song: "minecraft:my_music_disc_song.mysong"
+```
 
 ### Durability
 

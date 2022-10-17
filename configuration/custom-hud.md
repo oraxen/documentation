@@ -26,7 +26,7 @@ Below is an example of what a font-file should look like:
   "providers": [
     {
       "type": "bitmap",
-      "file": "minecraft:font/ascii_offset.png",
+      "file": "minecraft:required/ascii_offset.png",
       "ascent": -13,
       "height": 8,
       "chars": [

@@ -66,6 +66,20 @@ Mechanics:
     fall_sound: "block.wood.fall"
 ```
 
+## Jukebox
+Lets this furniture accept music discs and custom music discs which will be played.\
+You can tweak the `volume` and `pitch` of the music from the jukebox.\
+There is also a `permission` field, which can be used if you only want certain players to be able to play music from the jukebox.\
+By default permission is blank, which means anyone can play music from the jukebox.
+```yaml
+Mechanics:
+  furniture:
+    jukebox:
+      volume: 1.0
+      pitch: 1.0
+      permission: "oraxen.jukebox.play"
+```
+
 ## Barriers
 
 Barriers are invisible blocks placed with your furniture so that it has a realistic hitbox. You can place a single one or a list relative to the position of the player who places them.
