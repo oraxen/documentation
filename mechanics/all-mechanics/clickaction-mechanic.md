@@ -20,12 +20,12 @@ To get started, create a basic [Block](../block-mechanic/) or [Furniture](../fur
 Next, under the mechanics section, you can add the default clickAction mechanic.
 
 ```yaml
-  Mechanics:      
-      clickActions:
-        - conditions:
-            - '#player.hasPermission("test.permission")'
-          actions:
-            - '[console] say hello <player>!'
+Mechanics:      
+  clickActions:
+    - conditions:
+        - '#player.hasPermission("test.permission")'
+      actions:
+        - '[console] say hello <player>!'
 ```
 
 With this setup, players will only trigger the console command `say hello <player>` action if they have the permission `test.permission`.
@@ -33,11 +33,11 @@ With this setup, players will only trigger the console command `say hello <playe
 If you are not using conditions, you need to place brackets where they would be:
 
 ```yaml
-  Mechanics:      
-      clickActions:
-        - conditions: []
-          actions:
-            - '[console] say hello <player>!'
+Mechanics:      
+  clickActions:
+    - conditions: []
+      actions:
+        - '[console] say hello <player>!'
 ```
 
 {% hint style="danger" %}
