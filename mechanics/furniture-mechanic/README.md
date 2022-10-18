@@ -40,11 +40,14 @@ table:
     model: default/table
   Mechanics:
     furniture:
-      place_sound: "block.wood.place"
-      break_sound: "block.wood.break"
-      hit_sound: "block.wood.hit"
-      step_sound: "block.wood.step"
-      fall_sound: "block.wood.fall"
+      block_sounds:
+        place_sound: block.stone.place
+        break_sound: block.stone.break
+        hit_sound: my.custom.hitsound     # Custom sound as defined in Oraxen/sound.yml
+        step_sound: my.custom.stepsound   # Requires a sound-file in the Oraxen/pack-folder aswell
+        fall_sound: my.custom.fallsound
+        volume: 0.8                      # Default: 0.8
+        pitch: 0.8                       # Default: 0.8
       rotation: NONE
       facing: UP
       barrier: true
@@ -59,11 +62,14 @@ Currently the options are place/break/hit/step/fall.
 ```yaml
 Mechanics:
   furniture:
-    place_sound: "block.wood.place"
-    break_sound: "block.wood.break"
-    hit_sound: "block.wood.hit"
-    step_sound: "block.wood.step"
-    fall_sound: "block.wood.fall"
+    block_sounds:
+      place_sound: block.stone.place
+      break_sound: block.stone.break
+      hit_sound: my.custom.hitsound     # Custom sound as defined in Oraxen/sound.yml
+      step_sound: my.custom.stepsound   # Requires a sound-file in the Oraxen/pack-folder aswell
+      fall_sound: my.custom.fallsound
+      volume: 0.8                      # Default: 0.8
+      pitch: 0.8                       # Default: 0.8
 ```
 
 ## Jukebox
