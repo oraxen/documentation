@@ -15,6 +15,10 @@ No Oraxen is not a mod in the usual sense of the word. It's a minecraft plugin t
 
 If you are a player: yes Oraxen is using a server resource pack which does not replace anything: you can still use your own. If you are a server owner who is already using a resourcepack: yes but you'll need to integrate your pack in Oraxen (just drag and drop your files in the /pack folder of Oraxen) ...or integrate the oraxen pack with yours (but then you'ld have to do it everytime and that's a little stupid).
 
+## Can I disable the default assets and configs Oraxen comes with?
+Yes, as of Oraxen 1.144.0, `settings.yml` contains options to disable both of these.\
+Note: Required configs and assets will still be generated, but most is disabled.
+
 ## Does Oraxen replace items?
 
 The goal of Oraxen is to add things to the game without losing features, so the short answer is no, however minecraft has some limitations (you can't really add blocks or armors for example), so we had to make a choice (a choice that can be undone by disabling the related mechanics):\
