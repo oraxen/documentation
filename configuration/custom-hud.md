@@ -59,8 +59,8 @@ This will offset the text roughly to where the hud is in the image example below
 
 To add in glyphs you can use both the normal placeholder via `%oraxen_glyphid%` or `<glyph:glyphid>`
 
-If you do not wish to use custom huds, you can easily disable it by setting `update_time_in_ticks` to 0.\\
-
+If you do not wish to use custom huds, you can easily disable it by setting `update_time_in_ticks` to 0.
+<br>
 #### Example hud.yml:
 
 ```yaml
@@ -73,7 +73,6 @@ huds:
     enabled_by_default: true
     enable_for_spectator_mode: true # By default, this is set to false
 ```
-
-\\
+<br>
 
 <figure><img src="https://cdn.discordapp.com/attachments/758785982005903431/1002544517158801418/unknown.png" alt=""><figcaption><p>Result of above example</p></figcaption></figure>

@@ -122,7 +122,7 @@ Keep in mind it is recommended to leave this off
 seat: { height: -0.5, yaw: 90 }
 ```
 
-### Limited placing
+# Limited placing
 You can customize what blocks a custom block/furniture can be placed on with `limited_placing` subsection.  
 The `type` specifies if it should only be allowed on or denied on specific blocks.  
 If type is `ALLOW` the block can only be placed on the given blocks.  
