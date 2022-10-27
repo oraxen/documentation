@@ -68,8 +68,23 @@ Mechanics:
       hit_sound: my.custom.hitsound     # Custom sound as defined in Oraxen/sound.yml
       step_sound: my.custom.stepsound   # Requires a sound-file in the Oraxen/pack-folder aswell
       fall_sound: my.custom.fallsound
-      volume: 0.8                      # Default: 0.8
-      pitch: 0.8                       # Default: 0.8
+```
+All the volume and pitch values are set to be what Minecraft uses for blocks normally.\
+If you want to change the volume or pitch, you can do so by using the format below.\
+Keep in mind these two formats are compatible with eachother.\
+We recommend just use the default one, but the option is there if you want to change it.
+```yaml
+Mechanics:
+  furniture:
+    block_sounds:
+      place:
+        sound: block.stone.place
+        volume: 1.0
+        pitch: 0.2
+      break_sound: block.stone.break
+      hit_sound: my.custom.hitsound     # Custom sound as defined in Oraxen/sound.yml
+      step_sound: my.custom.stepsound   # Requires a sound-file in the Oraxen/pack-folder aswell
+      fall_sound: my.custom.fallsound
 ```
 
 ## Jukebox
