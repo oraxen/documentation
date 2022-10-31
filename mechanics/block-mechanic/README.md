@@ -35,9 +35,13 @@ noteblock:
 
 ## How to create a simple block?
 
-### Oraxen item and Pack configuration
+### Parent Models
 
-The oraxen item root configuration is the same as for any item (you can use any material like a diamond for example) and set a displayname, etc. For the pack section you can use your own model or generate one. To generate a block model juste tell to oraxen that the parent model  is "block/cube\_all", then add your block texture (one face) inside your oraxen/pack/textures folder.
+The oraxen item root configuration is the same as for any item (you can use any material like a diamond for example) and set a displayname, etc.\
+For the pack section you can use your own model or generate one.\
+To generate a block model just specify the parent model your block should use.\
+Supported parent_models for block are:\
+`block/cube_all`, `block/cross`, `block/orientable`, `block/orientable_vertical` and `block/cube_column`.
 
 ```yaml
 my_block:
@@ -49,6 +53,9 @@ my_block:
     textures:
       - my_block_texture.png
 ```
+Each of these parent models take a different amount of textures.\
+`block/cube_all` takes 1 texture, `block/cube_column` takes 2, `block/cross` takes 1, `block/orientable` takes 3 and `block/orientable_vertical` takes 2.\
+For example, if you want to make a log block using the Directional Block mechanic, you should use `block/cube_column`.
 
 ### Block Mechanic configuration
 
