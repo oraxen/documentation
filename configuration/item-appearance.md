@@ -46,7 +46,7 @@ ALWAYS USE LOWER CASE FOR MODEL AND TEXTURE NAMES. Upper case is n longer suppor
 
 Usually the templates you get place the textures in a folder, to make sure, open the json file and look at the first few lines, you should find something similar:
 
-```javascript
+```json
 {
 	"__comment": "Designed by HighBridRed for Oraxen",
 	"textures": {
@@ -84,9 +84,9 @@ If you want to use a custom model for a shield, you need to specific the pulling
       - default/combat_bow_pulling_2
 ```
 
-### Use charged\_models json model (for Crossbows)
+### Use charged_model json model (for Crossbows)
 
-```
+```yml
   Pack:
     generate_model: false
     model: default/custom_bow
@@ -94,6 +94,6 @@ If you want to use a custom model for a shield, you need to specific the pulling
       - default/custom_bow_pulling_0
       - default/custom_bow_pulling_1
       - default/custom_bow_pulling_2
-    charged_models: default/custom_bow_pulling_2
-    firework_models: default/custom_bow_charged #not so necessary
+    charged_model: default/custom_bow_pulling_2
+    firework_model: default/custom_bow_charged #not so necessary
 ```
