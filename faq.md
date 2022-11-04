@@ -49,6 +49,13 @@ Here is a great video that can help you: [https://youtu.be/LkansZwVaPY](https://
 
 [https://github.com/lolgeny/item-tooltip-remover](https://github.com/lolgeny/item-tooltip-remover)
 
+## All my furniture broke?
+This is probably because Oraxen did not load when the server was started.\
+Thus any furniture with barriers would break when loaded.\
+To fix this, you can get [FurnitureBreakProtection](https://www.spigotmc.org/resources/oraxenfurniturebreakprotection.106015/).\
+This is an addon we made to prevent this in case Oraxen should somehow fail to load.\
+It also has a command, `/oraxen_fix_furniture <radius>` to fix furniture that was broken by this issue.
+
 ## I would like to suggest a new feature or report an issue
 
 First option: Login to github and submit an issue to the official repo: [git.io/oraxen](https://github.com/Th0rgal/Oraxen)
