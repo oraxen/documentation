@@ -93,7 +93,8 @@ Mechanics:
 ```
 
 ### Limited placing
-You can customize what blocks a custom block/furniture can be placed on with `limited_placing` subsection.  
+You can customize what blocks a custom block/furniture can be placed on with `limited_placing` subsection.
+You can use the `roof`, `floor` and `wall` options to dictate where a block can be placed. By default, all are set to `true`.\
 The `type` specifies if it should only be allowed on or denied on specific blocks.  
 If type is `ALLOW` the block can only be placed on the given blocks.  
 If the type is `DENY` can be placed on all blocks not matching the given blocks.  
@@ -102,6 +103,9 @@ amethyst_ore:
   Mechanics:
     noteblock:
       limited_placing:
+        roof: true
+        floor: true
+        wall: true
         type: ALLOW
         block_types:
           - GRASS_BLOCK
