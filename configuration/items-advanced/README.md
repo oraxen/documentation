@@ -9,7 +9,7 @@ coverY: 0
 
 ## Vanilla options
 
-### displayname
+### DisplayName
 
 This allows you to change the name displayed on the top of an item.
 
@@ -17,7 +17,7 @@ This allows you to change the name displayed on the top of an item.
   displayname: "&c&lExample" #example name
 ```
 
-### material
+### Material
 
 This allows you to change the item type
 
@@ -25,7 +25,7 @@ This allows you to change the item type
   material: WOODEN_SWORD
 ```
 
-### color
+### Color
 
 This allows you to change the color of an item made of a supported material (e.g. leather armor).
 
@@ -33,7 +33,7 @@ This allows you to change the color of an item made of a supported material (e.g
   color: 3, 252, 136 #rgb
 ```
 
-### lore
+### Lore
 
 This allows you to add lines of text under the item name.
 
@@ -73,6 +73,12 @@ This will make your item unbreakable (for real, using minecraft dedicated proper
 
 ```yaml
 unbreakable: true
+```
+
+### Unstackable
+This will make your item unstackable. Useful for backpacks and other custom items that you want to be unique.
+```yaml
+unstackable: true
 ```
 
 ### ItemFlags

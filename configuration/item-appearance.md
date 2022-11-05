@@ -97,3 +97,12 @@ If you want to use a custom model for a shield, you need to specific the pulling
     charged_model: default/custom_bow_pulling_2
     firework_model: default/custom_bow_charged #not so necessary
 ```
+
+### Use cast_model json model (for fishing rods)
+
+```yml
+  Pack:
+    generate_model: false
+    model: default/fishing_rod
+    cast_model: default/fishing_rod_cast
+```
