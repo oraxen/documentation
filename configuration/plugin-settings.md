@@ -170,7 +170,26 @@ receive:
 
 The `automatically_set_model_id` option is really important. If you set it to true, Oraxen will automatically edit your configurations to add a custom\_model\_data field, that way if you add another item, it won't take the same model\_data than your previous item and this will avoid breaking already existing items. Please enable this option on a production server (with players). If you work on a test server and reset items everytime, it is not required.
 
+## CustomArmor
+```yaml
+CustomArmor:
+  disable_leather_repair: true
+```
+This option lets you disable leather being able to repair custom armors.\
+This means the only way to repair a custom armor set is other copies of said armor set.
+
 ## Misc
+
+### hide_scoreboard_numbers
+This option lets you hide the red scoreboard numbers.\
+```yaml
+  hide_scoreboard_numbers: true
+```
+**Before:** \
+![](https://media.discordapp.net/attachments/758785982005903431/1043486669371887616/image.png)\
+**After:** \
+![](https://media.discordapp.net/attachments/758785982005903431/1043486615655432193/image.png)
+
 
 ### reset\_recipes
 
