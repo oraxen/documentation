@@ -87,6 +87,14 @@ Mechanics:
       fall_sound: my.custom.fallsound
 ```
 
+## ModelEngine Furniture
+To make use of a ModelEngine model as your furniture, simply add the following to your item's config:
+```yaml
+Mechanics:
+  furniture:
+    modelengine_id: name_of_your_bbmodel_file
+```
+
 ## Jukebox
 Lets this furniture accept music discs and custom music discs which will be played.\
 You can tweak the `volume` and `pitch` of the music from the jukebox.\
