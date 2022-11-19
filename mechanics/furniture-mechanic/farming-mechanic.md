@@ -24,7 +24,6 @@ rose_seed:
   Mechanics:
     furniture:
       item: rose_plant_stage1
-      facing: UP
       barrier: false
       farmblock_required: true
       dryout: 10000
@@ -49,7 +48,6 @@ rose_plant_stage1:
   material: PAPER
   Mechanics:
     furniture:
-      facing: UP
       barrier: false
       farmblock_required: true
       dryout: 10000
@@ -74,7 +72,6 @@ rose_plant_stage2:
   material: PAPER
   Mechanics:
     furniture:
-      facing: UP
       barrier: false
       farmblock_required: true
       dryout: 10000
@@ -100,7 +97,6 @@ rose_plant_stage3:
   material: PAPER
   Mechanics:
     furniture:
-      facing: UP
       barrier: false
       farmblock_required: true
       dryout: 10000

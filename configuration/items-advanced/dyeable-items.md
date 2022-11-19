@@ -41,7 +41,6 @@ clock:
   color: 255, 255, 255 #rgb
   Mechanics:
     furniture:
-      rotation: NONE
       barrier: false
       drop: # useless if you are not using a barrier
         silktouch: false

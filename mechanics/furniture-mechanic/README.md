@@ -48,8 +48,6 @@ table:
         fall_sound: my.custom.fallsound
         volume: 0.8                      # Default: 0.8
         pitch: 0.8                       # Default: 0.8
-      rotation: NONE
-      facing: UP
       barrier: true
       drop: # useless if you are not using a barrier
         silktouch: false
@@ -209,7 +207,6 @@ This allows you to use a new option: light. This option corresponds to light int
 ```yaml
 Mechanics:
   furniture:
-    facing: UP
     barrier: true
     light: 5
     drop: # useless if you are not using a barrier
