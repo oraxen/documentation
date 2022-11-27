@@ -77,15 +77,18 @@ You'll have to create two textures for your armor. You can download the ruby exa
 [https://oraxen.com/resources/armor\_rest.png](https://media.discordapp.net/attachments/758785982005903431/1009559045893537802/ruby_armor_layer_1.png)\
 [https://oraxen.com/resources/armor\_leggings.png](https://media.discordapp.net/attachments/758785982005903431/1009559063815786626/ruby_armor_layer_2.png)
 
+{% hint style="danger" %}
+Make sure your armors resolution fits the value set in settings.yml.\
+By default armor_resolution is set to 16. This means that your textures must be 64x32 pixels.\
+If you want to use a higher resolution, you'll have to change the value in settings.yml.
+For example armor_layer files with 128x64 pixels must have a resolution of 32 in settings.yml.\
+You cannot have some at 64x32 and some at 128x64, it is either or.
+{% endhint %}
 
 ![](../../.gitbook/assets/leggings.png)
 
 
 ![](../../.gitbook/assets/armor.png)
-
-#### If you want to animate your armor, you can repeat the texture multiple time (one time per frame). To get about one second, you'ld need 24 frames. Here is an example with 3 frames:
-
-![](../../.gitbook/assets/animation.png)
 
 {% hint style="success" %}
 You can make your texture **emissive** (no optifine required) by adding another file with the same name ending in **\_e.png**. For example `ruby_armor_layer_1_e.png`  
