@@ -83,6 +83,10 @@ By default armor_resolution is set to 16. This means that your textures must be 
 If you want to use a higher resolution, you'll have to change the value in settings.yml.
 For example armor_layer files with 128x64 pixels must have a resolution of 32 in settings.yml.\
 You cannot have some at 64x32 and some at 128x64, it is either or.
+
+Also make sure that the bit-depth of your textures is 32 bits.\
+Anything else means not fully transparent, and the pixels the shader uses will be black.\
+This will not break Optifine/Iris versions but will break all vanilla versions.
 {% endhint %}
 
 ![](../../.gitbook/assets/leggings.png)
