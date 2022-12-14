@@ -4,7 +4,7 @@ cover: >-
 coverY: 0
 ---
 
-# Stripped log Mechanic
+# Stripped Log Mechanic
 
 {% hint style="info" %}
 only for 1.134.0+
@@ -12,21 +12,28 @@ only for 1.134.0+
 
 ## What is this?
 
-Minecraft has a function that allows you to click to build with an axe on trees and leave them bare, well Oraxen allows you to do it with custom blocks.\
+This mechanic allows you to strip custom logs in to stripped version, like in vanilla.
 
 
-## Configuration
+### Configuration
 
 ```yaml
 Mechanics:
     noteblock:
       custom_variation: 2
       logStrip:
-        strippedLogBlock: stripped_log1
-        drop: bark1
+        stripped_log: stripped_log #block that will change in to
 ```
 
-strippedLogBlock is the oraxen item which will become\
-drop is the object which will drop upon conversion.
+#### Drop after stripping
+
+```yaml
+Mechanics:
+    noteblock:
+      custom_variation: 2
+      logStrip:
+        stripped_log: stripped_log #block that will change in to
+        drop: bark #additonal drop after right click mechanic
+```
 
 {% embed url="https://youtu.be/ohiGtlz_who" %}
