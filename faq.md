@@ -15,6 +15,20 @@ No Oraxen is not a mod in the usual sense of the word. It's a minecraft plugin t
 
 If you are a player: yes Oraxen is using a server resource pack which does not replace anything: you can still use your own. If you are a server owner who is already using a resourcepack: yes but you'll need to integrate your pack in Oraxen (just drag and drop your files in the /pack folder of Oraxen) ...or integrate the oraxen pack with yours (but then you'ld have to do it everytime and that's a little stupid).
 
+## I use Bungee/Velocity but the pack keeps reloading when players switch servers?
+
+This is because the player technically leaves one server and joins another. Therefore, Minecraft removes and sends the resourcepack.\
+If you want to prevent this you can get [BungeePackLayer](https://www.spigotmc.org/resources/%E2%9C%82%EF%B8%8F-bungee-pack-layer-optimize-resource-pack-sending.94978/).\
+This is a Bungee/Velocity plugin which will prevent the pack from being resent, unless it is different.\
+A pack will be different if the config files on all servers are not identical.\
+
+## All my furniture broke?
+This is probably because Oraxen did not load when the server was started.\
+Thus any furniture with barriers would break when loaded.\
+To fix this, you can get [FurnitureBreakProtection](https://www.spigotmc.org/resources/oraxenfurniturebreakprotection.106015/).\
+This is an addon we made to prevent this in case Oraxen should somehow fail to load.\
+It also has a command, `/oraxen_fix_furniture <radius>` to fix furniture that was broken by this issue.
+
 ## Can I disable the default assets and configs Oraxen comes with?
 Yes, as of Oraxen 1.144.0, `settings.yml` contains options to disable both of these.\
 Note: Required configs and assets will still be generated, but most is disabled.
@@ -37,10 +51,6 @@ Don't forget to reload the plugin with `/o reload` **AND** your resource pack us
 
 It is no longer possible to use upper case in textures or model names with vanilla since minecraft 1.11, however optifine still supports it. Please never use upper case to avoid problems.
 
-## I'm using bungeecord and my players redownload the pack every time they switch to another server
-
-Just install [Bungee Pack Layer](https://www.spigotmc.org/resources/%E2%9C%82%EF%B8%8F-bungee-pack-layer-optimize-resource-pack-sending.94978/) on your bungee server/
-
 ## How to update Oraxen?
 
 Here is a great video that can help you: [https://youtu.be/LkansZwVaPY](https://youtu.be/LkansZwVaPY)
@@ -48,13 +58,6 @@ Here is a great video that can help you: [https://youtu.be/LkansZwVaPY](https://
 ## How to hide item tooltips?
 
 [https://github.com/lolgeny/item-tooltip-remover](https://github.com/lolgeny/item-tooltip-remover)
-
-## All my furniture broke?
-This is probably because Oraxen did not load when the server was started.\
-Thus any furniture with barriers would break when loaded.\
-To fix this, you can get [FurnitureBreakProtection](https://www.spigotmc.org/resources/oraxenfurniturebreakprotection.106015/).\
-This is an addon we made to prevent this in case Oraxen should somehow fail to load.\
-It also has a command, `/oraxen_fix_furniture <radius>` to fix furniture that was broken by this issue.
 
 ## I would like to suggest a new feature or report an issue
 
