@@ -42,23 +42,25 @@ In order to use Oraxen API, you need to add the jarfile to your classpath. You c
 #### Repository (jitpack)
 
 ```groovy
-	allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
-	}
+	repositories {
+      ...
+      maven { url 'https://jitpack.io' }
+}
 ```
 
 #### Dependency
 
 ```groovy
 	dependencies {
-	        compileOnly 'com.github.oraxen:oraxen:-SNAPSHOT'
+        ...
+        compileOnly 'com.github.oraxen:oraxen:-SNAPSHOT'
 	}
 ```
 
-
+{% hint style="info" %}
+All methods and better explanations of their functionality and parameters can be found in the actual Classes.\
+Simply open them in your IDE to get a full list of them.
+{% endhint %}
 
 ## Examples of use
 
@@ -86,14 +88,18 @@ You can use to check if an ItemStack is an OraxenItem (it will return null if Or
 OraxenItems.getIdByItem(itemstack);
 ```
 
-### Place custom block [BlockMechanicFactory](https://github.com/oraxen/Oraxen/blob/master/src/main/java/io/th0rgal/oraxen/mechanics/provided/block/BlockMechanicFactory.java)
+### Custom Blocks & Furniture
 
-#### Set an OraxenBlock
+#### Place an OraxenBlock
 
-You can set the model of a block by providing a block and the itemID of an item that implements the Block  mechanic.
-
+Place an OraxenBlock at a given location
 ```java
-BlockMechanicFactory.setBlockModel(block, itemID);
+OraxenBlocks.place(itemID, location)
+```
+
+Place an OraxenFurniture at a given location, optionally setting a player for rotation purposes
+```java
+OraxenFurniture.place(itemID, location, @Nullable player)
 ```
 
 
