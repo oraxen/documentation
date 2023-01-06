@@ -63,6 +63,9 @@ Called when a player equips an item.
 ### UNEQUIP
 Called when a player unequips an item.
 
+### INV_CLICK
+Called when a player clicks an item in an inventory.
+
 ## Available conditions
 
 ### HAS\_PERMISSION:the.permission
