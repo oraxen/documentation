@@ -17,15 +17,17 @@ The `clickAction` mechanic allows you to run commands, play sounds, or send mess
 
 To get started, create a basic [Block](../block-mechanic/) or [Furniture](../furniture-mechanic/).
 
-Next, under the mechanics section, you can add the default clickAction mechanic.
+Next, under the mechanics section, you can add the default clickAction mechanic under any\
+noteblock-mechanic, furniture-mechanic or stringblock-mechanic item.
 
 ```yaml
 Mechanics:      
-  clickActions:
-    - conditions:
-        - '#player.hasPermission("test.permission")'
-      actions:
-        - '[console] say <player> hello <player>!'
+  noteblock/furniture/stringblock:
+    clickActions:
+      - conditions:
+          - '#player.hasPermission("test.permission")'
+        actions:
+          - '[console] say <player> hello <player>!'
 ```
 
 With this setup, players will only trigger the console command `say hello <player>` action if they have the permission `test.permission`.
@@ -33,11 +35,12 @@ With this setup, players will only trigger the console command `say hello <playe
 If you are not using conditions, you need to place brackets where they would be:
 
 ```yaml
-Mechanics:      
-  clickActions:
-    - conditions: []
-      actions:
-        - '[console] say <player> hello <player>!'
+Mechanics:
+  noteblock/furniture/stringblock:
+    clickActions:
+      - conditions: []
+        actions:
+          - '[console] say <player> hello <player>!'
 ```
 
 {% hint style="danger" %}
