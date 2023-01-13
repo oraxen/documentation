@@ -12,13 +12,9 @@ Armor has like every item a texture in the inventory and in the hand, but it als
 This second appearance has some limitations and requires some practice. We will use a trick with leather armor and colors.
 
 
-<p class="callout danger">A success message</p>
----
-**NOTE**
-
-It works with almost all markdown flavours (the below blank line matters).
-
----
+> **⚠ WARNING: Aliens are coming.**  
+> If you are using shaders via either the Optifine or Iris mod, you will need some additional steps.
+> You can find these in [this guide](https://docs.oraxen.com/configuration/custom-armors/shader-armors)
 
 {% hint style="danger" %}
 If you are using shaders via either the Optifine or Iris mod, you will need some additional steps.
