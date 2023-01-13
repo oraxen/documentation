@@ -11,8 +11,8 @@ Oraxen alters this second texture by using colored leather armor and shaders.
 Armor has like every item a texture in the inventory and in the hand, but it also has a second texture when worn on the body. 
 This second appearance has some limitations and requires some practice. We will use a trick with leather armor and colors.
 
-
-> **⚠ WARNING: Aliens are coming.**  
+<hint style="danger">some *blue* text</span>.
+> **⚠ WARNING**  
 > If you are using shaders via either the Optifine or Iris mod, you will need some additional steps.
 > You can find these in [this guide](https://docs.oraxen.com/configuration/custom-armors/shader-armors)
 
