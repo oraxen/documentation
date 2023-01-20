@@ -15,7 +15,7 @@ The `clickAction` mechanic allows you to run commands, play sounds, or send mess
 
 ### Configuration
 
-To get started, create a basic [Block](../block-mechanic/) or [Furniture](../furniture-mechanic/).
+To get started, create a basic [Block](../noteblock-mechanic/) or [Furniture](../furniture-mechanic/).
 
 Next, under the mechanics section, you can add the default clickAction mechanic under any\
 noteblock-mechanic, furniture-mechanic or stringblock-mechanic item.

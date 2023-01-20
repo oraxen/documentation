@@ -11,7 +11,7 @@
 
 ## Configuration
 
-* [Understand the basics](configuration/understanding-the-basics.md)
+* [Understanding the basics](configuration/understanding-the-basics.md)
 * [Plugin settings](configuration/plugin-settings.md)
 * [Items (beginners)](configuration/create-your-first-item.md)
 * [Items (advanced)](configuration/items-advanced/README.md)
@@ -31,10 +31,10 @@
 * [Furniture Mechanic](mechanics/furniture-mechanic/README.md)
   * [Furtniture Position](mechanics/furniture-mechanic/furtniture-position.md)
   * [Farming Mechanic](mechanics/furniture-mechanic/farming-mechanic.md)
-* [Block mechanic](mechanics/block-mechanic/README.md)
-  * [Stripped log Mechanic](mechanics/block-mechanic/stripped-log-mechanic.md)
-  * [Directional mechanic](mechanics/block-mechanic/directional-mechanic.md)
-  * [Farmblock Mechanic](mechanics/block-mechanic/block-mechanic.md)
+* [NoteBlock mechanic](mechanics/noteblock-mechanic/README.md)
+  * [Stripped log Mechanic](mechanics/noteblock-mechanic/stripped-log-mechanic.md)
+  * [Directional mechanic](mechanics/noteblock-mechanic/directional-mechanic.md)
+  * [Farmblock Mechanic](mechanics/noteblock-mechanic/farmblock-mechanic.md)
 * [StringBlock Mechanic](mechanics/stringblock-mechanic/README.md)
   * [Sapling Mechanic](mechanics/stringblock-mechanic/sapling-mechanic.md)
 

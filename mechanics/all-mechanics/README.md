@@ -159,7 +159,7 @@ armorpotioneffects:
 
 ### Block and NoteBlock
 
-These mechanic allows you to use an item as block. Since these are quite special mechanics, they have a [dedicated tutorial page](../block-mechanic/).
+These mechanic allows you to use an item as block. Since these are quite special mechanics, they have a [dedicated tutorial page](../noteblock-mechanic/).
 
 ### clickAction
 
@@ -200,7 +200,7 @@ skinnable: {}
 
 ### ItemType
 
-With this mechanic, you can change the item type detected by OraxenBlocks. Make sure to use a type declared [inside the block mechanic](../block-mechanic/#global-configuration).&#x20;
+With this mechanic, you can change the item type detected by OraxenBlocks. Make sure to use a type declared [inside the block mechanic](../noteblock-mechanic/#global-configuration).&#x20;
 
 #### Per item configuration
 

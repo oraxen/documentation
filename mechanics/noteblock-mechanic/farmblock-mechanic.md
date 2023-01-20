@@ -8,7 +8,8 @@ coverY: 0
 # Farmblock Mechanic
 
 {% hint style="info" %}
-only for 1.134.0+
+If you are looking to add customizable farming mechanics to your server, we heavily recommend looking into [CustomCrops](https://polymart.org/resource/customcrops.2625).\
+It is a well-made plugin with full Oraxen compatibility.\
 {% endhint %}
 
 ## How does it work?

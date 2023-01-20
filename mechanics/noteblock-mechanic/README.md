@@ -5,40 +5,14 @@ cover: >-
 coverY: 0
 ---
 
-# Block mechanic
-
-## How does it work?
-
-Unlike items, blocks cannot be added to the game using predicates in a model, in fact it is not really possible to add new blocks ...at least the game wasn't made for that. But there are still some hacked-up techniques to do it anyway. Oraxen allows you to do this in two different ways. Blockstates (the json file which contains all the informations needed by Minecraft in order to render the block) can be used to attribute block models according to the characteristics of particular blocks. The oldest method  relies on the blockfacing of the base block. Basically it uses the variations of a vanilla blocks which can have different blockfacing: the mushroom stem block. Only one variation is used in vanilla minecraft maps for this block, there are 6 faces on a block so we have 2^6 - 1 = 63 possible variations.
-
-The most recent (and recommended) method is to use noteblocks and assign them different models depending on their instrument, their note and whether they are activated or not. This makes 800 possibilities (but 25 are reserved so that the vanilla noteblocks still work).
-
-{% hint style="info" %}
-The `block (`mushroom block ) and `noteblock` ( noteblock ) mechanics have the same configuration. To switch from one to the other you just have to rename the `block` section to `noteblock` and vice versa.
-{% endhint %}
-
-## Global configuration
-
-This global configuration has to be used in order to define the hierarchy of between your multiple tool\_types. You can put the normal types + new types you just invented.
-
-```yaml
-noteblock:
-  tool_types:
-    - WOODEN
-    - STONE
-    - IRON
-    - GOLDEN
-    - DIAMOND
-    - NETHERITE
-  enabled: true
-```
+# NoteBlock Mechanic
 
 ## How to create a simple block?
 
 ### Parent Models
 
 The oraxen item root configuration is the same as for any item (you can use any material like a diamond for example) and set a displayname, etc.\
-For the pack section you can use your own model or generate one.\
+For the pack section you can use your own model or generated one.\
 To generate a block model just specify the parent model your block should use.\
 Supported parent_models for block are:\
 `block/cube_all`, `block/cross`, `block/orientable`, `block/orientable_vertical` and `block/cube_column`.
@@ -122,7 +96,7 @@ The `block_types` are materials. Useful if you want to allow/deny a specific lis
 The `oraxen_blocks` are blocks defined in the oraxen configuration.  
 This allows all custom blocks and furniture in here, but furniture requires a barrier-hitbox.
 
-### Produce Light
+### Light Emitting Blocks
 
 You can use the option **light** so that your block emits light.&#x20;
 
@@ -139,7 +113,7 @@ Mechanics:
 ```
 
 {% hint style="info" %}
-You need Light Api for this
+You need Light Api for this, but will not work on any modern version of Paper due to chunk and lighting changes in Paper.\
 {% endhint %}
 
 {% embed url="https://www.spigotmc.org/resources/lightapi.4510" %}
@@ -206,6 +180,11 @@ amethyst_ore:
           - oraxen_item: amethyst
             probability: 1.0
 ```
+
+{% hint style="info" %}
+This does not actually spawn ores throughout your world.\
+Look into one of the WorldGenerator plugins in [World Generators](../../compatibility/world-generators/README.md) for that.\
+{% endhint %}
 
 ### Custom blocks with Custom Model
 

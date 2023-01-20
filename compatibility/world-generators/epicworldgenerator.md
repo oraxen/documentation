@@ -12,7 +12,7 @@ Spigot Link: [https://www.spigotmc.org/resources/epicworldgenerator-1-15-1-16-4.
 
 ## How to create custom ores
 
-In this example we assume that you have added a block (an amethyst ore for example) following [this example](../../mechanics/block-mechanic/#ores) to your oraxen configuration.
+In this example we assume that you have added a block (an amethyst ore for example) following [this example](../../mechanics/noteblock-mechanic/#ores) to your oraxen configuration.
 
 ### Locate the files to edit
 

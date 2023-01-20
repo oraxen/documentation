@@ -122,6 +122,6 @@ The plants can have the stages you decide, and the stages have to be a model cre
 **light\_boost** when it has light nearby it grows faster \
 **next\_stage** you specify the next stage, it has to be an already created Oraxen item.
 
-**farmblock\_required** [dedicated tutorial page](../block-mechanic/block-mechanic.md)
+**farmblock\_required** [dedicated tutorial page](../noteblock-mechanic/farmblock-mechanic.md)
 
 ****
