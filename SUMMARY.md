@@ -17,7 +17,6 @@
 * [Items (advanced)](configuration/items-advanced/README.md)
   * [Dyeable Items](configuration/items-advanced/dyeable-items.md)
 * [Custom Armors](configuration/custom-armors/README.md)
-  * [Shader Armors](configuration/custom-armors/shader-armors.md)
 * [Custom HUD](configuration/custom-hud.md)
 * [Item Appearance](configuration/item-appearance.md)
 * [Glyphs](configuration/glyphs/README.md)
@@ -37,7 +36,7 @@
   * [Directional mechanic](mechanics/block-mechanic/directional-mechanic.md)
   * [Farmblock Mechanic](mechanics/block-mechanic/block-mechanic.md)
 * [StringBlock Mechanic](mechanics/stringblock-mechanic/README.md)
-  * [Sappling Mechanic](mechanics/stringblock-mechanic/sapling-mechanic.md)
+  * [Sapling Mechanic](mechanics/stringblock-mechanic/sapling-mechanic.md)
 
 ## Compatibility
 
@@ -47,6 +46,8 @@
 * [MythicMobs - custom mobs](compatibility/mythicmobs-custom-mobs.md)
 * [TrMenu - custom inventories](compatibility/trmenu-custom-inventories.md)
 * [MMoItems](compatibility/mmoitems.md)
+* [MythicCrucible](compatibility/crucible.md)
+* [HappyHUD](compatibility/happyhud.md)
 * [World Generators](compatibility/world-generators/README.md)
   * [Iris World Generator](compatibility/world-generators/iris-world-generator.md)
   * [EpicWorldGenerator](compatibility/world-generators/epicworldgenerator.md)
