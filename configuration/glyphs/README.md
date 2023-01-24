@@ -20,13 +20,10 @@ You can then add your section to any yaml file from the glyphs directory. The co
 
 ```yaml
 heart:
-  code: 3000 #To get the unicodes use this page 
   texture: default/chat/heart
   ascent: 8
   height: 8
 ```
-
-{% embed url="https://unicode-table.com/en/search?q=3000" %}{% embed url="https://docs.oraxen.com/usage/commands#print-glyphs" %}
 
 ## My glyphs don't work?
 
@@ -84,33 +81,22 @@ Same applies to `interface.yml`. They are used in for example language files, so
 ## PlaceholderAPI
 
 ### What's my glyph placeholder?
-
-When you define a glyph in font.yml, you define a subsection. For example:
-
-
-
-```
-heart:
-  code: 3000  
-  texture: default/chat/heart
-  ascent: 8
-  height: 8
-```
-
 The section name is the glyph id. In this example the glyph id is `heart`, the placeholder is `%oraxen_glyphid%`, so in this example: `%oraxen_heart%`
 
-### How do I use this in Luckperms
+### How do I use this in Prefixes / Luckperms
+To add a glyph to a luckperms prefix, commonly to display ranks, simply add `<glyph:glyph_id>` to your prefix solution of choice.\
+For example, if using LuckPerms, you can use the command: `/lp group default meta setprefix <glyph:glyph_id>` and it will replace it with the glyph.\
 
-To use a glyph in a luckperms prefix, you need to get the raw unicode.  
+
+### How do I get the raw unicode of a glyph?
 You can use the following command to get the unicode from any glyph:  
 `/oraxen printglyph glyph_id`  
 This will copy the unicode to your clipboard.  
 You can also replace glyph_id with `all` to get a list of all your glyphs.  
 Below you can see what this looks like.  
-If you click, say `[dye_menu]` it will copy its unicode and you can simply paste it where you need it.  
+If you click, say `[dye_menu]` it will copy its unicode, and you can simply paste it where you need it.  
 The glyph is also shown when you hover over the glyph-id.
 ![](https://user-images.githubusercontent.com/36164338/178945511-447ce8f7-28be-4687-bc02-8ef9b3f935ab.png)
-
 
 ### How do I use a glyph in name/lore of an item?
 Any glyph can be used in name and lore of your item configurations.
