@@ -78,6 +78,11 @@ There is no real reason to delete this file. It will simply be recreated on star
 If you know what you are doing, changes made inside the file will not be overwritten, only if deleting the file.
 Same applies to `interface.yml`. They are used in for example language files, so deleting them means those fail.
 
+### My shift glyph does not move anything?
+This is commonly because the shift-glyphs are set to use a transparent image.\
+For example, if you edit the null.png in `Oraxen/pack/textures/required` to be transparent.\
+Shifts cannot use a transparent image, and your image used for them needs to be atleast a 1x1 pixel.\
+
 ## PlaceholderAPI
 
 ### What's my glyph placeholder?
