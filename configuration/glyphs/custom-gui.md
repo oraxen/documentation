@@ -16,12 +16,12 @@ customshop:
 ```
 
 The textures cannot be higher resolution than 256x256 and name of the texture must be all lowercase without spaces, as with all Resourcepack files.\
-To adjust the horizontal position of your texture/glyph in the inventory, use the shift-tag. `<shift:-8>` for moving 8 pixels back, and \<shift:211> for moving 211 pixels forward.\
+To adjust the horizontal position of your texture/glyph in the inventory, use the shift-tag. `<shift:-8>` for moving 8 pixels back, and `<shift:211>` for moving 211 pixels forward.\
 
 ![](https://images-ext-2.discordapp.net/external/lXJpPHHy3JFqjn9qU\_JpNHjaP2edFMFvnQjuYvTghYE/https/mcmodels.net/wp-content/uploads/2022/01/image-1.png)
 
 ### How do I get the unicode for the glyph?
-This really is not necessary as Oraxen will handle the <`glyph:glyph_id`> tag in any inventory / title.
+This really is not necessary as Oraxen will handle the `<glyph:glyph_id>` tag in any inventory / title.
 If you still want the raw unicode, you can use the `/oraxen printglyph glyph_id` command.
 
 ### How do I create an invisible item?
