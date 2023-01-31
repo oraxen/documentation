@@ -6,24 +6,23 @@ coverY: 0
 
 # Custom Gui
 
-#### With Oraxen ghyph you can create custom GUI's and here is an example
+#### With Oraxen glyph you can create custom textured GUI's and here is an example
 
 ```yaml
 customshop:
   texture: custom/default/custom/gui_tienda.png
   ascent: 13
   height: 256
-  code: 5088
 ```
 
-The textures must be maximum 256x256, and normally they will look a bit uneven in the GUI, so you must use the Oraxen shifts that in your case is `%oraxen_neg_shift_8%` or `%oraxen_neg_shift_16%` and before that you must use the letter `&f` or `<white>` in the configuration.
+The textures cannot be higher resolution than 256x256 and name of the texture must be all lowercase without spaces, as with all Resourcepack files.\
+To adjust the horizontal position of your texture/glyph in the inventory, use the shift-tag. `<shift:-8>` for moving 8 pixels back, and \<shift:211> for moving 211 pixels forward.\
 
 ![](https://images-ext-2.discordapp.net/external/lXJpPHHy3JFqjn9qU\_JpNHjaP2edFMFvnQjuYvTghYE/https/mcmodels.net/wp-content/uploads/2022/01/image-1.png)
 
 ### How do I get the unicode for the glyph?
-
-As mentioned in the previous section, you need to get the raw unicode for this.\
-You can see the command and example [here](https://docs.oraxen.com/configuration/glyphs#how-do-i-use-this-in-luckperms)
+This really is not necessary as Oraxen will handle the <`glyph:glyph_id`> tag in any inventory / title.
+If you still want the raw unicode, you can use the `/oraxen printglyph glyph_id` command.
 
 ### How do I create an invisible item?
 
