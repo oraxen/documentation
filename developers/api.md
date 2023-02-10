@@ -9,52 +9,52 @@ coverY: 0
 
 ## Add Oraxen to your plugin
 
-In order to use Oraxen API, you need to add the jarfile to your classpath. You can use the jarfile downloaded on spigot or build it yourself from sources. You can also use github packages or jitpack.
+In order to use Oraxen API, you need to add Oraxen to your dependencies.\
+Below are repository and dependency information.\
+Replace `VERSION` with the Oraxen version you wish to use.\
+The [latest release](https://github.com/oraxen/oraxen/releases/latest) can be found here.\
 
 ## Jitpack
 
-### With Maven
-
+## With Maven
 #### Repository (jitpack)
-
 ```markup
-	<repositories>
-		<repository>
-		    <id>jitpack.io</id>
-		    <url>https://jitpack.io</url>
-		</repository>
-	</repositories>
+<repository>
+  <id>jitpack.io</id>
+  <url>https://jitpack.io</url>
+</repository>
 ```
 
 #### Dependency
-
 ```markup
-	<dependency>
-	    <groupId>com.github.oraxen</groupId>
-	    <artifactId>oraxen</artifactId>
-	    <version>-SNAPSHOT</version>
-	    <scope>provided</scope>
-	</dependency>
+<dependency>
+    <groupId>com.github.oraxen</groupId>
+    <artifactId>oraxen</artifactId>
+    <version>VERSION</version>
+    <scope>provided</scope>
+</dependency>
 ```
 
-### With Gradle
-
+### With Gradle Kotlin
 #### Repository (jitpack)
-
-```groovy
-	repositories {
-      ...
-      maven { url 'https://jitpack.io' }
-}
+```kotlin
+maven("https://jitpack.io")
 ```
 
 #### Dependency
+```kotlin
+compileOnly("com.github.oraxen:oraxen:VERSION")
+```
 
+### With Groovy
+#### Repository (jitpack)
 ```groovy
-	dependencies {
-        ...
-        compileOnly 'com.github.oraxen:oraxen:-SNAPSHOT'
-	}
+maven { url 'https://jitpack.io' }
+```
+
+#### Dependency
+```groovy
+compileOnly 'com.github.oraxen:oraxen:VERSION'
 ```
 
 {% hint style="info" %}
