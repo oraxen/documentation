@@ -12,8 +12,9 @@ Armor has like every item a texture in the inventory and in the hand, but it als
 This second appearance has some limitations and requires some practice. We will use a trick with leather armor and colors.
 
 {% hint style="danger" %}
-If you are using shaders via either the Optifine or Iris mod, you will need some additional steps.
-You can find these in [this guide](https://docs.oraxen.com/configuration/custom-armors/shader-armors).
+If you are using shaders via either the Optifine or Iris mod, you will need some additional steps.\
+For Optifine, everything is handled automatically.\
+For Iris, you also need [CIT Resewn](https://modrinth.com/mod/cit-resewn), everything else is handled for you.\
 {% endhint %}
 
 ![A: item appearance    B: body appearance](../../.gitbook/assets/stuff.png)
