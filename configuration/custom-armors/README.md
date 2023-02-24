@@ -14,7 +14,7 @@ This second appearance has some limitations and requires some practice. We will 
 {% hint style="danger" %}
 If you are using shaders via either the Optifine or Iris mod, you will need some additional steps.\
 For Optifine, everything is handled automatically.\
-For Iris, you also need [CIT Resewn](https://modrinth.com/mod/cit-resewn), everything else is handled for you.\
+For Iris, you also need [CIT Resewn](https://modrinth.com/mod/cit-resewn), everything else is handled for you.
 {% endhint %}
 
 ![A: item appearance    B: body appearance](../../.gitbook/assets/stuff.png)
