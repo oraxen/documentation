@@ -18,6 +18,7 @@
   * [Dyeable Items](configuration/items-advanced/dyeable-items.md)
 * [Custom Armors](configuration/custom-armors/README.md)
 * [Custom HUD](configuration/custom-hud.md)
+* [Gestures](configuration/gestures.md)
 * [Item Appearance](configuration/item-appearance.md)
 * [Glyphs](configuration/glyphs/README.md)
   * [Custom Gui](configuration/glyphs/custom-gui.md)
