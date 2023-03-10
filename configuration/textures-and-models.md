@@ -21,6 +21,16 @@ Put the textures that you need in the textures directory of the pack folder. You
 
 The parent\_model field is required by minecraft. In fact this will allow your item to inherit the rendering properties of an item template from minecraft. You can look at the minecraft default models in order to find new ones but I personnaly use item/handheld for weapons like swords and item/generated for simple items or gems like amethysts.
 
+You can also use an alternative way of declaring textures, especially nice when using block parent-models.\
+```yaml
+Pack:
+  generate_model: true
+  parent_model: "block/cube"
+  textures:
+    top: example_image.png
+    side: example_image2.png
+```
+
 ### Use a json model
 
 Creating a json model can be time consuming but it allows you to create really cool things \(like 3d items\). It is really easy to integrate a json model with Oraxen : put your textures in your textures directory and your model in your models directory \(inside Oraxen/pack folder\). Then you can ask Oraxen to put this model on one of your items:
