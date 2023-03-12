@@ -1,6 +1,6 @@
 ---
 description: >-
-Guide on how to add custom Gestures/Emotes to your server
+    Guide on how to add custom Gestures/Emotes to your server
 ---
 {% hint style="info" %}
 Can be disabled in settings.yml under `Gestures.enabled`.\
