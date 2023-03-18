@@ -13,22 +13,6 @@ Oraxen uses invisible item frames to add non cubic blocks to the game. This avoi
 
 ![Example furniture](<../../.gitbook/assets/image (3).png>)
 
-## Global configuration
-
-This global configuration has to be used in order to define the hierarchy of between your multiple tool\_types. You can put the normal types + new types you just invented.
-
-```yaml
-furniture:
-  tool_types:
-    - WOODEN
-    - STONE
-    - IRON
-    - GOLDEN
-    - DIAMOND
-    - NETHERITE
-  enabled: true
-```
-
 ## Example configuration per item
 
 ```yaml
@@ -46,8 +30,6 @@ table:
         hit_sound: my.custom.hitsound     # Custom sound as defined in Oraxen/sound.yml
         step_sound: my.custom.stepsound   # Requires a sound-file in the Oraxen/pack-folder aswell
         fall_sound: my.custom.fallsound
-        volume: 0.8                      # Default: 0.8
-        pitch: 0.8                       # Default: 0.8
       barrier: true
       drop: # useless if you are not using a barrier
         silktouch: false
