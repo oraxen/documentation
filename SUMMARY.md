@@ -31,6 +31,7 @@
   * [clickAction Mechanic](mechanics/all-mechanics/clickaction-mechanic.md)
 * [Furniture Mechanic](mechanics/furniture-mechanic/README.md)
   * [Furniture Position](mechanics/furniture-mechanic/furniture_position.md)
+  * [Display-Entity Furniture](mechanics/furniture-mechanic/display_entity_furniture.md)
   * [Farming Mechanic](mechanics/furniture-mechanic/farming-mechanic.md)
 * [NoteBlock mechanic](mechanics/noteblock-mechanic/README.md)
   * [Stripped log Mechanic](mechanics/noteblock-mechanic/stripped-log-mechanic.md)
