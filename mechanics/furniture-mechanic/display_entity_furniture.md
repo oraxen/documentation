@@ -66,10 +66,10 @@ Look at [Furniture Position](furniture_position.md) for an example on FIXED (Ite
 
 The `tracking_rotation`-property defines whether you want the furniture to "track" the player.\
 This is mainly for stuff like billboard and leaderboards you want the player to see, not normal furniture.\
-Options are:
-`FIXED` - No rotation
-`VERTICAL` - Pivots around vertical axis
-`HORIZONTAL` - Pivots around horizontal axis
+Options are:\
+`FIXED` - No rotation\
+`VERTICAL` - Pivots around vertical axis\
+`HORIZONTAL` - Pivots around horizontal axis\
 `CENTER` - Pivots around center point
 
 The `brightness`-property is a way to have your furniture emit light.\
