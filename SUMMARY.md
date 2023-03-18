@@ -30,7 +30,7 @@
   * [Custom mechanic](mechanics/all-mechanics/custom-mechanic.md)
   * [clickAction Mechanic](mechanics/all-mechanics/clickaction-mechanic.md)
 * [Furniture Mechanic](mechanics/furniture-mechanic/README.md)
-  * [Furtniture Position](mechanics/furniture-mechanic/furtniture-position.md)
+  * [Furniture Position](mechanics/furniture-mechanic/furniture_position.md)
   * [Farming Mechanic](mechanics/furniture-mechanic/farming-mechanic.md)
 * [NoteBlock mechanic](mechanics/noteblock-mechanic/README.md)
   * [Stripped log Mechanic](mechanics/noteblock-mechanic/stripped-log-mechanic.md)
