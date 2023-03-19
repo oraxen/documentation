@@ -7,6 +7,13 @@ ViaVersion will not fix this.\
 Oraxen must also be version 1.154.0 or above
 {% endhint %}
 
+{% hint style="error" %}
+Keep in mind that changing old furniture configs is not a good idea.\
+Already placed furniture that use ItemFrames will not be updated automatically and might break if the config changes.\
+If you want to change the config, you should remove the furniture and place it again.\
+In the future, we might make a command, system or plugin-addon to migrate old furniture to DisplayEntities / new configs
+{% endhint %}
+
 Display-Entities are a new entity type introduced in 1.19.4.\
 It comes in a few different types: Item, Block and Interaction.\
 Oraxen makes use of Item Display Entities and Interaction Entities for its furniture mechanic.\
