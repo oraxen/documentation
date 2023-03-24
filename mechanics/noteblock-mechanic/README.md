@@ -113,7 +113,9 @@ Mechanics:
 ```
 
 {% hint style="info" %}
-You need Light Api for this, but will not work on any modern version of Paper due to chunk and lighting changes in Paper.\
+You need LightAPI for this, but will not work on any modern version of Paper due to chunk and lighting changes in Paper.\
+You can find a fork of the original plugin [here](https://github.com/IPECTER/LighterAPI/releases/tag/5.4.0-SNAPSHOT)\
+This should work on any modern version of Spigot and Paper.\
 {% endhint %}
 
 {% embed url="https://www.spigotmc.org/resources/lightapi.4510" %}

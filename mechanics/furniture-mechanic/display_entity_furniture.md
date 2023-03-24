@@ -80,7 +80,6 @@ Options are:\
 `CENTER` - Pivots around center point
 
 The `brightness`-property is a way to have your furniture emit light.\
-Since LightAPI, which is what was used before, is no longer maintained, this is a good way for lamps etc.\
 It has a `block` and `sky` property for the different types of lighting Minecraft has.
 
 `view_range`, `shadow_radius`, `shadow_strength` should be self-explanatory.
