@@ -62,7 +62,7 @@ It has a `width` and a `height` property for defining the hitbox.\
 This section will detail the many options this new entity-type adds.\
 Some are more useful than others, but I have added more or less all of them.\
 Under `display_entity_properties` you can define these settings:\
-`display_transform`, `tracking_rotation`, `brightness`, `view_range`, `shadow_radius`, `shadow_strength`
+`display_transform`, `tracking_rotation`, `brightness`, `view_range`, `shadow_radius`, `shadow_strength`, `scale`
 
 The `display_transform` dictates how the model will be displayed.\
 By default it is set to `NONE`, which will show it as it looks when you open the model in BlockBench.\
@@ -81,5 +81,23 @@ Options are:\
 
 The `brightness`-property is a way to have your furniture emit light.\
 It has a `block` and `sky` property for the different types of lighting Minecraft has.
+Config should look like this:
+```yaml
+display_entity_properties:
+  brightness:
+    block: 15
+    sky: 0
+```
+
+The `scale`-property is a way to scale the furniture.\
+It has a `x`, `y` and `z` property for scaling on each axis.
+Config should look like this:
+```yaml
+display_entity_properties:
+  scale:
+    x: 1
+    y: 1
+    z: 1
+```
 
 `view_range`, `shadow_radius`, `shadow_strength` should be self-explanatory.
