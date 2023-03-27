@@ -33,6 +33,7 @@ This is not an issue when using Gradle
             <groupId>com.github.oraxen</groupId>
             <artifactId>oraxen</artifactId>
             <version>VERSION</version>
+            <scope>provided</scope>
             <exclusions>
                 <exclusion>
                     <groupId>gs.mclo</groupId>
