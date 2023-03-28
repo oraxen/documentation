@@ -31,7 +31,7 @@ table:
         step_sound: my.custom.stepsound   # Requires a sound-file in the Oraxen/pack-folder aswell
         fall_sound: my.custom.fallsound
       barrier: true
-      drop: # useless if you are not using a barrier
+      drop:
         silktouch: false
         loots:
           - { oraxen_item: table, probability: 1.0 }
@@ -191,7 +191,7 @@ Mechanics:
   furniture:
     barrier: true
     light: 5
-    drop: # useless if you are not using a barrier
+    drop:
       silktouch: false
       loots:
         - { oraxen_item: table, probability: 1.0 }
