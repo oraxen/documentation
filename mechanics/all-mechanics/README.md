@@ -46,16 +46,20 @@ If you find any please open a [bug-report](https://github.com/oraxen/oraxen/issu
 {% endhint %}
 {% hint style="warning" %}
 There is currently a known dupe, if your backpack is using a stackable material like paper.\
-Therefore you should use an unstackable item for the material.
+Make sure to specify that the item should be unstackable, like shown below.\
 {% endhint %}
 #### Per item configuration
 ```yml
-Mechanics:
-  backpack:
-    rows: 4
-    title: "<red>Backpack"                      #Optional, Default: "Backpack"
-    open_sound: "entity.shulker.open"       #Optional, Default: "entity.shulker.open"
-    close_sound: "entity.shulker.close"     #Optional, Default: "entity.shulker.close"
+backpack:
+  displayname: backpack
+  material: PAPER
+  unstackable: true #Recommend making it unstackable to avoid abovementioned dupe
+  Mechanics:
+    backpack:
+      rows: 4
+      title: "<red>Backpack"                      #Optional, Default: "Backpack"
+      open_sound: "entity.shulker.open"       #Optional, Default: "entity.shulker.open"
+      close_sound: "entity.shulker.close"     #Optional, Default: "entity.shulker.close"
 ```
 
 ### Music Disc
