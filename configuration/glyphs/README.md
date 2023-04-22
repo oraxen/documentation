@@ -89,8 +89,10 @@ Shifts cannot use a transparent image, and your image used for them needs to be 
 The section name is the glyph id. In this example the glyph id is `heart`, the placeholder is `%oraxen_glyphid%`, so in this example: `%oraxen_heart%`
 
 ### How do I use this in Prefixes / Luckperms
-To add a glyph to a luckperms prefix, commonly to display ranks, simply add `<glyph:glyph_id>` or `%oraxen_glyph_id%` to your prefix solution of choice.\
+To add a glyph to a luckperms prefix, commonly to display ranks, simply add `%oraxen_glyph_id%` to your prefix solution of choice.\
 For example, if using LuckPerms, you can use the command: `/lp group default meta setprefix %oraxen_glyph_id%` and it will replace it with the glyph.\
+Keep in mind your chatplugin must support PlaceholderAPI for this to work.\
+An alternative, though not adviced, is to use the raw unicode as described below.
 
 
 ### How do I get the raw unicode of a glyph?
