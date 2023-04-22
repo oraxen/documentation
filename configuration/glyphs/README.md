@@ -86,7 +86,9 @@ Shifts cannot use a transparent image, and your image used for them needs to be 
 ## PlaceholderAPI
 
 ### What's my glyph placeholder?
-The section name is the glyph id. In this example the glyph id is `heart`, the placeholder is `%oraxen_glyphid%`, so in this example: `%oraxen_heart%`
+The section name is the glyph id. In this example the glyph id is `heart`, the placeholder is `%oraxen_glyphid%`, so in this example: `%oraxen_heart%`\
+Glyph-ID is the first line in any glyphs config, it is not the texturename or the placeholder.\
+
 
 ### How do I use this in Prefixes / Luckperms
 To add a glyph to a luckperms prefix, commonly to display ranks, simply add `%oraxen_glyph_id%` to your prefix solution of choice.\
