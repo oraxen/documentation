@@ -91,8 +91,8 @@ Glyph-ID is the first line in any glyphs config, it is not the texturename or th
 
 
 ### How do I use this in Prefixes / Luckperms
-To add a glyph to a luckperms prefix, commonly to display ranks, simply add `%oraxen_glyph_id%` to your prefix solution of choice.\
-For example, if using LuckPerms, you can use the command: `/lp group default meta setprefix %oraxen_glyph_id%` and it will replace it with the glyph.\
+To add a glyph to a luckperms prefix, commonly to display ranks, simply add `%oraxen_glyphid%` to your prefix solution of choice.\
+For example, if using LuckPerms, you can use the command: `/lp group default meta setprefix %oraxen_glyphid%` and it will replace it with the glyph.\
 Keep in mind your chatplugin must support PlaceholderAPI for this to work.\
 An alternative, though not adviced, is to use the raw unicode as described below.
 
