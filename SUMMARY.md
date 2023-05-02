@@ -56,6 +56,9 @@
   * [Custom Ore Generator](compatibility/world-generators/custom-ore-generator.md)
   * [RealisticWorldGenerator](compatibility/world-generators/realisticworldgenerator.md)
 
+## Vendors
+* [Adding Oraxen Configs](vendors/vendor-guidelines.md)
+
 ## Developers
 
 * [Create your own Mechanic](developers/mechanics.md)
