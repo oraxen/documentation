@@ -57,7 +57,7 @@
   * [RealisticWorldGenerator](compatibility/world-generators/realisticworldgenerator.md)
 
 ## Vendors
-* [Adding Oraxen Configs](vendors/vendor-guidelines.md)
+* [Vendor Guidelines](vendors/vendor-guidelines.md)
 
 ## Developers
 
