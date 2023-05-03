@@ -198,8 +198,8 @@ Mechanics:
 Some packs might include custom sounds for ambience, mobs or other things.\
 When possible it is recommended to use another namespace for this.\
 This is because Oraxen creates a sounds.json based on the `sound.yml` file by default, and this can cause conflicts.\
-If the usecase allows for custom namespaces, simply add your sounds.json to `assets/namespace/` and add the sound-files to `assets/namespace/sounds`.\
+If the usecase allows for custom namespaces, simply add your sounds.json to `Oraxen/pack/assets/namespace/` and add the sound-files to `Oraxen/pack/assets/namespace/sounds`-folder.\
 
 If the usecase needs to be in the normal minecraft namespace, you should not include a sounds.json.\
 Instead add entries into Oraxens sound.yml file for optimal compatibility.\
-Then simply add the sound-files into the `Oraxen/pack/assets/minecraft/sounds` or `Oraxen/pack/sounds` folders.\
+Then simply add the sound-files into the `Oraxen/pack/assets/minecraft/sounds` folder.\
