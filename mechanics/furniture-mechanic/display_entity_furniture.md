@@ -44,7 +44,7 @@ cart:
 ```
 
 ### Furniture Type
-First off, `type` is a new property added in Oraxern 1.154.0.\
+First off, `type` is a new property added in Oraxen 1.154.0.\
 It allows you to specify if you want to use the old ItemFrame type, or new Display Entity type.\
 If your server allows players on versions below 1.19.4, we suggest sticking with ItemFrame, as the other will not be visible.\
 If this property is not specified, it will default to ITEM_FRAME.\
