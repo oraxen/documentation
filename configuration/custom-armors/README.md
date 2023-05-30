@@ -60,6 +60,10 @@ For the rest of the above set it would be `ruby_chestplate`, `ruby_leggings` and
 Also make sure that every set of custom armor has a different `color`.  
 That's because it is what the shader uses to connect the texture to the item.  
 So all `ruby` armor must have the same color, but all `emerald` armor must have a different color.
+
+This is also why LEATHER is the only material that works.\
+Custom Armor can not be made with Diamond as the base material.\
+To get custom armor amounts, simply add Attribute Modifiers.\
 {% endhint %}
 
 
