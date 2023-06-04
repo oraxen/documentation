@@ -17,15 +17,15 @@ This is a variable of the custom blocks, but now you have to have a thread-based
 
 ```yaml
 stringblock:
-    tool_types:
-      - WOODEN
-      - STONE
-      - IRON
-      - GOLDEN
-      - DIAMOND
-      - NETHERITE
-    sapling_growth_check_delay: 4000
-    enabled: true
+  tool_types:
+    - WOODEN
+    - STONE
+    - IRON
+    - GOLDEN
+    - DIAMOND
+    - NETHERITE
+  sapling_growth_check_delay: 4000
+  enabled: true
 ```
 
 ## How do I create a sapling?

@@ -96,19 +96,23 @@ Barriers are invisible blocks placed with your furniture so that it has a realis
 ### Single barrier:
 
 ```yaml
-barrier: true
+Mechanics:
+  furniture:
+    barrier: true
 ```
 
 ### Multiple barriers:
 
 ```yaml
-barriers:
-    - { x: 0, y: 0, z: 0 }
-    - { x: 0, y: 0, z: 1 }
-    - { x: 0, y: 0, z: 2 }
-    - { x: 1, y: 0, z: 0 }
-    - { x: 1, y: 0, z: 1 }
-    - { x: 1, y: 0, z: 2 }
+Mechanics:
+  furniture:
+    barriers:
+      - { x: 0, y: 0, z: 0 }
+      - { x: 0, y: 0, z: 1 }
+      - { x: 0, y: 0, z: 2 }
+      - { x: 1, y: 0, z: 0 }
+      - { x: 1, y: 0, z: 1 }
+      - { x: 1, y: 0, z: 2 }
 ```
 
 # Seats
@@ -117,12 +121,16 @@ Currently it will also spawn a seat for every barrier, if there is multiple ones
 You can alter the height-offset of seats with the following configuration:  
 
 ```yaml
-seat: { height: 0.5 }
+Mechanics:
+  furniture:
+    seat: { height: 0.5 }
 ```
 You can also adjust the rotation if desired by adding a yaw section.  
 Keep in mind it is recommended to leave this off
 ```yaml
-seat: { height: -0.5, yaw: 90 }
+Mechanics:
+  furniture:
+    seat: { height: -0.5, yaw: 90 }
 ```
 
 # Limited placing
