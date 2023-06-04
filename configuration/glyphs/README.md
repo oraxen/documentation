@@ -96,7 +96,7 @@ For example, if using LuckPerms, you can use the command: `/lp group default met
 Because most plugins only parse the placeholders one time, the %luckperms_prefix% will not be parsed again.\
 You will most likely need to get the Utils-Expansion for PlaceholderAPI aswell.\
 Use the command `/papi ecloud download Utils` to download it.\
-Then in your plugin of choice use `%utils:parse:2_luckperms_prefix%` to parse the prefix again.\
+Then in your plugin of choice use `%utils_parse:2_luckperms_prefix%` to parse the prefix again.\
 Keep in mind your chatplugin must support PlaceholderAPI for this to work.\
 An alternative, though not adviced, is to use the raw unicode as described below.
 
