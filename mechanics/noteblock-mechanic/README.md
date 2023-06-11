@@ -19,7 +19,7 @@ Supported parent_models for block are:\
 
 ```yaml
 my_block:
-  displayname: "&My block"
+  displayname: "My block"
   material: DIAMOND
   Pack:
     generate_model: true
@@ -152,7 +152,7 @@ This example configuration shows you how to create ores that support fortune and
 
 ```yaml
 amethyst_ore:
-  displayname: "&dAmethyst Ore"
+  displayname: "<light_purple>Amethyst Ore"
   material: DIAMOND
   Pack:
     generate_model: true

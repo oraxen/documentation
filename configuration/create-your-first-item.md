@@ -37,7 +37,7 @@ Normally you would have had to create two json files: one explaining how to disp
 
 ```yaml
 onyx_axe:
-  displayname: "&0Onyx Axe"
+  displayname: "<black>Onyx Axe"
   material: DIAMOND_AXE
   Pack:
     generate_model: true
@@ -60,7 +60,7 @@ In the configuration of each item you can add a mechanics section and add lots o
 
 ```yaml
 onyx_axe:
-  displayname: "&0Onyx Axe"
+  displayname: "<black>Onyx Axe"
   material: DIAMOND_AXE
   Pack:
     generate_model: true

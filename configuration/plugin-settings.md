@@ -88,7 +88,7 @@ receive:
         period: -1
         # Click and Hover elements are only available by using the CHAT type
         messages:
-          - "&a&lResourcePack successfully loaded!"
+          - "<green><bold>ResourcePack successfully loaded!"
 
       # If you need to send commands
       commands:
@@ -108,7 +108,7 @@ receive:
         period: 3
         # Click and Hover elements are only available by using the CHAT type
         messages:
-          - "&a&lResourcePack accepted!"
+          - "<green><bold>ResourcePack accepted!"
           - "Thank you"
       # If you need to send commands
       commands:

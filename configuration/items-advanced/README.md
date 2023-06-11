@@ -14,7 +14,7 @@ coverY: 0
 This allows you to change the name displayed on the top of an item.
 
 ```yaml
-  displayname: "&c&lExample" #example name
+  displayname: "<red><bold>Example" #example name
 ```
 
 ### Material
@@ -40,7 +40,7 @@ This allows you to add lines of text under the item name.
 ```yaml
 lore:
   - "One line"
-  - "&aAnother line"
+  - "<green>Another line"
 ```
 
 ### injectID
