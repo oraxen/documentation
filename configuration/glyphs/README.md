@@ -59,6 +59,7 @@ The placeholders can be used in chat by players with the required permission (if
 ## How to make glyphs tabcomplete?
 Simply set `tabcomplete: true` in the chat-section.  
 If not specified, this will default to `false`
+Tabcompletion is currently only available for servers on 1.19.3 and above.
 ```yaml
 chat:
   tabcomplete: true
@@ -68,9 +69,6 @@ chat:
     - "<3"
   permission: "oraxen.emoji.heart"
 ```
-You can also change the icon displayed in tablist if you want to.  
-Simply change the `tab_icon_texture` and `tab_icon_signature` fields.  
-Unless you know how to get textures and signatures, it is recommended to leave them unspecified.
 
 ## Do not remove shifts.yml
 This file is used elsewhere in the default pack and removing it improperly will make the plugin fail to load.  

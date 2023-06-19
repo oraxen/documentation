@@ -7,10 +7,6 @@ coverY: 0
 
 # Furniture Mechanic
 
-## How does it work?
-
-Oraxen uses invisible item frames to add non cubic blocks to the game. This avoids some lags causes by armorstands You can then activate a transparent block (barrier) on top to act as a hitbox.
-
 ![Example furniture](<../../.gitbook/assets/image (3).png>)
 
 ## Example configuration per item
@@ -24,6 +20,7 @@ table:
     model: default/table
   Mechanics:
     furniture:
+      type: DISPLAY_ENTITY #Valid types are ITEM_FRAME, DISPLAY_ENTITY & GLOWING_ITEM_FRAME
       block_sounds:
         place_sound: block.stone.place
         break_sound: block.stone.break
@@ -65,6 +62,14 @@ Mechanics:
       hit_sound: my.custom.hitsound     # Custom sound as defined in Oraxen/sound.yml
       step_sound: my.custom.stepsound   # Requires a sound-file in the Oraxen/pack-folder aswell
       fall_sound: my.custom.fallsound
+```
+
+## Rotatable
+To make a furniture rotatable, simply add the following to your item's config.
+```yaml
+Mechanics:
+  furniture:
+    rotatable: true
 ```
 
 ## ModelEngine Furniture
