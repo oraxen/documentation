@@ -63,8 +63,6 @@ Tabcompletion is currently only available for servers on 1.19.3 and above.
 ```yaml
 chat:
   tabcomplete: true
-  tab_icon_texture: "something" # Not recommended to change from default unless you know how
-  tab_icon_signature: "something" # Not recommended to change from default unless you know how
   placeholders:
     - "<3"
   permission: "oraxen.emoji.heart"
