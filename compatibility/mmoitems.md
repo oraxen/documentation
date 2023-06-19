@@ -11,10 +11,6 @@ The compatibility with MmoItems allows you to import items created with this plu
 
 To do this, simply add an mmoitem section to your item section in Oraxen
 
-{% hint style="danger" %}
-You cannot specify a **material** when using a mmoitem section
-{% endhint %}
-
 ```yaml
 example_mmoitem:
   displayname: "<gradient:#59A7EA:#F1D2FF>Test"
