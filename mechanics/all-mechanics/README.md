@@ -101,6 +101,21 @@ Mechanics:
     value: 5000 #diamond sword is 1561 by default
 ```
 
+### Misc Mechanic
+This mechanic has a bunch of small changes you can make to your item.\
+What they each do should be pretty self-explanatory.
+```yaml
+Mechanics:
+  misc:
+    breaks_from_cactus: true
+    burns_in_fire: true
+    burns_in_lava: true
+    disable_vanilla_interactions: false
+    can_strip_logs: false
+    piglins_ignore_when_equipped: false
+    compostable: false
+```
+
 ### Repair
 
 This mechanic allows you to use an item to repair another one (which uses vanilla durability or oraxen custom). By default this mechanic is binded to iron, gold and diamond cogs. To use them you just need to click on the item you want to repair.
