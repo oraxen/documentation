@@ -51,6 +51,7 @@ bitmaps:
 ![](../../.gitbook/assets/example_bitmap.png)
 
 As you can see, the image shown above has 4 rows and 9 columns.\
+The ascent and height property will be the one used for all glyphs tied to this bitmap.\
 Now that you have your bitmap configured, you can link a glyphs to it.\
 In your glyph config, you need to specify the bitmap id, as well as the row and column of the glyph you want to use.\
 Below is an example of a glyph config using the bitmap above.
@@ -62,8 +63,8 @@ example_glyph:
     id: example_bitmap
     row: 1
     column: 1
-  ascent: 8
-  height: 8
+  #ascent: 8 # Not needed as bitmap specifies it
+  #height: 8 # Not needed as bitmap specifies it
 ```
 
 This will link the glyph to the first emoji on the first row in the image above.
