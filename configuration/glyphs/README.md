@@ -31,6 +31,43 @@ This is likely due to misconfiguration of the glyphs' config.
 Please check your console for any errors, as it should tell you exactly which glyph is misconfigured and how it is.
 ![](https://user-images.githubusercontent.com/62521371/185404681-e0c1a881-e30b-446a-9f33-20dd88bae27c.png)
 
+## Multi-Bitmap glyphs
+If you have a png consisting of several emotes, you can make it a multi-bitmap.\
+This means you can, tie several glyphs to one image. This step requires some extra configuration to work however.\
+In fonts.yml there is a section for `bitmaps`.\
+Here you need to specify an `id`, which you will use in your glyph-configs.\
+You also need to specify the path to the texture, as well as how many rows and columns the bitmap has.\
+Below is an example of an entry in `fonts.yml`:
+
+```yaml
+bitmaps:
+  example_bitmap:
+      texture: example/example_bitmap
+      rows: 4
+      columns: 9
+      ascent: 8
+      height: 8
+```
+![](../../.gitbook/assets/example_bitmap.png)
+
+As you can see, the image shown above has 4 rows and 9 columns.\
+Now that you have your bitmap configured, you can link a glyphs to it.\
+In your glyph config, you need to specify the bitmap id, as well as the row and column of the glyph you want to use.\
+Below is an example of a glyph config using the bitmap above.
+
+```yaml
+example_glyph:
+  texture: default/chat/example_glyph
+  bitmap:
+    id: example_bitmap
+    row: 1
+    column: 1
+  ascent: 8
+  height: 8
+```
+
+This will link the glyph to the first emoji on the first row in the image above.
+
 ## Emoji List
 To make a glyph appear under `/oraxen emojis` you need to specify that it is one, like below.  
 If not specified, this will default to `false`
