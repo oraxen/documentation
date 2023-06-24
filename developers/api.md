@@ -40,7 +40,7 @@ This is not an issue when using Gradle
                     <artifactId>mclogs</artifactId>
                 </exclusion>
                 <exclusion>
-                    <groupId>com.ticxo.playeranimator</groupId>
+                    <groupId>com.ticxo</groupId>
                     <artifactId>PlayerAnimator</artifactId>
                 </exclusion>
                 <exclusion>
