@@ -204,12 +204,22 @@ class DurabilityMechanicsManager implements Listener {
 
 ### Last step: register our mechanic
 
-Just call this line when you load your plugin (e.g. in your onEnable method):
+To finish we need to register our MechanicFactory and reload the items to apply the new mechanic to them.\
+To do this we need to add these lines in the onEnable method of our plugin:
 
 ```java
-MechanicsManager.registerMechanicFactory("durability", 
-                                DurabilityMechanicFactory::new);
+MechanicsManager.registerMechanicFactory("durability", DurabilityMechanicFactory::new);
+OraxenItems.loadItems();
 ```
+{% hint style="info" %}
+You also need to add your mechanic to mechanics.yml file in the Oraxen plugin folder:
+
+```yaml
+mechanicId:
+  enabled: true
+```
+{% endhint %}
+
 
 ## Conclusion
 
