@@ -42,11 +42,11 @@ Below is an example of an entry in `fonts.yml`:
 ```yaml
 bitmaps:
   example_bitmap:
-      texture: example/example_bitmap
-      rows: 4
-      columns: 9
-      ascent: 8
-      height: 8
+    texture: example/example_bitmap
+    rows: 4
+    columns: 9
+    ascent: 8
+    height: 8
 ```
 ![](../../.gitbook/assets/example_bitmap.png)
 
