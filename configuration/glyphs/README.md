@@ -129,7 +129,7 @@ To add a glyph to a luckperms prefix, commonly to display ranks, simply add `%or
 For example, if using LuckPerms, you can use the command: `/lp group default meta setprefix %oraxen_glyphid%` and it will replace it with the glyph.\
 Because most plugins only parse the placeholders one time, the %luckperms_prefix% will not be parsed again.\
 You will most likely need to get the Utils-Expansion for PlaceholderAPI aswell.\
-Use the command `/papi ecloud download Utils` to download it.\
+To get this, go to [this link](https://api.extendedclip.com/media/Utils-Expansion-1.0.1.jar), and place it in your plugins/PlaceholderAPI/expansions folder.\
 Then in your plugin of choice use `%utils_parse:2_luckperms_prefix%` to parse the prefix again.\
 Keep in mind your chatplugin must support PlaceholderAPI for this to work.\
 An alternative, though not adviced, is to use the raw unicode as described below.
