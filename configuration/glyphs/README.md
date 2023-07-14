@@ -123,7 +123,6 @@ Shifts cannot use a transparent image, and your image used for them needs to be 
 The section name is the glyph id. In this example the glyph id is `heart`, the placeholder is `%oraxen_glyphid%`, so in this example: `%oraxen_heart%`\
 Glyph-ID is the first line in any glyphs config, it is not the texturename or the placeholder.\
 
-
 ### How do I use this in Prefixes / Luckperms
 To add a glyph to a luckperms prefix, commonly to display ranks, simply add `%oraxen_glyphid%` to your prefix solution of choice.\
 For example, if using LuckPerms, you can use the command: `/lp group default meta setprefix %oraxen_glyphid%` and it will replace it with the glyph.\
@@ -132,18 +131,7 @@ You will most likely need to get the Utils-Expansion for PlaceholderAPI aswell.\
 To get this, go to [this link](https://api.extendedclip.com/media/Utils-Expansion-1.0.1.jar), and place it in your plugins/PlaceholderAPI/expansions folder.\
 Then in your plugin of choice use `%utils_parse:2_luckperms_prefix%` to parse the prefix again.\
 Keep in mind your chatplugin must support PlaceholderAPI for this to work.\
-An alternative, though not adviced, is to use the raw unicode as described below.
-
-
-### How do I get the raw unicode of a glyph?
-You can use the following command to get the unicode from any glyph:  
-`/oraxen printglyph glyph_id`  
-This will copy the unicode to your clipboard.  
-You can also replace glyph_id with `all` to get a list of all your glyphs.  
-Below you can see what this looks like.  
-If you click, say `[dye_menu]` it will copy its unicode, and you can simply paste it where you need it.  
-The glyph is also shown when you hover over the glyph-id.
-![](https://user-images.githubusercontent.com/36164338/178945511-447ce8f7-28be-4687-bc02-8ef9b3f935ab.png)
+If this does not work for whatever reason, you can always use the raw unicode from your glyph-config's `char`-property
 
 ### How do I use a glyph in name/lore of an item?
 Any glyph can be used in name and lore of your item configurations.

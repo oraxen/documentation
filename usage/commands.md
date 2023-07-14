@@ -118,16 +118,6 @@ This command allows you to interact with the Oraxen pack: send the configured me
 oraxen.command.pack # Allows you to use /o pack
 ```
 
-## Print glyphs
-This command allows you to print glyphs and unicode characters in chat so that you can copy them by clicking on them
-
-#### Usage:
-```yaml
-/oraxen printglyphs <glyphname/"all"> # prints the requested glyph or print all the glyphs
-/oraxen printglyphs <unicodehex>         # prints the requested unicode hex code (ex. "E100") in a json message 
-/oraxen printglyphs <unicodehex>+<range> # prints a range of unicode characters starting by the first hexcode (ex of command: "/o printglyphs E000+10" prints E000 and the next 10 characters)
-```
-
 ## Item info
 This command allows you to print item infos and custom-model-data-id
 
