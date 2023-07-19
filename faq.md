@@ -42,8 +42,7 @@ The goal of Oraxen is to add things to the game without losing features, so the 
 ## When I add an item, it breaks the textures of others already created
 
 By default, Oraxen automatically set a custom model data to your items and generate it in the most optimized way.\
-Every item need to have a different model data, so when you add another item, it might break the others.\
-In order to avoid this "issue" (which is not really an issue for test servers, but might be problematic for a production servers), enable the option `automatically_set_model_data` in **settings.yml**.
+Every item, which do not use the same model, need to have a different model data, so when you add another item, it might break the others if you manually set the same.\
 
 {% hint style="info" %}
 Don't forget to reload the plugin with `/o reload all` **AND** your resource pack using `/o pack send @a`(you can also disconnect and reconnect to the server)
@@ -83,8 +82,6 @@ Pack:
     protection: false
   dispatch:
     send_pack: false
-  automatically_set_model_data: true
-  automatically_set_glyph_code: true
   enable_configs_updater: false
 Misc:
   reset_recipes: false
