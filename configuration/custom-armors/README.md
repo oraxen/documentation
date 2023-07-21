@@ -42,7 +42,6 @@ For this we will be using the below config example for reference:
 ruby_helmet:
   displayname: "<gradient:#FA7CBB:#F14658>Ruby Helmet"
   material: LEATHER_HELMET
-  color: 252, 3, 28
   Pack:
     custom_model_data: 3
     generate_model: true
@@ -57,18 +56,9 @@ For the rest of the above set it would be `ruby_chestplate`, `ruby_leggings` and
 {% endhint %}
 
 {% hint style="info" %}
-Also make sure that every set of custom armor has a different `color`.  
-That's because it is what the shader uses to connect the texture to the item.  
-So all `ruby` armor must have the same color, but all `emerald` armor must have a different color.
-
 This is also why LEATHER is the only material that works.\
 Custom Armor can not be made with Diamond as the base material.\
 To get custom armor amounts, simply add Attribute Modifiers.\
-{% endhint %}
-
-
-{% hint style="info" %}
-You can use [this tool](https://www.rapidtables.com/convert/color/index.html) to convert colors from RGB to hex and vice versa
 {% endhint %}
 
 ## How to change the equipped appearance?
