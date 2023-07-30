@@ -11,11 +11,8 @@ The compatibility with Crucible allows you to import items created with MythicMo
 
 To do this, simply add a crucible section and specify the itemID in Oraxen
 
-{% hint style="danger" %}
-You cannot specify a **material** when using a mmoitem section
-{% endhint %}
 ```yaml
-example_mmoitem:
+example_crucible:
   displayname: "<gradient:#59A7EA:#F1D2FF>Test"
   crucible:
     id: my_crucible_itemid
