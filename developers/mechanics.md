@@ -128,13 +128,15 @@ public class DurabilityMechanicFactory extends MechanicFactory {
 
 ### Third step: add our features (events)
 
-In my case I need to use only one event to play with durability and I will create a DurabilityMechanicsManager class that implements Listener to have a clean and tidy code but I could have done it directly in DurabilityMechanicFactory. I tell to Bukkit which class manages the events when the factory is built:
+In my case I need to use only one event to play with durability and I will create a DurabilityMechanicsManager class\
+that implements Listener to have a clean and tidy code but I could have done it directly in DurabilityMechanicFactory.\
+I tell to Bukkit which class manages the events when the factory is built:
 
 ```java
 public class DurabilityMechanicFactory extends MechanicFactory {
 
-    public DurabilityMechanicFactory(ConfigurationSection section) {
-        super(section);
+    public DurabilityMechanicFactory(String mechanicId) {
+        super(mechanicId);
         MechanicsManager.registerListeners(OraxenPlugin.get(),
                 new DurabilityMechanicsManager(this));
     }
@@ -204,11 +206,12 @@ class DurabilityMechanicsManager implements Listener {
 
 ### Last step: register our mechanic
 
-Just call this line when you load your plugin (e.g. in your onEnable method):
+To finish we need to register our MechanicFactory and reload the items to apply the new mechanic to them.\
+To do this we need to add these lines in the onEnable method of our plugin:
 
 ```java
-MechanicsManager.registerMechanicFactory("durability", 
-                                DurabilityMechanicFactory::new);
+MechanicsManager.registerMechanicFactory("durability", DurabilityMechanicFactory::new, true);
+OraxenItems.loadItems();
 ```
 
 ## Conclusion

@@ -19,12 +19,7 @@ For this tutorial we will use /o because it is the shortest, but if this command
 
 The main benefit of this method is that it allows you to see all the items at the same time and therefore to be more efficient (you just have to click on an item to make it appear in your inventory). But you can't use it to automatically give an item to another player (for example from the shop).
 
-#### Usage:
-
-```yaml
-/o inv sorted # Opens an inventory containing oraxen items sorted by file
-/o inv all # Opens an inventory containing all oraxen items
-```
+#### Usage: `/oraxen inventory`
 
 #### Permissions:
 
@@ -41,7 +36,7 @@ This command will be mainly useful if you want to give an item to another player
 #### Usage:
 
 ```yaml
-/o give <player> <item> <amount> # Gives amount items to player
+/oraxen give <player> <item> <amount> # Gives amount items to player
 ```
 
 #### Permission:
@@ -59,7 +54,7 @@ This command can be used to repair an item you hold in your main hand. You can c
 #### Usage:
 
 ```yaml
-/o repair hand # Repair the item you hold
+/oraxen repair hand # Repair the item you hold
 ```
 
 #### Permissions:
@@ -75,7 +70,7 @@ This command can be used to repair every single item in your inventory (or in yo
 #### Usage:
 
 ```yaml
-/o repair all # Repair all your item (inside your inventory)
+/oraxen repair all # Repair all your item (inside your inventory)
 ```
 
 #### Permissions:
@@ -94,10 +89,10 @@ This command allows you to add new recipes to the configuration directly from th
 #### Usage:
 
 ```yaml
-/o recipe builder <builder> # Creates a recipe builder of type <builder> and opens it
-/o recipe save <name> # Saves your recipe with name <name>
-/o recipe show all # Show you the loaded recipes
-/o recipe show <recipe> # Show you one recipe
+/oraxen recipe builder <builder> # Creates a recipe builder of type <builder> and opens it
+/oraxen recipe save <name> # Saves your recipe with name <name>
+/oraxen recipe show all # Show you the loaded recipes
+/oraxen recipe show <recipe> # Show you one recipe
 ```
 
 #### Permission:
@@ -113,8 +108,8 @@ This command allows you to interact with the Oraxen pack: send the configured me
 #### Usage:
 
 ```yaml
-/o pack send <player> # Send to <player> the pack directly through the game
-/o pack msg <player> # Send to <player> the configured message
+/oraxen pack send <player> # Send to <player> the pack directly through the game
+/oraxen pack msg <player> # Send to <player> the configured message
 ```
 
 #### Permission:
@@ -123,22 +118,12 @@ This command allows you to interact with the Oraxen pack: send the configured me
 oraxen.command.pack # Allows you to use /o pack
 ```
 
-## Print glyphs
-This command allows you to print glyphs and unicode characters in chat so that you can copy them by clicking on them
-
-#### Usage:
-```yaml
-/o printglyphs <glyphname/"all"> # prints the requested glyph or print all the glyphs
-/o printglyphs <unicodehex>         # prints the requested unicode hex code (ex. "E100") in a json message 
-/o printglyphs <unicodehex>+<range> # prints a range of unicode characters starting by the first hexcode (ex of command: "/o printglyphs E000+10" prints E000 and the next 10 characters)
-```
-
 ## Item info
 This command allows you to print item infos and custom-model-data-id
 
 #### Usage:
 ```yaml
-/o iteminfo <itemname> # prints the requested item information
+/oraxen iteminfo <itemname> # prints the requested item information
 ```
 #### Permission:
 
@@ -153,10 +138,10 @@ This command allows you to reload oraxen configurations quickly and without caus
 #### Usage
 
 ```yaml
-/o reload all # Reloads items configuration, Reloads recipes configuration, regenerates the pack and upload it
-/o reload items # Reloads items configuration
-/o reload pack # Regenerates resourcepack and upload it
-/o reload recipes # Reloads recipes configuration
+/oraxen reload all # Reloads items configuration, Reloads recipes configuration, regenerates the pack and upload it
+/oraxen reload items # Reloads items configuration
+/oraxen reload pack # Regenerates resourcepack and upload it
+/oraxen reload recipes # Reloads recipes configuration
 ```
 
 #### Permission:

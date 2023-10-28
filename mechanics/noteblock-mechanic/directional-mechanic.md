@@ -36,7 +36,6 @@ mainBlock:
   Pack:
     generate_model: false
     model: mainBlockModel
-    custom_model_data: 411
   Mechanics:
     noteblock:
       model: mainBlockModel

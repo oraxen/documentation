@@ -30,33 +30,33 @@ Because maven decides to be weird, you will need to exclude a lot of imports fro
 This is not an issue when using Gradle
 ```markup
 <dependency>
-            <groupId>com.github.oraxen</groupId>
-            <artifactId>oraxen</artifactId>
-            <version>VERSION</version>
-            <scope>provided</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>gs.mclo</groupId>
-                    <artifactId>mclogs</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>com.ticxo.playeranimator</groupId>
-                    <artifactId>PlayerAnimator</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>me.gabytm.util</groupId>
-                    <artifactId>actions-spigot</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>net.kyori</groupId>
-                    <artifactId>*</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>com.jeff_media</groupId>
-                    <artifactId>*</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
+    <groupId>com.github.oraxen</groupId>
+    <artifactId>oraxen</artifactId>
+    <version>VERSION</version>
+    <scope>provided</scope>
+    <exclusions>
+        <exclusion>
+            <groupId>gs.mclo</groupId>
+            <artifactId>mclogs</artifactId>
+        </exclusion>
+        <exclusion>
+            <groupId>com.ticxo</groupId>
+            <artifactId>PlayerAnimator</artifactId>
+        </exclusion>
+        <exclusion>
+            <groupId>me.gabytm.util</groupId>
+            <artifactId>actions-spigot</artifactId>
+        </exclusion>
+        <exclusion>
+            <groupId>net.kyori</groupId>
+            <artifactId>*</artifactId>
+        </exclusion>
+        <exclusion>
+            <groupId>com.jeff_media</groupId>
+            <artifactId>*</artifactId>
+        </exclusion>
+    </exclusions>
+</dependency>
 ```
 
 ### With Gradle Kotlin

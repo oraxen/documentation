@@ -11,9 +11,11 @@ coverY: 0
 
 ## How does it work?
 
-The mechanics let you create sub-sections composed of 3 parts:
+This mechanic is for items only and does not work with blocks/furniture.\
+For that check the [clickAction mechanic](clickaction-mechanic.md).
+The mechanics let you create subsections composed of 3 parts:\
 
-* **Event**: when is this mechanic triggered? e.g. when you right click on a block
+* **Event**: when is this mechanic triggered? e.g. when you right-click on a block
 * **Conditions**: a set of conditions that must be satisfied. e.g. having a permission
 * **Actions**: a set of actions to perform. e.g. send a command or a message
 
@@ -35,7 +37,9 @@ Mechanics:
         - "[console] give <player> cooked_beef 1"
 ```
 
-In this example, the subsection `test` defines a custom mechanic triggered when someone right click (on a block or in the air). If this player has the permission `example.permission`, the console will perform the give command and replace \<player> by the player name. The item won't be consumed (oneUsage: false).
+In this example, the subsection `test` defines a custom mechanic triggered when someone right click (on a block or in the air).\
+If this player has the permission `example.permission`, the console will perform the give command and replace \<player> by the player name.\
+The item won't be consumed (oneUsage: false).
 
 ## Available events
 
@@ -68,7 +72,7 @@ Called when a player clicks an item in an inventory.
 
 ## Available conditions
 
-### HAS\_PERMISSION:the.permission
+### HAS_PERMISSION:the.permission
 
 **the.permission**:  `The permission required by the player using the item`
 

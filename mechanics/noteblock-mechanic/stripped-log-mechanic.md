@@ -19,21 +19,21 @@ This mechanic allows you to strip custom logs in to stripped version, like in va
 
 ```yaml
 Mechanics:
-    noteblock:
-      custom_variation: 2
-      logStrip:
-        stripped_log: stripped_log #block that will change in to
+  noteblock:
+    custom_variation: 2
+    logStrip:
+      stripped_log: stripped_log #block that will change in to
 ```
 
 #### Drop after stripping
 
 ```yaml
 Mechanics:
-    noteblock:
-      custom_variation: 2
-      logStrip:
-        stripped_log: stripped_log #block that will change in to
-        drop: bark #additonal drop after right click mechanic
+  noteblock:
+    custom_variation: 2
+    logStrip:
+      stripped_log: stripped_log #block that will change in to
+      drop: bark #additonal drop after right click mechanic
 ```
 
 {% embed url="https://youtu.be/ohiGtlz_who" %}

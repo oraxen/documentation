@@ -21,9 +21,9 @@ To adjust the horizontal position of your texture/glyph in the inventory, use th
 ![](https://images-ext-2.discordapp.net/external/lXJpPHHy3JFqjn9qU\_JpNHjaP2edFMFvnQjuYvTghYE/https/mcmodels.net/wp-content/uploads/2022/01/image-1.png)
 
 ### How do I get the unicode for the glyph?
-This really is not necessary as Oraxen will handle the `<glyph:glyph_id>` tag in any inventory / title.
-So to add this glyph in any other plugin, just set the title to be `<glyph:glyph_id>`.
-If you still want the raw unicode, you can use the `/oraxen printglyph glyph_id` command.
+This really is not necessary as Oraxen will handle the `<glyph:glyph_id>` tag in any inventory / title.\
+So to add this glyph in any other plugin, just set the title to be `<glyph:glyph_id>`.\
+If you still want the raw unicode, you can find it in your glyphs config.
 
 ### How do I create an invisible item?
 

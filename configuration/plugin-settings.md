@@ -88,7 +88,7 @@ receive:
         period: -1
         # Click and Hover elements are only available by using the CHAT type
         messages:
-          - "&a&lResourcePack successfully loaded!"
+          - "<green><bold>ResourcePack successfully loaded!"
 
       # If you need to send commands
       commands:
@@ -108,7 +108,7 @@ receive:
         period: 3
         # Click and Hover elements are only available by using the CHAT type
         messages:
-          - "&a&lResourcePack accepted!"
+          - "<green><bold>ResourcePack accepted!"
           - "Thank you"
       # If you need to send commands
       commands:
@@ -158,17 +158,12 @@ receive:
 ## ConfigTools
 
 ```yaml
-  # Nice for production servers, automatically set model ID in settings so
-  # that you can other items without destroying the others already created
-  automatically_set_model_id: false
   enable_configs_updater: true
   error_item:
     material: PODZOL
     excludeFromInventory: false # set to true if you don't want to display it inside inventory
     injectID: false
 ```
-
-The `automatically_set_model_id` option is really important. If you set it to true, Oraxen will automatically edit your configurations to add a custom\_model\_data field, that way if you add another item, it won't take the same model\_data than your previous item and this will avoid breaking already existing items. Please enable this option on a production server (with players). If you work on a test server and reset items everytime, it is not required.
 
 ## CustomArmor
 ```yaml
@@ -199,20 +194,57 @@ reset_recipes: true
 
 This option can causes bug with other recipes plugins. If you notice bugs with a recipes plugin when reloading Oraxen, you can disable this option. If you do that, you will have to restart the server to refresh Oraxen recipes.
 
-## GUI Inventory
+## Oraxen Inventory
 
 ```yaml
-gui_inventory:
-  armors: emerald_chestplate
-  blocks: orax_ore
-  guis: CHEST
-  hats: crown
-  items: ruby
-  mobs: goblin_beetle
-  mystical: legendary_hammer
-  skins: wood_sword
-  tools: iron_serpe
-  weapons: energy_crystal_sword
+oraxen_inventory:
+  main_menu_title: "<shift:-18><glyph:menu_items><shift:-193>"
+  menu_rows: 6
+  menu_layout:
+    armors:
+      slot: 1
+      icon: emerald_chestplate
+      title: "<main_menu_title><#362753><glyph:menu_items_overlay:colorable>"
+    blocks:
+      slot: 2
+      icon: orax_ore
+      title: "<main_menu_title><#EDCDEB><glyph:menu_items_overlay:colorable>"
+    furniture:
+      slot: 3
+      icon: chair
+      title: "<main_menu_title><#F2F2F2><glyph:menu_items_overlay:colorable>"
+    flowers:
+      slot: 4
+      icon: dailily
+      title: "<main_menu_title><#bf332c><glyph:menu_items_overlay:colorable>"
+    hats:
+      slot: 5
+      icon: crown
+      title: "<main_menu_title><#81B125><glyph:menu_items_overlay:colorable>"
+    items:
+      slot: 6
+      icon: ruby
+      title: "<main_menu_title><#DA2E45><glyph:menu_items_overlay:colorable>"
+    mystical:
+      slot: 7
+      icon: legendary_hammer
+      title: "<main_menu_title><#9AB2E4><glyph:menu_items_overlay:colorable>"
+    plants:
+      slot: 8
+      icon: weed_leaf
+      title: "<main_menu_title><#44C886><glyph:menu_items_overlay:colorable>"
+    skins:
+      slot: 9
+      icon: wood_sword
+      title: "<main_menu_title><#C48E40><glyph:menu_items_overlay:colorable>"
+    tools:
+      slot: 10
+      icon: iron_serpe
+      title: "<main_menu_title><#FFFFFF><glyph:menu_items_overlay:colorable>"
+    weapons:
+      slot: 11
+      icon: energy_crystal_sword
+      title: "<main_menu_title><#2FB6FF><glyph:menu_items_overlay:colorable>"
 ```
 
 This allows you to configure an icon for every section of the Oraxen inventory. You can use Oraxen ids or Minecraft materials.

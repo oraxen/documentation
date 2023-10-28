@@ -87,7 +87,6 @@ rose_plant_stage2:
   Pack:
     generate_model: false
     model: custom/plants/rose_stage_2
-    custom_model_data: 329
 ```
 
 ### Third stage

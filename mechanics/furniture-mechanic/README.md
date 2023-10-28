@@ -7,10 +7,6 @@ coverY: 0
 
 # Furniture Mechanic
 
-## How does it work?
-
-Oraxen uses invisible item frames to add non cubic blocks to the game. This avoids some lags causes by armorstands You can then activate a transparent block (barrier) on top to act as a hitbox.
-
 ![Example furniture](<../../.gitbook/assets/image (3).png>)
 
 ## Example configuration per item
@@ -24,6 +20,7 @@ table:
     model: default/table
   Mechanics:
     furniture:
+      type: DISPLAY_ENTITY #Valid types are ITEM_FRAME, DISPLAY_ENTITY & GLOWING_ITEM_FRAME
       block_sounds:
         place_sound: block.stone.place
         break_sound: block.stone.break
@@ -67,6 +64,14 @@ Mechanics:
       fall_sound: my.custom.fallsound
 ```
 
+## Rotatable
+To make a furniture rotatable, simply add the following to your item's config.
+```yaml
+Mechanics:
+  furniture:
+    rotatable: true
+```
+
 ## ModelEngine Furniture
 To make use of a ModelEngine model as your furniture, simply add the following to your item's config:
 ```yaml
@@ -96,19 +101,23 @@ Barriers are invisible blocks placed with your furniture so that it has a realis
 ### Single barrier:
 
 ```yaml
-barrier: true
+Mechanics:
+  furniture:
+    barrier: true
 ```
 
 ### Multiple barriers:
 
 ```yaml
-barriers:
-    - { x: 0, y: 0, z: 0 }
-    - { x: 0, y: 0, z: 1 }
-    - { x: 0, y: 0, z: 2 }
-    - { x: 1, y: 0, z: 0 }
-    - { x: 1, y: 0, z: 1 }
-    - { x: 1, y: 0, z: 2 }
+Mechanics:
+  furniture:
+    barriers:
+      - { x: 0, y: 0, z: 0 }
+      - { x: 0, y: 0, z: 1 }
+      - { x: 0, y: 0, z: 2 }
+      - { x: 1, y: 0, z: 0 }
+      - { x: 1, y: 0, z: 1 }
+      - { x: 1, y: 0, z: 2 }
 ```
 
 # Seats
@@ -117,25 +126,33 @@ Currently it will also spawn a seat for every barrier, if there is multiple ones
 You can alter the height-offset of seats with the following configuration:  
 
 ```yaml
-seat: { height: 0.5 }
+Mechanics:
+  furniture:
+    seat: { height: 0.5 }
 ```
 You can also adjust the rotation if desired by adding a yaw section.  
 Keep in mind it is recommended to leave this off
 ```yaml
-seat: { height: -0.5, yaw: 90 }
+Mechanics:
+  furniture:
+    seat: { height: -0.5, yaw: 90 }
 ```
 
 # Limited placing
 You can customize what blocks a custom block/furniture can be placed on with `limited_placing` subsection.
 You can use the `roof`, `floor` and `wall` options to dictate where a block can be placed. By default, all are set to `true`.\
-The `type` specifies if it should only be allowed on or denied on specific blocks.  
-If type is `ALLOW` the block can only be placed on the given blocks.  
-If the type is `DENY` can be placed on all blocks not matching the given blocks.
+The `type` specifies if it should only be allowed on or denied on specific blocks.\
+If type is `ALLOW` the block can only be placed on the given blocks.\
+If the type is `DENY` can be placed on all blocks not matching the given blocks.\
+There is also a `radius_limitation` option, which allows you to limit the amount of a certain furniture within a radius.
 ```yaml
 chair:
   Mechanics:
     furniture:
       limited_placing:
+        radius_limitation:
+          radius: 20
+          amount: 10
         roof: false
         floor: true
         wall: false

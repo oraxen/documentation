@@ -35,13 +35,15 @@ This will make it easier to properly handle CustomModelData and mitigate most su
 CustomModelData is the most common pitfall of pack-conflicts.\
 Several packs tend to use the same materials and same CustomModelData values.\
 Oraxen has several methods it handles this.\
-1. If the config has no specified Pack.custom_model_data, Oraxen will assign the highest unused value based on the `material`
-   1. This value is not saved to the config, see below point, and vendors are adviced to leave it as such
-   2. If the `automatically_set_model_data` setting in `settings.yml` is enabled, this value will be saved to the config
-   3. Vendors should have this disabled and not specify a value for the CustomModelData in the configs, to let Oraxen assign an unused one
-2. Due to ModelEngine using `LEATHER_HORSE_ARMOR` as it's default property, it is adviced to not use this for configs.
-   1. Use another dyeable item like `TIPPED_ARROW` or `POTION` for best compatibility
-3. If you are making Custom Armor, be aware that different resolutions cannot be combined
+1. If the config has no specified Pack.custom_model_data, Oraxen will assign the highest unused value based on the `material` and `model`
+   1. This value is always saved to the config unless `disable_automatic_model_data` is set to true
+   2. Vendors should have this setting set to `true` and not specify a value for the CustomModelData in the configs, to let Oraxen assign an unused one
+2. For Glyphs, it is a similar situation. It has a `code`-property, and Oraxen will assign the highest unused value
+   1. This value is always saved to the config unless `disable_automatic_glyph_code` is set to true
+   2. Vendors should have this setting set to `true` and not specify a value for the Glyph code in the configs, to let Oraxen assign an unused one
+3. Due to ModelEngine using `LEATHER_HORSE_ARMOR` as it's default property, it is adviced to not use this for configs.
+   1. Use another dyeable item like `TIPPED_ARROW`, `POTION` or `SPLASH_POTION` for optimal compatibility
+4. If you are making Custom Armor, be aware that different resolutions cannot be combined
    1. Meaning any pack that adds 128x64 armor will not work with 64x32 armor
    2. The user should also be informed that they need to change the `armor_resolution` setting to match the pack they are using
    3. This should be set to the height-pixel count of the armor_layer files / 2. (128x64 = 32, 64x32 = 16 (default))
@@ -165,7 +167,7 @@ my_example_furniture:
 ```
 There are a few more properties as you can see.\
 The `type`-property is used to specify what type of furniture it is.\
-The options are `DISPLAY_ENTITY`, `ITEM_FRAME`, `GLOW_ITEM_FRAME` and `ARMOR_STAND`.\
+The options are `DISPLAY_ENTITY`, `ITEM_FRAME` and `GLOW_ITEM_FRAME`.\
 `DISPLAY_ENTITY` is a new type as of 1.19.4, and will only work on 1.19.4 servers and above.\
 It is recommended to set this to it either way, as it will be automatically converted to `ITEM_FRAME` on older versions.\
 This type has more properties and allows for better hitboxes and performance.\

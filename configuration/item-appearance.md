@@ -40,7 +40,7 @@ Pack:
 
 ### Use a json model
 
-Creating a json model can be time consuming but it allows you to create really cool things (like 3d items). It is really easy to integrate a json model with Oraxen : put your textures in your textures directory and your model in your models directory (inside Oraxen/pack folder). Then you can ask Oraxen to put this model on one of your items:
+Creating a json model can be time-consuming but it allows you to create really cool things (like 3d items). It is really easy to integrate a json model with Oraxen : put your textures in your textures directory and your model in your models directory (inside Oraxen/pack folder). Then you can ask Oraxen to put this model on one of your items:
 
 {% hint style="danger" %}
 ALWAYS USE LOWER CASE FOR MODEL AND TEXTURE NAMES. Upper case is n longer supported by minecraft vanilla since 1.11 (even though it still works for users using optifine).
@@ -70,8 +70,8 @@ Usually the templates you get place the textures in a folder, to make sure, open
 As you can see, the path to the texture is **custom/bonesword\_palette**, that means minecraft will be looking for a texture called **bonesword\_palette.png** in the folder "custom", so you need to create this folder inside "Oraxen/pack/textures". You can also remove "custom/" and keep the texture name only, so you just have to drag and drop it inside the textures folder without creating a subfolder.
 
 ### Use a blocking json model (for shield)
-
-If you want to use a custom model for a shield, you need to specific the blocking model which will be used when a user right click using your shield, hopefully this is easy with Oraxen. Here is what it can look like:
+If you want to use a custom model for a shield, you need to specific the blocking model which will be used when\
+a user right click using your shield, hopefully this is easy with Oraxen. Here is what it can look like:
 
 ```yaml
   Pack:
@@ -81,8 +81,9 @@ If you want to use a custom model for a shield, you need to specific the blockin
 ```
 
 ### Use a pulling json model (for bows)
-
-If you want to use a custom model for a shield, you need to specific the pulling model which will be used when a user right click using your bow, hopefully this is easy with Oraxen. Here is what it can look like:
+If you want to use a custom model for a shield, you need to specific the pulling model which will be\
+used when a user right click using your bow, hopefully this is easy with Oraxen.\
+Here is what it can look like:
 
 ```yaml
   Pack:
@@ -93,6 +94,7 @@ If you want to use a custom model for a shield, you need to specific the pulling
       - default/combat_bow_pulling_1
       - default/combat_bow_pulling_2
 ```
+This also works with pulling_textures if you only have texture files
 
 ### Use charged_model json model (for Crossbows)
 
@@ -107,6 +109,7 @@ If you want to use a custom model for a shield, you need to specific the pulling
     charged_model: default/custom_bow_pulling_2
     firework_model: default/custom_bow_charged #not so necessary
 ```
+This also works with charged_texture & firework_texture if you only have texture files
 
 ### Use cast_model json model (for fishing rods)
 
@@ -116,3 +119,16 @@ If you want to use a custom model for a shield, you need to specific the pulling
     model: default/fishing_rod
     cast_model: default/fishing_rod_cast
 ```
+This also works with cast_texture if you only have texture files
+
+### Use damaged_model json model (for different durability levels)
+```yml
+Pack:
+  generate_model: false
+  model: default/diamond_sword
+  damaged_models:
+    - default/diamond_sword_damaged1
+    - default/diamond_sword_damaged2
+    - default/diamond_sword_damaged3
+```
+This also works with damaged_textures if you only have texture files

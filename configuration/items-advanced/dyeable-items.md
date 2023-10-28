@@ -49,5 +49,4 @@ clock:
   Pack:
     generate_model: false
     model: custom/furniture/clock
-    custom_model_data: 76
 ```

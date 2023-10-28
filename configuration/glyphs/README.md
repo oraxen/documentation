@@ -31,6 +31,44 @@ This is likely due to misconfiguration of the glyphs' config.
 Please check your console for any errors, as it should tell you exactly which glyph is misconfigured and how it is.
 ![](https://user-images.githubusercontent.com/62521371/185404681-e0c1a881-e30b-446a-9f33-20dd88bae27c.png)
 
+## Multi-Bitmap glyphs
+If you have a png consisting of several emotes, you can make it a multi-bitmap.\
+This means you can, tie several glyphs to one image. This step requires some extra configuration to work however.\
+In fonts.yml there is a section for `bitmaps`.\
+Here you need to specify an `id`, which you will use in your glyph-configs.\
+You also need to specify the path to the texture, as well as how many rows and columns the bitmap has.\
+Below is an example of an entry in `fonts.yml`:
+
+```yaml
+bitmaps:
+  example_bitmap:
+    texture: example/example_bitmap
+    rows: 4
+    columns: 9
+    ascent: 8
+    height: 8
+```
+![](../../.gitbook/assets/example_bitmap.png)
+
+As you can see, the image shown above has 4 rows and 9 columns.\
+The ascent and height property will be the one used for all glyphs tied to this bitmap.\
+Now that you have your bitmap configured, you can link a glyphs to it.\
+In your glyph config, you need to specify the bitmap id, as well as the row and column of the glyph you want to use.\
+Below is an example of a glyph config using the bitmap above.
+
+```yaml
+example_glyph:
+  texture: default/chat/example_glyph
+  bitmap:
+    id: example_bitmap
+    row: 1
+    column: 1
+  #ascent: 8 # Not needed as bitmap specifies it
+  #height: 8 # Not needed as bitmap specifies it
+```
+
+This will link the glyph to the first emoji on the first row in the image above.
+
 ## Emoji List
 To make a glyph appear under `/oraxen emojis` you need to specify that it is one, like below.  
 If not specified, this will default to `false`
@@ -59,18 +97,14 @@ The placeholders can be used in chat by players with the required permission (if
 ## How to make glyphs tabcomplete?
 Simply set `tabcomplete: true` in the chat-section.  
 If not specified, this will default to `false`
+Tabcompletion is currently only available for servers on 1.19.3 and above.
 ```yaml
 chat:
   tabcomplete: true
-  tab_icon_texture: "something" # Not recommended to change from default unless you know how
-  tab_icon_signature: "something" # Not recommended to change from default unless you know how
   placeholders:
     - "<3"
   permission: "oraxen.emoji.heart"
 ```
-You can also change the icon displayed in tablist if you want to.  
-Simply change the `tab_icon_texture` and `tab_icon_signature` fields.  
-Unless you know how to get textures and signatures, it is recommended to leave them unspecified.
 
 ## Do not remove shifts.yml
 This file is used elsewhere in the default pack and removing it improperly will make the plugin fail to load.  
@@ -89,27 +123,15 @@ Shifts cannot use a transparent image, and your image used for them needs to be 
 The section name is the glyph id. In this example the glyph id is `heart`, the placeholder is `%oraxen_glyphid%`, so in this example: `%oraxen_heart%`\
 Glyph-ID is the first line in any glyphs config, it is not the texturename or the placeholder.\
 
-
 ### How do I use this in Prefixes / Luckperms
 To add a glyph to a luckperms prefix, commonly to display ranks, simply add `%oraxen_glyphid%` to your prefix solution of choice.\
 For example, if using LuckPerms, you can use the command: `/lp group default meta setprefix %oraxen_glyphid%` and it will replace it with the glyph.\
 Because most plugins only parse the placeholders one time, the %luckperms_prefix% will not be parsed again.\
 You will most likely need to get the Utils-Expansion for PlaceholderAPI aswell.\
-Use the command `/papi ecloud download Utils` to download it.\
+To get this, go to [this link](https://api.extendedclip.com/media/Utils-Expansion-1.0.1.jar), and place it in your plugins/PlaceholderAPI/expansions folder.\
 Then in your plugin of choice use `%utils_parse:2_luckperms_prefix%` to parse the prefix again.\
 Keep in mind your chatplugin must support PlaceholderAPI for this to work.\
-An alternative, though not adviced, is to use the raw unicode as described below.
-
-
-### How do I get the raw unicode of a glyph?
-You can use the following command to get the unicode from any glyph:  
-`/oraxen printglyph glyph_id`  
-This will copy the unicode to your clipboard.  
-You can also replace glyph_id with `all` to get a list of all your glyphs.  
-Below you can see what this looks like.  
-If you click, say `[dye_menu]` it will copy its unicode, and you can simply paste it where you need it.  
-The glyph is also shown when you hover over the glyph-id.
-![](https://user-images.githubusercontent.com/36164338/178945511-447ce8f7-28be-4687-bc02-8ef9b3f935ab.png)
+If this does not work for whatever reason, you can always use the raw unicode from your glyph-config's `char`-property
 
 ### How do I use a glyph in name/lore of an item?
 Any glyph can be used in name and lore of your item configurations.

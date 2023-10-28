@@ -38,7 +38,7 @@ I recommend that you watch his video to fully understand the concept. You can th
 
 ```yaml
 example_upper_section:
-  displayname: "&0"
+  displayname: "<black>"
   material: DIAMOND
   excludeFromInventory: true
   Pack:

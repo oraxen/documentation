@@ -18,14 +18,14 @@ This is a variable of the custom blocks, but now you have to have a thread-based
 
 ```yaml
 stringblock:
-    tool_types:
-      - WOODEN
-      - STONE
-      - IRON
-      - GOLDEN
-      - DIAMOND
-      - NETHERITE
-    enabled: true
+  tool_types:
+    - WOODEN
+    - STONE
+    - IRON
+    - GOLDEN
+    - DIAMOND
+    - NETHERITE
+  enabled: true
 ```
 
 ## How do I create a decoration?
