@@ -9,6 +9,28 @@ coverY: 0
 
 ## Vanilla options
 
+### ItemTemplate
+This allows you to easily copy properties from a template-item onto other items.\
+In the template item:
+```yml
+template_item:
+  template: true
+  material: DIAMOND_SWORD
+  ...
+```
+
+In the item you want to copy the properties to:
+```yml
+template_item1:
+  template: template_item
+  displayname: Template Item 1
+
+template_item2:
+  template: template_item
+  displayname: Template Item 2
+  material: CLOCK
+```
+
 ### DisplayName
 
 This allows you to change the name displayed on the top of an item.

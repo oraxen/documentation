@@ -52,7 +52,6 @@ epic_box_dry:
   Pack:
     generate_model: false
     model: epic_box_dry
-    custom_model_data: 83
   Mechanics:
     noteblock:
       custom_variation: 49
@@ -69,7 +68,6 @@ epic_box_wet:
   Pack:
     generate_model: false
     model: epic_box_wet
-    custom_model_data: 84
   Mechanics:
     noteblock:
       custom_variation: 48
@@ -103,7 +101,6 @@ epic_watering_vacuum:
   Pack:
     generate_model: false
     model: items/epic_watering_vacuum
-    custom_model_data: 499
 
 epic_watering_full:
   displayname: '<white>Epic Watering Full'
@@ -114,7 +111,6 @@ epic_watering_full:
   Pack:
     generate_model: false
     model: custom/plants/epic_watering_full
-    custom_model_data: 500
 ```
 
 

@@ -43,7 +43,6 @@ ruby_helmet:
   displayname: "<gradient:#FA7CBB:#F14658>Ruby Helmet"
   material: LEATHER_HELMET
   Pack:
-    custom_model_data: 3
     generate_model: true
     parent_model: "item/generated"
     textures:
