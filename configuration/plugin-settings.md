@@ -185,6 +185,11 @@ This option lets you hide the red scoreboard numbers.\
 **After:** \
 ![](https://media.discordapp.net/attachments/758785982005903431/1043486615655432193/image.png)
 
+### hide_scoreboard_background
+This option lets you hide the scoreboard background.\
+```yaml
+  hide_scoreboard_background: true
+```
 
 ### reset\_recipes
 
