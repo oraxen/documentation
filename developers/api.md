@@ -9,77 +9,8 @@ coverY: 0
 
 ## Add Oraxen to your plugin
 
-In order to use Oraxen API, you need to add Oraxen to your dependencies.\
-Below are repository and dependency information.\
-Replace `VERSION` with the Oraxen version you wish to use.\
-The [latest release](https://github.com/oraxen/oraxen/releases/latest) can be found here.\
-
-## Jitpack
-
-## With Maven
-#### Repository (jitpack)
-```markup
-<repository>
-  <id>jitpack.io</id>
-  <url>https://jitpack.io</url>
-</repository>
-```
-
-#### Dependency
-Because maven decides to be weird, you will need to exclude a lot of imports from Oraxen.\
-This is not an issue when using Gradle
-```markup
-<dependency>
-    <groupId>com.github.oraxen</groupId>
-    <artifactId>oraxen</artifactId>
-    <version>VERSION</version>
-    <scope>provided</scope>
-    <exclusions>
-        <exclusion>
-            <groupId>gs.mclo</groupId>
-            <artifactId>mclogs</artifactId>
-        </exclusion>
-        <exclusion>
-            <groupId>com.ticxo</groupId>
-            <artifactId>PlayerAnimator</artifactId>
-        </exclusion>
-        <exclusion>
-            <groupId>me.gabytm.util</groupId>
-            <artifactId>actions-spigot</artifactId>
-        </exclusion>
-        <exclusion>
-            <groupId>net.kyori</groupId>
-            <artifactId>*</artifactId>
-        </exclusion>
-        <exclusion>
-            <groupId>com.jeff_media</groupId>
-            <artifactId>*</artifactId>
-        </exclusion>
-    </exclusions>
-</dependency>
-```
-
-### With Gradle Kotlin
-#### Repository (jitpack)
-```kotlin
-maven("https://jitpack.io")
-```
-
-#### Dependency
-```kotlin
-compileOnly("com.github.oraxen:oraxen:VERSION")
-```
-
-### With Groovy
-#### Repository (jitpack)
-```groovy
-maven { url 'https://jitpack.io' }
-```
-
-#### Dependency
-```groovy
-compileOnly 'com.github.oraxen:oraxen:VERSION'
-```
+### Repository & Dependency Info
+You can find the repository and dependency notice [here](https://github.com/oraxen/oraxen#api).
 
 {% hint style="info" %}
 All methods and better explanations of their functionality and parameters can be found in the actual Classes.\
