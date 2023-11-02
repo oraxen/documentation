@@ -162,7 +162,7 @@ Mechanics:
       - "give diamond_sword 1"
 ```
 
-### PotionEffects
+### Armor Effects
 
 This allows you to bind a Potion Effect to an armor (or a hat) so that when you equip it you'll get the effect.
 
@@ -172,12 +172,22 @@ This allows you to bind a Potion Effect to an armor (or a hat) so that when you 
 
 ```yaml
 Mechanics:
-  armorpotioneffects:
+  armor_effects:
     night_vision: # the potion effect type
+      duration: 10
       amplifier: 0
       ambient: true # Makes potion effect produce more, translucent, particles.
       particles: true # whether this effect has particles or not
       icon: true # whether this effect has an icon or not
+```
+
+You can also make an effect only apply if the entire set it equipped.
+```yaml
+Mechanics:
+  armor_effects:
+    night_vision:
+      requires_full_set: true
+      ...
 ```
 
 ### Block and NoteBlock
