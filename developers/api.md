@@ -32,7 +32,8 @@ OraxenItems.getItemById(itemID); // where itemID is a section in items configura
 #### Check if an OraxenID exists
 
 ```java
-OraxenItems.isAnItem(itemID);
+OraxenItems.exists(itemID);
+OraxenItems.exists(itemStack);
 ```
 
 #### Extract an OraxenID from an ItemStack
@@ -61,10 +62,10 @@ OraxenFurniture.place(itemID, location, @Nullable player)
 
 ### Add resources to the pack
 
-#### Get access to the assets/ folder&#x20;
+#### Adding files to the pack
 
 ```java
-ResourcePack.getAssetsFolder();
+OraxenPack.addFilesToPack(fileArray)
 ```
 
 ### Mechanics:
