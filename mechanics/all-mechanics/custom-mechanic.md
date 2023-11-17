@@ -70,6 +70,9 @@ Called when a player unequips an item.
 ### INV_CLICK
 Called when a player clicks an item in an inventory.
 
+### DEATH
+Called when a player dies and would normally drop the given item.
+
 ## Available conditions
 
 ### HAS_PERMISSION:the.permission
