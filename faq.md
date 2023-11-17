@@ -23,13 +23,6 @@ If you want to prevent this you can get [BungeePackLayer](https://www.spigotmc.o
 This is a Bungee/Velocity plugin which will prevent the pack from being resent, unless it is different.\
 A pack will be different if the config files on all servers are not identical.\
 
-## All my furniture broke?
-This is probably because Oraxen did not load when the server was started.\
-Thus any furniture with barriers would break when loaded.\
-To fix this, you can get [FurnitureBreakProtection](https://www.spigotmc.org/resources/oraxenfurniturebreakprotection.106015/).\
-This is an addon we made to prevent this in case Oraxen should somehow fail to load.\
-It also has a command, `/oraxen_fix_furniture <radius>` to fix furniture that was broken by this issue.
-
 ## Can I disable the default assets and configs Oraxen comes with?
 Yes, `settings.yml` contains options to disable both of these.\
 Note: Required configs and assets will still be generated, but most will be disabled.
