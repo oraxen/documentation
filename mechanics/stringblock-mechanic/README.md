@@ -59,6 +59,17 @@ To use this mechanic you need to tell oraxen which model to use (to use the gene
           - { oraxen_item: jasmine_flower, probability: 1.0 }
 ```
 
+## BlockLocker
+You can use this to allow protection via [BlockLocker](https://www.spigotmc.org/resources/blocklocker.3268/)
+Valid protectionTypes are CONTAINER, DOOR, ATTACHABLE
+```yaml
+Mechanics:
+  furniture:
+    blocklocker:
+      can_protect: true
+      protection_type: CONTAINER
+```
+
 The other mechanics are almost the same as the custom blocks, please read their category for more information and not all of them should work correctly, just use the ones on this page.
 
 ### How do I create a decoration with my own model?

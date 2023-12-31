@@ -112,6 +112,17 @@ Mechanics:
         - {oraxen_item: my_custom_item, probability: 1.0}
 ```
 
+## BlockLocker
+You can use this to allow protection via [BlockLocker](https://www.spigotmc.org/resources/blocklocker.3268/)
+Valid protectionTypes are CONTAINER, DOOR, ATTACHABLE
+```yaml
+Mechanics:
+  furniture:
+    blocklocker:
+      can_protect: true
+      protection_type: CONTAINER
+```
+
 {% hint style="info" %}
 You need LightAPI for this, but will not work on any modern version of Paper due to chunk and lighting changes in Paper.\
 You can find a fork of the original plugin [here](https://github.com/IPECTER/LighterAPI/releases/tag/5.4.0-SNAPSHOT)\
