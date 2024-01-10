@@ -47,6 +47,7 @@ Mechanics:
 This mechanic does not support furniture with no hitbox.
 {% endhint %}
 
+
 ### Conditions
 
 Conditions are VERY configurable. You can use any of the "get" methods for Player or Server. See the Spigot Javadocs for all methods.
