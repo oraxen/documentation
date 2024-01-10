@@ -216,7 +216,7 @@ Mechanics:
 ```
 
 ## BlockLocker
-You can use this to allow protection via [BlockLocker](https://www.spigotmc.org/resources/blocklocker.3268/)
+You can use this to allow protection via [BlockLocker](https://www.spigotmc.org/resources/blocklocker.3268/)\
 Valid protectionTypes are CONTAINER, DOOR, ATTACHABLE
 ```yaml
 Mechanics:
@@ -225,7 +225,3 @@ Mechanics:
       can_protect: true
       protection_type: CONTAINER
 ```
-
-### Video Tutorial
-
-{% embed url="https://www.youtube.com/watch?t=329s&v=ch4Fufti5Rg" %}
