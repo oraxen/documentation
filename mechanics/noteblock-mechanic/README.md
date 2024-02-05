@@ -144,7 +144,7 @@ There's a few different types: _STORAGE, PERSONAL, ENDERCHEST & DISPOSAL_.\
 
 ```yaml
 Mechanics:
-  furniture:
+  noteblock:
     barrier: true
     storage:
       type: STORAGE
@@ -156,6 +156,15 @@ Mechanics:
 {% hint style="info" %}\
 This mechanic can also be used with the furniture mechanic!\
 {% endhint %}
+
+### Falling Blocks
+This is a sub-mechanic that mimics sand & gravel for your custom block.
+Placing it next to another block, with no block beneath, will make it fall
+```yaml
+Mechanics:
+  noteblock:
+    is_falling: true # Default to false if unspecified
+```
 
 ### Ores
 
