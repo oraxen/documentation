@@ -114,6 +114,7 @@ Mechanics:
     can_strip_logs: false
     piglins_ignore_when_equipped: false
     compostable: false
+    allow_in_vanilla_recipes: true
 ```
 
 ### Repair

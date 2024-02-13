@@ -200,9 +200,7 @@ This mechanic requires a barrier(s) if used with furniture!
 
 ## Light
 
-You can configure your furniture so it produces light. To do so you need to install this plugin: [LightAPI](https://www.spigotmc.org/resources/lightapi.4510/).
-
-This allows you to use a new option: light. This option corresponds to light intensity and must be between 1 and 15.
+You can configure your furniture so it emits light. This option corresponds to light intensity and must be between 1 and 15.
 
 ```yaml
 Mechanics:
