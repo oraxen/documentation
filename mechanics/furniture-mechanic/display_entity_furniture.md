@@ -35,8 +35,8 @@ cart:
       display_entity_properties:
         display_transform: NONE
         brightness:
-          block: 15
-          sky: 0
+          block_light: 15
+          sky_light: 0
       barrier: true
   Pack:
     generate_model: false
@@ -80,13 +80,13 @@ Options are:\
 `CENTER` - Pivots around center point
 
 The `brightness`-property is a way to have your furniture emit light.\
-It has a `block` and `sky` property for the different types of lighting Minecraft has.
+It has a `block_light` and `sky_light` property for the different types of lighting Minecraft has.
 Config should look like this:
 ```yaml
 display_entity_properties:
   brightness:
-    block: 15
-    sky: 0
+    block_light: 15
+    sky_light: 0
 ```
 
 The `scale`-property is a way to scale the furniture.\
