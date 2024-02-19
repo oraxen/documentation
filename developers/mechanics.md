@@ -207,11 +207,17 @@ class DurabilityMechanicsManager implements Listener {
 ### Last step: register our mechanic
 
 To finish we need to register our MechanicFactory and reload the items to apply the new mechanic to them.\
+It is recommended to register it in an EventListener for `OraxenNativeMechanicsRegisteredEvent`, due to `/oraxen reload all` clearing this registry.\
 To do this we need to add these lines in the onEnable method of our plugin:
 
 ```java
-MechanicsManager.registerMechanicFactory("durability", DurabilityMechanicFactory::new, true);
-OraxenItems.loadItems();
+Bukkit.getPluginManager().registerEvents(new Listener() {
+    @EventHandler
+    public void onMechanicRegister(OraxenNativeMechanicsRegisteredEvent event) {
+        MechanicsManager.registerMechanicFactory("durability", DurabilityMechanicFactory::new, true);
+        OraxenItems.loadItems();
+    }
+}, this);
 ```
 
 ## Conclusion
