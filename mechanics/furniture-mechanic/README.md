@@ -139,6 +139,16 @@ Mechanics:
     seat: { height: -0.5, yaw: 90 }
 ```
 
+# Restrict Rotation
+You can restrict the amount of rotation-facings a furniture has with `restricted_rotation`.\
+It can be set to STRICT or VERY_STRICT, with 8 and 4 facings respectively.\
+```yaml
+chair:
+  Mechanics:
+    furniture:
+      restricted_rotation: VERY_STRICT #STRICT is default if unspecified
+```
+
 # Limited placing
 You can customize what blocks a custom block/furniture can be placed on with `limited_placing` subsection.
 You can use the `roof`, `floor` and `wall` options to dictate where a block can be placed. By default, all are set to `true`.\
