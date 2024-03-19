@@ -21,7 +21,7 @@ Simply open them in your IDE to get a full list of them.
 
 Oraxen is built around an ItemsBuilder class that allows you to create items easily. When the plugin starts it parses the configurations to generate builders for each type of items. Each builder can be used to generate itemstacks.
 
-### [OraxenItems](https://github.com/Th0rgal/Oraxen/blob/master/src/main/java/io/th0rgal/oraxen/items/OraxenItems.java) class:&#x20;
+### [OraxenItems](https://github.com/Th0rgal/Oraxen/blob/master/core/src/main/java/io/th0rgal/oraxen/api/OraxenItems.java) class:&#x20;
 
 #### Get an ItemBuilder from an OraxenID
 
