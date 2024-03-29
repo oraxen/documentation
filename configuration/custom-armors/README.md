@@ -6,9 +6,71 @@ coverY: 0
 ---
 
 # Custom Armors
-Just like other items, armor have a texture for when it is held or in your inventory, but also a texture for when a player equips it.  
-Oraxen alters this second texture by using colored leather armor and shaders.  
-Armor has like every item a texture in the inventory and in the hand, but it also has a second texture when worn on the body. 
+Just like other items, armor have a texture for when it is held or in your inventory, but also a texture for when a player equips it.\
+Oraxen comes with two ways to add custom armor: Trims & Shaders.\
+Trims is designed around the Armor-Trim system added in Minecraft 1.20, and will not work on earlier versions.\
+Shaders utilizes core-shaders, which were added in 1.17.
+
+**Armor-Trim** method is recommended if your server is 1.20+ and only allows 1.20+ players.\
+It has the benefit of not breaking with shaders / requiring extra mods to work.\
+It also is not locked to only LEATHER armor-materials, by default using CHAINMAIL.
+
+**Core-Shader** method is recommended if your server is below 1.20 or allow players on older versions.\
+Compared to armor-trims this method breaks with shaders in Optifine & Iris mods.\
+To fix this Oraxen generates CIT-textures into the pack.\
+This works out-of-the-box with Optifine, but players using Iris will also need [CIT Resewn](https://modrinth.com/mod/cit-resewn).
+
+## Custom Armor - Armor Trims
+If using trims as your custom-armor type, most things is handled automatically for you.\
+Unlike with Core Shader method, trims aren't limited to just using LEATHER-materials.
+
+By default, Oraxen is set to use CHAINMAIL, but this can be changed in `settings.yml`.\
+Oraxen then generates a datapack based on your configured custom armors.\
+Due to it requiring a datapack, the server needs to do a full restart any time you add/remove an armor-set.
+
+{% hint style="danger" %}
+After changing `CustomArmor.armor_type` to `TRIMS` you need to:
+1. Start your server to let datapack be generated
+2. Stop your server
+3. Start it again to enable the previously generated datapack
+{% endhint %}
+
+### How to configure your armor?
+
+{% hint style="info" %}
+Make sure that the itemID of your OraxenItem follows the pattern `armorname_armortype`.\
+For the rest of the above set it would be `ruby_chestplate`, `ruby_leggings` and `ruby_boots`.
+
+Make sure your armor-layer files follow the format of **armorname**_armor_layer_1/2.png.\
+In the example below, we would need a **ruby**_armor_layer_1.png & **ruby**_armor_layer_2.png
+{% endhint %}
+
+Simply set the material and specify the texture-icon twice
+```yaml
+ruby_helmet:
+  displayname: "<gradient:#FA7CBB:#F14658>Ruby Helmet"
+  material: CHAINMAIL_HELMET
+  Pack:
+    generate_model: true
+    parent_model: "item/generated"
+    textures:
+      - default/armors/ruby_helmet
+      - default/armors/ruby_helmet
+```
+
+A trim-pattern is also necessary for the armor to display correctly.\
+Oraxen will automatically assign it if it has not been manually specified.\
+You can optionally manually assign the `trim_pattern` if you want to.\
+The value should be `oraxen:armorname`, so in our example;
+```yaml
+ruby_helmet:
+  trim_pattern: oraxen:ruby
+```
+
+
+## Custom Armor - Core Shaders
+Oraxen alters this second texture by using colored leather armor and shaders.\
+Armor has like every item a texture in the inventory and in the hand, but it also has a second texture when worn on the body\
 This second appearance has some limitations and requires some practice. We will use a trick with leather armor and colors.
 
 {% hint style="danger" %}
@@ -33,9 +95,7 @@ And in [step 2](./#2-name-your-textures-correctly) you'll be able to create the 
 \- **amethyst**_armor_layer_2.png
 {% endhint %}
 
-
-
-## How to configure your armor?
+#### How to configure your armor?
 
 For this we will be using the below config example for reference:
 ```yaml
@@ -60,7 +120,7 @@ Custom Armor can not be made with Diamond as the base material.\
 To get custom armor amounts, simply add Attribute Modifiers.\
 {% endhint %}
 
-## How to change the equipped appearance?
+### How to change the equipped appearance?
 
 Now the fun begins. We're going to use a vanilla shader to associate an armor style with a specific color.  
 Thanks to [Ancientkingg](https://twitter.com/ancientkingg) for developing the shader used by Oraxen.
