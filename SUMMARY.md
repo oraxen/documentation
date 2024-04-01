@@ -5,12 +5,12 @@
 
 ## Usage
 
-* [Commands](usage/commands.md)
-* [Recipes](usage/recipes.md)
+* [⚙️ Installation](usage/installation.md)
+* [⌨️ Commands](usage/commands.md)
+* [🧑‍🍳 Recipes](usage/recipes.md)
 
 ## Configuration
 
-* [Understanding the basics](configuration/understanding-the-basics.md)
 * [Plugin settings](configuration/plugin-settings.md)
 * [Items (beginners)](configuration/create-your-first-item.md)
 * [Items (advanced)](configuration/items-advanced/README.md)
