@@ -7,14 +7,15 @@ cover: >-
 coverY: 0
 ---
 
-# All mechanics
+# Other Mechanics
 
 ## Miscellaneous
 
 ### Custom Food
-This mechanic allows you to set food-related properties for any food item.  
-This means you can create foods which refill different amounts of hunger and saturation.  
-It also lets you set a replacement item for when the food has been consumed.  
+
+This mechanic allows you to set food-related properties for any food item.\
+This means you can create foods which refill different amounts of hunger and saturation.\
+It also lets you set a replacement item for when the food has been consumed.
 
 Below is a config example of the mechanic-part for a custom food:
 
@@ -38,17 +39,21 @@ Mechanics:
 ```
 
 ### Backpack
-This allows you to turn any item into a backpack.\
+
+This allows you to turn any item into a backpack.\\
 
 {% hint style="info" %}
 This mechanic might cause duplication issues!\
-If you find any please open a [bug-report](https://github.com/oraxen/oraxen/issues/new?assignees=&labels=bug&template=bug-report.yml&title=%5BBUG%5D+%3Cname+for+bug%3E) and we will fix them as soon as possible!\
+If you find any please open a [bug-report](https://github.com/oraxen/oraxen/issues/new?assignees=\&labels=bug\&template=bug-report.yml\&title=%5BBUG%5D+%3Cname+for+bug%3E) and we will fix them as soon as possible!\\
 {% endhint %}
+
 {% hint style="warning" %}
 There is currently a known dupe, if your backpack is using a stackable material like paper.\
-Make sure to specify that the item should be unstackable, like shown below.\
+Make sure to specify that the item should be unstackable, like shown below.\\
 {% endhint %}
+
 #### Per item configuration
+
 ```yml
 backpack:
   displayname: backpack
@@ -63,8 +68,10 @@ backpack:
 ```
 
 ### Music Disc
+
 This allows you to make custom music discs with custom sounds.\
-To add a sound simply follow the default example by adding it into `Oraxen/sound.yml`\
+To add a sound simply follow the default example by adding it into `Oraxen/sound.yml`\\
+
 {% hint style="warning" %}
 Any stereo sounds will not play at a specific position or following an entity.\
 If you want this you need to make sure your .ogg sound-file is in mono sound format.
@@ -72,15 +79,17 @@ If you want this you need to make sure your .ogg sound-file is in mono sound for
 
 `song` is the namespace:sound.name as you defined it in `sound.yml`.\
 If your sound.yml entry looks like this:
+
 ```yml
 sounds:
   my_music_disc_song.mysong:
     category: record
     sound: mysong.ogg
 ```
-This means your .ogg file is in the path `Oraxen/sounds/mysong.ogg`,
-and your sound-ID is `my_music_disc_song.mysong` with the namespace minecraft.\
+
+This means your .ogg file is in the path `Oraxen/sounds/mysong.ogg`, and your sound-ID is `my_music_disc_song.mysong` with the namespace minecraft.\
 If you are importing sounds.json into another namespace, the namespace would naturally not be minecraft
+
 ```yml
 Mechanics:
   music_disc:
@@ -89,7 +98,7 @@ Mechanics:
 
 ### Durability
 
-This allows you to change the durability of an item created with Oraxen. Minecraft vanilla wasn't made to handle that kind of modifications, this is why this system is not perfect. You'll not see the good  durability on your item, it will just work as a percentage. What that means is that if for example you create a pickaxe based off the wooden pickaxe (which has 59 of durability by default) and you change it to 5900, you'll still see 59 of durability on your item. But you'll need to break 100 blocks in order to lose of one durability. The cool thing is that the displayed bar will be updated correctly.
+This allows you to change the durability of an item created with Oraxen. Minecraft vanilla wasn't made to handle that kind of modifications, this is why this system is not perfect. You'll not see the good durability on your item, it will just work as a percentage. What that means is that if for example you create a pickaxe based off the wooden pickaxe (which has 59 of durability by default) and you change it to 5900, you'll still see 59 of durability on your item. But you'll need to break 100 blocks in order to lose of one durability. The cool thing is that the displayed bar will be updated correctly.
 
 #### Per item configuration
 
@@ -102,8 +111,10 @@ Mechanics:
 ```
 
 ### Misc Mechanic
+
 This mechanic has a bunch of small changes you can make to your item.\
 What they each do should be pretty self-explanatory.
+
 ```yaml
 Mechanics:
   misc:
@@ -132,7 +143,7 @@ Mechanics:
 
 #### Global configuration
 
-If you enable oraxen_durability_only, this mechanic will only work with items using oraxen Durability mechanic.
+If you enable oraxen\_durability\_only, this mechanic will only work with items using oraxen Durability mechanic.
 
 ```yaml
 repair:
@@ -183,6 +194,7 @@ Mechanics:
 ```
 
 You can also make an effect only apply if the entire set it equipped.
+
 ```yaml
 Mechanics:
   armor_effects:
@@ -193,7 +205,7 @@ Mechanics:
 
 ### Block and NoteBlock
 
-These mechanic allows you to use an item as block. Since these are quite special mechanics, they have a [dedicated tutorial page](../noteblock-mechanic/).
+These mechanic allows you to use an item as block. Since these are quite special mechanics, they have a [dedicated tutorial page](noteblock-mechanic/).
 
 ### clickAction
 
@@ -201,7 +213,7 @@ This mechanic allows you to run various events when a player clicks a block or f
 
 ### Aura
 
-Do you want to show a cool particle effect when a player holds your item? The Aura mechanic is your way  to go. You can find a list of available particles here: [https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html)
+Do you want to show a cool particle effect when a player holds your item? The Aura mechanic is your way to go. You can find a list of available particles here: [https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html)
 
 #### Per item configuration (easy)
 
@@ -237,7 +249,7 @@ Mechanics:
 
 ### ItemType
 
-With this mechanic, you can change the item type detected by OraxenBlocks. Make sure to use a type declared [inside the block mechanic](../noteblock-mechanic/#global-configuration).&#x20;
+With this mechanic, you can change the item type detected by OraxenBlocks. Make sure to use a type declared [inside the block mechanic](noteblock-mechanic/#global-configuration).
 
 #### Per item configuration
 

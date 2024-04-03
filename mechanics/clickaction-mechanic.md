@@ -15,7 +15,7 @@ The `clickAction` mechanic allows you to run commands, play sounds, or send mess
 
 ### Configuration
 
-To get started, create a basic [Block](../noteblock-mechanic/) or [Furniture](../furniture-mechanic/).
+To get started, create a basic [Block](noteblock-mechanic/) or [Furniture](furniture-mechanic/).
 
 Next, under the mechanics section, you can add the default clickAction mechanic under any\
 noteblock-mechanic, furniture-mechanic or stringblock-mechanic item.
@@ -46,7 +46,6 @@ Mechanics:
 {% hint style="danger" %}
 This mechanic does not support furniture with no hitbox.
 {% endhint %}
-
 
 ### Conditions
 
@@ -99,6 +98,3 @@ Additionally, the Spring Documentation is a good resource for understanding how 
 `[actionbar] <gray>Hello from the actionbar!`
 
 `{source=AMBIENT volume=0.1 pitch=1} [sound] minecraft:block.shulker_box.close`
-
-
-

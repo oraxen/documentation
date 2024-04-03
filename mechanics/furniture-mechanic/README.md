@@ -5,11 +5,13 @@ cover: >-
 coverY: 0
 ---
 
-# Furniture Mechanic
+# 🪑 Furniture Mechanic
+
+## Furniture Mechanic
 
 ![Example furniture](<../../.gitbook/assets/image (3).png>)
 
-## Example configuration per item
+### Example configuration per item
 
 ```yaml
 table:
@@ -33,9 +35,12 @@ table:
         loots:
           - { oraxen_item: table, probability: 1.0 }
 ```
-## Custom Sounds
-Furniture, like custom blocks, can have custom sounds.  
+
+### Custom Sounds
+
+Furniture, like custom blocks, can have custom sounds.\
 Currently the options are place/break/hit/step/fall.
+
 ```yaml
 Mechanics:
   furniture:
@@ -46,10 +51,12 @@ Mechanics:
       step_sound: my.custom.stepsound   # Requires a sound-file in the Oraxen/pack-folder aswell
       fall_sound: my.custom.fallsound
 ```
+
 All the volume and pitch values are set to be what Minecraft uses for blocks normally.\
 If you want to change the volume or pitch, you can do so by using the format below.\
 Keep in mind these two formats are compatible with eachother.\
 We recommend just use the default one, but the option is there if you want to change it.
+
 ```yaml
 Mechanics:
   furniture:
@@ -64,27 +71,33 @@ Mechanics:
       fall_sound: my.custom.fallsound
 ```
 
-## Rotatable
+### Rotatable
+
 To make a furniture rotatable, simply add the following to your item's config.
+
 ```yaml
 Mechanics:
   furniture:
     rotatable: true
 ```
 
-## ModelEngine Furniture
+### ModelEngine Furniture
+
 To make use of a ModelEngine model as your furniture, simply add the following to your item's config:
+
 ```yaml
 Mechanics:
   furniture:
     modelengine_id: name_of_your_bbmodel_file
 ```
 
-## Jukebox
+### Jukebox
+
 Lets this furniture accept music discs and custom music discs which will be played.\
 You can tweak the `volume` and `pitch` of the music from the jukebox.\
 There is also a `permission` field, which can be used if you only want certain players to be able to play music from the jukebox.\
 By default permission is blank, which means anyone can play music from the jukebox.
+
 ```yaml
 Mechanics:
   furniture:
@@ -94,11 +107,11 @@ Mechanics:
       permission: "oraxen.jukebox.play"
 ```
 
-## Barriers
+### Barriers
 
 Barriers are invisible blocks placed with your furniture so that it has a realistic hitbox. You can place a single one or a list relative to the position of the player who places them.
 
-### Single barrier:
+#### Single barrier:
 
 ```yaml
 Mechanics:
@@ -106,7 +119,7 @@ Mechanics:
     barrier: true
 ```
 
-### Multiple barriers:
+#### Multiple barriers:
 
 ```yaml
 Mechanics:
@@ -121,27 +134,32 @@ Mechanics:
           z: 2
 ```
 
-# Seats
-<b>Seats are only available when barriers are enabled.</b>  
-Currently it will also spawn a seat for every barrier, if there is multiple ones.  
-You can alter the height-offset of seats with the following configuration:  
+## Seats
+
+Seats are only available when barriers are enabled.\
+Currently it will also spawn a seat for every barrier, if there is multiple ones.\
+You can alter the height-offset of seats with the following configuration:
 
 ```yaml
 Mechanics:
   furniture:
     seat: { height: 0.5 }
 ```
-You can also adjust the rotation if desired by adding a yaw section.  
+
+You can also adjust the rotation if desired by adding a yaw section.\
 Keep in mind it is recommended to leave this off
+
 ```yaml
 Mechanics:
   furniture:
     seat: { height: -0.5, yaw: 90 }
 ```
 
-# Restrict Rotation
+## Restrict Rotation
+
 You can restrict the amount of rotation-facings a furniture has with `restricted_rotation`.\
-It can be set to STRICT or VERY_STRICT, with 8 and 4 facings respectively.\
+It can be set to STRICT or VERY\_STRICT, with 8 and 4 facings respectively.\\
+
 ```yaml
 chair:
   Mechanics:
@@ -149,13 +167,14 @@ chair:
       restricted_rotation: VERY_STRICT #STRICT is default if unspecified
 ```
 
-# Limited placing
-You can customize what blocks a custom block/furniture can be placed on with `limited_placing` subsection.
-You can use the `roof`, `floor` and `wall` options to dictate where a block can be placed. By default, all are set to `true`.\
+## Limited placing
+
+You can customize what blocks a custom block/furniture can be placed on with `limited_placing` subsection. You can use the `roof`, `floor` and `wall` options to dictate where a block can be placed. By default, all are set to `true`.\
 The `type` specifies if it should only be allowed on or denied on specific blocks.\
 If type is `ALLOW` the block can only be placed on the given blocks.\
 If the type is `DENY` can be placed on all blocks not matching the given blocks.\
 There is also a `radius_limitation` option, which allows you to limit the amount of a certain furniture within a radius.
+
 ```yaml
 chair:
   Mechanics:
@@ -178,12 +197,13 @@ chair:
           - ruby_ore
 ```
 
-The `block_tags` can be found at [this page](https://minecraft.fandom.com/wiki/Tag#Block_tags). Useful if you want to allow/deny a group of blocks.  
-The `block_types` are materials. Useful if you want to allow/deny a specific list block.  
-The `oraxen_blocks` are blocks defined in the oraxen configuration.  
+The `block_tags` can be found at [this page](https://minecraft.fandom.com/wiki/Tag#Block\_tags). Useful if you want to allow/deny a group of blocks.\
+The `block_types` are materials. Useful if you want to allow/deny a specific list block.\
+The `oraxen_blocks` are blocks defined in the oraxen configuration.\
 This allows all custom blocks and furniture in here, but furniture requires a barrier-hitbox.
 
-# Storage
+## Storage
+
 This is a sub-mechanic for furniture and noteblock mechanics, that let you make a custom storage container.\
 Essentially a chest, closet or whatever you might want.
 
@@ -191,7 +211,7 @@ There's a few different types: _STORAGE, PERSONAL, ENDERCHEST & DISPOSAL_.\
 **STORAGE** is similar to a normal chest. Anyone can open it and view the content of it.\
 **PERSONAL** is essentially a custom enderchest, letting you edit the row-count and so on.\
 **ENDERCHEST** is literally just the enderchest inventory, but letting you make a custom block/furniture to access it.\
-**DISPOSAL** is a custom trashcan, letting you throw items in it, and they will be deleted when closed.\
+**DISPOSAL** is a custom trashcan, letting you throw items in it, and they will be deleted when closed.\\
 
 ```yaml
 Mechanics:
@@ -204,11 +224,12 @@ Mechanics:
       open_sound: entity.shulker.open     # Default: entity.chest.open
       close_sound: entity.shulker.close   # Default: entity.chest.close
 ```
+
 {% hint style="info" %}
 This mechanic requires a barrier(s) if used with furniture!
 {% endhint %}
 
-## Light
+### Light
 
 You can configure your furniture so it emits light. This option corresponds to light intensity and must be between 1 and 15.
 
@@ -223,9 +244,11 @@ Mechanics:
         - { oraxen_item: table, probability: 1.0 }
 ```
 
-## BlockLocker
+### BlockLocker
+
 You can use this to allow protection via [BlockLocker](https://www.spigotmc.org/resources/blocklocker.3268/)\
 Valid protectionTypes are CONTAINER, DOOR, ATTACHABLE
+
 ```yaml
 Mechanics:
   furniture:

@@ -24,10 +24,7 @@
 ## Mechanics
 
 * [Introduction](mechanics/mechanics-introduction.md)
-* [All mechanics](mechanics/all-mechanics/README.md)
-  * [Custom mechanic](mechanics/all-mechanics/custom-mechanic.md)
-  * [clickAction Mechanic](mechanics/all-mechanics/clickaction-mechanic.md)
-* [Furniture Mechanic](mechanics/furniture-mechanic/README.md)
+* [🪑 Furniture Mechanic](mechanics/furniture-mechanic/README.md)
   * [Furniture Position](mechanics/furniture-mechanic/furniture\_position.md)
   * [Display-Entity Furniture](mechanics/furniture-mechanic/display\_entity\_furniture.md)
   * [Farming Mechanic](mechanics/furniture-mechanic/farming-mechanic.md)
@@ -37,6 +34,9 @@
   * [Farmblock Mechanic](mechanics/noteblock-mechanic/farmblock-mechanic.md)
 * [StringBlock Mechanic](mechanics/stringblock-mechanic/README.md)
   * [Sapling Mechanic](mechanics/stringblock-mechanic/sapling-mechanic.md)
+* [Other Mechanics](mechanics/all-mechanics.md)
+* [clickAction Mechanic](mechanics/clickaction-mechanic.md)
+* [Custom mechanic](mechanics/custom-mechanic.md)
 
 ## Compatibility
 
