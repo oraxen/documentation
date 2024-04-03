@@ -10,6 +10,7 @@ coverY: 0
 ## Add Oraxen to your plugin
 
 ### Repository & Dependency Info
+
 You can find the repository and dependency notice [here](https://github.com/oraxen/oraxen#api).
 
 {% hint style="info" %}
@@ -21,18 +22,12 @@ Simply open them in your IDE to get a full list of them.
 
 Oraxen is built around an ItemsBuilder class that allows you to create items easily. When the plugin starts it parses the configurations to generate builders for each type of items. Each builder can be used to generate itemstacks.
 
-### [OraxenItems](https://github.com/Th0rgal/Oraxen/blob/master/src/main/java/io/th0rgal/oraxen/items/OraxenItems.java) class:&#x20;
+### [OraxenItems](https://github.com/Th0rgal/Oraxen/blob/master/src/main/java/io/th0rgal/oraxen/items/OraxenItems.java) class:
 
 #### Get an ItemBuilder from an OraxenID
 
 ```java
 OraxenItems.getItemById(itemID); // where itemID is a section in items configurations
-```
-
-#### Check if an OraxenID exists
-
-```java
-OraxenItems.isAnItem(itemID);
 ```
 
 #### Extract an OraxenID from an ItemStack
@@ -48,23 +43,15 @@ OraxenItems.getIdByItem(itemstack);
 #### Place an OraxenBlock
 
 Place an OraxenBlock at a given location
+
 ```java
 OraxenBlocks.place(itemID, location)
 ```
 
 Place an OraxenFurniture at a given location, optionally setting a player for rotation purposes
+
 ```java
 OraxenFurniture.place(itemID, location, @Nullable player)
-```
-
-
-
-### Add resources to the pack
-
-#### Get access to the assets/ folder&#x20;
-
-```java
-ResourcePack.getAssetsFolder();
 ```
 
 ### Mechanics:
