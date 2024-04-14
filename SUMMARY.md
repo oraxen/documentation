@@ -38,11 +38,8 @@
 
 ## Compatibility
 
-* [BossShopPro - shop](compatibility/bossshoppro-shop.md)
-* [CrateReloaded - crates](compatibility/cratereloaded-crates.md)
 * [ModelEngine - custom mobs](compatibility/modelengine-custom-mobs.md)
 * [MythicMobs - custom mobs](compatibility/mythicmobs-custom-mobs.md)
-* [TrMenu - custom inventories](compatibility/trmenu-custom-inventories.md)
 * [MMoItems](compatibility/mmoitems.md)
 * [MythicCrucible](compatibility/crucible.md)
 * [HappyHUD](compatibility/happyhud.md)
