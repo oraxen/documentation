@@ -8,25 +8,19 @@ coverY: 0
 
 ## How does it work?
 
-This is a variable of the custom blocks, but now you have to have a thread-based hitbox that allows you to make small decorative objects that can be traversed and are more optimized than furniture and the custom\_variation is different from that of the blocks.
+This is a type of CustomBlock best aimed at plants, rocks and other foliage.\
+It uses the vanilla TripWire block and therefore will disable all normal behaviour TripWires might have.\
+This allows for up to 127 custom block slots of this type.\
+Another quirk with this CustomBlock is that it has 2 different hitbox-states\
+All variations after 64 will have a smaller hitbox than those before.
 
-### Global Configuration
+## How do I create a stringblock?
 
-```yaml
-stringblock:
-  tool_types:
-    - WOODEN
-    - STONE
-    - IRON
-    - GOLDEN
-    - DIAMOND
-    - NETHERITE
-  enabled: true
-```
+### Oraxen Pack configuration
 
-## How do I create a decoration?
-
-### Oraxen item and Pack configuration
+Below is an example of how to configure the model/texture to use.\
+`block/cross` is what normal vanilla plants use and allows for converting a 2d-texture into a block.\
+If you want an example, look at RoseBushes in-game.
 
 ```yaml
 jasmine_flower:
@@ -41,11 +35,17 @@ jasmine_flower:
 
 ### StringBlock Mechanic Configuration
 
-To use this mechanic you need to tell oraxen which model to use (to use the generated one, just put the id name of your item). Then you need to use custom\_variation that is not already used by another decoration (since by default 1 is used by brunnera, you can for example use 2). This example of drop settings allows you to get the drop when you mine it with a stone pickaxe.
+To use this mechanic you need to tell oraxen which model to use (to use the generated one, just put the id name of your item).\
+Then you need to use custom\_variation that is not already used by another decoration.\
+You can also configure the hardness of the block, which specifies how long a block should take to break.\
+`drop.best_tool` allows you to specify which tool should be best.\
+An example would be PICKAXE for a small stone
 
 ```yaml
+jasmine_flower:
   Mechanics:
-    stringblock:
+    custom_block:
+      type: STRINGBLOCK
       custom_variation: 2
       model: jasmine_flower
       hardness: 2
@@ -55,21 +55,33 @@ To use this mechanic you need to tell oraxen which model to use (to use the gene
           - { oraxen_item: jasmine_flower, probability: 1.0 }
 ```
 
+## Minor sub-mechanics
+
+Stringblocks also have some additional properties.\
+`placeable_on_water`allows you to place it on water like Lilypads\
+`is_tall` makes the customblock have a double hitbox, much like Tall Grass\
+`random_place` takes a list of strings representing other stringblock-mechanics. \
+This will then place a random one of these when the "parent" is placed
+
 ## Sapling
 
 ```yaml
 sapling:
   Mechanics:
-    stringblock:
+    custom_block:
+      type: STRINGBLOCK
       sapling:
-        canGrowNaturally: true # if you want only the player can grow it
-        naturalGrowthTime: 6000 #in ticks
-        canGrowFromBoneMeal: true
-        boneMealGrowChance: 50
-        growSound: block.grass.break
-        minLightLevel: 4
-        requiresWaterSource: false #if you want it to need water
-        schematicName: schemTest #structure that will put
+        grows_naturally: true # if you want only the player can grow it
+        natural_growth_time: 6000 #in ticks
+        grows_from_bonemeal: true
+        bonemeal_growth_speedup: 1250
+        grow_sound: block.grass.break
+        min_light_level: 4
+        requires_water_source: false #if you want it to need water
+        schematic: schemTest #structure that will put
+        replace_blocks: false
+        copy_biomes: false
+        copy_entities: false
 ```
 
 You can also add some randomness to the growth, or just increase the delay between checks.\
@@ -83,7 +95,8 @@ Valid protectionTypes are CONTAINER, DOOR, ATTACHABLE
 
 ```yaml
 Mechanics:
-  furniture:
+  custom_block:
+    type: STRINGBLOCK
     blocklocker:
       can_protect: true
       protection_type: CONTAINER
