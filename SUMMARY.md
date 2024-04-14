@@ -42,7 +42,6 @@
 * [MythicMobs - custom mobs](compatibility/mythicmobs-custom-mobs.md)
 * [MMoItems](compatibility/mmoitems.md)
 * [MythicCrucible](compatibility/crucible.md)
-* [HappyHUD](compatibility/happyhud.md)
 * [World Generators](compatibility/world-generators/README.md)
   * [Iris World Generator](compatibility/world-generators/iris-world-generator.md)
   * [EpicWorldGenerator](compatibility/world-generators/epicworldgenerator.md)

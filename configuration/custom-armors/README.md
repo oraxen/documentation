@@ -14,7 +14,8 @@ Shaders utilizes core-shaders, which were added in 1.17.
 
 **Armor-Trim** method is recommended if your server is 1.20+ and only allows 1.20+ players.\
 It has the benefit of not breaking with shaders / requiring extra mods to work.\
-It can also be any material, not just LEATHER, and supports multiple armor-resolutions.
+It can also be any material, not just LEATHER, and supports multiple armor-resolutions.\
+The downside of this method is that the material you decide to replace, will not work with the vanilla trim-system.
 
 **Core-Shader** method is recommended if your server is below 1.20 or allow players on older versions.\
 Compared to armor-trims this method breaks with shaders in Optifine & Iris mods.\

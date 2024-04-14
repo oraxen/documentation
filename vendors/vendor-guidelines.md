@@ -120,7 +120,8 @@ my_example_block:
     textures:
       - something/texture_file
   Mechanics:
-    noteblock:
+    custom_block:
+      type: NOTEBLOCK
       custom_variation: 1
       model: something/model_file
 ```
@@ -151,7 +152,8 @@ my_example_block:
     textures:
         - something/texture_file
   Mechanics:
-    stringblock:
+    custom_block:
+      type: STRINGBLOCK
       custom_variation: 1
       model: something/model_file
 ```
