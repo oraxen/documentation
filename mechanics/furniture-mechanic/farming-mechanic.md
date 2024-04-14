@@ -113,14 +113,14 @@ rose_plant_stage3:
     model: custom/plants/rose_stage_3
 ```
 
-The plants can have the stages you decide, and the stages have to be a model created by you and not by the plugin for it to work. Now let's explain each mechanic **farmland\_required** It is to be placed only in fertile soil.&#x20;
+The plants can have the stages you decide, and the stages have to be a model created by you and not by the plugin for it to work. Now let's explain each mechanic **farmland\_required** It is to be placed only in fertile soil.
 
 \
-**delay** the time in ticks that it takes to grow \
-**probability** to grow when the delay is passed \
-**light\_boost** when it has light nearby it grows faster \
+**delay** the time in ticks that it takes to grow\
+**probability** to grow when the delay is passed\
+**light\_boost** when it has light nearby it grows faster\
 **next\_stage** you specify the next stage, it has to be an already created Oraxen item.
 
-**farmblock\_required** [dedicated tutorial page](../noteblock-mechanic/farmblock-mechanic.md)
+**farmblock\_required** [dedicated tutorial page](broken-reference)
 
-****
+***

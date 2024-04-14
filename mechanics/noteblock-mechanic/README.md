@@ -5,7 +5,7 @@ cover: >-
 coverY: 0
 ---
 
-# NoteBlock mechanic
+# NoteBlock Mechanic
 
 ## How to create a simple block?
 
@@ -36,35 +36,38 @@ For example, if you want to make a log block using the Directional Block mechani
 
 To use this mechanic you need to tell to oraxen which model to use (to use the generated one, just put the name id of your item). You then need to use custom\_variation which is not already used by another block (since by default 1 is used by caveblock, you can for example use 2). This example drop configurations allows you to get the drop when you mine it with a stone pickaxe.
 
-```yaml
-Mechanics:
-  noteblock:
-    custom_variation: 2
-    model: my_block
-    drop:
-      silktouch: false 
-      minimal_type: STONE
-      loots:
-        - {oraxen_item: caveblock, probability: 1.0}
-```
+<pre class="language-yaml"><code class="lang-yaml">my_block:
+<strong>  Mechanics:
+</strong>    custom_block:
+      type: NOTEBLOCK
+      custom_variation: 2
+      model: my_block
+      drop:
+        silktouch: false 
+        minimal_type: STONE
+        loots:
+          - {oraxen_item: caveblock, probability: 1.0}
+</code></pre>
 
 ### Customize the breaking speed
 
-You can customize the breaking speed and the most suitable tools with the hardness subsection.
+You can customize the breaking speed and the most suitable tools with the hardness subsection.\
+`drop.best_tool` dictates the "preferred tool" for this block which further tweaks the speed
 
 ```yaml
-Mechanics:
-  noteblock:
-    custom_variation: 2
-    model: my_block
-    hardness: 20 # this makes it really hard to mine
-    drop:
-      silktouch: false 
-      minimal_type: STONE
-      best_tools:
-        - PICKAXE # and it's faster using a pickaxe
-      loots:
-        - {oraxen_item: caveblock, probability: 1.0}
+my_block:
+  Mechanics:
+    custom_block:
+      type: NOTEBLOCK
+      custom_variation: 2
+      model: my_block
+      hardness: 20 # this makes it really hard to mine
+      drop:
+        silktouch: false 
+        minimal_type: STONE
+        best_tool: PICKAXE
+        loots:
+          - {oraxen_item: caveblock, probability: 1.0}
 ```
 
 ### Limited placing
@@ -77,7 +80,8 @@ If the type is `DENY` can be placed on all blocks not matching the given blocks.
 ```yaml
 amethyst_ore:
   Mechanics:
-    noteblock:
+    custom_block:
+      type: NOTEBLOCK
       limited_placing:
         roof: true
         floor: true
@@ -103,36 +107,32 @@ This allows all custom blocks and furniture in here, but furniture requires a ba
 You can use the option **light** so that your block emits light.
 
 ```yaml
-Mechanics:
-  noteblock:
-    custom_variation: 2
-    model: my_block
-    light: 5
-    drop:
-      silktouch: false 
-      loots:
-        - {oraxen_item: my_custom_item, probability: 1.0}
+my_block:
+  Mechanics:
+    custom_block:
+      type: NOTEBLOCK
+      custom_variation: 2
+      model: my_block
+      light: 5
+      drop:
+        silktouch: false 
+        loots:
+          - {oraxen_item: my_custom_item, probability: 1.0}
 ```
 
-## BlockLocker
+### BlockLocker
 
 You can use this to allow protection via [BlockLocker](https://www.spigotmc.org/resources/blocklocker.3268/) Valid protectionTypes are CONTAINER, DOOR, ATTACHABLE
 
 ```yaml
-Mechanics:
-  furniture:
-    blocklocker:
-      can_protect: true
-      protection_type: CONTAINER
+my_block:
+  Mechanics:
+    custom_block:
+      type: NOTEBLOCK
+      blocklocker:
+        can_protect: true
+        protection_type: CONTAINER
 ```
-
-{% hint style="info" %}
-You need LightAPI for this, but will not work on any modern version of Paper due to chunk and lighting changes in Paper.\
-You can find a fork of the original plugin [here](https://github.com/IPECTER/LighterAPI/releases/tag/5.4.0-SNAPSHOT)\
-This should work on any modern version of Spigot and Paper.\\
-{% endhint %}
-
-{% embed url="https://www.spigotmc.org/resources/lightapi.4510" %}
 
 ### Storage
 
@@ -146,28 +146,26 @@ There's a few different types: _STORAGE, PERSONAL, ENDERCHEST & DISPOSAL_.\
 **DISPOSAL** is a custom trashcan, letting you throw items in it, and they will be deleted when closed.\\
 
 ```yaml
-Mechanics:
-  noteblock:
-    barrier: true
-    storage:
-      type: STORAGE
-      rows: 5                             # Default: 6
-      title: "<red>My Storage"            # Default: "Storage"
-      open_sound: entity.shulker.open     # Default: entity.chest.open
-      close_sound: entity.shulker.close   # Default: entity.chest.close
+my_block:
+  Mechanics:
+    custom_block:
+      type: NOTEBLOCK
+      storage:
+        type: STORAGE
+        rows: 5                             # Default: 6
+        title: "<red>My Storage"            # Default: "Storage"
+        open_sound: entity.shulker.open     # Default: entity.chest.open
+        close_sound: entity.shulker.close   # Default: entity.chest.close
 ```
-
-{% hint style="info" %}
-\
-This mechanic can also be used with the furniture mechanic!\\
-{% endhint %}
 
 ### Falling Blocks
 
 This is a sub-mechanic that mimics sand & gravel for your custom block. Placing it next to another block, with no block beneath, will make it fall
 
 ```yaml
-Mechanics:
-  noteblock:
-    is_falling: true # Default to false if unspecified
+my_block:
+  Mechanics:
+    custom_block:
+      type: NOTEBLOCK
+      is_falling: true # Default to false if unspecified
 ```

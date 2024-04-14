@@ -4,22 +4,22 @@ cover: >-
 coverY: 0
 ---
 
-# Directional mechanic
+# Directional Mechanic
 
 ### What is this?
 
-This mechanic allows you to place blocks and have them change their texture depending on the direction in which they are placed, like for example logs.  
-There are 3 types of directional blocks: `LOG`, `FURNACE` and `DROPPER`.  
-`LOG` takes up 3 custom block variations, `FURNACE` takes 4 and `DROPPER` takes 6.  
+This mechanic allows you to place blocks and have them change their texture depending on the direction in which they are placed, like for example logs.\
+There are 3 types of directional blocks: `LOG`, `FURNACE` and `DROPPER`.\
+`LOG` takes up 3 custom block variations, `FURNACE` takes 4 and `DROPPER` takes 6.
 
 {% hint style="info" %}
-Every sub-block can have a `model` property, which Oraxen will use to determine what to display.  
-If there is no `model` property on the sub-block, Oraxen will use the model from the parent-block.  
+Every sub-block can have a `model` property, which Oraxen will use to determine what to display.\
+If there is no `model` property on the sub-block, Oraxen will use the model from the parent-block.
 {% endhint %}
 
 {% hint style="info" %}
-Models are also automatically rotated depending on the direction in which the block is placed.  
-This means you can use the same model, and it will be rotated accordingly.  
+Models are also automatically rotated depending on the direction in which the block is placed.\
+This means you can use the same model, and it will be rotated accordingly.\
 If the sub-block has a model defined, it will not be rotated, allowing you to use different models for different directions.
 {% endhint %}
 
@@ -37,7 +37,8 @@ mainBlock:
     generate_model: false
     model: mainBlockModel
   Mechanics:
-    noteblock:
+    custom_block:
+      type: NOTEBLOCK
       model: mainBlockModel
       custom_variation: 1
       directional:
@@ -66,13 +67,15 @@ mainBlock:
 ```
 
 #### LOG-type example:
+
 ```yaml
 #This doesn't include the parent block from the above example
 mainBlockY:
   excludeFromInventory: true # Makes inventory only contain base-block
   material: PAPER
   Mechanics:
-    noteblock:
+    custom_block:
+      type: NOTEBLOCK
       custom_variation: 1
       directional:
         parent_block: mainBlock #base block which will give drop
@@ -81,7 +84,8 @@ mainBlockX:
   excludeFromInventory: true # Makes inventory only contain base-block
   material: PAPER
   Mechanics:
-    noteblock:
+    custom_block:
+      type: NOTEBLOCK
       custom_variation: 2
       directional:
         parent_block: mainBlock #base block which will give drop
@@ -90,20 +94,23 @@ mainBlockZ:
   excludeFromInventory: true # Makes inventory only contain base-block
   material: PAPER
   Mechanics:
-    noteblock:
+    custom_block:
+      type: NOTEBLOCK
       custom_variation: 3
       directional:
         parent_block: mainBlock #base block which will give drop
 ```
 
 #### FURNACE-type example:
+
 ```yaml
 #This doesn't include the parent block from the above example
 mainBlockNorth:
   excludeFromInventory: true # Makes inventory only contain base-block
   material: PAPER
   Mechanics:
-    noteblock:
+    custom_block:
+      type: NOTEBLOCK
       model: mainBlockModel
       custom_variation: 1
       directional:
@@ -113,7 +120,8 @@ mainBlockSouth:
   excludeFromInventory: true # Makes inventory only contain base-block
   material: PAPER
   Mechanics:
-    noteblock:
+    custom_block:
+      type: NOTEBLOCK
       model: mainBlockModel
       custom_variation: 2
       directional:
@@ -133,7 +141,8 @@ mainBlockEast:
   excludeFromInventory: true # Makes inventory only contain base-block
   material: PAPER
   Mechanics:
-    noteblock:
+    custom_block:
+      type: NOTEBLOCK
       model: mainBlockModel
       custom_variation: 4
       directional:
@@ -141,13 +150,15 @@ mainBlockEast:
 ```
 
 #### DROPPER-type example:
+
 ```yaml
 #This doesn't include the parent block from the above example
 mainBlockNorth:
   excludeFromInventory: true # Makes inventory only contain base-block
   material: PAPER
   Mechanics:
-    noteblock:
+    custom_block:
+      type: NOTEBLOCK
       custom_variation: 1
       directional:
         parent_block: mainBlock #base block which will give drop
@@ -156,7 +167,8 @@ mainBlockSouth:
   excludeFromInventory: true # Makes inventory only contain base-block
   material: PAPER
   Mechanics:
-    noteblock:
+    custom_block:
+      type: NOTEBLOCK
       custom_variation: 2
       directional:
         parent_block: mainBlock #base block which will give drop
@@ -165,7 +177,8 @@ mainBlockWest:
   excludeFromInventory: true # Makes inventory only contain base-block
   material: PAPER
   Mechanics:
-    noteblock:
+    custom_block:
+      type: NOTEBLOCK
       custom_variation: 3
       directional:
         parent_block: mainBlock #base block which will give drop
@@ -174,7 +187,8 @@ mainBlockEast:
   excludeFromInventory: true # Makes inventory only contain base-block
   material: PAPER
   Mechanics:
-    noteblock:
+    custom_block:
+      type: NOTEBLOCK
       custom_variation: 4
       directional:
         parent_block: mainBlock #base block which will give drop
@@ -183,7 +197,8 @@ mainBlockUp:
   excludeFromInventory: true # Makes inventory only contain base-block
   material: PAPER
   Mechanics:
-    noteblock:
+    custom_block:
+      type: NOTEBLOCK
       model: mainBlockModel_vertical
       custom_variation: 5
       directional:
@@ -193,7 +208,8 @@ mainBlockDown:
   excludeFromInventory: true # Makes inventory only contain base-block
   material: PAPER
   Mechanics:
-    noteblock:
+    custom_block:
+      type: NOTEBLOCK
       model: mainBlockModel_vertical
       custom_variation: 6
       directional:
