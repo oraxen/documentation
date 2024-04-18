@@ -9,8 +9,6 @@ coverY: 0
 
 ## Furniture Mechanic
 
-![Example furniture](<../../.gitbook/assets/image (3).png>)
-
 ### Example configuration per item
 
 ```yaml
@@ -40,8 +38,7 @@ table:
 
 ### Custom Sounds
 
-Furniture, like custom blocks, can have custom sounds.\
-Currently the options are place/break/hit/step/fall.
+Furniture, like custom blocks, can have custom sounds
 
 ```yaml
 Mechanics:
@@ -83,6 +80,42 @@ Mechanics:
     rotatable: true
 ```
 
+### Hitboxes
+
+Furnitures can have two types of hitboxes, with or without collision.\
+Collision hitboxes are barrier-blocks, whilst non-solid ones are interaction-entities.\
+Below are examples of how to use both.\
+\
+**Barrier** hitboxes can be formatted at a given offset from the furniture.
+
+```yaml
+Mechanics:
+  furniture:
+    hitbox:
+      barrierHitboxes:
+        - 0,0,0
+        - 0,0,1
+        - 0,0,2
+        - 1,0,0
+        - 1,0,1
+        - 1,0,2
+```
+
+\
+**Interaction-Entity Hitboxes** use the Interaction-entity added in 1.19.4.\
+This of course means that 1.19-1.19.3 servers will not be able to use this..\
+Each interaction-hitbox takes a **width**, **height** and an **offset**
+
+```yaml
+Mechanics:
+  furniture:
+    hitbox:
+      interactionHitboxes:
+        - 1 1 0,0,0
+        - 1 2.0 1,0,0
+        - 1 2.2 -1,0,0
+```
+
 ### ModelEngine Furniture
 
 To make use of a ModelEngine model as your furniture, simply add the following to your item's config:
@@ -109,55 +142,7 @@ Mechanics:
       permission: "oraxen.jukebox.play"
 ```
 
-### Hitboxes
-
-Furnitures can have two types of hitboxes, with or without collision.\
-Collision hitboxes are barrier-blocks, whilst non-solid ones are interaction-entities.\
-Below are examples of how to use both.\
-\
-**Barrier** hitboxes can be formatted at a given offset from the furniture.\
-Below is an example of a single barrier placed at the furniture origin.
-
-```yaml
-Mechanics:
-  furniture:
-    hitbox:
-      barrierHitboxes:
-        - 0,0,0
-```
-
-#### Here is an example of using multiple barrier-hitboxes
-
-```yaml
-Mechanics:
-  furniture:
-    hitbox:
-      barrierHitboxes:
-        - 0,0,0
-        - 0,0,1
-        - 0,0,2
-        - 1,0,0
-        - 1,0,1
-        - 1,0,2
-```
-
-\
-**Interaction-Entity Hitboxes** use the Interaction-entity added in 1.20+.\
-This ofcourse means that 1.19.X servers will not be able to use this, only 1.20+ servers.\
-Each interaction-hitbox takes a **width**, **height** and an **offset**\
-
-
-```yaml
-Mechanics:
-  furniture:
-    hitbox:
-      interactionHitboxes:
-        - 1 1 0,0,0
-        - 1 2.0 1,0,0
-        - 1 2.2 -1,0,0
-```
-
-## Seats
+### Seats
 
 Seats can be configured to spawn with a given offset from the base furniture, like below
 
@@ -168,7 +153,7 @@ Mechanics:
       - 0,0.5,0
 ```
 
-## Restrict Rotation
+### Restrict Rotation
 
 You can restrict the amount of rotation-facings a furniture has with `restricted_rotation`.\
 It can be set to STRICT or VERY\_STRICT, with 8 and 4 facings respectively.\\
@@ -180,7 +165,7 @@ chair:
       restricted_rotation: VERY_STRICT #STRICT is default if unspecified
 ```
 
-## Limited placing
+### Limited placing
 
 You can customize what blocks a custom block/furniture can be placed on with `limited_placing` subsection. You can use the `roof`, `floor` and `wall` options to dictate where a block can be placed. By default, all are set to `true`.\
 The `type` specifies if it should only be allowed on or denied on specific blocks.\
@@ -215,7 +200,7 @@ The `block_types` are materials. Useful if you want to allow/deny a specific lis
 The `oraxen_blocks` are blocks defined in the oraxen configuration.\
 This allows all custom blocks and furniture in here, but furniture requires a barrier-hitbox.
 
-## Storage
+### Storage
 
 This is a sub-mechanic for furniture and noteblock mechanics, that let you make a custom storage container.\
 Essentially a chest, closet or whatever you might want.
