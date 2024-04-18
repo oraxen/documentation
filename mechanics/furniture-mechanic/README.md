@@ -29,7 +29,9 @@ table:
         hit_sound: my.custom.hitsound     # Custom sound as defined in Oraxen/sound.yml
         step_sound: my.custom.stepsound   # Requires a sound-file in the Oraxen/pack-folder aswell
         fall_sound: my.custom.fallsound
-      barrier: true
+      hitbox:
+        barrierHitboxes:
+          - 0,0,0
       drop:
         silktouch: false
         loots:
@@ -107,52 +109,63 @@ Mechanics:
       permission: "oraxen.jukebox.play"
 ```
 
-### Barriers
+### Hitboxes
 
-Barriers are invisible blocks placed with your furniture so that it has a realistic hitbox. You can place a single one or a list relative to the position of the player who places them.
-
-#### Single barrier:
+Furnitures can have two types of hitboxes, with or without collision.\
+Collision hitboxes are barrier-blocks, whilst non-solid ones are interaction-entities.\
+Below are examples of how to use both.\
+\
+**Barrier** hitboxes can be formatted at a given offset from the furniture.\
+Below is an example of a single barrier placed at the furniture origin.
 
 ```yaml
 Mechanics:
   furniture:
-    barrier: true
+    hitbox:
+      barrierHitboxes:
+        - 0,0,0
 ```
 
-#### Multiple barriers:
+#### Here is an example of using multiple barrier-hitboxes
 
 ```yaml
 Mechanics:
   furniture:
-      barriers:
-        - origin # Shorthand for { x: 0, y: 0, z: 0 }
-        - z: 1 # If not specified, coord is 0 -> { x: 0, y: 0, z: 1 }
-        - z: 2
-        - x: 1
-        - { x: 1, z: 1 }
-        - x: 1
-          z: 2
+    hitbox:
+      barrierHitboxes:
+        - 0,0,0
+        - 0,0,1
+        - 0,0,2
+        - 1,0,0
+        - 1,0,1
+        - 1,0,2
+```
+
+\
+**Interaction-Entity Hitboxes** use the Interaction-entity added in 1.20+.\
+This ofcourse means that 1.19.X servers will not be able to use this, only 1.20+ servers.\
+Each interaction-hitbox takes a **width**, **height** and an **offset**\
+
+
+```yaml
+Mechanics:
+  furniture:
+    hitbox:
+      interactionHitboxes:
+        - 1 1 0,0,0
+        - 1 2.0 1,0,0
+        - 1 2.2 -1,0,0
 ```
 
 ## Seats
 
-Seats are only available when barriers are enabled.\
-Currently it will also spawn a seat for every barrier, if there is multiple ones.\
-You can alter the height-offset of seats with the following configuration:
+Seats can be configured to spawn with a given offset from the base furniture, like below
 
 ```yaml
 Mechanics:
   furniture:
-    seat: { height: 0.5 }
-```
-
-You can also adjust the rotation if desired by adding a yaw section.\
-Keep in mind it is recommended to leave this off
-
-```yaml
-Mechanics:
-  furniture:
-    seat: { height: -0.5, yaw: 90 }
+    seats:
+      - 0,0.5,0
 ```
 
 ## Restrict Rotation
@@ -236,7 +249,6 @@ You can configure your furniture so it emits light. This option corresponds to l
 ```yaml
 Mechanics:
   furniture:
-    barrier: true
     light: 5
     drop:
       silktouch: false
