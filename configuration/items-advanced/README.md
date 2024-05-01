@@ -96,8 +96,11 @@ This option allows you to exclude an item from the oraxen inventory. It will no 
 
 ### durability
 
-This allows you to change the number of damage of a item (not very useful)
-
+This allows you to change the number of damage of a item (not very useful)\
+{% hint style="info" %}
+As of Oraxen 1.174.0 this has been removed for all servers below 1.20.5.\
+It instead now defines the max-durability of an item when server is 1.20.5+
+{% endhint %}
 ```yaml
 my_item:
   durability: 10
@@ -226,6 +229,36 @@ piercing
 mending
 vanishing_curse
 soul_speed
+```
+
+### 1.20.5 Specific Properties
+`max_stack_size` - Sets the maximum slot-size of an OraxenItem\
+`enchantment_glint_override` - Sets an override-state for the enchantment glint\
+`fire_resistant` - Sets whether this OraxenItem is immune to fire and lava\
+`durability` - Sets the durability of this OraxenItem\
+`hide_tooltips` - Hides all tooltips from the given OraxenItem on hover\
+`food` - Makes this item consumable with several different properties
+
+Example of all the above properties:
+```yaml
+my_item:
+  #itemname is also allowed
+  displayname: <gradient:#4B36B1:#6699FF>My Item
+  material: IRON_PICKAXE
+  enchantment_glint_override: false
+  durability: 10
+  max_stack_size: 10
+  fire_resistant: true
+  hide_tooltips: true
+  food:
+    nutrition: 2
+    saturation: 2
+    can_always_eat: true
+    effects:
+      mining_fatigue:
+        duration: 10
+        amplifier: 1
+        probability: 50
 ```
 
 ### How do I set a specific Custom Model Data?
