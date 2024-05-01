@@ -254,10 +254,14 @@ my_item:
     nutrition: 2
     saturation: 2
     can_always_eat: true
+    eat_seconds: 1.6
     effects:
       mining_fatigue:
         duration: 10
         amplifier: 1
+        ambient: false
+        show_icon: true
+        show_particles: true
         probability: 50
 ```
 
