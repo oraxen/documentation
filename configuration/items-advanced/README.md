@@ -247,6 +247,13 @@ my_item:
   material: IRON_PICKAXE
   enchantment_glint_override: false
   durability: 10
+  # if the material above isnt a normal tool, but say PAPER
+  # The item will not have its durability lowered by actions by default
+  # Example of making the tool lower its durability from hitting entities and breaking blocks
+  #durability:
+  #  value: 10
+  #  damage_block_break: true
+  # damage_entity_hit: true
   max_stack_size: 10
   fire_resistant: true
   hide_tooltips: true
