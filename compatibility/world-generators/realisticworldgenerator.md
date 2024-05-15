@@ -12,7 +12,7 @@ Spigot Link: [https://www.spigotmc.org/resources/realisticworldgenerator.15905/]
 
 ## How to create custom ores / blocks
 
-In this example we assume that you have added a block (an amethyst ore for example) following [this example](../../mechanics/noteblock-mechanic/#ores) to your oraxen configuration.
+In this example we assume that you have added a block (an amethyst ore for example) following [this example](../../mechanics/custom-block-mechanics/noteblock-mechanic/#ores) to your oraxen configuration.
 
 ### Locate the file to edit
 
@@ -45,7 +45,7 @@ You can now easily add your new ore to the generation. In our example, this shou
 You need to chose what you want to do. In this example I will show it with the "**ores.yml**" file but it's the same for every file mentioned above in [Locate the file to edit](realisticworldgenerator.md#Locate-the-file-to-edit)
 
 After opening the file you only need to add the block you want to add with the "**oraxen:**" namespace infront of it instead of "**minecraft:**"\
-&#x20;This can look like this:
+This can look like this:
 
 ```yaml
   amethyst:

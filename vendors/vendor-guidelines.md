@@ -134,7 +134,7 @@ Perhaps in the future it will be assigned automatically. If you include a README
 The `model`-property is the same as the one in the `Pack`-section, and follows the same rules.\
 If had `generate_model` enabled as you specified textures, the model would be your item-id, so `my_example_block`.\
 There are also additional sub-mechanics, like custom sounds, hardness and more.\
-You can read more about them in the [NoteBlock Mechanics](../mechanics/noteblock-mechanic/) and its other pages.
+You can read more about them in the [NoteBlock Mechanics](../mechanics/custom-block-mechanics/noteblock-mechanic/) and its other pages.
 
 ### StringBlock
 
@@ -159,7 +159,7 @@ my_example_block:
 ```
 
 As you can see it is very similar to the `noteblock`-mechanic.\
-The sub-mechanics can be found in the [StringBlock Mechanics](../mechanics/stringblock-mechanic.md) and its other pages.
+The sub-mechanics can be found in the [StringBlock Mechanics](../mechanics/custom-block-mechanics/stringblock-mechanic.md) and its other pages.
 
 ## Custom Furniture
 

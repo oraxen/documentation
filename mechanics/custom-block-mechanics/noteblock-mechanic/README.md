@@ -102,23 +102,38 @@ The `block_types` are materials. Useful if you want to allow/deny a specific lis
 The `oraxen_blocks` are blocks defined in the oraxen configuration.\
 This allows all custom blocks and furniture in here, but furniture requires a barrier-hitbox.
 
-### Light Emitting Blocks
+### Beacon Base
 
-You can use the option **light** so that your block emits light.
+You can also make a custom block work in beacons with the following:
 
+{% code lineNumbers="true" %}
 ```yaml
 my_block:
   Mechanics:
     custom_block:
       type: NOTEBLOCK
-      custom_variation: 2
-      model: my_block
-      light: 5
-      drop:
-        silktouch: false 
-        loots:
-          - {oraxen_item: my_custom_item, probability: 1.0}
+      beacon_base_block: true
 ```
+{% endcode %}
+
+{% hint style="info" %}
+A beacon will "activate" if any noteblock is in the pyramid, but the effect is only given when said noteblock(s) are base\_beacon\_blocks\
+This is because it requires a Datapack that adds noteblocks to the given Tag, but it does not support individual blockstates
+{% endhint %}
+
+### Light Emitting Blocks
+
+You can use the option **light** so that your block emits light.
+
+{% code lineNumbers="true" %}
+```yaml
+my_block:
+  Mechanics:
+    custom_block:
+      type: NOTEBLOCK
+      light: 5
+```
+{% endcode %}
 
 ### BlockLocker
 

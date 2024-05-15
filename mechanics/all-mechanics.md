@@ -205,7 +205,7 @@ Mechanics:
 
 ### Block and NoteBlock
 
-These mechanic allows you to use an item as block. Since these are quite special mechanics, they have a [dedicated tutorial page](noteblock-mechanic/).
+These mechanic allows you to use an item as block. Since these are quite special mechanics, they have a [dedicated tutorial page](custom-block-mechanics/noteblock-mechanic/).
 
 ### clickAction
 
@@ -249,7 +249,7 @@ Mechanics:
 
 ### ItemType
 
-With this mechanic, you can change the item type detected by OraxenBlocks. Make sure to use a type declared [inside the block mechanic](noteblock-mechanic/#global-configuration).
+With this mechanic, you can change the item type detected by OraxenBlocks. Make sure to use a type declared [inside the block mechanic](custom-block-mechanics/noteblock-mechanic/#global-configuration).
 
 #### Per item configuration
 
