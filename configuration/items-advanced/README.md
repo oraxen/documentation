@@ -272,6 +272,11 @@ my_item:
         probability: 50
 ```
 
+### 1.21 Specific Properties
+`jukebox_playable` - Lets this item be inserted into a Jukebox and play a given song
+  * `show_in_tooltip` - Show song-info in Item-Tooltip
+  * `song_key` - The key of the song (Custom songs requires datapacks)
+
 ### How do I set a specific Custom Model Data?
 
 ```yaml
