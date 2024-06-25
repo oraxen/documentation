@@ -245,37 +245,47 @@ my_item:
   #itemname is also allowed
   displayname: <gradient:#4B36B1:#6699FF>My Item
   material: IRON_PICKAXE
-  enchantment_glint_override: false
-  durability: 10
-  # if the material above isnt a normal tool, but say PAPER
-  # The item will not have its durability lowered by actions by default
-  # Example of making the tool lower its durability from hitting entities and breaking blocks
-  #durability:
-  #  value: 10
-  #  damage_block_break: true
-  # damage_entity_hit: true
-  max_stack_size: 10
-  fire_resistant: true
-  hide_tooltips: true
-  food:
-    nutrition: 2
-    saturation: 2
-    can_always_eat: true
-    eat_seconds: 1.6
-    effects:
-      mining_fatigue:
-        duration: 10
-        amplifier: 1
-        ambient: false
-        show_icon: true
-        show_particles: true
-        probability: 50
+  Components:
+    enchantment_glint_override: false
+    durability: 10
+    # if the material above isnt a normal tool, but say PAPER
+    # The item will not have its durability lowered by actions by default
+    # Example of making the tool lower its durability from hitting entities and breaking blocks
+    #durability:
+    #  value: 10
+    #  damage_block_break: true
+    # damage_entity_hit: true
+    max_stack_size: 10
+    fire_resistant: true
+    hide_tooltips: true
+    food:
+      nutrition: 2
+      saturation: 2
+      can_always_eat: true
+      eat_seconds: 1.6
+      effects:
+        mining_fatigue:
+          duration: 10
+          amplifier: 1
+          ambient: false
+          show_icon: true
+          show_particles: true
+          probability: 50
 ```
 
 ### 1.21 Specific Properties
 `jukebox_playable` - Lets this item be inserted into a Jukebox and play a given song
   * `show_in_tooltip` - Show song-info in Item-Tooltip
   * `song_key` - The key of the song (Custom songs requires datapacks)
+
+```yml
+myitem:
+  material: PAPER
+  Components:
+    jukebox_playable:
+      show_in_tooltip: true
+      song_key: mysong.id
+```
 
 ### How do I set a specific Custom Model Data?
 
