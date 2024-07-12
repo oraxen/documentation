@@ -258,14 +258,36 @@ my_item:
     max_stack_size: 10
     fire_resistant: true
     hide_tooltips: true
+    tool:
+      damage_per_block:                       # Optional, defaults to 1
+      default_mining_speed:                   # Optional, defaults to 1.0
+      rules:
+        - speed: 1.0
+          correct_for_drops: true             # If mining the given blocks should drop or not
+          material: DIAMOND_BLOCK             # The material this rule applies to, also supports list format
+          #materials:
+          #  - DIAMOND_BLOCK
+          #  - NETHERITE_BLOCK
+          # List of all tags can be found at https://minecraft.wiki/w/Tag#Block_tags_2
+          tag: minecraft:mineable/axe         # The block-tag this rule applies to, also supports list format
+          #tags:
+          #  - minecraft:mineable/axe
+          #  - minecraft:mineable/shovel
     food:
       nutrition: 2
-      saturation: 2
-      can_always_eat: true
-      eat_seconds: 1.6
+      saturation: 2 
+      can_always_eat: false                   # Optional, default is false
+      eat_seconds: 1.6                        # Optional, default is 1.6
+      replacement:                            # Optional, 1.21+ only, null if not specified (aka no replacement)
+        #minecraft_type: DIAMOND
+        #crucible_item: crucibleid
+        #eco_item: ecoid
+        #mmoitems_id: id
+        #mmoitems_type: type
+        oraxen_item: itemid
       effects:
         mining_fatigue:
-          duration: 10
+          duration: 10                        # In seconds, default is 20
           amplifier: 1
           ambient: false
           show_icon: true
