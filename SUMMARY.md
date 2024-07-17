@@ -49,6 +49,10 @@
   * [Custom Ore Generator](compatibility/world-generators/custom-ore-generator.md)
   * [RealisticWorldGenerator](compatibility/world-generators/realisticworldgenerator.md)
 
+## ➕ Addons
+
+* [CustomBlockExpansion](addons/customblockexpansion.md)
+
 ## Vendors
 
 * [Vendor Guidelines](vendors/vendor-guidelines.md)
