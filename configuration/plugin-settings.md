@@ -27,153 +27,102 @@ First, Oraxen has several folders and 3 of these are to configure things, the fi
 
 ## Pack
 
-### Generation
+### Obfuscation
+
+Obfuscation works by renaming all models, textures and files into random namespaces and paths\
+This is to make it very hard to just download and use a ResourcePack.\
+It comes with four modes, FILENAME, NAMESPACE, FULL & NONE\
+\
+There is also an option to cache the obfuscated pack. \
+This makes it so unless there are changes, Oraxen will not reobfuscate the ResourcePack.\
+This makes it so players do not have to redownload the ResourcePack every time your server starts.\
+
 
 ```yaml
-  generation:
-    generate: true
-    compression: BEST_COMPRESSION # see Deflater.class
-    # protection will use several methods to make your pack impossible to extract
-    # with usual tools (native windows unzip, 7zip, winrar, etc) without altering
-    # its integrity. Be careful if you activate this option to not try to extract
-    # the pack or you might fill your disk.
-    protection: true
-    comment: "The content of this texture pack
-     \nbelongs to the owner of the Oraxen
-     \nplugin and any complete or partial
-     \nuse must comply with the terms and
-     \nconditions of Oraxen."
+Pack:
+  obfuscation:
+    type: FULL
+    cache: true
 ```
 
-This section allows you to configure the **generation** of the pack. The **compression** is configured to make the smallest zip possible by default. You can change the **comment** which is basically a watermark inside your zip.
+**NONE** does no obfuscation on the ResourcePack
 
-#### Protection
+```makefile
+📁ResourcePack
+└── 📁assets
+    └── 📁custom_namespace
+        └── 📁models
+             └── 📑custom_model.json
+```
 
-Protection will allow you to prevent players from stealing your textures easily. This won't make your pack heavier but if you enabled it. You **shall not** try to extract the generated zip, this could damage your disk.
+**FILENAME** only obfuscates individual filenames, but retains the original pack-structure
 
-![1 Exabyte (EB) = 1000000000 Gigabyte (GB)](../.gitbook/assets/size.png)
+```makefile
+📁ResourcePack
+└── 📁assets
+    └── 📁custom_namespace
+        └── 📁models
+             └── 📑02a61ae4-2457-4dfa-91af-9598cd52fd9e.json
+```
 
-![Your operating system should prevent you from extracting in order to preserve your disk integrity](../.gitbook/assets/extraction.png)
+**NAMESPACE** only obfuscates namespaces, but retains the original filepath otherwise
 
-### Upload
+```makefile
+📁ResourcePack
+└── 📁assets
+    └── 📁0d003f53-e176-4e74-a895-d392c82f50be
+        └── 📁models
+             └── 📑custom_model.json
+```
+
+**FULL** obfuscates the entire path
+
+```
+📁ResourcePack
+└── 📁assets
+    └── 📁0d003f53-e176-4e74-a895-d392c82f50be
+        └── 📁models
+             └── 📑02a61ae4-2457-4dfa-91af-9598cd52fd9e.json
+```
+
+### PackServer
+
+The ResourcePack oraxen generates needs to be hosted somewhere before it can be sent to players.\
+Oraxen has two built-in server-options, POLYMATH & SELFHOST
+
+**POLYMATH** is Oraxens own remote server, same as in Oraxen 1.0.\
+It is located in France and can therefore be slower depending on your server's location and players download speed\
+\
+SELFHOST is a locally hosted server on the machine and can therefore be faster if your players are closer to it. You will need to manually configure the IP-address to your servers.
 
 ```yaml
-    enabled: true
-    type: polymath #transfer.sh or polymath
-    polymath:
-      server: atlas.oraxen.com # you can also host your own polymath instance
+Pack:
+  server:
+    type: SELFHOST
+      selfhost:
+        public_address: 0.0.0.0   # Set to your server's IP
+        port: 8082                # Set to a port you have opened on your server
+      polymath:
+        server: atlas.oraxen.com
+        secret: oraxen
 ```
-
-Oraxen integrates with Polymath (a custom web server written in Python especially to be compatible). You can download the source code [here](https://github.com/Th0rgal/Polymath/) and host it yourself or use the provided instance (atlas). You can also integrate with [your own custom hosting service](broken-reference).
 
 ### Dispatch
 
-This section allows you to easily perform actions depending on the resource pack status of your players.
-
-You can send message (through a KICK, the chat, an actionbar or a title) and specify a delay and a period (between the different messages if you are using an actionbar or a title).
+This section is for handling when the pack should be sent to players.
 
 ```yaml
-receive:
-  enabled: true
-
-  loaded:
-    actions:
-      message:
-        enabled: true
-        # KICK / CHAT / ACTION_BAR / TITLE
-        type: ACTION_BAR
-        # Delay before the first message to appear, this is in seconds
-        delay: 0
-        # You only need a period if you send multiple messages of type ACTION_BAR or TITLE
-        period: -1
-        # Click and Hover elements are only available by using the CHAT type
-        messages:
-          - "<green><bold>ResourcePack successfully loaded!"
-
-      # If you need to send commands
-      commands:
-        console: []
-        player: []
-        opped_player: []
-
-  accepted:
-    actions:
-      message:
-        enabled: true
-        # KICK / CHAT / ACTION_BAR / TITLE
-        type: TITLE
-        # Delay before the first message to appear, this is in seconds
-        delay: 0
-        # You only need a period if you send multiple messages of type ACTION_BAR or TITLE
-        period: 3
-        # Click and Hover elements are only available by using the CHAT type
-        messages:
-          - "<green><bold>ResourcePack accepted!"
-          - "Thank you"
-      # If you need to send commands
-      commands:
-        console: []
-        player: []
-        opped_player: []
-
-  denied:
-    actions:
-      message:
-        enabled: true
-        # KICK / CHAT / ACTION_BAR / TITLE
-        type: CHAT
-        # Delay before the first message to appear, this is in seconds
-        delay: 0
-        # You can put any value here because this is a CHAT message
-        period: -1
-        # Click and Hover elements are only available by using the CHAT type
-        messages:
-          - "<red>You refused the ResourcePack, but you need it in order to see the new items. Please </red><click:run_command:/oraxen pack><hover:show_text:\"<green>Display more informations\"><green><bold>CLICK HERE</bold></hover></click> <red>or type <bold>/o pack"
-      # If you need to send commands
-      commands:
-        console: []
-        player: []
-        opped_player: []
-
-  failed_download:
-    actions:
-      message:
-        enabled: true
-        # KICK / CHAT / ACTION_BAR / TITLE
-        type: CHAT
-        # Delay before the first message to appear, this is in seconds
-        delay: 0
-        # You can put any value here because this is a CHAT message
-        period: -1
-        # Click and Hover elements are only available by using the CHAT type
-        messages:
-          - "<red>You failed to download the ResourcePack, but you need it in order to see the new items. Please </red><click:run_command:/oraxen pack getpack><hover:show_text:\"<red>/!\\ loading the resourcepack from the game can cause lags\"><red><bold>CLICK HERE</bold></hover></click> <red>to retry or type <bold>/o pack</bold> and download it from the internet"
-      # If you need to send commands
-      commands:
-        console: []
-        player: []
-        opped_player: []
+Pack:
+  dispatch:
+    # Sends the Resourcepack before the players loads into the server
+    # Might cause issues with large packs due to long download/load times
+    send_pre_join: true
+    send_on_join: false
+    send_on_reload: true    # Sends the pack to players after using reload-command
+    delay: -1               # Delay before pack is sent, does not apply to PreJoin dispatches
+    mandatory: true         # If declining the ResourcePack should kick the player
+    prompt: "<#fa4943>Accept the pack to enjoy a full <b><gradient:#9055FF:#13E2DA>Oraxen</b><#fa4943>experience"
 ```
-
-## ConfigTools
-
-```yaml
-  enable_configs_updater: true
-  error_item:
-    material: PODZOL
-    excludeFromInventory: false # set to true if you don't want to display it inside inventory
-    injectID: false
-```
-
-## CustomArmor
-
-```yaml
-CustomArmor:
-  disable_leather_repair: true
-```
-
-This option lets you disable leather being able to repair custom armors.\
-This means the only way to repair a custom armor set is other copies of said armor set.
 
 ## Misc
 

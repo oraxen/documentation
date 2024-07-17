@@ -37,6 +37,10 @@
 * [clickAction Mechanic](mechanics/clickaction-mechanic.md)
 * [Custom mechanic](mechanics/custom-mechanic.md)
 
+## ➕ Addons
+
+* [CustomBlockExpansion](addons/customblockexpansion.md)
+
 ## Compatibility
 
 * [ModelEngine - custom mobs](compatibility/modelengine-custom-mobs.md)
@@ -45,13 +49,7 @@
 * [MythicCrucible](compatibility/crucible.md)
 * [World Generators](compatibility/world-generators/README.md)
   * [Iris World Generator](compatibility/world-generators/iris-world-generator.md)
-  * [EpicWorldGenerator](compatibility/world-generators/epicworldgenerator.md)
   * [Custom Ore Generator](compatibility/world-generators/custom-ore-generator.md)
-  * [RealisticWorldGenerator](compatibility/world-generators/realisticworldgenerator.md)
-
-## ➕ Addons
-
-* [CustomBlockExpansion](addons/customblockexpansion.md)
 
 ## Vendors
 

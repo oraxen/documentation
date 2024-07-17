@@ -10,7 +10,7 @@ coverY: 0
 # MythicMobs - custom mobs
 
 {% hint style="info" %}
-If the plugin does not work with MythicMobs, use version 5.6.0+.
+If the plugin does not work with MythicMobs, use version 5.7.0+.
 {% endhint %}
 
 ## How to use an oraxen item for the drops?
