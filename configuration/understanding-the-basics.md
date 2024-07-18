@@ -49,5 +49,6 @@ If you need to override a specific file from oraxen, you can create the `Oraxen/
 This folder contains the different recipe configurations you have added which are sorted by recipe type.
 For example, `Oraxen/recipes/shaped.yml` will contain all shaped recipes while `Oraxen/recipes/campfire.yml` will have any campfire recipes.
 
-
+{% hint style="info" %}
 *This folder is rarely touched because it is easier/faster to generate recipe configs directly from the game via the [oraxen recipe command](https://docs.oraxen.com/usage/commands#manage-recipes).*
+{% endhint %}
