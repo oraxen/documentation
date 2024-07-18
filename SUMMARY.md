@@ -40,6 +40,10 @@
 * [StringBlock Mechanic](mechanics/stringblock-mechanic/README.md)
   * [Sapling Mechanic](mechanics/stringblock-mechanic/sapling-mechanic.md)
 
+## ➕ Addons
+
+* [CustomBlockExpansion](addons/customblockexpansion.md)
+
 ## Compatibility
 
 * [BossShopPro - shop](compatibility/bossshoppro-shop.md)
