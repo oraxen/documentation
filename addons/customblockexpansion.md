@@ -78,7 +78,8 @@ custom_door:
   Pack:
     generate_model: true
     parent_model: item/generated   # This is used for the item when held in hand
-    texture: block/oak_door        # The texture to use for the item in hand
+    textures:
+      - block/oak_door        # The texture to use for the item in hand
   Mechanics:
     custom_door:
       custom_variation: 1          # 1-4 are available
@@ -99,7 +100,7 @@ custom_door_placed:
       bottom: block/reinforced_deepslate_bottom
       top: block/reinforced_deepslate_top
   # Extra properties to prevent item from being "registered" as an OraxenItem
-  injectId: false
+  injectID: false
   excludeFromInventory: true
   excludeFromCommands: true
 ```
@@ -134,7 +135,8 @@ custom_grate:
   Pack:
     generate_model: true
     parent_model: block/cube_all
-    texture: block/reinforced_deepslate_side
+    textures:
+      - block/reinforced_deepslate_side
   Mechanics:
     custom_grate:
       custom_variation: 1          # 1-4 are available
