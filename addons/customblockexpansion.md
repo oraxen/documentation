@@ -34,7 +34,6 @@ custom_stair:
       bottom: block/reinforced_deepslate_bottom
       side: block/reinforced_deepslate_side
       top: block/reinforced_deepslate_top
-    #texture: block/diamond_block  # Optional formatting if only using 1 texture
   Mechanics:
     custom_stair:
       custom_variation: 1          # 1-4 are available
@@ -54,7 +53,6 @@ custom_slab:
       bottom: block/reinforced_deepslate_bottom
       side: block/reinforced_deepslate_side
       top: block/reinforced_deepslate_top
-    #texture: block/diamond_block  # Optional formatting if only using 1 texture
   Mechanics:
     custom_slab:
       custom_variation: 1          # 1-4 are available
@@ -79,7 +77,7 @@ custom_door:
     generate_model: true
     parent_model: item/generated   # This is used for the item when held in hand
     textures:
-      - block/oak_door        # The texture to use for the item in hand
+      - item/oak_door        # The texture to use for the item in hand
   Mechanics:
     custom_door:
       custom_variation: 1          # 1-4 are available
@@ -116,7 +114,6 @@ custom_trapdoor:
     parent_model: block/template_orientable_trapdoor_bottom
     textures:
       texture: block/reinforced_deepslate_side
-    #texture: block/diamond_block  # Optional formatting if only using 1 texture
   Mechanics:
     custom_trapdoor:
       custom_variation: 1         # 1-4 are available
