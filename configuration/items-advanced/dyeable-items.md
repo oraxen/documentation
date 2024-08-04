@@ -36,12 +36,11 @@ Use white to paint better
 
 ```yaml
 clock:
-  displayname: "<white>Clock"
+  itemname: "<white>Clock"
   material: LEATHER_HORSE_ARMOR
   color: 255, 255, 255 #rgb
   Mechanics:
     furniture:
-      barrier: false
       drop: # useless if you are not using a barrier
         silktouch: false
         loots:

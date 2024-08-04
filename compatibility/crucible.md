@@ -9,7 +9,7 @@ coverY: 0
 
 The compatibility with Crucible allows you to import items created with MythicMobs & Crucible and use them as a base for your Oraxen items (you will keep everything configured with Crucible and add your own mechanics, textures, 3d models, etc).
 
-To do this, simply add a crucible section and specify the itemID in Oraxen
+To do this, simply add a crucible\_id-property in your OraxenItem
 
 ```yaml
 example_crucible:

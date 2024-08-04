@@ -4,7 +4,7 @@ cover: >-
 coverY: 0
 ---
 
-# StringBlock Mechanic
+# 🧵 StringBlock Mechanic
 
 ## How does it work?
 

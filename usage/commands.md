@@ -45,41 +45,6 @@ This command will be mainly useful if you want to give an item to another player
 oraxen.command.give # Allows you to use /o give
 ```
 
-## Repair
-
-### Repair only one item
-
-This command can be used to repair an item you hold in your main hand. You can configure the plugin to repair only items using oraxen custom durability or also vanilla durability.
-
-#### Usage:
-
-```yaml
-/oraxen repair hand # Repair the item you hold
-```
-
-#### Permissions:
-
-```yaml
-oraxen.command.repair # Allows to use the /o repair command
-```
-
-### Repair all items in your inventory
-
-This command can be used to repair every single item in your inventory (or in your armor slots). You can configure the plugin to repair only items using oraxen custom durability or also vanilla durability.
-
-#### Usage:
-
-```yaml
-/oraxen repair all # Repair all your item (inside your inventory)
-```
-
-#### Permissions:
-
-```yaml
-oraxen.command.repair # so you are also able to use /o repair hand
-oraxen.command.repair.all # Allows to use the /o repair all command
-```
-
 ## Manage recipes
 
 This command allows you to add new recipes to the configuration directly from the game using recipes builder. For more information on how to use it, see [Recipes](recipes.md).

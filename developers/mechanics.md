@@ -167,7 +167,6 @@ Bukkit.getPluginManager().registerEvents(new Listener() {
     @EventHandler
     public void onMechanicRegister(OraxenNativeMechanicsRegisteredEvent event) {
         MechanicsManager.registerMechanicFactory("durability", DurabilityMechanicFactory::new, true);
-        OraxenItems.loadItems();
     }
 }, this);
 ```

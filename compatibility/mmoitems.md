@@ -13,8 +13,7 @@ To do this, simply add an mmoitem section to your item section in Oraxen
 
 ```yaml
 example_mmoitem:
-  displayname: "<gradient:#59A7EA:#F1D2FF>Test"
-
+  itemname: "<gradient:#59A7EA:#F1D2FF>Test"
   mmoitem:
     type: SWORD
     id: FALCON_BLADE
@@ -22,4 +21,3 @@ example_mmoitem:
     tier: RARE # Optional
     match_level: true # Optional
 ```
-

@@ -5,13 +5,15 @@ cover: >-
 coverY: 0
 ---
 
-# Items (advanced)
+# ⚒️ Items (advanced)
 
 ## Vanilla options
 
 ### ItemTemplate
+
 This allows you to easily copy properties from a template-item onto other items.\
 In the template item:
+
 ```yml
 template_item:
   template: true
@@ -20,6 +22,7 @@ template_item:
 ```
 
 In the item you want to copy the properties to:
+
 ```yml
 template_item1:
   template: template_item
@@ -31,13 +34,24 @@ template_item2:
   material: CLOCK
 ```
 
-### DisplayName
+### Itemname
 
 This allows you to change the name displayed on the top of an item.
 
 ```yaml
 my_item:
+  itemname: "<red><bold>Example" #example name
+```
+
+### Displayname
+
+This is only useful on 1.20.4, above it will just use Itemname\
+`custom_name` will set the displayname/customname if you need to use this legacy feature
+
+```yaml
+my_item:
   displayname: "<red><bold>Example" #example name
+  #customname: "<red><bold>Example" #example name
 ```
 
 ### Material
@@ -75,12 +89,14 @@ This allows Oraxen to know recognise the item, it is by default set to true and 
 
 ```yaml
 my_item:
-  injectID: false
+  injectId: false
 ```
 
 ### Disable Enchanting
+
 This options allows you to prevent an item from being enchanted via anvils or enchantment tables.\
-This does not prevent enchantments from being applied in the config.\
+This does not prevent enchantments from being applied in the config.\\
+
 ```yaml
 my_item:
   disable_enchanting: true
@@ -88,19 +104,10 @@ my_item:
 
 ### excludeFromInventory
 
-This option allows you to exclude an item from the oraxen inventory. It will no longer be displayed but you can still get it using [oraxen give command](../../usage/commands.md#get-the-items). It is useful for items used in  other plugins like inventory icons.
+This option allows you to exclude an item from the oraxen inventory. It will no longer be displayed but you can still get it using [oraxen give command](../../usage/commands.md#get-the-items). It is useful for items used in other plugins like inventory icons.
 
 ```yaml
   excludeFromInventory: true
-```
-
-### durability
-
-This allows you to change the number of damage of a item (not very useful)
-
-```yaml
-my_item:
-  durability: 10
 ```
 
 ### unbreakable
@@ -110,13 +117,6 @@ This will make your item unbreakable (for real, using minecraft dedicated proper
 ```yaml
 my_item:
   unbreakable: true
-```
-
-### Unstackable
-This will make your item unstackable. Useful for backpacks and other custom items that you want to be unique.
-```yaml
-my_item:
-  unstackable: true
 ```
 
 ### ItemFlags

@@ -13,13 +13,6 @@ You can merge any resourcepacks into Oraxens generated pack.\
 Oraxen will then send the pack to all players with the merged packs.\
 Check out the ResourcePack page for a detailed explanation
 
-## I use Bungee/Velocity but the pack keeps reloading when players switch servers?
-
-This is because the player technically leaves one server and joins another. Therefore, Minecraft removes and sends the resourcepack.\
-If you want to prevent this you can get [BungeePackLayer](https://www.spigotmc.org/resources/%E2%9C%82%EF%B8%8F-bungee-pack-layer-optimize-resource-pack-sending.94978/).\
-This is a Bungee/Velocity plugin which will prevent the pack from being resent, unless it is different.\
-A pack will be different if the config files on all servers are not identical.\\
-
 ## Can I disable the default assets and configs Oraxen comes with?
 
 Yes, `settings.yml` contains options to disable both of these.\

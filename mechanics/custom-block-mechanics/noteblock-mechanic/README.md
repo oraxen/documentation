@@ -5,7 +5,7 @@ cover: >-
 coverY: 0
 ---
 
-# NoteBlock Mechanic
+# 🎶 NoteBlock Mechanic
 
 ## How to create a simple block?
 

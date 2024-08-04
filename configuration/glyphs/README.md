@@ -4,7 +4,7 @@ cover: https://i.imgur.com/T76ianD.png
 coverY: 0
 ---
 
-# Glyphs
+# 🌀 Glyphs
 
 ## What is a glyph?
 

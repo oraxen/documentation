@@ -259,7 +259,6 @@ There's a few different types: _STORAGE, PERSONAL, ENDERCHEST & DISPOSAL_.\
 ```yaml
 Mechanics:
   furniture:
-    barrier: true
     storage:
       type: STORAGE
       rows: 5                             # Default: 6

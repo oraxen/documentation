@@ -1,4 +1,4 @@
-# Custom Block Mechanics
+# 📦 Custom Block Mechanics
 
 Oraxen has several options for making Custom Blocks.\
 They all come with a few restrictions due to the nature of how custom blocks can be implemented.\

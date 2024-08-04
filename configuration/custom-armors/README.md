@@ -5,7 +5,7 @@ cover: >-
 coverY: 0
 ---
 
-# Custom Armors
+# ⛑️ Custom Armors
 
 Just like other items, armor have a texture for when it is held or in your inventory, but also a texture for when a player equips it.\
 Oraxen comes with two ways to add custom armor: Trims & Shaders.\

@@ -5,7 +5,7 @@ cover: >-
 coverY: 0
 ---
 
-# Items (beginners)
+# ⛏️ Items (beginners)
 
 Today I want to create a new super rare object. By the way, it's funny how players love having super rare items, so to make them happy they all end up having a super rare item (having a rare item is no longer very rare lol). No more jokes, let's get to work! This tutorial will explain how to create an onyx axe but you can do absolutely anything you want with it.
 
@@ -25,7 +25,7 @@ I couldn't decide where to add my axe (is it more of a tool or a weapon?) so I c
 
 ```yaml
 onyx_axe:
-  displayname: "<#6f737d>Onyx Axe"
+  itemname: "<#6f737d>Onyx Axe"
   material: DIAMOND_AXE
 ```
 
@@ -37,7 +37,7 @@ Normally you would have had to create two json files: one explaining how to disp
 
 ```yaml
 onyx_axe:
-  displayname: "<black>Onyx Axe"
+  itemname: "<black>Onyx Axe"
   material: DIAMOND_AXE
   Pack:
     generate_model: true
@@ -60,16 +60,16 @@ In the configuration of each item you can add a mechanics section and add lots o
 
 ```yaml
 onyx_axe:
-  displayname: "<black>Onyx Axe"
+  itemname: "<black>Onyx Axe"
   material: DIAMOND_AXE
   Pack:
     generate_model: true
     parent_model: "item/handheld"
     textures:
       - onyx_axe.png
+  Components:
+    durability: 20000
   Mechanics:
-    durability:
-      value: 20000
     bedrockbreak:
       delay: 0
       period: 10
@@ -77,10 +77,6 @@ onyx_axe:
 ```
 
 A durability of 20,000 is ludicrous, to compare diamond tools have a 1,561 one. I put a probability of 0.5 for loot when you mine the bedrock with it because I want the bedrock block to remain difficult to obtain.
-
-{% hint style="info" %}
-For some mechanics it is necessary to use ProtocolLib, this is the case for bedrockbreak
-{% endhint %}
 
 ## 5. Let's try it!
 

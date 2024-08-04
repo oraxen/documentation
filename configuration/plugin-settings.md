@@ -5,18 +5,7 @@ cover: >-
 coverY: 0
 ---
 
-# Plugin settings
-
-## Plugin
-
-```yaml
-Plugin:
-  commands:
-    repair:
-      oraxen_durability_only: false # will not repair vanilla items if set to true
-```
-
-The plugin related options. Here you can configure how some things work. Should the repair only repair Oraxen items with an oraxen durability?
+# ⚙️ Plugin settings
 
 ## Item configurations
 
@@ -31,7 +20,7 @@ First, Oraxen has several folders and 3 of these are to configure things, the fi
 
 Obfuscation works by renaming all models, textures and files into random namespaces and paths\
 This is to make it very hard to just download and use a ResourcePack.\
-It comes with four modes, FILENAME, NAMESPACE, FULL & NONE\
+It comes with four modes, SIMPLE, FULL & NONE\
 \
 There is also an option to cache the obfuscated pack. \
 This makes it so unless there are changes, Oraxen will not reobfuscate the ResourcePack.\
@@ -55,24 +44,13 @@ Pack:
              └── 📑custom_model.json
 ```
 
-**FILENAME** only obfuscates individual filenames, but retains the original pack-structure
+**SIMPLE**only obfuscates individual filenames, but retains the original pack-structure
 
 ```makefile
 📁ResourcePack
 └── 📁assets
     └── 📁custom_namespace
-        └── 📁models
-             └── 📑02a61ae4-2457-4dfa-91af-9598cd52fd9e.json
-```
-
-**NAMESPACE** only obfuscates namespaces, but retains the original filepath otherwise
-
-```makefile
-📁ResourcePack
-└── 📁assets
-    └── 📁0d003f53-e176-4e74-a895-d392c82f50be
-        └── 📁models
-             └── 📑custom_model.json
+        └── 📑02a61ae4-2457-4dfa-91af-9598cd52fd9e.json
 ```
 
 **FULL** obfuscates the entire path
@@ -133,11 +111,6 @@ This option lets you hide the red scoreboard numbers.\\
 ```yaml
   hide_scoreboard_numbers: true
 ```
-
-**Before:**\
-![](https://media.discordapp.net/attachments/758785982005903431/1043486669371887616/image.png)\
-**After:**\
-![](https://media.discordapp.net/attachments/758785982005903431/1043486615655432193/image.png)
 
 ### hide\_scoreboard\_background
 
