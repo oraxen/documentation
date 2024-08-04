@@ -18,6 +18,10 @@ It also lets you set a replacement item for when the food has been consumed.
 
 Below is a config example of the mechanic-part for a custom food:
 
+{% hint style="warning" %}
+On 1.20.5+ use the new [Food-Component](../../configuration/items-advanced/README.md#1205-specific-properties) instead
+{% endhint %}
+
 ```yaml
 Mechanics:
   food:
@@ -70,6 +74,10 @@ Any stereo sounds will not play at a specific position or following an entity.\
 If you want this you need to make sure your .ogg sound-file is in mono sound format.
 {% endhint %}
 
+{% hint style="warning" %}
+On 1.21+ use the new [JukeboxPlayable-Component](../../configuration/items-advanced/README.md#121-specific-properties) instead
+{% endhint %}
+
 `song` is the namespace:sound.name as you defined it in `sound.yml`.\
 If your sound.yml entry looks like this:
 ```yml
@@ -91,6 +99,10 @@ Mechanics:
 
 This allows you to change the durability of an item created with Oraxen. Minecraft vanilla wasn't made to handle that kind of modifications, this is why this system is not perfect. You'll not see the good  durability on your item, it will just work as a percentage. What that means is that if for example you create a pickaxe based off the wooden pickaxe (which has 59 of durability by default) and you change it to 5900, you'll still see 59 of durability on your item. But you'll need to break 100 blocks in order to lose of one durability. The cool thing is that the displayed bar will be updated correctly.
 
+{% hint style="warning" %}
+On 1.20.5+ use the new [Durability-Component](../../configuration/items-advanced/README.md#1205-specific-properties) instead
+{% endhint %}
+
 #### Per item configuration
 
 There are two options available : ratio and fixed\_amount. You can put only one of these two options on the same item. Ratio allows you to repair a percentage of your item (0.15 will repair 15% of maximum durability while 1.0 will repair it to 100%). Fixe amount repairs a fixed amount of your item durability (put 10 if you want to add 10 durability points to your item for example).
@@ -104,6 +116,11 @@ Mechanics:
 ### Misc Mechanic
 This mechanic has a bunch of small changes you can make to your item.\
 What they each do should be pretty self-explanatory.
+
+{% hint style="warning" %}
+On 1.20.5+ use the new [FireResistant-Component](../../configuration/items-advanced/README.md#1205-specific-properties) instead of burns_in_X below
+{% endhint %}
+
 ```yaml
 Mechanics:
   misc:
