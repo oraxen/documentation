@@ -20,7 +20,6 @@ table:
     model: default/table
   Mechanics:
     furniture:
-      type: DISPLAY_ENTITY #Valid types are ITEM_FRAME, DISPLAY_ENTITY & GLOWING_ITEM_FRAME
       block_sounds:
         place_sound: block.stone.place
         break_sound: block.stone.break
@@ -35,6 +34,54 @@ table:
         loots:
           - { oraxen_item: table, probability: 1.0 }
 ```
+
+### Display Entity Properties
+
+#### Display Transform
+
+The `display_transform` dictates how the model will be displayed.\
+By default it is set to `NONE`, which will show it as it looks when you open the model in BlockBench.\
+As some other plugins might use ArmorStands and add the furniture to its head, you can set this option to `HEAD` for the same effect.\
+There is also: `FIRSTPERSON_LEFTHAND`, `FIRSTPERSON_RIGHTHAND`, `FIXED`, `GROUND`, `GUI`, `THIRDPERSON_LEFTHAND`, `THIRDPERSON_RIGHTHAND`.\
+All of these will be displayed ingame as shown in BlockBench's Display Tab under the specified type.\
+Look at [Furniture Position](furniture\_position.md) for an example on FIXED (ItemFrame Position)
+
+#### Tracking Rotation / Billboard
+
+The `tracking_rotation`-property defines whether you want the furniture to "track" the player.\
+This is mainly for stuff like billboard and leaderboards you want the player to see, not normal furniture.\
+Options are:\
+`FIXED` - No rotation\
+`VERTICAL` - Pivots around vertical axis\
+`HORIZONTAL` - Pivots around horizontal axis\
+`CENTER` - Pivots around center point
+
+#### Brightness
+
+The `brightness`-property lets you override the vanilla lighting-values of the furniture.\
+It has a `block_light` and `sky_light` property for the different types of lighting Minecraft has. Config should look like this:
+
+```yaml
+display_entity_properties:
+  brightness:
+    block_light: 15
+    sky_light: 0
+```
+
+#### Scale
+
+The `scale`-property is a way to scale the furniture.\
+It has a `x`, `y` and `z` property for scaling on each axis. Config should look like this:
+
+```yaml
+display_entity_properties:
+  scale:
+    x: 1
+    y: 1
+    z: 1
+```
+
+`view_range`, `shadow_radius`, `shadow_strength` should be self-explanatory.
 
 ### Custom Sounds
 
@@ -102,18 +149,16 @@ Mechanics:
 ```
 
 \
-**Interaction-Entity Hitboxes** use the Interaction-entity added in 1.19.4.\
-This of course means that 1.19-1.19.3 servers will not be able to use this..\
-Each interaction-hitbox takes a **width**, **height** and an **offset**
+**Interaction-Entity Hitboxes** takes an **offset, width and height**
 
 ```yaml
 Mechanics:
   furniture:
     hitbox:
       interactionHitboxes:
-        - 1 1 0,0,0
-        - 1 2.0 1,0,0
-        - 1 2.2 -1,0,0
+        - 0,0,0 1,1
+        - 1,0,0 1,2.0 
+        - -1,0,0 1,2.2
 ```
 
 ### ModelEngine Furniture
@@ -223,18 +268,15 @@ Mechanics:
       close_sound: entity.shulker.close   # Default: entity.chest.close
 ```
 
-{% hint style="info" %}
-This mechanic requires a barrier(s) if used with furniture!
-{% endhint %}
-
 ### Light
 
-You can configure your furniture so it emits light. This option corresponds to light intensity and must be between 1 and 15.
+You can configure your furniture so it emits light. This option corresponds to light intensity and must be between 1 and 15. It takes an **offset** from the base-furniture and a **light-level**
 
 ```yaml
 Mechanics:
   furniture:
-    light: 5
+    lights:
+      - 0,0,0 15
     drop:
       silktouch: false
       loots:
