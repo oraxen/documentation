@@ -236,7 +236,7 @@ soul_speed
 `enchantment_glint_override` - Sets an override-state for the enchantment glint\
 `fire_resistant` - Sets whether this OraxenItem is immune to fire and lava\
 `durability` - Sets the durability of this OraxenItem\
-`hide_tooltips` - Hides all tooltips from the given OraxenItem on hover\
+`hide_tooltip` - Hides all tooltips from the given OraxenItem on hover\
 `food` - Makes this item consumable with several different properties
 
 Example of all the above properties:
@@ -257,7 +257,7 @@ my_item:
     # damage_entity_hit: true
     max_stack_size: 10
     fire_resistant: true
-    hide_tooltips: true
+    hide_tooltip: true
     tool:
       damage_per_block:                       # Optional, defaults to 1
       default_mining_speed:                   # Optional, defaults to 1.0
