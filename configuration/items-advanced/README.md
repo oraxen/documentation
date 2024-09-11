@@ -9,6 +9,84 @@ coverY: 0
 
 ## Vanilla options
 
+### 1.20.5 Specific Properties
+`max_stack_size` - Sets the maximum slot-size of an OraxenItem\
+`enchantment_glint_override` - Sets an override-state for the enchantment glint\
+`fire_resistant` - Sets whether this OraxenItem is immune to fire and lava\
+`durability` - Sets the durability of this OraxenItem\
+`hide_tooltip` - Hides all tooltips from the given OraxenItem on hover\
+`food` - Makes this item consumable with several different properties
+
+Example of all the above properties:
+```yaml
+my_item:
+  #itemname is also allowed
+  displayname: <gradient:#4B36B1:#6699FF>My Item
+  material: IRON_PICKAXE
+  Components:
+    enchantment_glint_override: false
+    durability: 10
+    # if the material above isnt a normal tool, but say PAPER
+    # The item will not have its durability lowered by actions by default
+    # Example of making the tool lower its durability from hitting entities and breaking blocks
+    #durability:
+    #  value: 10
+    #  damage_block_break: true
+    # damage_entity_hit: true
+    max_stack_size: 10
+    fire_resistant: true
+    hide_tooltip: true
+    tool:
+      damage_per_block:                       # Optional, defaults to 1
+      default_mining_speed:                   # Optional, defaults to 1.0
+      rules:
+        - speed: 1.0
+          correct_for_drops: true             # If mining the given blocks should drop or not
+          material: DIAMOND_BLOCK             # The material this rule applies to, also supports list format
+          #materials:
+          #  - DIAMOND_BLOCK
+          #  - NETHERITE_BLOCK
+          # List of all tags can be found at https://minecraft.wiki/w/Tag#Block_tags_2
+          tag: minecraft:mineable/axe         # The block-tag this rule applies to, also supports list format
+          #tags:
+          #  - minecraft:mineable/axe
+          #  - minecraft:mineable/shovel
+    food:
+      nutrition: 2
+      saturation: 2 
+      can_always_eat: false                   # Optional, default is false
+      eat_seconds: 1.6                        # Optional, default is 1.6
+      replacement:                            # Optional, 1.21+ only, null if not specified (aka no replacement)
+        #minecraft_type: DIAMOND
+        #crucible_item: crucibleid
+        #eco_item: ecoid
+        #mmoitems_id: id
+        #mmoitems_type: type
+        oraxen_item: itemid
+      effects:
+        mining_fatigue:
+          duration: 10                        # In seconds, default is 20
+          amplifier: 1
+          ambient: false
+          show_icon: true
+          show_particles: true
+          probability: 50
+```
+
+### 1.21 Specific Properties
+`jukebox_playable` - Lets this item be inserted into a Jukebox and play a given song
+* `show_in_tooltip` - Show song-info in Item-Tooltip
+* `song_key` - The key of the song (Custom songs requires datapacks)
+
+```yml
+myitem:
+  material: PAPER
+  Components:
+    jukebox_playable:
+      show_in_tooltip: true
+      song_key: mysong.id
+```
+
 ### ItemTemplate
 This allows you to easily copy properties from a template-item onto other items.\
 In the template item:
@@ -94,18 +172,6 @@ This option allows you to exclude an item from the oraxen inventory. It will no 
   excludeFromInventory: true
 ```
 
-### durability
-
-This allows you to change the number of damage of a item (not very useful)\
-{% hint style="info" %}
-As of Oraxen 1.174.0 this has been removed for all servers below 1.20.5.\
-It instead now defines the max-durability of an item when server is 1.20.5+
-{% endhint %}
-```yaml
-my_item:
-  durability: 10
-```
-
 ### unbreakable
 
 This will make your item unbreakable (for real, using minecraft dedicated property).
@@ -113,13 +179,6 @@ This will make your item unbreakable (for real, using minecraft dedicated proper
 ```yaml
 my_item:
   unbreakable: true
-```
-
-### Unstackable
-This will make your item unstackable. Useful for backpacks and other custom items that you want to be unique.
-```yaml
-my_item:
-  unstackable: true
 ```
 
 ### ItemFlags
@@ -229,84 +288,6 @@ piercing
 mending
 vanishing_curse
 soul_speed
-```
-
-### 1.20.5 Specific Properties
-`max_stack_size` - Sets the maximum slot-size of an OraxenItem\
-`enchantment_glint_override` - Sets an override-state for the enchantment glint\
-`fire_resistant` - Sets whether this OraxenItem is immune to fire and lava\
-`durability` - Sets the durability of this OraxenItem\
-`hide_tooltip` - Hides all tooltips from the given OraxenItem on hover\
-`food` - Makes this item consumable with several different properties
-
-Example of all the above properties:
-```yaml
-my_item:
-  #itemname is also allowed
-  displayname: <gradient:#4B36B1:#6699FF>My Item
-  material: IRON_PICKAXE
-  Components:
-    enchantment_glint_override: false
-    durability: 10
-    # if the material above isnt a normal tool, but say PAPER
-    # The item will not have its durability lowered by actions by default
-    # Example of making the tool lower its durability from hitting entities and breaking blocks
-    #durability:
-    #  value: 10
-    #  damage_block_break: true
-    # damage_entity_hit: true
-    max_stack_size: 10
-    fire_resistant: true
-    hide_tooltip: true
-    tool:
-      damage_per_block:                       # Optional, defaults to 1
-      default_mining_speed:                   # Optional, defaults to 1.0
-      rules:
-        - speed: 1.0
-          correct_for_drops: true             # If mining the given blocks should drop or not
-          material: DIAMOND_BLOCK             # The material this rule applies to, also supports list format
-          #materials:
-          #  - DIAMOND_BLOCK
-          #  - NETHERITE_BLOCK
-          # List of all tags can be found at https://minecraft.wiki/w/Tag#Block_tags_2
-          tag: minecraft:mineable/axe         # The block-tag this rule applies to, also supports list format
-          #tags:
-          #  - minecraft:mineable/axe
-          #  - minecraft:mineable/shovel
-    food:
-      nutrition: 2
-      saturation: 2 
-      can_always_eat: false                   # Optional, default is false
-      eat_seconds: 1.6                        # Optional, default is 1.6
-      replacement:                            # Optional, 1.21+ only, null if not specified (aka no replacement)
-        #minecraft_type: DIAMOND
-        #crucible_item: crucibleid
-        #eco_item: ecoid
-        #mmoitems_id: id
-        #mmoitems_type: type
-        oraxen_item: itemid
-      effects:
-        mining_fatigue:
-          duration: 10                        # In seconds, default is 20
-          amplifier: 1
-          ambient: false
-          show_icon: true
-          show_particles: true
-          probability: 50
-```
-
-### 1.21 Specific Properties
-`jukebox_playable` - Lets this item be inserted into a Jukebox and play a given song
-  * `show_in_tooltip` - Show song-info in Item-Tooltip
-  * `song_key` - The key of the song (Custom songs requires datapacks)
-
-```yml
-myitem:
-  material: PAPER
-  Components:
-    jukebox_playable:
-      show_in_tooltip: true
-      song_key: mysong.id
 ```
 
 ### How do I set a specific Custom Model Data?
