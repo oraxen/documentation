@@ -12,37 +12,43 @@ coverY: 0
 ### Components
 
 {% tabs %}
-
 {% tab title="1.21.2+" %}
-
 `max_stack_size` - Sets the maximum slot-size of an OraxenItem\
 `enchantment_glint_override` - Sets an override-state for the enchantment glint\
 `fire_resistant` - Sets whether this OraxenItem is immune to fire and lava\
 `durability` - Sets the durability of this OraxenItem\
 `hide_tooltip` - Hides all tooltips from the given OraxenItem on hover\
-`food` - Makes this item consumable with several different properties
-`jukebox_playable` - Lets this item be inserted into a Jukebox and play a given song
-  * `show_in_tooltip` - Show song-info in Item-Tooltip
-  * `song_key` - The key of the song (Custom songs requires datapacks)
-`equippable` - Make this item equippable like armor\
-  * Useful for proper [CustomArmor](../../configuration/items-advanced/README.md#1212-specific-properties)
-  * `camera_overlay` references texture in `assets/<namespace>/textures/<id>`
-`damage_resistant` - Specify a damage-type this item is invulnerable to\
-  * If you want to do multiple damage-types, you need a datapack with a new custom tag
-  * All available damage-types can be found [here](https://minecraft.wiki/w/Tag#Damage_type_tags)
+`food` - Makes this item consumable with several different properties\
+&#x20;`jukebox_playable` - Lets this item be inserted into a Jukebox and play a given song
+
+* `show_in_tooltip` - Show song-info in Item-Tooltip
+* `song_key` - The key of the song (Custom songs requires datapacks)
+
+&#x20;`equippable` - Make this item equippable like armor\
+`damage_resistant` - Specify a damage-type this item is invulnerable to
+
+* If you want to do multiple damage-types, you need a datapack with a new custom tag
+* All available damage-types can be found [here](https://minecraft.wiki/w/Tag#Damage\_type\_tags)&#x20;
+
 `enchantable` - Set the maximum enchantment-cost for this item in an enchanting table\
 `glider` - Allows the player to glide, like with elytra, when equipped\
-`item_model` - The base-model for this item, can replace custom_model_data\
-  * References model in `assets/<namespace>/models/item/<model>` -> `item_model: namespace:model`
-`tooltip_style` - Style of the items tooltip\
-  * References custom sprite-background at `assets/<namespace>/textures/gui/sprites/tooltip/<id>_background`
-  * References custom sprite-frame at `assets/<namespace>/textures/gui/sprites/tooltip/<id>_frame`
-  * Can be customized & animated using mcmeta [Wiki](https://minecraft.wiki/w/Resource_pack#Animation#Gui:~:text=below%20that%20pack.-,GUI,-%5Bedit%20%7C)
+`item_model` - The base-model for this item, can replace custom\_model\_data
+
+* References model in `assets/<namespace>/models/item/<model>` -> `item_model: namespace:model`&#x20;
+
+`tooltip_style` - Style of the items tooltip
+
+* References custom sprite-background at `assets/<namespace>/textures/gui/sprites/tooltip/<id>_background`
+* References custom sprite-frame at `assets/<namespace>/textures/gui/sprites/tooltip/<id>_frame`
+* Can be customized & animated using mcmeta [Wiki](https://minecraft.wiki/w/Resource\_pack#Animation#Gui)&#x20;
+
 `use_cooldown` - Applies a cooldown to all matching items when used\
-`use_remainder` - Replaces the item with a remainder item if its stack count has decreased after use\
-  * This used to be a property of food-component in 1.20.5 -> 1.21.1
+`use_remainder` - Replaces the item with a remainder item if its stack count has decreased after use
+
+
 
 Example of all the above properties:
+
 ```yaml
 my_item:
   itemname: <gradient:#4B36B1:#6699FF>My Item
@@ -60,8 +66,8 @@ my_item:
     fire_resistant: true
     hide_tooltip: true
     tool:
-      damage_per_block:                       # Optional, defaults to 1
-      default_mining_speed:                   # Optional, defaults to 1.0
+      #damage_per_block:                       # Optional, defaults to 1
+      #default_mining_speed:                   # Optional, defaults to 1.0
       rules:
         - speed: 1.0
           correct_for_drops: true             # If mining the given blocks should drop or not
@@ -77,7 +83,7 @@ my_item:
     food:
       nutrition: 2
       saturation: 2 
-      can_always_eat: false                   # Optional, default is false
+      #can_always_eat: false                   # Optional, default is false
     damage_resistant: is_fire
     enchantable: 1
     glider: true
@@ -113,12 +119,14 @@ my_item:
 `fire_resistant` - Sets whether this OraxenItem is immune to fire and lava\
 `durability` - Sets the durability of this OraxenItem\
 `hide_tooltip` - Hides all tooltips from the given OraxenItem on hover\
-`food` - Makes this item consumable with several different properties
+`food` - Makes this item consumable with several different properties\
 `jukebox_playable` - Lets this item be inserted into a Jukebox and play a given song
-  * `show_in_tooltip` - Show song-info in Item-Tooltip
-  * `song_key` - The key of the song (Custom songs requires datapacks)
+
+* `show_in_tooltip` - Show song-info in Item-Tooltip
+* `song_key` - The key of the song (Custom songs requires datapacks)
 
 Example of all the above properties:
+
 ```yaml
 my_item:
   itemname: <gradient:#4B36B1:#6699FF>My Item
@@ -185,6 +193,7 @@ my_item:
 `food` - Makes this item consumable with several different properties
 
 Example of all the above properties:
+
 ```yaml
 my_item:
   itemname: <gradient:#4B36B1:#6699FF>My Item
@@ -238,12 +247,13 @@ my_item:
           probability: 50
 ```
 {% endtab %}
-
 {% endtabs %}
 
 ### ItemTemplate
+
 This allows you to easily copy properties from a template-item onto other items.\
 In the template item:
+
 ```yml
 template_item:
   template: true
@@ -252,6 +262,7 @@ template_item:
 ```
 
 In the item you want to copy the properties to:
+
 ```yml
 template_item1:
   template: template_item
@@ -311,8 +322,10 @@ my_item:
 ```
 
 ### Disable Enchanting
+
 This options allows you to prevent an item from being enchanted via anvils or enchantment tables.\
-This does not prevent enchantments from being applied in the config.\
+This does not prevent enchantments from being applied in the config.\\
+
 ```yaml
 my_item:
   disable_enchanting: true
@@ -320,7 +333,7 @@ my_item:
 
 ### excludeFromInventory
 
-This option allows you to exclude an item from the oraxen inventory. It will no longer be displayed but you can still get it using [oraxen give command](../../usage/commands.md#get-the-items). It is useful for items used in  other plugins like inventory icons.
+This option allows you to exclude an item from the oraxen inventory. It will no longer be displayed but you can still get it using [oraxen give command](../../usage/commands.md#get-the-items). It is useful for items used in other plugins like inventory icons.
 
 ```yaml
   excludeFromInventory: true
