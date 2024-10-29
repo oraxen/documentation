@@ -9,13 +9,16 @@ coverY: 0
 
 ## Vanilla options
 
-### 1.20.5 Specific Properties
+### 1.20.5+ Specific Properties
 `max_stack_size` - Sets the maximum slot-size of an OraxenItem\
 `enchantment_glint_override` - Sets an override-state for the enchantment glint\
 `fire_resistant` - Sets whether this OraxenItem is immune to fire and lava\
 `durability` - Sets the durability of this OraxenItem\
 `hide_tooltip` - Hides all tooltips from the given OraxenItem on hover\
 `food` - Makes this item consumable with several different properties
+  * 1.21.2+ -> `eat_seconds` is in consumable-component
+  * 1.21.2+ -> `effects` is in consumable-component
+  * 1.21.2+ -> `replacement` is `use_remainder`-component
 
 Example of all the above properties:
 ```yaml
@@ -73,7 +76,7 @@ my_item:
           probability: 50
 ```
 
-### 1.21 Specific Properties
+### 1.21+ Specific Properties
 `jukebox_playable` - Lets this item be inserted into a Jukebox and play a given song
 * `show_in_tooltip` - Show song-info in Item-Tooltip
 * `song_key` - The key of the song (Custom songs requires datapacks)
@@ -85,6 +88,56 @@ myitem:
     jukebox_playable:
       show_in_tooltip: true
       song_key: mysong.id
+```
+
+### 1.21.2+ Specific Properties
+`equippable` - Make this item equippable like armor\
+  * Useful for proper [CustomArmor](../../configuration/items-advanced/README.md#1212-specific-properties)
+  * `camera_overlay` references texture in `assets/<namespace>/textures/<id>`
+`damage_resistant` - Specify a damage-type this item is invulnerable to\
+  * If you want to do multiple damage-types, you need a datapack with a new custom tag
+  * All available damage-types can be found [here](https://minecraft.wiki/w/Tag#Damage_type_tags)
+`enchantable` - Set the maximum enchantment-cost for this item in an enchanting table\
+`glider` - Allows the player to glide, like with elytra, when equipped\
+`item_model` - The base-model for this item, can replace custom_model_data\
+  * References model in `assets/<namespace>/models/item/<model>` -> `item_model: namespace:model`
+`tooltip_style` - Style of the items tooltip\
+  * References custom sprite-background at `assets/<namespace>/textures/gui/sprites/tooltip/<id>_background`
+  * References custom sprite-frame at `assets/<namespace>/textures/gui/sprites/tooltip/<id>_frame`
+  * Can be customized & animated using mcmeta [Wiki](https://minecraft.wiki/w/Resource_pack#Animation#Gui:~:text=below%20that%20pack.-,GUI,-%5Bedit%20%7C)
+`use_cooldown` - Applies a cooldown to all matching items when used\
+`use_remainder` - Replaces the item with a remainder item if its stack count has decreased after use\
+  * This used to be a property of food-component in 1.20.5 -> 1.21.1
+`glider` - Allows the player to glide, like with elytra, when equipped\
+```yml
+myitem:
+  Components:
+    damage_resistant: is_fire
+    enchantable: 1
+    glider: true
+    item_model: minecraft:example         #`assets/minecraft/models/item/example.json`
+    tooltip_style: minecraft:example      #`assets/minecraft/textures/gui/sprites/tooltip/example_(background & frame)`
+    use_remainder:
+      #minecraft_type: DIAMOND
+      #crucible_item: crucibleid
+      #eco_item: ecoid
+      #mmoitems_id: id
+      #mmoitems_type: type
+      oraxen_item: itemid
+    use_cooldown:
+      seconds: 1.2                        #Default is 1.0
+      group: oraxen:example               #Default is `oraxen:itemid`, set to ""-blank to affect by material
+    equippable:
+      slot: HEAD
+      #model: minecraft:example           Optional, primarily useful for Custom-Armor
+      #camera_overlay: minecraft:example  Optional, used by carved_pumpkin etc, example; `assets/minecraft/textures/example.png`
+      #equip_sound: item.armor.equip_chain
+      #allowed_entities:                  Optional, defaults to all entities
+      #  - PLAYER
+      #  - SKELETON
+      #dispensable: true                  Optional, default is true
+      #swappable: true                    Optional, default is true
+      #damage_on_hurt: true               Optional, default is true
 ```
 
 ### ItemTemplate

@@ -119,6 +119,7 @@ What they each do should be pretty self-explanatory.
 
 {% hint style="warning" %}
 On 1.20.5+ use the new [FireResistant-Component](../../configuration/items-advanced/README.md#1205-specific-properties) instead of burns_in_X below
+On 1.21.2+ use the new [DamageResistant-Component](../../configuration/items-advanced/README.md#1212-specific-properties) instead of burns_in_X/breaks_from_cactus below
 {% endhint %}
 
 ```yaml
