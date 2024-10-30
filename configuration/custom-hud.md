@@ -55,16 +55,14 @@ Below is an example of what a font-file should look like:
 Just like with Glyphs, editing the ascent property adjusts the y-position of the text.\
 This will offset the text roughly to where the hud is in the image example below.
 
-
-
 To add in glyphs you can use both the normal placeholder via `%oraxen_glyphid%` or `<glyph:glyphid>`
 
 If you do not wish to use custom huds, you can easily disable it by setting `update_time_in_ticks` to 0.
 
 In case your HUD doesn't display despite being properly configured, try toggling it with: `/oraxen hud toggle` followed by your HUD's name (`/oraxen hud toggle balance`).
 
-<br>
-#### Example hud.yml:
+\
+\#### Example hud.yml:
 
 ```yaml
 update_time_in_ticks: 40
@@ -76,6 +74,8 @@ huds:
     enabled_by_default: true
     enable_for_spectator_mode: true # By default, this is set to false
 ```
-<br>
+
+\
+
 
 <figure><img src="https://cdn.discordapp.com/attachments/758785982005903431/1002544517158801418/unknown.png" alt=""><figcaption><p>Result of above example</p></figcaption></figure>

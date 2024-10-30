@@ -19,12 +19,12 @@ coverY: 0
 `durability` - Sets the durability of this OraxenItem\
 `hide_tooltip` - Hides all tooltips from the given OraxenItem on hover\
 `food` - Makes this item consumable with several different properties\
-&#x20;`jukebox_playable` - Lets this item be inserted into a Jukebox and play a given song
+`jukebox_playable` - Lets this item be inserted into a Jukebox and play a given song
 
 * `show_in_tooltip` - Show song-info in Item-Tooltip
 * `song_key` - The key of the song (Custom songs requires datapacks)
 
-&#x20;`equippable` - Make this item equippable like armor\
+`equippable` - Make this item equippable like armor\
 `damage_resistant` - Specify a damage-type this item is invulnerable to
 
 * If you want to do multiple damage-types, you need a datapack with a new custom tag
@@ -49,6 +49,7 @@ coverY: 0
 
 Example of all the above properties:
 
+{% code fullWidth="true" %}
 ```yaml
 my_item:
   itemname: <gradient:#4B36B1:#6699FF>My Item
@@ -111,6 +112,7 @@ my_item:
       #swappable: true                    Optional, default is true
       #damage_on_hurt: true               Optional, default is true
 ```
+{% endcode %}
 {% endtab %}
 
 {% tab title="1.21" %}
@@ -274,14 +276,26 @@ template_item2:
   material: CLOCK
 ```
 
-### DisplayName
+### Custom Name
 
 This allows you to change the name displayed on the top of an item.
 
+{% tabs %}
+{% tab title="1.20.5+" %}
+```yaml
+my_item:
+  itemname: "<red><bold>Example" #example name
+  #customname: "example" #Should only be used for legacy-compatibility
+```
+{% endtab %}
+
+{% tab title="1.18-1.20.4" %}
 ```yaml
 my_item:
   displayname: "<red><bold>Example" #example name
 ```
+{% endtab %}
+{% endtabs %}
 
 ### Material
 
@@ -324,7 +338,7 @@ my_item:
 ### Disable Enchanting
 
 This options allows you to prevent an item from being enchanted via anvils or enchantment tables.\
-This does not prevent enchantments from being applied in the config.\\
+This does not prevent enchantments from being applied in the config.
 
 ```yaml
 my_item:
@@ -394,12 +408,10 @@ my_item:
     # - attribute: Get the list here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/attribute/Attribute.html
     # - operations: 0 for ADD_NUMBER, 1 for ADD_SCALAR, 2 for MULTIPLY_SCALAR_1;
     # - slot: HAND, OFF_HAND, FEET, LEGS, CHEST or HEAD
-    - {
-       attribute: GENERIC_MOVEMENT_SPEED, 
+    -  attribute: GENERIC_MOVEMENT_SPEED, 
        amount: 0.1, 
        operation: 0, 
        slot: HAND
-      }
 ```
 
 ### Enchantments
@@ -412,49 +424,6 @@ my_item:
     protection: 4
     flame: 34
     sharpness: 18
-```
-
-Here is a list of enchants available in minecraft vanilla:
-
-```
-protection
-fire_protection
-feather_falling
-blast_protection
-projectile_protection
-respiration
-aqua_affinity
-thorns
-depth_strider
-frost_walker
-binding_curse
-sharpness
-smite
-bane_of_arthropods
-knockback
-fire_aspect
-looting
-sweeping
-efficiency
-silk_touch
-unbreaking
-fortune
-power
-punch
-flame
-infinity
-luck_of_the_sea
-lure
-loyalty
-impaling
-riptide
-channeling
-multishot
-quick_charge
-piercing
-mending
-vanishing_curse
-soul_speed
 ```
 
 ### How do I set a specific Custom Model Data?
