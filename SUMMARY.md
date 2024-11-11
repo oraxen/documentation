@@ -17,8 +17,10 @@
 * [Items (advanced)](configuration/items-advanced/README.md)
   * [Dyeable Items](configuration/items-advanced/dyeable-items.md)
 * [Custom Armors](configuration/custom-armors/README.md)
+  * [Component Based (1.21.2+)](configuration/custom-armors/Components.md)
+  * [Trims Based (1.20-1.21.1)](configuration/custom-armors/Trims.md)
+  * [Shader Based (1.18-1.19.4)](configuration/custom-armors/Shaders.md)
 * [Custom HUD](configuration/custom-hud.md)
-* [Gestures](configuration/gestures.md)
 * [Item Appearance](configuration/item-appearance.md)
 * [Glyphs](configuration/glyphs/README.md)
   * [Custom Gui](configuration/glyphs/custom-gui.md)
@@ -30,8 +32,8 @@
   * [Custom mechanic](mechanics/all-mechanics/custom-mechanic.md)
   * [clickAction Mechanic](mechanics/all-mechanics/clickaction-mechanic.md)
 * [Furniture Mechanic](mechanics/furniture-mechanic/README.md)
-  * [Furniture Position](mechanics/furniture-mechanic/furniture_position.md)
-  * [Display-Entity Furniture](mechanics/furniture-mechanic/display_entity_furniture.md)
+  * [Furniture Position](mechanics/furniture-mechanic/furniture\_position.md)
+  * [Display-Entity Furniture](mechanics/furniture-mechanic/display\_entity\_furniture.md)
   * [Farming Mechanic](mechanics/furniture-mechanic/farming-mechanic.md)
 * [NoteBlock mechanic](mechanics/noteblock-mechanic/README.md)
   * [Stripped log Mechanic](mechanics/noteblock-mechanic/stripped-log-mechanic.md)
@@ -61,6 +63,7 @@
   * [RealisticWorldGenerator](compatibility/world-generators/realisticworldgenerator.md)
 
 ## Vendors
+
 * [Vendor Guidelines](vendors/vendor-guidelines.md)
 
 ## Developers

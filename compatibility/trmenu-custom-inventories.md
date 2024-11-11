@@ -1,0 +1,2 @@
+# TrMenu - custom inventories
+
