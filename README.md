@@ -19,5 +19,7 @@ When a Spigot server starts with oraxen installed, the plugin will read all the 
 Installing Oraxen is a fairly straight forward process: drop Oraxen.jar and [ProtocolLib](https://www.spigotmc.org/resources/protocollib.1997/) to your /plugins/ folder and restart your server.
 
 {% hint style="info" %}
-Oraxen has been tested with Spigot and Paper 1.18 -> 1.21
+Oraxen has been tested with Spigot and Paper 1.18 -> 1.21.3
 {% endhint %}
+
+For 1.21.2+, last version of Oraxen is advised with [Paper](https://papermc.io/downloads/paper) server software. For older Minecraft versions, first install `Oraxen 1.183.0` so you get compatible configuration files, you can then update the jar file.&#x20;
