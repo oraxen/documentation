@@ -12,15 +12,14 @@ coverY: 0
 ## How does it work?
 
 This mechanic is for items only and does not work with blocks/furniture.\
-For that check the [clickAction mechanic](clickaction-mechanic.md).
-The mechanics let you create subsections composed of 3 parts:\
+For that check the [clickAction mechanic](clickaction-mechanic.md). The mechanics let you create subsections composed of 3 parts:
 
 * **Event**: when is this mechanic triggered? e.g. when you right-click on a block
 * **Conditions**: a set of conditions that must be satisfied. e.g. having a permission
 * **Actions**: a set of actions to perform. e.g. send a command or a message
 
 {% hint style="info" %}
-An optional settings called oneUsage allows you to imitate the use of an item at 1.&#x20;
+An optional settings called oneUsage allows you to imitate the use of an item at 1.
 {% endhint %}
 
 ## A comprehensive example
@@ -48,7 +47,7 @@ The item won't be consumed (oneUsage: false).
 Called when you click with the item.
 
 **mouse\_click\_type**: `[ right, left, all ]`\
-**target\_type**: `[ block, air, all ]`&#x20;
+**target\_type**: `[ block, air, all ]`
 
 ### DROP
 
@@ -59,37 +58,42 @@ Called when you drop the item.
 Called when you pick up the item.
 
 ### BREAK
+
 Called when a player breaks an item.
 
 ### EQUIP
+
 Called when a player equips an item.
 
 ### UNEQUIP
+
 Called when a player unequips an item.
 
-### INV_CLICK
+### INV\_CLICK
+
 Called when a player clicks an item in an inventory.
 
 ### DEATH
+
 Called when a player dies and would normally drop the given item.
 
 ## Available conditions
 
-### HAS_PERMISSION:the.permission
+### HAS\_PERMISSION:the.permission
 
-**the.permission**:  `The permission required by the player using the item`
+**the.permission**: `The permission required by the player using the item`
 
 ## Available actions
 
 ### COMMAND:sender:command
 
-**sender**:  `[ console, player ]`\
-**command**:  `The command to perform. The placeholder <player> can be used.`
+**sender**: `[ console, player ]`\
+**command**: `The command to perform. The placeholder <player> can be used.`
 
 ### MESSAGE:content
 
-**content**:  `Content of the message to send (it supports minimessage format)`
+**content**: `Content of the message to send (it supports minimessage format)`
 
 ### ACTIONBAR:content
 
-**content**:  `Content of the message to send (it supports minimessage format)`
+**content**: `Content of the message to send (it supports minimessage format)`

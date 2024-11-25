@@ -75,7 +75,4 @@ huds:
     enable_for_spectator_mode: true # By default, this is set to false
 ```
 
-\
-
-
 <figure><img src="https://cdn.discordapp.com/attachments/758785982005903431/1002544517158801418/unknown.png" alt=""><figcaption><p>Result of above example</p></figcaption></figure>
