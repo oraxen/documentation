@@ -45,7 +45,7 @@ First, Oraxen has several folders and 3 of these are to configure things, the fi
      \nconditions of Oraxen."
 ```
 
-This section allows you to configure the **generation** of the pack. The **compression** is configured to make the smallest zip possible by default. You can change the **comment** which is basically a watermark inside your zip.&#x20;
+This section allows you to configure the **generation** of the pack. The **compression** is configured to make the smallest zip possible by default. You can change the **comment** which is basically a watermark inside your zip.
 
 #### Protection
 
@@ -166,27 +166,34 @@ receive:
 ```
 
 ## CustomArmor
+
 ```yaml
 CustomArmor:
   disable_leather_repair: true
 ```
+
 This option lets you disable leather being able to repair custom armors.\
 This means the only way to repair a custom armor set is other copies of said armor set.
 
 ## Misc
 
-### hide_scoreboard_numbers
-This option lets you hide the red scoreboard numbers.\
+### hide\_scoreboard\_numbers
+
+This option lets you hide the red scoreboard numbers.
+
 ```yaml
   hide_scoreboard_numbers: true
 ```
-**Before:** \
+
+**Before:**\
 ![](https://media.discordapp.net/attachments/758785982005903431/1043486669371887616/image.png)\
-**After:** \
+**After:**\
 ![](https://media.discordapp.net/attachments/758785982005903431/1043486615655432193/image.png)
 
-### hide_scoreboard_background
-This option lets you hide the scoreboard background.\
+### hide\_scoreboard\_background
+
+This option lets you hide the scoreboard background.
+
 ```yaml
   hide_scoreboard_background: true
 ```
@@ -253,4 +260,3 @@ oraxen_inventory:
 ```
 
 This allows you to configure an icon for every section of the Oraxen inventory. You can use Oraxen ids or Minecraft materials.
-
