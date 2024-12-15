@@ -18,7 +18,8 @@ coverY: 0
 `fire_resistant` - Sets whether this OraxenItem is immune to fire and lava\
 `durability` - Sets the durability of this OraxenItem\
 `hide_tooltip` - Hides all tooltips from the given OraxenItem on hover\
-`food` - Makes this item consumable with several different properties\
+`consumable` - Makes this item consumable with several different properties\
+`food` - Makes this (consumable) item increase saturation and nutrition\
 `jukebox_playable` - Lets this item be inserted into a Jukebox and play a given song
 
 * `show_in_tooltip` - Show song-info in Item-Tooltip
@@ -28,24 +29,22 @@ coverY: 0
 `damage_resistant` - Specify a damage-type this item is invulnerable to
 
 * If you want to do multiple damage-types, you need a datapack with a new custom tag
-* All available damage-types can be found [here](https://minecraft.wiki/w/Tag#Damage\_type\_tags)&#x20;
+* All available damage-types can be found [here](https://minecraft.wiki/w/Tag#Damage_type_tags)
 
 `enchantable` - Set the maximum enchantment-cost for this item in an enchanting table\
 `glider` - Allows the player to glide, like with elytra, when equipped\
 `item_model` - The base-model for this item, can replace custom\_model\_data
 
-* References model in `assets/<namespace>/models/item/<model>` -> `item_model: namespace:model`&#x20;
+* References model in `assets/<namespace>/models/item/<model>` -> `item_model: namespace:model`
 
 `tooltip_style` - Style of the items tooltip
 
 * References custom sprite-background at `assets/<namespace>/textures/gui/sprites/tooltip/<id>_background`
 * References custom sprite-frame at `assets/<namespace>/textures/gui/sprites/tooltip/<id>_frame`
-* Can be customized & animated using mcmeta [Wiki](https://minecraft.wiki/w/Resource\_pack#Animation#Gui)&#x20;
+* Can be customized & animated using mcmeta [Wiki](https://minecraft.wiki/w/Resource_pack#Animation#Gui)
 
 `use_cooldown` - Applies a cooldown to all matching items when used\
 `use_remainder` - Replaces the item with a remainder item if its stack count has decreased after use
-
-
 
 Example of all the above properties:
 
