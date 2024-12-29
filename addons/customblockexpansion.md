@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # CustomBlockExpansion
 
 This is an addon for Oraxen that adds several new CustomBlock types.\
@@ -5,8 +9,7 @@ It allows for custom doors, trapdoors, stairs, slabs and transparent blocks.\
 Below will be examples for each of the different types
 
 {% hint style="warning" %}
-This is currently not released fully, but is available in the Discord for verified Oraxen-Buyers
-Note that each of the types are currently limited to only 4 variations.
+This is currently not released fully, but is available in the Discord for verified Oraxen-Buyers Note that each of the types are currently limited to only 4 variations.
 {% endhint %}
 
 {% hint style="danger" %}
@@ -16,7 +19,7 @@ If you do not care about letting players wax copper, you can disable this in `pl
 {% endhint %}
 
 {% hint style="danger" %}
-Care should also be taken to convert your existing world. \
+Care should also be taken to convert your existing world.\
 As of 1.21, trial chambers generate with Waxed Copper blocks, which might cause some unintended issues.\
 Please use the WorldConverter tool below to fix your world
 {% endhint %}
@@ -64,8 +67,7 @@ custom_slab:
 Door-setup is a bit different than the other blocks, as it requires two configs.\
 This is because the item-model in hand will look incorrect if it uses the block-parent-models\
 The second config is just so that Oraxen generates the necessary models\
-If you provide your own json-model, you can skip the second config\
-
+If you provide your own json-model, you can skip the second config\\
 
 ItemConfig for held item:
 
