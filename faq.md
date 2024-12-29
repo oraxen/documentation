@@ -29,6 +29,24 @@ A pack will be different if the config files on all servers are not identical.
 Yes, `settings.yml` contains options to disable both of these.\
 Note: Required configs and assets will still be generated, but most will be disabled.
 
+## Can I disable or change the welcome sound?
+
+Yes, `settings.yml` contains configurable actions to perform when the pack is sent to a user, including a sound by default:
+
+```yaml
+  receive:
+    enabled: true
+    loaded:
+      actions:
+        sound:
+          # Enabled by default, just switch to enabled to send
+          # the below sound whenever someone joins
+          enabled: true
+          type: minecraft:welcome
+          volume: 1.0
+          pitch: 1.0
+```
+
 ## Does Oraxen replace items?
 
 The goal of Oraxen is to add things to the game without losing features, so the short answer is no, however minecraft has some limitations (you can't really add blocks or armors for example), so we had to make a choice (a choice that can be undone by disabling the related mechanics):\
@@ -36,7 +54,7 @@ The goal of Oraxen is to add things to the game without losing features, so the 
 
 ## When I add an item, it breaks the textures of others already created
 
-By default, Oraxen automatically set a custom model data to your items and generate it in the most optimized way.\
+By default, before 1.21.4, Oraxen automatically set a custom model data to your items and generate it in the most optimized way.\
 Every item, which do not use the same model, need to have a different model data, so when you add another item, it might break the others if you manually set the same.
 
 {% hint style="info" %}
@@ -45,7 +63,7 @@ Don't forget to reload the plugin with `/o reload all` **AND** your resource pac
 
 ## My textures work when I use optifine but not in vanilla
 
-It is no longer possible to use upper case in textures or model names with vanilla since minecraft 1.11, however optifine still supports it. Please never use upper case to avoid problems.
+It is no longer possible to use upper case in folder, textures or model names with vanilla resource packs since minecraft 1.11, however optifine still supports it. Please never use upper case to avoid problems.
 
 ## How to update Oraxen?
 
@@ -59,7 +77,7 @@ Here is a great video that can help you: [https://youtu.be/LkansZwVaPY](https://
 
 First option: Login to github and submit an issue to the official repo: [git.io/oraxen](https://github.com/Th0rgal/Oraxen)
 
-Second option: Join [the discord](https://discord.gg/4Qk5kBT9UX), get your Oraxen rank and go to the support or requests channel.
+Second option: Join [the discord](https://discord.gg/2ng6q3JNQ7), get your Oraxen rank and go to the support or requests channel.
 
 ### I just want to use Oraxen's mechanics.
 

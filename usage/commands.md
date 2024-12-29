@@ -82,9 +82,9 @@ oraxen.command.repair.all # Allows to use the /o repair all command
 
 ## Manage recipes
 
-This command allows you to add new recipes to the configuration directly from the game using recipes builder. For more information on how to use it, see [Recipes](recipes.md).&#x20;
+This command allows you to add new recipes to the configuration directly from the game using recipes builder. For more information on how to use it, see [Recipes](recipes.md).
 
-![Recipe showcase using /o recipe show all](../.gitbook/assets/recipe\_showcase.png)
+![Recipe showcase using /o recipe show all](../.gitbook/assets/recipe_showcase.png)
 
 #### Usage:
 
@@ -119,12 +119,15 @@ oraxen.command.pack # Allows you to use /o pack
 ```
 
 ## Item info
+
 This command allows you to print item infos and custom-model-data-id
 
 #### Usage:
+
 ```yaml
 /oraxen iteminfo <itemname> # prints the requested item information
 ```
+
 #### Permission:
 
 ```yaml
@@ -152,11 +155,11 @@ oraxen.command.reload # Allows you to use /o reload
 
 ## Debug
 
-I wish you never have to use it but if you ever have a bug with Oraxen, I will probably ask you to execute this command to get more information about your installation.
+I wish you never have to use it but if you ever have a bug with Oraxen, I will probably ask you to execute this command to get more information about your installation. This will display advanced logs in the console.
 
 #### Usage:
 
-It will depend on the situation and will often change with the updates of oraxen, I will explain everything.
+It will depend on the situation and could change with the updates of oraxen, I will explain everything.
 
 #### Permissions:
 
