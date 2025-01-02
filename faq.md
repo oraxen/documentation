@@ -15,7 +15,7 @@ No Oraxen is not a mod in the usual sense of the word. It's a minecraft plugin t
 
 You can merge any resourcepacks into Oraxens generated pack.\
 Oraxen will then send the pack to all players with the merged packs.\
-Simply copy your packs assets-folder and paste it into Oraxen/pack/assets.\\
+Simply copy your packs assets-folder and paste it into Oraxen/pack/assets.
 
 ## I use Bungee/Velocity but the pack keeps reloading when players switch servers?
 
@@ -49,13 +49,13 @@ Yes, `settings.yml` contains configurable actions to perform when the pack is se
 
 ## Does Oraxen replace items?
 
-The goal of Oraxen is to add things to the game without losing features, so the short answer is no, however minecraft has some limitations (you can't really add blocks or armors for example), so we had to make a choice (a choice that can be undone by disabling the related mechanics):\
+The goal of Oraxen is to add things to the game without losing features, so the short answer is no, however Minecraft has some limitations (you can't really add blocks or armors for example), so we had to make a choice (a choice that can be undone by disabling the related mechanics):\
 \- new blocks will use vanilla unused noteblocks variations: this can create issues in constructions made using those unusual variations.
 
 ## When I add an item, it breaks the textures of others already created
 
-By default, before 1.21.4, Oraxen automatically set a custom model data to your items and generate it in the most optimized way.\
-Every item, which do not use the same model, need to have a different model data, so when you add another item, it might break the others if you manually set the same.
+By default (pre 1.21.4), Oraxen automatically picks custom model data values for your items and generates them in the most optimized way.\
+Every item, which does not use the exact same model, needs to have a different custom model data value. When adding a new item to Oraxen and setting it's custom model data value manually, you can break other items by accidentally setting the same value on two or more different items.
 
 {% hint style="info" %}
 Don't forget to reload the plugin with `/o reload all` **AND** your resource pack using `/o pack send @a`(you can also disconnect and reconnect to the server)
@@ -63,7 +63,7 @@ Don't forget to reload the plugin with `/o reload all` **AND** your resource pac
 
 ## My textures work when I use optifine but not in vanilla
 
-It is no longer possible to use upper case in folder, textures or model names with vanilla resource packs since minecraft 1.11, however optifine still supports it. Please never use upper case to avoid problems.
+It is no longer possible to use upper case in folder, texture or model names with vanilla resource packs since minecraft 1.11, however optifine still supports it. Please never use upper case to avoid problems.
 
 ## How to update Oraxen?
 
@@ -77,7 +77,7 @@ Here is a great video that can help you: [https://youtu.be/LkansZwVaPY](https://
 
 First option: Login to github and submit an issue to the official repo: [git.io/oraxen](https://github.com/Th0rgal/Oraxen)
 
-Second option: Join [the discord](https://discord.gg/2ng6q3JNQ7), get your Oraxen rank and go to the support or requests channel.
+Second option: Join [the discord](https://discord.gg/2ng6q3JNQ7), get your Oraxen verified rank, then go to the support channel where you can open a ticket.
 
 ### I just want to use Oraxen's mechanics.
 
